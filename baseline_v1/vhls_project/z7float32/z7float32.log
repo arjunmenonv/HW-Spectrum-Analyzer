@@ -1,0 +1,981 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../vhls/fixed/fft.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 643 ; free virtual = 4081
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 643 ; free virtual = 4081
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 533 ; free virtual = 3995
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator*=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator-=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator+=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 507 ; free virtual = 3972
+INFO: [XFORM 203-1101] Packing variable 'data_OUT' (../vhls/fixed/fft.cpp:44) into a 32-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'data_IN' (../vhls/fixed/fft.cpp:44) into a 32-bit variable.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator*=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator-=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator+=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../vhls/fixed/fft.cpp:26:46) to (../vhls/fixed/fft.cpp:26:40) in function 'FFT0'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 448 ; free virtual = 3918
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real.V' (../vhls/fixed/fft.cpp:31:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real.V' (../vhls/fixed/fft.cpp:32:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real.V' (../vhls/fixed/fft.cpp:58:27)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real.V' (../vhls/fixed/fft.cpp:19:3)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 439 ; free virtual = 3910
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated clock period (10.779ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'FFT0' consists of the following:
+	'mul' operation of DSP[57] ('mul_ln1193', ../vhls/fixed/fft.cpp:30) [56]  (3.36 ns)
+	'sub' operation of DSP[57] ('ret.V', ../vhls/fixed/fft.cpp:30) [57]  (3.02 ns)
+	'sub' operation ('complex<ap_fixed<16, 8, 5, 3, 0> >._M_real.V', ../vhls/fixed/fft.cpp:31) [68]  (2.08 ns)
+	'store' operation ('data_OUT_M_real_V_a_write_ln31', ../vhls/fixed/fft.cpp:31) of variable 'complex<ap_fixed<16, 8, 5, 3, 0> >._M_real.V', ../vhls/fixed/fft.cpp:31 on array 'data_OUT_M_real_V' [71]  (2.32 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 46.27 seconds; current allocated memory: 286.205 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 286.509 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 286.783 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 287.088 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'FFT_mul_mul_10s_16s_24_1_1' to 'FFT_mul_mul_10s_1bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_mul_mul_16s_9s_24_1_1' to 'FFT_mul_mul_16s_9cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_mac_mulsub_9s_16s_24s_24_1_1' to 'FFT_mac_mulsub_9sdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_mac_muladd_10s_16s_24s_24_1_1' to 'FFT_mac_muladd_10eOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_mac_muladd_10eOg': 1 instance(s).
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../vhls/fixed/fft.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 771 ; free virtual = 4038
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 771 ; free virtual = 4038
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 665 ; free virtual = 3947
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator*=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator-=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator+=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 639 ; free virtual = 3922
+INFO: [XFORM 203-1101] Packing variable 'data_OUT' (../vhls/fixed/fft.cpp:44) into a 32-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'data_IN' (../vhls/fixed/fft.cpp:44) into a 32-bit variable.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator*=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator-=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator+=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../vhls/fixed/fft.cpp:26:46) to (../vhls/fixed/fft.cpp:26:40) in function 'FFT0'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 579 ; free virtual = 3868
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real.V' (../vhls/fixed/fft.cpp:31:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real.V' (../vhls/fixed/fft.cpp:32:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real.V' (../vhls/fixed/fft.cpp:58:27)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real.V' (../vhls/fixed/fft.cpp:19:3)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 569 ; free virtual = 3859
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated clock period (10.779ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'FFT0' consists of the following:
+	'mul' operation of DSP[57] ('mul_ln1193', ../vhls/fixed/fft.cpp:30) [56]  (3.36 ns)
+	'sub' operation of DSP[57] ('ret.V', ../vhls/fixed/fft.cpp:30) [57]  (3.02 ns)
+	'sub' operation ('complex<ap_fixed<16, 8, 5, 3, 0> >._M_real.V', ../vhls/fixed/fft.cpp:31) [68]  (2.08 ns)
+	'store' operation ('data_OUT_M_real_V_a_write_ln31', ../vhls/fixed/fft.cpp:31) of variable 'complex<ap_fixed<16, 8, 5, 3, 0> >._M_real.V', ../vhls/fixed/fft.cpp:31 on array 'data_OUT_M_real_V' [71]  (2.32 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 43.8 seconds; current allocated memory: 286.099 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 286.403 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 286.712 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 287.010 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'FFT_mul_mul_10s_16s_24_1_1' to 'FFT_mul_mul_10s_1bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_mul_mul_16s_9s_24_1_1' to 'FFT_mul_mul_16s_9cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_mac_mulsub_9s_16s_24s_24_1_1' to 'FFT_mac_mulsub_9sdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_mac_muladd_10s_16s_24s_24_1_1' to 'FFT_mac_muladd_10eOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_mac_muladd_10eOg': 1 instance(s).
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../vhls/fixed/fft.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 682 ; free virtual = 3843
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 682 ; free virtual = 3843
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 554 ; free virtual = 3753
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator*=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator-=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator+=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 529 ; free virtual = 3729
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator*=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator-=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator+=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../vhls/fixed/fft.cpp:26:46) to (../vhls/fixed/fft.cpp:26:40) in function 'FFT0'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 474 ; free virtual = 3675
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real.V' (../vhls/fixed/fft.cpp:31:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real.V' (../vhls/fixed/fft.cpp:32:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real.V' (../vhls/fixed/fft.cpp:58:27)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real.V' (../vhls/fixed/fft.cpp:19:3)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 464 ; free virtual = 3666
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated clock period (10.779ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'FFT0' consists of the following:
+	'mul' operation of DSP[57] ('mul_ln1193', ../vhls/fixed/fft.cpp:30) [56]  (3.36 ns)
+	'sub' operation of DSP[57] ('ret.V', ../vhls/fixed/fft.cpp:30) [57]  (3.02 ns)
+	'sub' operation ('complex<ap_fixed<16, 8, 5, 3, 0> >._M_real.V', ../vhls/fixed/fft.cpp:31) [68]  (2.08 ns)
+	'store' operation ('data_OUT_M_real_V_a_write_ln31', ../vhls/fixed/fft.cpp:31) of variable 'complex<ap_fixed<16, 8, 5, 3, 0> >._M_real.V', ../vhls/fixed/fft.cpp:31 on array 'data_OUT_M_real_V' [71]  (2.32 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 45.92 seconds; current allocated memory: 286.917 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 287.221 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 287.459 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 287.761 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'FFT_mul_mul_10s_16s_24_1_1' to 'FFT_mul_mul_10s_1bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_mul_mul_16s_9s_24_1_1' to 'FFT_mul_mul_16s_9cud' due to the length limit 20
+INFO: [SYN 201-210]==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../vhls/fixed/fft.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 763 ; free virtual = 3900
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 763 ; free virtual = 3900
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 660 ; free virtual = 3811
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator*=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator-=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator+=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 633 ; free virtual = 3790
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator*=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator-=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator+=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../vhls/fixed/fft.cpp:26:46) to (../vhls/fixed/fft.cpp:26:40) in function 'FFT0'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 573 ; free virtual = 3735
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real.V' (../vhls/fixed/fft.cpp:31:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real.V' (../vhls/fixed/fft.cpp:32:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real.V' (../vhls/fixed/fft.cpp:58:27)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real.V' (../vhls/fixed/fft.cpp:19:3)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 564 ; free virtual = 3727
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated clock period (10.779ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'FFT0' consists of the following:
+	'mul' operation of DSP[57] ('mul_ln1193', ../vhls/fixed/fft.cpp:30) [56]  (3.36 ns)
+	'sub' operation of DSP[57] ('ret.V', ../vhls/fixed/fft.cpp:30) [57]  (3.02 ns)
+	'sub' operation ('complex<ap_fixed<16, 8, 5, 3, 0> >._M_real.V', ../vhls/fixed/fft.cpp:31) [68]  (2.08 ns)
+	'store' operation ('data_OUT_M_real_V_a_write_ln31', ../vhls/fixed/fft.cpp:31) of variable 'complex<ap_fixed<16, 8, 5, 3, 0> >._M_real.V', ../vhls/fixed/fft.cpp:31 on array 'data_OUT_M_real_V' [71]  (2.32 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 23.41 seconds; current allocated memory: 286.959 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 287.263 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 287.498 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 287.801 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'FFT_mul_mul_10s_16s_24_1_1' to 'FFT_mul_mul_10s_1bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_mul_mul_16s_9s_24_1_1' to 'FFT_mul_mul_16s_9cud' due to the length limit 20
+INFO: [SYN 201-210]==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../vhls/fixed/fft.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 712 ; free virtual = 3662
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 712 ; free virtual = 3662
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 600 ; free virtual = 3572
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator*=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator-=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator+=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 574 ; free virtual = 3549
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator*=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator-=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator+=<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../vhls/fixed/fft.cpp:26:46) to (../vhls/fixed/fft.cpp:26:40) in function 'FFT0'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 512 ; free virtual = 3492
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real.V' (../vhls/fixed/fft.cpp:31:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real.V' (../vhls/fixed/fft.cpp:32:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real.V' (../vhls/fixed/fft.cpp:58:27)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real.V' (../vhls/fixed/fft.cpp:19:3)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 502 ; free virtual = 3484
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated clock period (10.779ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'FFT0' consists of the following:
+	'mul' operation of DSP[57] ('mul_ln1193', ../vhls/fixed/fft.cpp:30) [56]  (3.36 ns)
+	'sub' operation of DSP[57] ('ret.V', ../vhls/fixed/fft.cpp:30) [57]  (3.02 ns)
+	'sub' operation ('complex<ap_fixed<16, 8, 5, 3, 0> >._M_real.V', ../vhls/fixed/fft.cpp:31) [68]  (2.08 ns)
+	'store' operation ('data_OUT_M_real_V_a_write_ln31', ../vhls/fixed/fft.cpp:31) of variable 'complex<ap_fixed<16, 8, 5, 3, 0> >._M_real.V', ../vhls/fixed/fft.cpp:31 on array 'data_OUT_M_real_V' [71]  (2.32 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 29.97 seconds; current allocated memory: 286.957 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 287.261 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 287.497 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 287.801 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'FFT_mul_mul_10s_16s_24_1_1' to 'FFT_mul_mul_10s_1bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_mul_mul_16s_9s_24_1_1' to 'FFT_mul_mul_16s_9cud' due to the length limit 20
+INFO: [SYN 201-210]==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../vhls/fixed/fft.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 1009 ; free virtual = 3553
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 1009 ; free virtual = 3553
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 866 ; free virtual = 3445
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 838 ; free virtual = 3421
+INFO: [XFORM 203-1101] Packing variable 'data_OUT' (../vhls/fixed/fft.cpp:44) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'data_IN' (../vhls/fixed/fft.cpp:44) into a 64-bit variable.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../vhls/fixed/fft.cpp:26:46) to (../vhls/fixed/fft.cpp:26:40) in function 'FFT0'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 792 ; free virtual = 3378
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real' (../vhls/fixed/fft.cpp:31:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real' (../vhls/fixed/fft.cpp:32:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real' (../vhls/fixed/fft.cpp:58:27)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real' (../vhls/fixed/fft.cpp:19:3)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 791 ; free virtual = 3378
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 25.86 seconds; current allocated memory: 267.615 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 268.001 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 268.315 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 268.631 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'FFT_fsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_fsub_32ns_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_faddfsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_faddfsub_32nscud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fadd_32ns_32ns_32_5_full_dsp_1' to 'FFT_fadd_32ns_32ndEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fmul_32ns_32ns_32_4_max_dsp_1' to 'FFT_fmul_32ns_32neOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_faddfsub_32nscud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0'.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 269.431 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_IN' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_OUT' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'FFT' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_real' to 'FFT_data_OUT0_M_rfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_imag' to 'FFT_data_OUT0_M_ig8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_real' to 'FFT_data_OUT1_M_rhbi' due to the length limit 20
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../vhls/fixed/fft.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:34 ; elapsed = 00:01:18 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 542 ; free virtual = 2226
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:34 ; elapsed = 00:01:18 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 542 ; free virtual = 2226
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 432 ; free virtual = 2143
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 405 ; free virtual = 2117
+INFO: [XFORM 203-1101] Packing variable 'data_OUT' (../vhls/fixed/fft.cpp:44) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'data_IN' (../vhls/fixed/fft.cpp:44) into a 64-bit variable.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:60) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../vhls/fixed/fft.cpp:26:46) to (../vhls/fixed/fft.cpp:26:40) in function 'FFT0'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:39 ; elapsed = 00:01:24 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 357 ; free virtual = 2074
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real' (../vhls/fixed/fft.cpp:31:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real' (../vhls/fixed/fft.cpp:32:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real' (../vhls/fixed/fft.cpp:58:27)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real' (../vhls/fixed/fft.cpp:19:3)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:39 ; elapsed = 00:01:24 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 355 ; free virtual = 2074
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 84.77 seconds; current allocated memory: 267.611 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 267.996 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 268.314 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 268.630 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'FFT_fsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_fsub_32ns_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_faddfsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_faddfsub_32nscud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fadd_32ns_32ns_32_5_full_dsp_1' to 'FFT_fadd_32ns_32ndEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fmul_32ns_32ns_32_4_max_dsp_1' to 'FFT_fmul_32ns_32neOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_faddfsub_32nscud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0'.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 269.430 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_IN' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_OUT' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'FFT' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_real' to 'FFT_data_OUT0_M_rfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_imag' to 'FFT_data_OUT0_M_ig8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_real' to 'FFT_data_OUT1_M_rhbi' due to the length limit 20
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../vhls/fixed/fft.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 638 ; free virtual = 3529
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 638 ; free virtual = 3529
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 541 ; free virtual = 3452
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:62) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 515 ; free virtual = 3427
+INFO: [XFORM 203-1101] Packing variable 'data_OUT' (../vhls/fixed/fft.cpp:44) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'data_IN' (../vhls/fixed/fft.cpp:44) into a 64-bit variable.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:62) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../vhls/fixed/fft.cpp:26:46) to (../vhls/fixed/fft.cpp:26:40) in function 'FFT0'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 467 ; free virtual = 3383
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real' (../vhls/fixed/fft.cpp:31:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real' (../vhls/fixed/fft.cpp:32:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real' (../vhls/fixed/fft.cpp:60:27)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real' (../vhls/fixed/fft.cpp:19:3)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 466 ; free virtual = 3383
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 45.32 seconds; current allocated memory: 267.904 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 268.289 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 268.627 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 268.966 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'FFT_fsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_fsub_32ns_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_faddfsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_faddfsub_32nscud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fadd_32ns_32ns_32_5_full_dsp_1' to 'FFT_fadd_32ns_32ndEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fmul_32ns_32ns_32_4_max_dsp_1' to 'FFT_fmul_32ns_32neOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_faddfsub_32nscud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0'.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 269.707 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_IN' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_OUT' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'FFT' to 's_axilite & ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_real' to 'FFT_data_OUT0_M_rfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_imag' to 'FFT_data_OUT0_M_ig8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_real' to 'FFT_data_OUT1_M_rhbi' due to the length limit 20
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../vhls/fixed/fft.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:25 ; elapsed = 00:00:41 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 628 ; free virtual = 2118
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:25 ; elapsed = 00:00:41 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 627 ; free virtual = 2117
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:28 ; elapsed = 00:00:46 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 520 ; free virtual = 2036
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:62) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:29 ; elapsed = 00:00:46 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 492 ; free virtual = 2010
+INFO: [XFORM 203-1101] Packing variable 'data_OUT' (../vhls/fixed/fft.cpp:44) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'data_IN' (../vhls/fixed/fft.cpp:44) into a 64-bit variable.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:62) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../vhls/fixed/fft.cpp:26:46) to (../vhls/fixed/fft.cpp:26:40) in function 'FFT0'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 443 ; free virtual = 1967
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real' (../vhls/fixed/fft.cpp:31:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real' (../vhls/fixed/fft.cpp:32:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real' (../vhls/fixed/fft.cpp:60:27)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real' (../vhls/fixed/fft.cpp:19:3)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 438 ; free virtual = 1967
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 47.84 seconds; current allocated memory: 267.957 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 268.342 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 268.677 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 269.017 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'FFT_fsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_fsub_32ns_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_faddfsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_faddfsub_32nscud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fadd_32ns_32ns_32_5_full_dsp_1' to 'FFT_fadd_32ns_32ndEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fmul_32ns_32ns_32_4_max_dsp_1' to 'FFT_fmul_32ns_32neOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_faddfsub_32nscud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0'.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 269.773 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_IN' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_OUT' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'FFT' to 's_axilite & ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_real' to 'FFT_data_OUT0_M_rfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_imag' to 'FFT_data_OUT0_M_ig8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_real' to 'FFT_data_OUT1_M_rhbi' due to the length limit 20
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../vhls/fixed/fft.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 640 ; free virtual = 2842
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 640 ; free virtual = 2842
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 532 ; free virtual = 2755
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:64) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 506 ; free virtual = 2730
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT0' (../vhls/fixed/fft.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (../vhls/fixed/fft.cpp:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (../vhls/fixed/fft.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'bitreverse' into 'FFT' (../vhls/fixed/fft.cpp:64) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../vhls/fixed/fft.cpp:26:46) to (../vhls/fixed/fft.cpp:26:40) in function 'FFT0'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 458 ; free virtual = 2687
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real' (../vhls/fixed/fft.cpp:31:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT._M_real' (../vhls/fixed/fft.cpp:32:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real' (../vhls/fixed/fft.cpp:62:27)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real' (../vhls/fixed/fft.cpp:19:3)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 456 ; free virtual = 2687
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 29.43 seconds; current allocated memory: 267.972 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 268.357 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 268.694 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 269.041 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'FFT_fsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_fsub_32ns_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_faddfsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_faddfsub_32nscud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fadd_32ns_32ns_32_5_full_dsp_1' to 'FFT_fadd_32ns_32ndEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fmul_32ns_32ns_32_4_max_dsp_1' to 'FFT_fmul_32ns_32neOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_faddfsub_32nscud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0'.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 269.799 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_IN_M_real' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_IN_M_imag' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_OUT_M_real' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_OUT_M_imag' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'FFT' to 's_axilite & ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_real' to 'FFT_data_OUT0_M_rfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_imag' to 'FFT_data_OUT0_M_ig8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_real' to 'FFT_data_OUT1_M_rhbi' due to the length limit 20
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

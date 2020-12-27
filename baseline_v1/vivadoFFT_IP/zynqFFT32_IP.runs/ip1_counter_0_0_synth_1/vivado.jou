@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Dec 25 15:20:58 2020
+# Process ID: 5875
+# Current directory: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.runs/ip1_counter_0_0_synth_1
+# Command line: vivado -log ip1_counter_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ip1_counter_0_0.tcl
+# Log file: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.runs/ip1_counter_0_0_synth_1/ip1_counter_0_0.vds
+# Journal file: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.runs/ip1_counter_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ip1_counter_0_0.tcl -notrace

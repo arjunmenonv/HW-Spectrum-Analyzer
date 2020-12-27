@@ -1,0 +1,768 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Dec 27 17:03:16 2020
+# Process ID: 1046
+# Current directory: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.runs/ip1_FFT_0_1_synth_1
+# Command line: vivado -log ip1_FFT_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ip1_FFT_0_1.tcl
+# Log file: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.runs/ip1_FFT_0_1_synth_1/ip1_FFT_0_1.vds
+# Journal file: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.runs/ip1_FFT_0_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ip1_FFT_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/FFT32float'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/perf_ctr'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
+Command: synth_design -top ip1_FFT_0_1 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1078
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2149.371 ; gain = 0.000 ; free physical = 761 ; free virtual = 3631
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ip1_FFT_0_1' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ip/ip1_FFT_0_1/synth/ip1_FFT_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'FFT' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 17'b00000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 17'b00000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 17'b00000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 17'b00000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 17'b00000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 17'b00000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 17'b00000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 17'b00000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 17'b00000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 17'b00000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 17'b00000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 17'b00000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 17'b00001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 17'b00010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 17'b00100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 17'b01000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 17'b10000000000000000 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_xin_M_real' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_xin_M_real.v:40]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_xin_M_real_ram' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_xin_M_real.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './FFT_xin_M_real_ram.dat' is read successfully [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_xin_M_real.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_xin_M_real_ram' (1#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_xin_M_real.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_xin_M_real' (2#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_xin_M_real.v:40]
+INFO: [Synth 8-6157] synthesizing module 'FFT_rev_32' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_rev_32.v:39]
+	Parameter DataWidth bound to: 5 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_rev_32_rom' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_rev_32.v:6]
+	Parameter DWIDTH bound to: 5 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './FFT_rev_32_rom.dat' is read successfully [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_rev_32.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_rev_32_rom' (3#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_rev_32.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_rev_32' (4#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_rev_32.v:39]
+INFO: [Synth 8-6157] synthesizing module 'FFT_AXILiteS_s_axi' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_AXILiteS_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 10'b0000000000 
+	Parameter ADDR_GIE bound to: 10'b0000000100 
+	Parameter ADDR_IER bound to: 10'b0000001000 
+	Parameter ADDR_ISR bound to: 10'b0000001100 
+	Parameter ADDR_DATA_IN_M_REAL_BASE bound to: 10'b0010000000 
+	Parameter ADDR_DATA_IN_M_REAL_HIGH bound to: 10'b0011111111 
+	Parameter ADDR_DATA_IN_M_IMAG_BASE bound to: 10'b0100000000 
+	Parameter ADDR_DATA_IN_M_IMAG_HIGH bound to: 10'b0101111111 
+	Parameter ADDR_DATA_OUT_M_REAL_BASE bound to: 10'b0110000000 
+	Parameter ADDR_DATA_OUT_M_REAL_HIGH bound to: 10'b0111111111 
+	Parameter ADDR_DATA_OUT_M_IMAG_BASE bound to: 10'b1000000000 
+	Parameter ADDR_DATA_OUT_M_IMAG_HIGH bound to: 10'b1001111111 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_AXILiteS_s_axi_ram' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_AXILiteS_s_axi.v:639]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FFT_AXILiteS_s_axi_ram' (5#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_AXILiteS_s_axi.v:639]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_AXILiteS_s_axi.v:355]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_AXILiteS_s_axi' (6#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_AXILiteS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'FFT0' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 20'b00000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 20'b00000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 20'b00000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 20'b00000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 20'b00000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 20'b00000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 20'b00000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 20'b00000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 20'b00000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 20'b00000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 20'b00000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 20'b00000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 20'b00000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 20'b00000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 20'b00000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 20'b00001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 20'b00010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 20'b00100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 20'b01000000000000000000 
+	Parameter ap_ST_fsm_state20 bound to: 20'b10000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'FFT0_W_M_real' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0_W_M_real.v:39]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT0_W_M_real_rom' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0_W_M_real.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './FFT0_W_M_real_rom.dat' is read successfully [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0_W_M_real.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'FFT0_W_M_real_rom' (7#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0_W_M_real.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FFT0_W_M_real' (8#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0_W_M_real.v:39]
+INFO: [Synth 8-6157] synthesizing module 'FFT0_W_M_imag' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0_W_M_imag.v:39]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT0_W_M_imag_rom' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0_W_M_imag.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './FFT0_W_M_imag_rom.dat' is read successfully [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0_W_M_imag.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'FFT0_W_M_imag_rom' (9#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0_W_M_imag.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FFT0_W_M_imag' (10#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0_W_M_imag.v:39]
+INFO: [Synth 8-6157] synthesizing module 'FFT_fsub_32ns_32nbkb' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_fsub_32ns_32nbkb.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_fsub_3_full_dsp_32' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/ip/FFT_ap_fsub_3_full_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_10' declared at '/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/248c/hdl/floating_point_v7_1_rfs.vhd:94738' bound to instance 'U0' of component 'floating_point_v7_1_10' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/ip/FFT_ap_fsub_3_full_dsp_32.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_fsub_3_full_dsp_32' (28#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/ip/FFT_ap_fsub_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_fsub_32ns_32nbkb' (29#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_fsub_32ns_32nbkb.v:8]
+INFO: [Synth 8-6157] synthesizing module 'FFT_faddfsub_32nscud' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_faddfsub_32nscud.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_faddfsub_3_full_dsp_32' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/ip/FFT_ap_faddfsub_3_full_dsp_32.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_10' declared at '/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/248c/hdl/floating_point_v7_1_rfs.vhd:94738' bound to instance 'U0' of component 'floating_point_v7_1_10' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/ip/FFT_ap_faddfsub_3_full_dsp_32.vhd:216]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_faddfsub_3_full_dsp_32' (30#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/ip/FFT_ap_faddfsub_3_full_dsp_32.vhd:74]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_faddfsub_32nscud' (31#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_faddfsub_32nscud.v:8]
+INFO: [Synth 8-6157] synthesizing module 'FFT_fadd_32ns_32ndEe' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_fadd_32ns_32ndEe.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_fadd_3_full_dsp_32' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/ip/FFT_ap_fadd_3_full_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_10' declared at '/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/248c/hdl/floating_point_v7_1_rfs.vhd:94738' bound to instance 'U0' of component 'floating_point_v7_1_10' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/ip/FFT_ap_fadd_3_full_dsp_32.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_fadd_3_full_dsp_32' (32#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/ip/FFT_ap_fadd_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_fadd_32ns_32ndEe' (33#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_fadd_32ns_32ndEe.v:8]
+INFO: [Synth 8-6157] synthesizing module 'FFT_fmul_32ns_32neOg' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_fmul_32ns_32neOg.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_fmul_2_max_dsp_32' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/ip/FFT_ap_fmul_2_max_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_10' declared at '/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/248c/hdl/floating_point_v7_1_rfs.vhd:94738' bound to instance 'U0' of component 'floating_point_v7_1_10' [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/ip/FFT_ap_fmul_2_max_dsp_32.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_fmul_2_max_dsp_32' (41#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/ip/FFT_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_fmul_32ns_32neOg' (42#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT_fmul_32ns_32neOg.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0.v:756]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0.v:758]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0.v:778]
+INFO: [Synth 8-6155] done synthesizing module 'FFT0' (43#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'FFT' (44#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ipshared/3223/hdl/verilog/FFT.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'ip1_FFT_0_1' (45#1) [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ip/ip1_FFT_0_1/synth/ip1_FFT_0_1.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2196.242 ; gain = 46.871 ; free physical = 774 ; free virtual = 3647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 2211.086 ; gain = 61.715 ; free physical = 773 ; free virtual = 3646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 2211.086 ; gain = 61.715 ; free physical = 773 ; free virtual = 3646
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2217.023 ; gain = 0.000 ; free physical = 760 ; free virtual = 3634
+INFO: [Netlist 29-17] Analyzing 440 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ip/ip1_FFT_0_1/constraints/FFT_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.srcs/sources_1/bd/ip1/ip/ip1_FFT_0_1/constraints/FFT_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.runs/ip1_FFT_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.runs/ip1_FFT_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2344.867 ; gain = 0.000 ; free physical = 643 ; free virtual = 3531
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  FDE => FDRE: 12 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2344.867 ; gain = 0.000 ; free physical = 641 ; free virtual = 3529
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2344.867 ; gain = 195.496 ; free physical = 721 ; free virtual = 3619
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2344.867 ; gain = 195.496 ; free physical = 721 ; free virtual = 3619
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.runs/ip1_FFT_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2344.867 ; gain = 195.496 ; free physical = 721 ; free virtual = 3619
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'FFT_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'FFT_AXILiteS_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "FFT_AXILiteS_s_axi_ram:/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'FFT_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'FFT_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 2344.867 ; gain = 195.496 ; free physical = 714 ; free virtual = 3614
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/grp_FFT0_fu_306/FFT_fsub_32ns_32nbkb_U1/FFT_ap_fsub_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_FFT0_fu_306/FFT_fsub_32ns_32nbkb_U1/FFT_ap_fsub_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_FFT0_fu_306/FFT_fsub_32ns_32nbkb_U1/FFT_ap_fsub_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_FFT0_fu_306/FFT_fsub_32ns_32nbkb_U1/FFT_ap_fsub_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_FFT0_fu_306/FFT_faddfsub_32nscud_U2/FFT_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_FFT0_fu_306/FFT_faddfsub_32nscud_U2/FFT_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_FFT0_fu_306/FFT_faddfsub_32nscud_U2/FFT_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_FFT0_fu_306/FFT_faddfsub_32nscud_U2/FFT_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fadd_32ns_32ndEe:/FFT_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'FFT_fadd_32ns_32ndEe:/FFT_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fadd_32ns_32ndEe:/FFT_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'FFT_fadd_32ns_32ndEe:/FFT_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fmul_32ns_32neOg:/FFT_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'FFT_fmul_32ns_32neOg:/FFT_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fmul_32ns_32neOg:/FFT_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'FFT_fmul_32ns_32neOg:/FFT_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "inst/FFT_AXILiteS_s_axi_U/int_data_IN_M_real/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/FFT_AXILiteS_s_axi_U/int_data_IN_M_imag/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/FFT_AXILiteS_s_axi_U/int_data_OUT_M_real/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/FFT_AXILiteS_s_axi_U/int_data_OUT_M_imag/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 2344.867 ; gain = 195.496 ; free physical = 686 ; free virtual = 3594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:49 . Memory (MB): peak = 2344.867 ; gain = 195.496 ; free physical = 510 ; free virtual = 3425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:52 . Memory (MB): peak = 2344.867 ; gain = 195.496 ; free physical = 499 ; free virtual = 3414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/xin_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/xin_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/xin_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/xin_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT0_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT0_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT0_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT0_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT1_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT1_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT1_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT1_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT2_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT2_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT2_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT2_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT3_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT3_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT3_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT3_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT4_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT4_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT4_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_OUT4_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/xout_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/xout_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/xout_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/xout_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/FFT_AXILiteS_s_axi_U/int_data_IN_M_real/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/FFT_AXILiteS_s_axi_U/int_data_IN_M_real/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/FFT_AXILiteS_s_axi_U/int_data_IN_M_imag/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/FFT_AXILiteS_s_axi_U/int_data_IN_M_imag/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/FFT_AXILiteS_s_axi_U/int_data_OUT_M_real/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/FFT_AXILiteS_s_axi_U/int_data_OUT_M_imag/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:54 . Memory (MB): peak = 2351.898 ; gain = 202.527 ; free physical = 496 ; free virtual = 3411
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:58 . Memory (MB): peak = 2351.898 ; gain = 202.527 ; free physical = 486 ; free virtual = 3401
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:58 . Memory (MB): peak = 2351.898 ; gain = 202.527 ; free physical = 486 ; free virtual = 3401
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:59 . Memory (MB): peak = 2351.898 ; gain = 202.527 ; free physical = 495 ; free virtual = 3410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:59 . Memory (MB): peak = 2351.898 ; gain = 202.527 ; free physical = 495 ; free virtual = 3410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:59 . Memory (MB): peak = 2351.898 ; gain = 202.527 ; free physical = 495 ; free virtual = 3410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:59 . Memory (MB): peak = 2351.898 ; gain = 202.527 ; free physical = 495 ; free virtual = 3410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    40|
+|2     |DSP48E1  |    20|
+|7     |LUT1     |    27|
+|8     |LUT2     |   211|
+|9     |LUT3     |   695|
+|10    |LUT4     |   355|
+|11    |LUT5     |   537|
+|12    |LUT6     |   382|
+|13    |MUXCY    |   280|
+|14    |RAMB18E1 |    14|
+|15    |RAMB36E1 |     4|
+|16    |XORCY    |   100|
+|17    |FDE      |    12|
+|18    |FDRE     |  1875|
+|19    |FDSE     |     6|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:59 . Memory (MB): peak = 2351.898 ; gain = 202.527 ; free physical = 495 ; free virtual = 3410
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 2351.898 ; gain = 68.746 ; free physical = 567 ; free virtual = 3482
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:59 . Memory (MB): peak = 2351.906 ; gain = 202.527 ; free physical = 567 ; free virtual = 3482
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2351.906 ; gain = 0.000 ; free physical = 641 ; free virtual = 3556
+INFO: [Netlist 29-17] Analyzing 470 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2383.914 ; gain = 0.000 ; free physical = 578 ; free virtual = 3493
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 88 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 76 instances
+  FDE => FDRE: 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+125 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:08 . Memory (MB): peak = 2383.914 ; gain = 234.672 ; free physical = 743 ; free virtual = 3659
+INFO: [Common 17-1381] The checkpoint '/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.runs/ip1_FFT_0_1_synth_1/ip1_FFT_0_1.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ip1_FFT_0_1, cache-ID = 492d4e968d1bac09
+INFO: [Coretcl 2-1174] Renamed 433 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/zynqFFT32_IP.runs/ip1_FFT_0_1_synth_1/ip1_FFT_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ip1_FFT_0_1_utilization_synth.rpt -pb ip1_FFT_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 27 17:04:40 2020...
