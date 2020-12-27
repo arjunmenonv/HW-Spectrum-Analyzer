@@ -44,7 +44,7 @@ The Vivado High Level Synthesis (HLS) tool makes the job of designing an FFT per
     * We cannot parallely get low resolution and high magnitude as the dynamic range is always constant. The ap_fixed (arbitrary precision fixed) data type supported by HLS libraries for C let us choose the number of bits for representing fractions. So by choosing a suitable precision, we can optimise on the magnitude and precision required for the spectrum analyser.
     * Addition of fixed point numbers is the same as adding integers. While multiplying two fixed point numbers, the result must be shifted accordingly to preserve the binary point position. Since shakti processors do not support fixed point in its native form, we'll either have to modify the multiply instruction in RV32IM isa or convert the data from float to ap_fixed (with loss of precision) whenever the data is loaded from memory to the peripheral (and vice versa).
   - The baseline implementation of the system will use float data type as the code for it is readily available. This will let us run tests and compute the performance.
-  -*Comparisons to be made wrt float vs ap_fixed:*
+  - *Comparisons to be made wrt float vs ap_fixed:*
     - Speedup (latency and initiation interval) of peripheral
     - Speedup of complete system (float2ap_fixed conversion in case of an ap_fixed implementation using a shakti processorwill increase the critical delay)
     - Resource usage (LUTs, FFs, BRAMs and DSP slices)
@@ -54,7 +54,7 @@ The Vivado High Level Synthesis (HLS) tool makes the job of designing an FFT per
   - In the baseline implementation, the peripheral will only compute the fourier transform of an input vector. The multiplication of the data vector by a window will be done in the processor itself. This will let us get a working implementation of the system quickly
   - The processor will perform the windowing operation sequentially (from element 0 to element N-1). However, this can be parallelised using the Multiply Accumulates on the FPGA. This can be done by modifying the HLS code for the FFT peripheral.
   - Additionally, the output can be converted from cartesian to polar form in the peripheral itself (abs computation can be sped up using a multiplier while for computing arctan the peripheral can use an optimal architecture such as CORDIC)
-  -*Comparisons to be made wrt windowing in fpga:*
+  - *Comparisons to be made wrt windowing in fpga:*
     - Speedup (latency and initiation interval) of peripheral
     - Resource usage (LUTs, FFs, BRAMs and DSP slices) and mapping the additional usage of DSP slices to the windowing operation
 
@@ -132,9 +132,9 @@ The work may be divided into the following largely parallelisable tasks:
 
 **Resources:**
 1. Shakti Processor
-  1. User Manual: http://shakti.org.in/docs/user_manual.pdf
-  2. Source Code for E class Processor: https://gitlab.com/shaktiproject/cores/shakti-soc/tree/master/fpga/boards/artya7-35t/e-class
-  3. Documentation for Zybo Z7-20 board: https://reference.digilentinc.com/reference/programmable-logic/zybo-z7/reference-manual
+    1. User Manual: http://shakti.org.in/docs/user_manual.pdf
+    2. Source Code for E class Processor: https://gitlab.com/shaktiproject/cores/shakti-soc/tree/master/fpga/boards/artya7-35t/e-class
+    3. Documentation for Zybo Z7-20 board: https://reference.digilentinc.com/reference/programmable-logic/zybo-z7/reference-manual
 
   Remarks: References for instantiating shakti processor on an FPGA, memory map of E-class 32 bit processor E-arty35T (we'll use the UART0 and GPIO peripherals), using Shakti SDK for application programming in C
 
@@ -142,19 +142,19 @@ The work may be divided into the following largely parallelisable tasks:
 
 
 2. FFT on hardware
-  1. FFT on Hardware using Vivado HLS- baseline implementation: https://www.youtube.com/watch?v=R-msBFn6r88&list=PLco7dux9L7g3PAmOFZtaqO93FnKf9MZiZ&index=4
+    1. FFT on Hardware using Vivado HLS- baseline implementation: https://www.youtube.com/watch?v=R-msBFn6r88&list=PLco7dux9L7g3PAmOFZtaqO93FnKf9MZiZ&index=4
   The rest of this playlist on youtube includes details on getting a block design running on an FPGA
-  2.  Source Code for Nitin Sir's HLS implementation of FFT: https://gitlab.com/chandrachoodan/teach-fpga
-  3. Analysing Vivado HLS synthesis: https://www.youtube.com/watch?v=iAarcpreA7Q&list=PLco7dux9L7g1RrB8TqUVCMEeu86D7azeg&index=21
-  4. Primer on FFT and its Digital architecture: http://web.mit.edu/6.111/www/f2017/handouts/FFTtutorial121102.pdf
-  5. Writing C++ code to optimise Vivado HLS sythesis: Chapters 4 and 5 in https://arxiv.org/pdf/1805.03648.pdf
-  6. Software Implementation of FFT in C: Numerical Recipes in C is a good reference (Chapter 12)  
+    2.  Source Code for Nitin Sir's HLS implementation of FFT: https://gitlab.com/chandrachoodan/teach-fpga
+    3. Analysing Vivado HLS synthesis: https://www.youtube.com/watch?v=iAarcpreA7Q&list=PLco7dux9L7g1RrB8TqUVCMEeu86D7azeg&index=21
+    4. Primer on FFT and its Digital architecture: http://web.mit.edu/6.111/www/f2017/handouts/FFTtutorial121102.pdf
+    5. Writing C++ code to optimise Vivado HLS sythesis: Chapters 4 and 5 in https://arxiv.org/pdf/1805.03648.pdf
+    6. Software Implementation of FFT in C: Numerical Recipes in C is a good reference (Chapter 12)  
   https://www.cec.uchile.cl/cinetica/pcordero/MC_libros/NumericalRecipesinC.pdf
 
 
 3. Spectrum analyser
-  1. https://www.electronics-notes.com/articles/test-methods/spectrum-analyzer/fft-fast-fourier-transform-spectrum-analyser.php
-  2. https://www.thinksrs.com/downloads/pdfs/applicationnotes/AboutFFTs.pdf
-  3. This article talks about windowing in one of the sections: https://www.sjsu.edu/people/burford.furman/docs/me120/FFT_tutorial_NI.pdf
-  4. Short Time Fourier Transform: https://ccrma.stanford.edu/~jos/sasp/Short_Time_Fourier_Transform.html
-  5. Time Domain Windows and their Freq char: https://ccrma.stanford.edu/~jos/sasp/Rectangular_Window.html
+    1. https://www.electronics-notes.com/articles/test-methods/spectrum-analyzer/fft-fast-fourier-transform-spectrum-analyser.php
+    2. https://www.thinksrs.com/downloads/pdfs/applicationnotes/AboutFFTs.pdf
+    3. This article talks about windowing in one of the sections: https://www.sjsu.edu/people/burford.furman/docs/me120/FFT_tutorial_NI.pdf
+    4. Short Time Fourier Transform: https://ccrma.stanford.edu/~jos/sasp/Short_Time_Fourier_Transform.html
+    5. Time Domain Windows and their Freq char: https://ccrma.stanford.edu/~jos/sasp/Rectangular_Window.html
