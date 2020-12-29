@@ -1,0 +1,187 @@
+/*
+
+Xilinx Vitis v2020.1.0 (64-bit) [Major: 2020, Minor: 1]
+SW Build 2902540 on Wed May 27 19:55:13 MDT 2020
+
+Process ID (PID): 8596
+License: Customer
+
+Current time: 	Thu Dec 24 23:58:58 IST 2020
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: Ubuntu
+OS Version: 5.4.0-58-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :0
+Screen size: 1366x768
+Available screens: 1
+Available disk space: 482 GB
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 4 GB
+
+Java library paths: /tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o:/tools/Xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/lib/:/tools/Xilinx/Vitis/2020.1/tps/lnx64/jre9.0.4/lib//server:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2020.1/lib/lnx64.o:/tools/Xilinx/Vivado/2020.1/bin/../lnx64/tools/dot/lib:/tools/Xilinx/Vitis/2020.1/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /tools/Xilinx/Vitis/2020.1/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.0.v20180512-1130.jar
+LD_LIBRARY_PATH: /tools/Xilinx/Vitis
+
+User name: 	arjunmenonv
+User home directory: /home/arjunmenonv
+User working directory: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2020.1
+RDI_DATADIR: /tools/Xilinx/Vitis/2020.1/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2020.1/bin
+
+Vitis preferences directory: /home/arjunmenonv/.Xilinx/Vitis/2020.1/
+Vitis workspace directory: /home/arjunmenonv/workspace
+Vitis workspace log file location: /home/arjunmenonv/workspace/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+VITIS: /tools/Xilinx/Vitis/2020.1
+VIVADO: /tools/Xilinx/Vivado/2020.1
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis/2020.1
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2020.1
+XILINX_SDK: /tools/Xilinx/Vitis/2020.1
+XILINX_VITIS: /tools/Xilinx/Vitis/2020.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2020.1
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectTree("uartHello", "uartHello_system", "Explorer", "ProjectExplorer", "Tree");
+selectTree("gpio2MB_wrapper", "uartHello_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTree("uartHello_system", "uartHello_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Close System Project", "Explorer", "ProjectExplorer", "MenuItem.CLOSE_SYSTEM_PROJECT");
+selectTree("serialZynq_wrapper", "uartHello_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("File", "serialZynq_wrapper", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("New", "serialZynq_wrapper", "WorkbenchWindow", "MenuItem.NEW");
+selectMenuItem("Application Project", "serialZynq_wrapper", "WorkbenchWindow", "MenuItem.APPLICATION_PROJECT");
+selectTab("Create a new platform from hardware", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+selectButton("Browse", "New Application Project (Platform)", "NewAppProjectWizard", "Button.BROWSE");
+setFileDialog("/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/zynqFFT32_IP/ip1_wrapper.xsa", "Create Platform from XSA", "SDXFileDialog", "Button.OK");
+selectButton("Next", "New Application Project (Platform)", "NewAppProjectWizard", "Button.NEXT");
+selectTreeTable("ps7_cortexa9_0", "New Application Project (Application Project Details)", "NewAppProjectWizard", "ProjectDetailsPage");
+setTextField("baseline1", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Text.APPLICATION_PROJECT_NAME");
+selectButton("Next", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Button.NEXT");
+selectCombo("freertos10_xilinx", "New Application Project (Domain)", "NewAppProjectWizard", "ComboViewer.OPERATING_SYSTEM");
+selectCombo("standalone", "New Application Project (Domain)", "NewAppProjectWizard", "ComboViewer.OPERATING_SYSTEM");
+selectButton("Next", "New Application Project (Domain)", "NewAppProjectWizard", "Button.NEXT");
+selectTreeTable("Empty Application", "SW development templates", "New Application Project (Templates)", "NewAppProjectWizard", "TreeViewer.TemplateContentProvider");
+selectButton("Finish", "New Application Project (Templates)", "NewAppProjectWizard", "Button.FINISH");
+selectTree("src", "baseline1_system > baseline1", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("New", "Explorer", "ProjectExplorer", "MenuItem.NEW");
+selectMenuItem("File", "baseline1", "WorkbenchWindow", "MenuItem.FILE");
+selectButton("Cancel", "New File (File)", "BasicNewFileResourceWizard", "Button.CANCEL");
+selectTree("src", "baseline1_system > baseline1", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Import Sources", "Explorer", "ProjectExplorer", "MenuItem.IMPORT_SOURCES");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("fft-sdk", "Import Sources (File system)", "FileSystemImportWizard", "Tree.FFT_SDK");
+selectTable("main.cc", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectHyperlink("Hardware Specification View processors memory range", "baseline1", "SDXSettingsEditor", "Link.HARDWARE_SPECIFICATION");
+activateView("baseline1", "baseline1/baseline1.prj", "SDXSettingsEditor", "CTabItem.BASELINE1");
+selectButton("Navigate to BSP Settings", "baseline1", "SDXSettingsEditor", "Button.NAVIGATE_TO_BSP");
+selectTab("Drivers", "Drivers", "ScwEditor", "TabItem.DRIVERS");
+selectTree("ps7_cortexa9_0", "ip1_wrapper", "ip1_wrapper", "ScwEditor", "Tree");
+selectTree("zynq_fsbl", "ip1_wrapper > ps7_cortexa9_0", "ip1_wrapper", "ScwEditor", "Tree");
+selectTree("Board Support Package", "ip1_wrapper > ps7_cortexa9_0 > zynq_fsbl", "ip1_wrapper", "ScwEditor", "Tree");
+selectTab("Drivers", "Drivers", "ScwEditor", "TabItem.DRIVERS");
+activateView("baseline1", "baseline1/baseline1.prj", "SDXSettingsEditor", "CTabItem.BASELINE1");
+activateView("baseline1_system", "baseline1_system/baseline1_system.sprj", "SystemSettingsEditor", "CTabItem.BASELINE1_SYSTEM");
+activateView("xuartps.h", "serialZynq_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cort", "CEditor", "CTabItem.XUARTPS_H");
+closeView("xuartps.h", "serialZynq_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_9/src/xuartps.h", "CEditor", "CTabItem.XUARTPS_H");
+closeView("baseline1_system", "baseline1_system/baseline1_system.sprj", "SystemSettingsEditor", "CTabItem.BASELINE1_SYSTEM");
+closeView("baseline1", "baseline1/baseline1.prj", "SDXSettingsEditor", "CTabItem.BASELINE1");
+closeView("ip1_wrapper", "ip1_wrapper/platform.spr", "ScwEditor", "CTabItem.IP1_WRAPPER");
+selectTree("platform.spr", "ip1_wrapper", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTree("serialZynq_wrapper", "ip1_wrapper", "Explorer", "ProjectExplorer", "Tree");
+selectTree("ip1_wrapper", "ip1_wrapper", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTree("platform.spr", "ip1_wrapper", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTree("Board Support Package", "ip1_wrapper > ps7_cortexa9_0 > zynq_fsbl", "ip1_wrapper", "ScwEditor", "Tree");
+selectTab("Drivers", "Drivers", "ScwEditor", "TabItem.DRIVERS");
+selectTree("Board Support Package", "ip1_wrapper > ps7_cortexa9_0 > domain_ps7_cortexa9_0", "ip1_wrapper", "ScwEditor", "Tree");
+selectTab("Drivers", "Drivers", "ScwEditor", "TabItem.DRIVERS");
+selectTable("FFT_0", "ip1_wrapper", "ScwEditor", "TableViewer.ArrayContentProvider");
+closeView("ip1_wrapper", "ip1_wrapper/platform.spr", "ScwEditor", "CTabItem.IP1_WRAPPER");
+selectTree("ip1_wrapper", "Explorer", "ProjectExplorer", "Tree");
+selectTree("xfft.h", "ip1_wrapper > ps7_cortexa9_0 > domain_ps7_cortexa9_0 > bsp > ps7_cortexa9_0 > libsrc > FFT_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTree("xfft.c", "ip1_wrapper > ps7_cortexa9_0 > domain_ps7_cortexa9_0 > bsp > ps7_cortexa9_0 > libsrc > FFT_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTree("src", "baseline1_system > baseline1", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Import Sources", "Explorer", "ProjectExplorer", "MenuItem.IMPORT_SOURCES");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("fft-sdk", "Import Sources (File system)", "FileSystemImportWizard", "Tree.FFT_SDK");
+selectTable("main.cc", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("inp_cpp.txt", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("out_cpp.txt", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectButton("Finish", "Import Sources (File system)", "FileSystemImportWizard", "Button.FINISH");
+selectTree("inp_cpp.txt", "baseline1_system > baseline1 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTree("main.cc", "baseline1_system > baseline1 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTree("src", "baseline1_system > baseline1", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Import Sources", "Explorer", "ProjectExplorer", "MenuItem.IMPORT_SOURCES");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("fft-sdk", "Import Sources (File system)", "FileSystemImportWizard", "Tree.FFT_SDK");
+selectTable("32fft.h", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("32fftvalues.h", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("fft.cpp", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectButton("Finish", "Import Sources (File system)", "FileSystemImportWizard", "Button.FINISH");
+activateView("xfft.h", "ip1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bs", "CEditor", "CTabItem.XFFT_H");
+activateView("main.cc", "baseline1/src/main.cc", "CEditor", "CTabItem.MAIN_CC");
+closeView("main.cc", "baseline1/src/main.cc", "CEditor", "CTabItem.MAIN_CC");
+selectTree("src", "baseline1_system > baseline1", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Refresh", "Explorer", "ProjectExplorer", "MenuItem.REFRESH");
+selectTree("main.cc", "baseline1_system > baseline1 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTree("src", "baseline1_system > baseline1", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Refresh", "Explorer", "ProjectExplorer", "MenuItem.REFRESH");
+selectTree("32fft.h", "baseline1_system > baseline1 > src", "Explorer", "ProjectExplorer", "Tree");
+activateView("xfft.h", "ip1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bs", "CEditor", "CTabItem.XFFT_H");
+activateView("main.cc", "baseline1/src/main.cc", "CEditor", "CTabItem.MAIN_CC");
+selectTree("gpiops_v3_7", "ip1_wrapper > ps7_cortexa9_0 > domain_ps7_cortexa9_0 > bsp > ps7_cortexa9_0 > libsrc", "Explorer", "ProjectExplorer", "Tree");
+selectTree("src", "ip1_wrapper > ps7_cortexa9_0 > domain_ps7_cortexa9_0 > bsp > ps7_cortexa9_0 > libsrc > generic_v2_1", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTree("scutimer_v2_2", "ip1_wrapper > ps7_cortexa9_0 > domain_ps7_cortexa9_0 > bsp > ps7_cortexa9_0 > libsrc", "Explorer", "ProjectExplorer", "Tree");
+selectToolBarButton("Outline", "baseline1", "WorkbenchWindow", "ToolItem.OUTLINE");
+selectToolBarButton("Restore", "baseline1", "WorkbenchWindow", "ToolItem.RESTORE");
+selectTree("xcounter.h", EventType.DOUBLE_CLICK, "Outline", "ContentOutline", "Tree.main_cc");
+selectTree("complex", EventType.DOUBLE_CLICK, "Outline", "ContentOutline", "Tree.main_cc");
+selectTree("fft.cpp", "baseline1_system > baseline1 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "Tree");
+activateView("main.cc", "baseline1/src/main.cc", "CEditor", "CTabItem.MAIN_CC");
+activateView("xfft.h", "ip1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bs", "CEditor", "CTabItem.XFFT_H");
+activateView("xfft.c", "ip1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bs", "CEditor", "CTabItem.XFFT_C");
+activateView("main.cc", "baseline1/src/main.cc", "CEditor", "CTabItem.MAIN_CC");
+selectTree("xfft_hw.h", "ip1_wrapper > ps7_cortexa9_0 > domain_ps7_cortexa9_0 > bsp > ps7_cortexa9_0 > libsrc > FFT_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "Tree");
+closeView("xfft_hw.h", "ip1_wrapper/ps7_cortexa9_0/domain_ps7_cortexa9_0/bsp/ps7_cortexa9_0/libsrc/FFT_v1_0/src/xfft_hw.h", "CEditor", "CTabItem.XFFT_HW_H");
+selectTree("xfft_hw.h", "ip1_wrapper > ps7_cortexa9_0 > domain_ps7_cortexa9_0 > bsp > ps7_cortexa9_0 > libsrc > FFT_v1_0 > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTree("baseline1_system", "ip1_wrapper > ps7_cortexa9_0 > domain_ps7_cortexa9_0 > bsp > ps7_cortexa9_0 > libsrc > FFT_v1_0 > src", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Delete", "Explorer", "ProjectExplorer", "MenuItem.DELETE");
+selectButton("OK", "Delete Resources", "RefactoringWizardDialog2", "Button.OK");
+selectTree("ip1_wrapper", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Delete", "Explorer", "ProjectExplorer", "MenuItem.DELETE");
+selectCheckBox("Delete project contents on disk", Boolean.TRUE, "Delete Resources", "RefactoringWizardDialog2", "Button.DELETE_PROJECT_CONTENTS");
+selectButton("OK", "Delete Resources", "RefactoringWizardDialog2", "Button.OK");
+selectTree("gpio2MB_wrapper", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTree("uartHello_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+closeView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+closeView("Assistant", "Assistant to manage Vitis project setup, builds, and reports", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectMenuItem("File", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("Exit", "WorkbenchWindow", "MenuItem.EXIT");
+closeView("Problems", "1 items", "ProblemsView", "CTabItem.PROBLEMS");
+closeView("Console", "ConsoleView", "CTabItem.CONSOLE");
+closeView("Outline", "ContentOutline", "CTabItem.OUTLINE");
+// Exiting Xilinx Vitis with a status code '0' at 12/25/20, 12:39:16 PM IST
+// Elapsed time: 12:40:18
+

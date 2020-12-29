@@ -1,0 +1,1825 @@
+INFO-FLOW: Workspace /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2 opened at Tue Dec 29 12:29:07 IST 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Command       ap_source done; 0.2 sec.
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.31 sec.
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.12 sec.
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.34 sec.
+Command     ap_source done; 0.35 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Command       ap_part_info done; 1.45 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.72 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -description FFT32 float AXIS no_optim 
+Execute     config_export -display_name=FFT32_v2.0 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 2.68 sec.
+Execute   set_part xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.21 sec.
+Execute   create_clock -period 10 -name default 
+Execute   config_export -description FFT32 float AXIS no_optim -display_name FFT32_v2.0 -format ip_catalog -rtl verilog 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'teach-fpga/01-fft/vhls/fixed/fft.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling teach-fpga/01-fft/vhls/fixed/fft.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       is_encrypted teach-fpga/01-fft/vhls/fixed/fft.cpp 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "teach-fpga/01-fft/vhls/fixed/fft.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2020.1/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp" 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E teach-fpga/01-fft/vhls/fixed/fft.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2020.1/common/technology/autopilot -I /tools/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp
+Command       clang done; 4.51 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 2.54 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2020.1/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp"  -o "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2020.1/common/technology/autopilot -I /tools/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/useless.bc
+Command       clang done; 4.41 sec.
+INFO-FLOW: Done: GCC PP time: 11.5 seconds per iteration
+Execute       source /tools/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /tools/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source /tools/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp std=gnu++98 -directive=/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/.systemc_flag -quiet -fix-errors /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.66 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp std=gnu++98 -directive=/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/all.directive.json -quiet -fix-errors /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.11 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/xilinx-dataflow-lawyer.fft.pp.0.cpp.diag.yml /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/xilinx-dataflow-lawyer.fft.pp.0.cpp.out.log 2> /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/xilinx-dataflow-lawyer.fft.pp.0.cpp.err.log 
+Command       ap_eval done; 1.84 sec.
+Execute       source /tools/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute         source /tools/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: teach-fpga/01-fft/vhls/fixed/fft.cpp:77:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: teach-fpga/01-fft/vhls/fixed/fft.cpp:78:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: teach-fpga/01-fft/vhls/fixed/fft.cpp:79:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: teach-fpga/01-fft/vhls/fixed/fft.cpp:80:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: teach-fpga/01-fft/vhls/fixed/fft.cpp:81:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: teach-fpga/01-fft/vhls/fixed/fft.cpp:83:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: teach-fpga/01-fft/vhls/fixed/fft.cpp:84:19
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: teach-fpga/01-fft/vhls/fixed/fft.cpp:86:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: teach-fpga/01-fft/vhls/fixed/fft.cpp:100:2
+Execute       send_msg_by_id WARNING @200-471@%s%s 9 teach-fpga/01-fft/vhls/fixed/fft.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 9 issue(s) in file teach-fpga/01-fft/vhls/fixed/fft.cpp
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/tidy-3.1.fft.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/tidy-3.1.fft.pp.0.cpp.out.log 2> /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/tidy-3.1.fft.pp.0.cpp.err.log 
+Command         ap_eval done; 1.72 sec.
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/xilinx-legacy-rewriter.fft.pp.0.cpp.out.log 2> /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/xilinx-legacy-rewriter.fft.pp.0.cpp.err.log 
+Command         ap_eval done; 1.59 sec.
+Command       tidy_31 done; 3.34 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 6.4 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 2.11 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2020.1/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.bc" 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2020.1/common/technology/autopilot -I /tools/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.bc
+Command       clang done; 4.81 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/fft.g.bc -hls-opt -except-internalize FFT -L/tools/Xilinx/Vivado/2020.1/lnx64/lib -lhlsm -lhlsmc++ -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.g 
+Command       llvm-ld done; 2.41 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 661 ; free virtual = 4045
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 661 ; free virtual = 4045
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.pp.bc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.53 sec.
+Execute         llvm-ld /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.pp.0.bc -disable-opt -L/tools/Xilinx/Vivado/2020.1/lnx64/lib -lfloatconversion -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.g.0 
+Command         llvm-ld done; 2.9 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -stream-depth-lower -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top FFT -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.g.0.bc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.56 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 559 ; free virtual = 3960
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.g.1.bc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT0' (teach-fpga/01-fft/vhls/fixed/fft.cpp:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (teach-fpga/01-fft/vhls/fixed/fft.cpp:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (teach-fpga/01-fft/vhls/fixed/fft.cpp:60) automatically.
+Command         transform done; 0.29 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.g.2.prechk.bc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 533 ; free virtual = 3934
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.g.1.bc to /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.o.1.bc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (teach-fpga/01-fft/vhls/fixed/fft.cpp:86) in function 'FFT' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (teach-fpga/01-fft/vhls/fixed/fft.cpp:100) in function 'FFT' completely with a factor of 32.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT053' (teach-fpga/01-fft/vhls/fixed/fft.cpp:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT053' (teach-fpga/01-fft/vhls/fixed/fft.cpp:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT053' (teach-fpga/01-fft/vhls/fixed/fft.cpp:60) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT054' (teach-fpga/01-fft/vhls/fixed/fft.cpp:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT054' (teach-fpga/01-fft/vhls/fixed/fft.cpp:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT054' (teach-fpga/01-fft/vhls/fixed/fft.cpp:60) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT055' (teach-fpga/01-fft/vhls/fixed/fft.cpp:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT055' (teach-fpga/01-fft/vhls/fixed/fft.cpp:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT055' (teach-fpga/01-fft/vhls/fixed/fft.cpp:60) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT056' (teach-fpga/01-fft/vhls/fixed/fft.cpp:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT056' (teach-fpga/01-fft/vhls/fixed/fft.cpp:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT056' (teach-fpga/01-fft/vhls/fixed/fft.cpp:60) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'FFT057' (teach-fpga/01-fft/vhls/fixed/fft.cpp:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT057' (teach-fpga/01-fft/vhls/fixed/fft.cpp:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT057' (teach-fpga/01-fft/vhls/fixed/fft.cpp:60) automatically.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT1._M_imag'  should be updated in process function 'FFT053', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT1._M_real'  should be updated in process function 'FFT053', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT2._M_imag'  should be updated in process function 'FFT054', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT2._M_real'  should be updated in process function 'FFT054', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT3._M_imag'  should be updated in process function 'FFT055', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT3._M_real'  should be updated in process function 'FFT055', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT4._M_imag'  should be updated in process function 'FFT056', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT4._M_real'  should be updated in process function 'FFT056', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'xout._M_real'  should be updated in process function 'FFT057', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'xout._M_imag'  should be updated in process function 'FFT057', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'FFT', detected/extracted 8 process function(s): 
+	 'Block_codeRepl113_proc'
+	 'bitreverse'
+	 'FFT053'
+	 'FFT054'
+	 'FFT055'
+	 'FFT056'
+	 'FFT057'
+	 'Block_codeRepl11320_proc'.
+Command         transform done; 0.68 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.o.1.tmp.bc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (teach-fpga/01-fft/vhls/fixed/fft.cpp:53:46) to (teach-fpga/01-fft/vhls/fixed/fft.cpp:53:40) in function 'FFT057'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (teach-fpga/01-fft/vhls/fixed/fft.cpp:53:46) to (teach-fpga/01-fft/vhls/fixed/fft.cpp:53:40) in function 'FFT056'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (teach-fpga/01-fft/vhls/fixed/fft.cpp:53:46) to (teach-fpga/01-fft/vhls/fixed/fft.cpp:53:40) in function 'FFT055'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (teach-fpga/01-fft/vhls/fixed/fft.cpp:53:46) to (teach-fpga/01-fft/vhls/fixed/fft.cpp:53:40) in function 'FFT054'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (teach-fpga/01-fft/vhls/fixed/fft.cpp:53:46) to (teach-fpga/01-fft/vhls/fixed/fft.cpp:53:40) in function 'FFT053'... converting 4 basic blocks.
+Command         transform done; 0.31 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 477 ; free virtual = 3891
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.o.2.bc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl113_proc' to 'Block_codeRepl113_pr' (teach-fpga/01-fft/vhls/fixed/fft.cpp:88:2)
+WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl11320_proc' to 'Block_codeRepl11320_' (teach-fpga/01-fft/vhls/fixed/fft.cpp:102:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real' (teach-fpga/01-fft/vhls/fixed/fft.cpp:46:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'xout._M_real' (teach-fpga/01-fft/vhls/fixed/fft.cpp:59:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xout._M_real' (teach-fpga/01-fft/vhls/fixed/fft.cpp:60:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real' (teach-fpga/01-fft/vhls/fixed/fft.cpp:88:2)
+Command         transform done; 0.54 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 413 ; free virtual = 3829
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 5.85 sec.
+Command     elaborate done; 35.22 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+Execute       ap_set_top_model FFT 
+WARNING: [SYN 201-103] Legalizing function name 'Block_codeRepl11320_' to 'Block_codeRepl11320_s'.
+Execute       get_model_list FFT -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model FFT 
+Execute       preproc_iomode -model Block_codeRepl11320_ 
+Execute       preproc_iomode -model FFT057 
+Execute       preproc_iomode -model FFT056 
+Execute       preproc_iomode -model FFT055 
+Execute       preproc_iomode -model FFT054 
+Execute       preproc_iomode -model FFT053 
+Execute       preproc_iomode -model bitreverse 
+Execute       preproc_iomode -model Block_codeRepl113_pr 
+Execute       get_model_list FFT -filter all-wo-channel 
+INFO-FLOW: Model list for configure: Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT
+INFO-FLOW: Configuring Module : Block_codeRepl113_pr ...
+Execute       set_default_model Block_codeRepl113_pr 
+Execute       apply_spec_resource_limit Block_codeRepl113_pr 
+INFO-FLOW: Configuring Module : bitreverse ...
+Execute       set_default_model bitreverse 
+Execute       apply_spec_resource_limit bitreverse 
+INFO-FLOW: Configuring Module : FFT053 ...
+Execute       set_default_model FFT053 
+Execute       apply_spec_resource_limit FFT053 
+INFO-FLOW: Configuring Module : FFT054 ...
+Execute       set_default_model FFT054 
+Execute       apply_spec_resource_limit FFT054 
+INFO-FLOW: Configuring Module : FFT055 ...
+Execute       set_default_model FFT055 
+Execute       apply_spec_resource_limit FFT055 
+INFO-FLOW: Configuring Module : FFT056 ...
+Execute       set_default_model FFT056 
+Execute       apply_spec_resource_limit FFT056 
+INFO-FLOW: Configuring Module : FFT057 ...
+Execute       set_default_model FFT057 
+Execute       apply_spec_resource_limit FFT057 
+INFO-FLOW: Configuring Module : Block_codeRepl11320_ ...
+Execute       set_default_model Block_codeRepl11320_ 
+Execute       apply_spec_resource_limit Block_codeRepl11320_ 
+INFO-FLOW: Configuring Module : FFT ...
+Execute       set_default_model FFT 
+Execute       apply_spec_resource_limit FFT 
+INFO-FLOW: Model list for preprocess: Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT
+INFO-FLOW: Preprocessing Module: Block_codeRepl113_pr ...
+Execute       set_default_model Block_codeRepl113_pr 
+Execute       cdfg_preprocess -model Block_codeRepl113_pr 
+Execute       rtl_gen_preprocess Block_codeRepl113_pr 
+INFO-FLOW: Preprocessing Module: bitreverse ...
+Execute       set_default_model bitreverse 
+Execute       cdfg_preprocess -model bitreverse 
+Execute       rtl_gen_preprocess bitreverse 
+INFO-FLOW: Preprocessing Module: FFT053 ...
+Execute       set_default_model FFT053 
+Execute       cdfg_preprocess -model FFT053 
+Execute       rtl_gen_preprocess FFT053 
+INFO-FLOW: Preprocessing Module: FFT054 ...
+Execute       set_default_model FFT054 
+Execute       cdfg_preprocess -model FFT054 
+Execute       rtl_gen_preprocess FFT054 
+INFO-FLOW: Preprocessing Module: FFT055 ...
+Execute       set_default_model FFT055 
+Execute       cdfg_preprocess -model FFT055 
+Execute       rtl_gen_preprocess FFT055 
+INFO-FLOW: Preprocessing Module: FFT056 ...
+Execute       set_default_model FFT056 
+Execute       cdfg_preprocess -model FFT056 
+Execute       rtl_gen_preprocess FFT056 
+INFO-FLOW: Preprocessing Module: FFT057 ...
+Execute       set_default_model FFT057 
+Execute       cdfg_preprocess -model FFT057 
+Execute       rtl_gen_preprocess FFT057 
+INFO-FLOW: Preprocessing Module: Block_codeRepl11320_ ...
+Execute       set_default_model Block_codeRepl11320_ 
+Execute       cdfg_preprocess -model Block_codeRepl11320_ 
+Execute       rtl_gen_preprocess Block_codeRepl11320_ 
+INFO-FLOW: Preprocessing Module: FFT ...
+Execute       set_default_model FFT 
+Execute       cdfg_preprocess -model FFT 
+Execute       rtl_gen_preprocess FFT 
+INFO-FLOW: Model list for synthesis: Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_codeRepl113_pr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Block_codeRepl113_pr 
+Execute       schedule -model Block_codeRepl113_pr 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.46 sec.
+INFO: [HLS 200-111]  Elapsed time: 39.06 seconds; current allocated memory: 338.454 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.verbose.sched.rpt 
+Command       syn_report done; 0.25 sec.
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.sched.adb -f 
+INFO-FLOW: Finish scheduling Block_codeRepl113_pr.
+Execute       set_default_model Block_codeRepl113_pr 
+Execute       bind -model Block_codeRepl113_pr 
+BIND OPTION: model=Block_codeRepl113_pr
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.14 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 339.331 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.verbose.bind.rpt 
+Command       syn_report done; 0.32 sec.
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.bind.adb -f 
+INFO-FLOW: Finish binding Block_codeRepl113_pr.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bitreverse' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model bitreverse 
+Execute       schedule -model bitreverse 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'bitreversal_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 339.503 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.verbose.sched.rpt 
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.sched.adb -f 
+INFO-FLOW: Finish scheduling bitreverse.
+Execute       set_default_model bitreverse 
+Execute       bind -model bitreverse 
+BIND OPTION: model=bitreverse
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 339.614 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.verbose.bind.rpt 
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.bind.adb -f 
+INFO-FLOW: Finish binding bitreverse.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT053' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model FFT053 
+Execute       schedule -model FFT053 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.16 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 339.974 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.verbose.sched.rpt 
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.sched.adb -f 
+INFO-FLOW: Finish scheduling FFT053.
+Execute       set_default_model FFT053 
+Execute       bind -model FFT053 
+BIND OPTION: model=FFT053
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 340.359 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.verbose.bind.rpt 
+Command       syn_report done; 0.15 sec.
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.bind.adb -f 
+INFO-FLOW: Finish binding FFT053.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT054' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model FFT054 
+Execute       schedule -model FFT054 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.16 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 340.665 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.verbose.sched.rpt 
+Command       syn_report done; 0.11 sec.
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.sched.adb -f 
+INFO-FLOW: Finish scheduling FFT054.
+Execute       set_default_model FFT054 
+Execute       bind -model FFT054 
+BIND OPTION: model=FFT054
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 341.084 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.verbose.bind.rpt 
+Command       syn_report done; 0.23 sec.
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.bind.adb -f 
+INFO-FLOW: Finish binding FFT054.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT055' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model FFT055 
+Execute       schedule -model FFT055 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.21 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 341.391 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.verbose.sched.rpt 
+Command       syn_report done; 0.12 sec.
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.sched.adb -f 
+INFO-FLOW: Finish scheduling FFT055.
+Execute       set_default_model FFT055 
+Execute       bind -model FFT055 
+BIND OPTION: model=FFT055
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 341.776 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.verbose.bind.rpt 
+Command       syn_report done; 0.15 sec.
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.bind.adb -f 
+INFO-FLOW: Finish binding FFT055.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT056' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model FFT056 
+Execute       schedule -model FFT056 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.11 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 342.098 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.verbose.sched.rpt 
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.sched.adb -f 
+INFO-FLOW: Finish scheduling FFT056.
+Execute       set_default_model FFT056 
+Execute       bind -model FFT056 
+BIND OPTION: model=FFT056
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 342.482 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.verbose.bind.rpt 
+Command       syn_report done; 0.15 sec.
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.bind.adb -f 
+INFO-FLOW: Finish binding FFT056.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT057' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model FFT057 
+Execute       schedule -model FFT057 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.16 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 342.821 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.verbose.sched.rpt 
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.sched.adb -f 
+INFO-FLOW: Finish scheduling FFT057.
+Execute       set_default_model FFT057 
+Execute       bind -model FFT057 
+BIND OPTION: model=FFT057
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 343.243 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.verbose.bind.rpt 
+Command       syn_report done; 0.16 sec.
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.bind.adb -f 
+INFO-FLOW: Finish binding FFT057.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_codeRepl11320_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Block_codeRepl11320_ 
+Execute       schedule -model Block_codeRepl11320_ 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.36 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 343.946 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.verbose.sched.rpt 
+Command       syn_report done; 0.36 sec.
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.sched.adb -f 
+INFO-FLOW: Finish scheduling Block_codeRepl11320_.
+Execute       set_default_model Block_codeRepl11320_ 
+Execute       bind -model Block_codeRepl11320_ 
+BIND OPTION: model=Block_codeRepl11320_
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.16 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 344.817 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.verbose.bind.rpt 
+Command       syn_report done; 0.37 sec.
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.bind.adb -f 
+INFO-FLOW: Finish binding Block_codeRepl11320_.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model FFT 
+Execute       schedule -model FFT 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 344.954 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.verbose.sched.rpt 
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.sched.adb -f 
+INFO-FLOW: Finish scheduling FFT.
+Execute       set_default_model FFT 
+Execute       bind -model FFT 
+BIND OPTION: model=FFT
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.95 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.96 seconds; current allocated memory: 345.352 MB.
+Execute       syn_report -verbosereport -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.verbose.bind.rpt 
+Command       syn_report done; 0.28 sec.
+Execute       db_write -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.bind.adb -f 
+INFO-FLOW: Finish binding FFT.
+Execute       get_model_list FFT -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess Block_codeRepl113_pr 
+Execute       rtl_gen_preprocess bitreverse 
+Execute       rtl_gen_preprocess FFT053 
+Execute       rtl_gen_preprocess FFT054 
+Execute       rtl_gen_preprocess FFT055 
+Execute       rtl_gen_preprocess FFT056 
+Execute       rtl_gen_preprocess FFT057 
+Execute       rtl_gen_preprocess Block_codeRepl11320_ 
+Execute       rtl_gen_preprocess FFT 
+INFO-FLOW: Model list for RTL generation: Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_codeRepl113_pr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Block_codeRepl113_pr -vendor xilinx -mg_file /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_codeRepl113_pr'.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 346.376 MB.
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Block_codeRepl113_pr -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/systemc/Block_codeRepl113_pr -synmodules Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT 
+Execute       gen_rtl Block_codeRepl113_pr -style xilinx -f -lang vhdl -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/vhdl/Block_codeRepl113_pr 
+Execute       gen_rtl Block_codeRepl113_pr -style xilinx -f -lang vlog -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/verilog/Block_codeRepl113_pr 
+Execute       syn_report -csynth -model Block_codeRepl113_pr -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/Block_codeRepl113_pr_csynth.rpt 
+Execute       syn_report -rtlxml -model Block_codeRepl113_pr -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/Block_codeRepl113_pr_csynth.xml 
+Execute       syn_report -verbosereport -model Block_codeRepl113_pr -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.verbose.rpt 
+Command       syn_report done; 0.21 sec.
+Execute       db_write -model Block_codeRepl113_pr -f -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.adb 
+Execute       gen_tb_info Block_codeRepl113_pr -p /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bitreverse' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model bitreverse -vendor xilinx -mg_file /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bitreverse'.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 349.968 MB.
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute       gen_rtl bitreverse -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/systemc/bitreverse -synmodules Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT 
+Execute       gen_rtl bitreverse -style xilinx -f -lang vhdl -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/vhdl/bitreverse 
+Execute       gen_rtl bitreverse -style xilinx -f -lang vlog -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/verilog/bitreverse 
+Execute       syn_report -csynth -model bitreverse -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/bitreverse_csynth.rpt 
+Execute       syn_report -rtlxml -model bitreverse -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/bitreverse_csynth.xml 
+Execute       syn_report -verbosereport -model bitreverse -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.verbose.rpt 
+Execute       db_write -model bitreverse -f -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.adb 
+Execute       gen_tb_info bitreverse -p /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT053' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model FFT053 -vendor xilinx -mg_file /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'FFT_fsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_fsub_32ns_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fadd_32ns_32ns_32_5_full_dsp_1' to 'FFT_fadd_32ns_32ncud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fmul_32ns_32ns_32_4_max_dsp_1' to 'FFT_fmul_32ns_32ndEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32ndEe': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32nbkb': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT053'.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 351.225 MB.
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute       gen_rtl FFT053 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/systemc/FFT053 -synmodules Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT 
+Execute       gen_rtl FFT053 -style xilinx -f -lang vhdl -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/vhdl/FFT053 
+Execute       gen_rtl FFT053 -style xilinx -f -lang vlog -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/verilog/FFT053 
+Execute       syn_report -csynth -model FFT053 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/FFT053_csynth.rpt 
+Execute       syn_report -rtlxml -model FFT053 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/FFT053_csynth.xml 
+Execute       syn_report -verbosereport -model FFT053 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.verbose.rpt 
+Command       syn_report done; 0.14 sec.
+Execute       db_write -model FFT053 -f -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.adb 
+Execute       gen_tb_info FFT053 -p /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT054' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model FFT054 -vendor xilinx -mg_file /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32ndEe': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32nbkb': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT054'.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 353.288 MB.
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute       gen_rtl FFT054 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/systemc/FFT054 -synmodules Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT 
+Execute       gen_rtl FFT054 -style xilinx -f -lang vhdl -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/vhdl/FFT054 
+Execute       gen_rtl FFT054 -style xilinx -f -lang vlog -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/verilog/FFT054 
+Execute       syn_report -csynth -model FFT054 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/FFT054_csynth.rpt 
+Execute       syn_report -rtlxml -model FFT054 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/FFT054_csynth.xml 
+Execute       syn_report -verbosereport -model FFT054 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.verbose.rpt 
+Command       syn_report done; 0.15 sec.
+Execute       db_write -model FFT054 -f -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.adb 
+Execute       gen_tb_info FFT054 -p /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT055' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model FFT055 -vendor xilinx -mg_file /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32ndEe': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32nbkb': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT055'.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 355.328 MB.
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute       gen_rtl FFT055 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/systemc/FFT055 -synmodules Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT 
+Execute       gen_rtl FFT055 -style xilinx -f -lang vhdl -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/vhdl/FFT055 
+Execute       gen_rtl FFT055 -style xilinx -f -lang vlog -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/verilog/FFT055 
+Execute       syn_report -csynth -model FFT055 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/FFT055_csynth.rpt 
+Execute       syn_report -rtlxml -model FFT055 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/FFT055_csynth.xml 
+Execute       syn_report -verbosereport -model FFT055 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.verbose.rpt 
+Command       syn_report done; 0.15 sec.
+Execute       db_write -model FFT055 -f -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.adb 
+Execute       gen_tb_info FFT055 -p /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT056' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model FFT056 -vendor xilinx -mg_file /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32ndEe': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32nbkb': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT056'.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 357.400 MB.
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute       gen_rtl FFT056 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/systemc/FFT056 -synmodules Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT 
+Execute       gen_rtl FFT056 -style xilinx -f -lang vhdl -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/vhdl/FFT056 
+Execute       gen_rtl FFT056 -style xilinx -f -lang vlog -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/verilog/FFT056 
+Execute       syn_report -csynth -model FFT056 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/FFT056_csynth.rpt 
+Execute       syn_report -rtlxml -model FFT056 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/FFT056_csynth.xml 
+Execute       syn_report -verbosereport -model FFT056 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.verbose.rpt 
+Command       syn_report done; 0.12 sec.
+Execute       db_write -model FFT056 -f -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.adb 
+Execute       gen_tb_info FFT056 -p /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT057' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model FFT057 -vendor xilinx -mg_file /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32ndEe': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32nbkb': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT057'.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 359.482 MB.
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute       gen_rtl FFT057 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/systemc/FFT057 -synmodules Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT 
+Execute       gen_rtl FFT057 -style xilinx -f -lang vhdl -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/vhdl/FFT057 
+Execute       gen_rtl FFT057 -style xilinx -f -lang vlog -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/verilog/FFT057 
+Execute       syn_report -csynth -model FFT057 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/FFT057_csynth.rpt 
+Execute       syn_report -rtlxml -model FFT057 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/FFT057_csynth.xml 
+Execute       syn_report -verbosereport -model FFT057 -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.verbose.rpt 
+Command       syn_report done; 0.13 sec.
+Execute       db_write -model FFT057 -f -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.adb 
+Execute       gen_tb_info FFT057 -p /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_codeRepl11320_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Block_codeRepl11320_ -vendor xilinx -mg_file /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_codeRepl11320_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 361.564 MB.
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Block_codeRepl11320_ -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/systemc/Block_codeRepl11320_s -synmodules Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT 
+Execute       gen_rtl Block_codeRepl11320_ -style xilinx -f -lang vhdl -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/vhdl/Block_codeRepl11320_s 
+Execute       gen_rtl Block_codeRepl11320_ -style xilinx -f -lang vlog -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/verilog/Block_codeRepl11320_s 
+Execute       syn_report -csynth -model Block_codeRepl11320_ -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/Block_codeRepl11320_s_csynth.rpt 
+Execute       syn_report -rtlxml -model Block_codeRepl11320_ -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/Block_codeRepl11320_s_csynth.xml 
+Execute       syn_report -verbosereport -model Block_codeRepl11320_ -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.verbose.rpt 
+Command       syn_report done; 0.2 sec.
+Execute       db_write -model Block_codeRepl11320_ -f -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.adb 
+Execute       gen_tb_info Block_codeRepl11320_ -p /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model FFT -vendor xilinx -mg_file /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_IN_M_real' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_IN_M_imag' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_OUT_M_real' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_OUT_M_imag' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'FFT' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'data_IN_M_real', 'data_IN_M_imag', 'data_OUT_M_real' and 'data_OUT_M_imag' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_real' to 'FFT_data_OUT0_M_reOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_imag' to 'FFT_data_OUT0_M_ifYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_imag' to 'FFT_data_OUT1_M_ig8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_real' to 'FFT_data_OUT1_M_rhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT2_M_imag' to 'FFT_data_OUT2_M_iibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT2_M_real' to 'FFT_data_OUT2_M_rjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT3_M_imag' to 'FFT_data_OUT3_M_ikbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT3_M_real' to 'FFT_data_OUT3_M_rlbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT4_M_imag' to 'FFT_data_OUT4_M_imb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT4_M_real' to 'FFT_data_OUT4_M_rncg' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT'.
+Command       create_rtl_model done; 0.24 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.55 seconds; current allocated memory: 367.089 MB.
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute       gen_rtl FFT -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/systemc/FFT -synmodules Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT 
+Execute       gen_rtl FFT -istop -style xilinx -f -lang vhdl -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/vhdl/FFT 
+Execute       gen_rtl FFT -istop -style xilinx -f -lang vlog -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/verilog/FFT 
+Execute       syn_report -csynth -model FFT -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/FFT_csynth.rpt 
+Execute       syn_report -rtlxml -model FFT -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/syn/report/FFT_csynth.xml 
+Execute       syn_report -verbosereport -model FFT -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.verbose.rpt 
+Command       syn_report done; 0.73 sec.
+Execute       db_write -model FFT -f -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.adb 
+Command       db_write done; 0.17 sec.
+Execute       gen_tb_info FFT -p /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT 
+Execute       export_constraint_db -f -tool general -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.constraint.tcl 
+Execute       syn_report -designview -model FFT -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.design.xml 
+Command       syn_report done; 0.66 sec.
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model FFT -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model FFT -o /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks FFT 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain FFT 
+INFO-FLOW: Model list for RTL component generation: Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_ FFT
+INFO-FLOW: Handling components in module [Block_codeRepl113_pr] ... 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.compgen.tcl 
+INFO-FLOW: Handling components in module [bitreverse] ... 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.compgen.tcl 
+INFO-FLOW: Found component bitreverse_rev_32.
+INFO-FLOW: Append model bitreverse_rev_32
+INFO-FLOW: Handling components in module [FFT053] ... 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.compgen.tcl 
+INFO-FLOW: Found component FFT_fsub_32ns_32nbkb.
+INFO-FLOW: Append model FFT_fsub_32ns_32nbkb
+INFO-FLOW: Found component FFT_fadd_32ns_32ncud.
+INFO-FLOW: Append model FFT_fadd_32ns_32ncud
+INFO-FLOW: Found component FFT_fmul_32ns_32ndEe.
+INFO-FLOW: Append model FFT_fmul_32ns_32ndEe
+INFO-FLOW: Found component FFT053_W_M_real65.
+INFO-FLOW: Append model FFT053_W_M_real65
+INFO-FLOW: Found component FFT053_W_M_imag61.
+INFO-FLOW: Append model FFT053_W_M_imag61
+INFO-FLOW: Handling components in module [FFT054] ... 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.compgen.tcl 
+INFO-FLOW: Handling components in module [FFT055] ... 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.compgen.tcl 
+INFO-FLOW: Handling components in module [FFT056] ... 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.compgen.tcl 
+INFO-FLOW: Handling components in module [FFT057] ... 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.compgen.tcl 
+INFO-FLOW: Handling components in module [Block_codeRepl11320_s] ... 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.compgen.tcl 
+INFO-FLOW: Handling components in module [FFT] ... 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.tcl 
+INFO-FLOW: Found component FFT_AXILiteS_s_axi.
+INFO-FLOW: Append model FFT_AXILiteS_s_axi
+INFO-FLOW: Append model Block_codeRepl113_pr
+INFO-FLOW: Append model bitreverse
+INFO-FLOW: Append model FFT053
+INFO-FLOW: Append model FFT054
+INFO-FLOW: Append model FFT055
+INFO-FLOW: Append model FFT056
+INFO-FLOW: Append model FFT057
+INFO-FLOW: Append model Block_codeRepl11320_s
+INFO-FLOW: Append model FFT
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: bitreverse_rev_32 FFT_fsub_32ns_32nbkb FFT_fadd_32ns_32ncud FFT_fmul_32ns_32ndEe FFT053_W_M_real65 FFT053_W_M_imag61 FFT_AXILiteS_s_axi Block_codeRepl113_pr bitreverse FFT053 FFT054 FFT055 FFT056 FFT057 Block_codeRepl11320_s FFT
+INFO-FLOW: To file: write model bitreverse_rev_32
+INFO-FLOW: To file: write model FFT_fsub_32ns_32nbkb
+INFO-FLOW: To file: write model FFT_fadd_32ns_32ncud
+INFO-FLOW: To file: write model FFT_fmul_32ns_32ndEe
+INFO-FLOW: To file: write model FFT053_W_M_real65
+INFO-FLOW: To file: write model FFT053_W_M_imag61
+INFO-FLOW: To file: write model FFT_AXILiteS_s_axi
+INFO-FLOW: To file: write model Block_codeRepl113_pr
+INFO-FLOW: To file: write model bitreverse
+INFO-FLOW: To file: write model FFT053
+INFO-FLOW: To file: write model FFT054
+INFO-FLOW: To file: write model FFT055
+INFO-FLOW: To file: write model FFT056
+INFO-FLOW: To file: write model FFT057
+INFO-FLOW: To file: write model Block_codeRepl11320_s
+INFO-FLOW: To file: write model FFT
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       syn_report -model FFT -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 119.65 MHz
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.17 sec.
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.27 sec.
+Command       ap_source done; 0.27 sec.
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'bitreverse_rev_32_rom' using distributed ROMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'FFT053_W_M_real65_rom' using distributed ROMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'FFT053_W_M_imag61_rom' using distributed ROMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.32 sec.
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.tcl 
+Execute         send_msg_by_id INFO @200-741@%s FFT_xin_M_imag_memcore 
+INFO: [HLS 200-741] Implementing PIPO FFT_xin_M_imag_memcore using a single memory for all blocks
+INFO: [RTMG 210-278] Implementing memory 'FFT_xin_M_imag_memcore_ram (RAM)' using block RAMs with power-on initialization.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s FFT_data_OUT0_M_reOg_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_data_OUT0_M_reOg_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'FFT_data_OUT0_M_reOg_memcore_ram (RAM)' using block RAMs with power-on initialization.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s FFT_data_OUT1_M_ig8j_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_data_OUT1_M_ig8j_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'FFT_data_OUT1_M_ig8j_memcore_ram (RAM)' using block RAMs with power-on initialization.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s FFT_xout_M_real_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_xout_M_real_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'FFT_xout_M_real_memcore_ram (RAM)' using block RAMs with power-on initialization.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         source ./AXILiteS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.24 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.17 sec.
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.23 sec.
+Command       ap_source done; 0.24 sec.
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=FFT xml_exists=0
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.13 sec.
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.tcl 
+Execute         send_msg_by_id INFO @200-741@%s FFT_xin_M_imag_memcore 
+INFO: [HLS 200-741] Implementing PIPO FFT_xin_M_imag_memcore using a single memory for all blocks
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s FFT_data_OUT0_M_reOg_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_data_OUT0_M_reOg_memcore using a separate memory for each block
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s FFT_data_OUT1_M_ig8j_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_data_OUT1_M_ig8j_memcore using a separate memory for each block
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s FFT_xout_M_real_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_xout_M_real_memcore using a separate memory for each block
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.17 sec.
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.compgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.tcl 
+Execute         send_msg_by_id INFO @200-741@%s FFT_xin_M_imag_memcore 
+INFO: [HLS 200-741] Implementing PIPO FFT_xin_M_imag_memcore using a single memory for all blocks
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s FFT_data_OUT0_M_reOg_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_data_OUT0_M_reOg_memcore using a separate memory for each block
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s FFT_data_OUT1_M_ig8j_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_data_OUT1_M_ig8j_memcore using a separate memory for each block
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s FFT_xout_M_real_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_xout_M_real_memcore using a separate memory for each block
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.constraint.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=4
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=16 #gSsdmPorts=0
+Execute       source /tools/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.dataonly.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.dataonly.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.dataonly.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.constraint.tcl 
+Execute       sc_get_clocks FFT 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/impl/misc/FFT_ap_fadd_3_full_dsp_32_ip.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/impl/misc/FFT_ap_fmul_2_max_dsp_32_ip.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/impl/misc/FFT_ap_fsub_3_full_dsp_32_ip.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.tbgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.tbgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.tbgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.tbgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.tbgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.tbgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.tbgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.tbgen.tcl 
+Execute       source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:43 ; elapsed = 00:00:52 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 249 ; free virtual = 3684
+INFO: [VHDL 208-304] Generating VHDL RTL for FFT.
+INFO: [VLOG 209-307] Generating Verilog RTL for FFT.
+Command     autosyn done; 13.4 sec.
+Command   csynth_design done; 48.63 sec.
+Command ap_source done; 51.55 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2 opened at Tue Dec 29 12:30:49 IST 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.14 sec.
+Command     ap_source done; 0.14 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Command       ap_part_info done; 3.06 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.39 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 4.29 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -description FFT32 float AXIS no_optim 
+Execute     config_export -display_name=FFT32_v2.0 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 4.62 sec.
+Execute   cosim_design -trace_level all 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Command     ap_source done; 0.18 sec.
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Command         ap_source done; 0.11 sec.
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.24 sec.
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.75 sec.
+Command     ap_source done; 0.77 sec.
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     is_encrypted /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/vhls/fixed/fft_tb.cpp 
+Execute     is_encrypted /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/inp_1.txt 
+Execute     is_encrypted /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/inp_cpp.txt 
+Execute     is_encrypted /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/out_1.txt 
+Execute     is_encrypted /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/out_cpp.txt 
+Execute     is_encrypted /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/vhls/fixed/fft.cpp 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: TB processing: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/vhls/fixed/fft_tb.cpp /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/./sim/autowrap/testbench/fft_tb.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/./sim/autowrap/testbench/fft_tb.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/./sim/autowrap/testbench/fft_tb.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 5.56 sec.
+Execute     tidy_31 xilinx-tb31-process /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/./sim/autowrap/testbench/fft_tb.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/./sim/autowrap/testbench/fft_tb.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 5.46 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: TB processing: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/vhls/fixed/fft.cpp /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/./sim/autowrap/testbench/fft.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/./sim/autowrap/testbench/fft.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/./sim/autowrap/testbench/fft.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 2.68 sec.
+Execute     tidy_31 xilinx-tb31-process /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/./sim/autowrap/testbench/fft.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2020.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/./sim/autowrap/testbench/fft.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 3.79 sec.
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/./sim/autowrap/testbench/tb.status.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.65 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     send_msg_by_id WARNING @200-616@ 
+WARNING: [HLS 200-616] This design uses AXI slave interface in dataflow mode, which can result in simulation dead-lock and/or mismatching results (due to AXI slave FIFO sizing).
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     send_msg_by_id WARNING @200-616@ 
+WARNING: [HLS 200-616] This design uses AXI slave interface in dataflow mode, which can result in simulation dead-lock and/or mismatching results (due to AXI slave FIFO sizing).
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 107.26 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command   cosim_design done; 298.44 sec.
+Command ap_source done; 303.06 sec.
+Execute cleanup_all 
+Command cleanup_all done; 0.13 sec.
+INFO-FLOW: Workspace /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2 opened at Tue Dec 29 12:37:17 IST 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Command         ap_source done; 0.21 sec.
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Command       ap_source done; 0.38 sec.
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Command       ap_source done; 0.13 sec.
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.55 sec.
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.14 sec.
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.41 sec.
+Command     ap_source done; 0.42 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Command       ap_part_info done; 16.61 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 16.8 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -description FFT32 float AXIS no_optim 
+Execute     config_export -display_name=FFT32_v2.0 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 17.87 sec.
+Execute   export_design -rtl verilog -format ip_catalog -description FFT32 float AXILITE pipelined -version 2.1 -display_name FFT32_v2.1 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -xo 
+Execute     config_export -description=FFT32 float AXILITE pipelined -display_name=FFT32_v2.1 -format=ip_catalog -rtl=verilog -version=2.1 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog -version 2.1 -description {FFT32 float AXILITE pipelined} -display_name FFT32_v2.1
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.29 sec.
+Command     ap_source done; 0.29 sec.
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.12 sec.
+Command     ap_source done; 0.12 sec.
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=FFT xml_exists=1
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.tcl 
+Execute       send_msg_by_id INFO @200-741@%s FFT_xin_M_imag_memcore 
+INFO: [HLS 200-741] Implementing PIPO FFT_xin_M_imag_memcore using a single memory for all blocks
+Command       send_msg_by_id done; 0.11 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       send_msg_by_id INFO @200-740@%s FFT_data_OUT0_M_reOg_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_data_OUT0_M_reOg_memcore using a separate memory for each block
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       send_msg_by_id INFO @200-740@%s FFT_data_OUT1_M_ig8j_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_data_OUT1_M_ig8j_memcore using a separate memory for each block
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       send_msg_by_id INFO @200-740@%s FFT_xout_M_real_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_xout_M_real_memcore using a separate memory for each block
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command     ap_source done; 0.21 sec.
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.compgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.tcl 
+Execute       send_msg_by_id INFO @200-741@%s FFT_xin_M_imag_memcore 
+INFO: [HLS 200-741] Implementing PIPO FFT_xin_M_imag_memcore using a single memory for all blocks
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       send_msg_by_id INFO @200-740@%s FFT_data_OUT0_M_reOg_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_data_OUT0_M_reOg_memcore using a separate memory for each block
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       send_msg_by_id INFO @200-740@%s FFT_data_OUT1_M_ig8j_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_data_OUT1_M_ig8j_memcore using a separate memory for each block
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       send_msg_by_id INFO @200-740@%s FFT_xout_M_real_memcore 
+INFO: [HLS 200-740] Implementing PIPO FFT_xout_M_real_memcore using a separate memory for each block
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.constraint.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=4
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=0 g_has_adaptors=false generate_bd_files=0 #modelList=16 #gSsdmPorts=0
+Execute     source /tools/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source /tools/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command     ap_source done; 0.57 sec.
+Execute     source /tools/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /tools/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source /tools/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -xo 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.dataonly.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.dataonly.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.dataonly.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.constraint.tcl 
+Execute     sc_get_clocks FFT 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/impl/misc/FFT_ap_fadd_3_full_dsp_32_ip.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/impl/misc/FFT_ap_fmul_2_max_dsp_32_ip.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/impl/misc/FFT_ap_fsub_3_full_dsp_32_ip.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl113_pr.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/bitreverse.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT053.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT054.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT055.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT056.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT057.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/Block_codeRepl11320_s.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -profile 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -stall_sig_gen 
+Execute     get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       copying IP vlog from /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/impl/vhdl
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 2_1 /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=0
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.dataonly.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.compgen.dataonly.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=FFT
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=FFT
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.rtl_wrap.cfg.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.constraint.tcl 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/FFT.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-files /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/impl/.verilog/sim_tbs
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.11 sec.
+Command     ap_source done; 0.11 sec.
+Execute     source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2/soln_v2/impl/ip/pack.sh
+Command   export_design done; 89.99 sec.
+Command ap_source done; 107.91 sec.
+Execute cleanup_all 

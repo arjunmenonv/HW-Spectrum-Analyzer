@@ -1,0 +1,239 @@
+
+
+================================================================
+== Vivado HLS Report for 'FFT'
+================================================================
+* Date:           Tue Dec 29 12:29:51 2020
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        SpecAnalv2
+* Solution:       soln_v2
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.358 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |      271|      271| 2.710 us | 2.710 us |   36|   36| dataflow |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 16
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 16, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 17 [2/2] (0.00ns)   --->   "call fastcc void @Block_codeRepl113_pr([32 x float]* %data_IN_M_real, [32 x float]* %data_IN_M_imag, [32 x float]* @xin_M_imag, [32 x float]* @xin_M_real)"   --->   Operation 17 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 18 [1/2] (0.00ns)   --->   "call fastcc void @Block_codeRepl113_pr([32 x float]* %data_IN_M_real, [32 x float]* %data_IN_M_imag, [32 x float]* @xin_M_imag, [32 x float]* @xin_M_real)"   --->   Operation 18 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 19 [2/2] (0.00ns)   --->   "call fastcc void @bitreverse()" [teach-fpga/01-fft/vhls/fixed/fft.cpp:91]   --->   Operation 19 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 20 [1/2] (0.00ns)   --->   "call fastcc void @bitreverse()" [teach-fpga/01-fft/vhls/fixed/fft.cpp:91]   --->   Operation 20 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 21 [2/2] (0.00ns)   --->   "call fastcc void @FFT053([32 x float]* nocapture @data_OUT0_M_real, [32 x float]* nocapture @data_OUT0_M_imag, [32 x float]* @data_OUT1_M_imag, [32 x float]* @data_OUT1_M_real)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:94]   --->   Operation 21 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 22 [1/2] (0.00ns)   --->   "call fastcc void @FFT053([32 x float]* nocapture @data_OUT0_M_real, [32 x float]* nocapture @data_OUT0_M_imag, [32 x float]* @data_OUT1_M_imag, [32 x float]* @data_OUT1_M_real)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:94]   --->   Operation 22 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 23 [2/2] (0.00ns)   --->   "call fastcc void @FFT054([32 x float]* @data_OUT2_M_imag, [32 x float]* @data_OUT2_M_real)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:95]   --->   Operation 23 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 24 [1/2] (0.00ns)   --->   "call fastcc void @FFT054([32 x float]* @data_OUT2_M_imag, [32 x float]* @data_OUT2_M_real)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:95]   --->   Operation 24 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 25 [2/2] (0.00ns)   --->   "call fastcc void @FFT055([32 x float]* @data_OUT3_M_imag, [32 x float]* @data_OUT3_M_real)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:96]   --->   Operation 25 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 26 [1/2] (0.00ns)   --->   "call fastcc void @FFT055([32 x float]* @data_OUT3_M_imag, [32 x float]* @data_OUT3_M_real)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:96]   --->   Operation 26 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 27 [2/2] (0.00ns)   --->   "call fastcc void @FFT056([32 x float]* @data_OUT4_M_imag, [32 x float]* @data_OUT4_M_real)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:97]   --->   Operation 27 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 28 [1/2] (0.00ns)   --->   "call fastcc void @FFT056([32 x float]* @data_OUT4_M_imag, [32 x float]* @data_OUT4_M_real)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:97]   --->   Operation 28 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 29 [2/2] (0.00ns)   --->   "call fastcc void @FFT057()" [teach-fpga/01-fft/vhls/fixed/fft.cpp:98]   --->   Operation 29 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 30 [1/2] (0.00ns)   --->   "call fastcc void @FFT057()" [teach-fpga/01-fft/vhls/fixed/fft.cpp:98]   --->   Operation 30 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 31 [2/2] (0.00ns)   --->   "call fastcc void @Block_codeRepl11320_([32 x float]* %data_OUT_M_real, [32 x float]* %data_OUT_M_imag, [32 x float]* @xout_M_imag, [32 x float]* @xout_M_real)"   --->   Operation 31 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind" [teach-fpga/01-fft/vhls/fixed/fft.cpp:90]   --->   Operation 32 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([32 x float]* %data_IN_M_real), !map !39"   --->   Operation 33 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([32 x float]* %data_IN_M_imag), !map !45"   --->   Operation 34 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([32 x float]* %data_OUT_M_real), !map !49"   --->   Operation 35 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([32 x float]* %data_OUT_M_imag), !map !53"   --->   Operation 36 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @FFT_str) nounwind"   --->   Operation 37 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 38 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecMemCore([32 x float]* %data_OUT_M_real, [1 x i8]* @p_str6, [7 x i8]* @RAM_1P_str, [1 x i8]* @p_str6, i32 -1, [1 x i8]* @p_str6, [1 x i8]* @p_str6, [1 x i8]* @p_str6, [1 x i8]* @p_str6, [1 x i8]* @p_str6)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:73]   --->   Operation 38 'specmemcore' 'empty' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 39 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecMemCore([32 x float]* %data_OUT_M_imag, [1 x i8]* @p_str7, [7 x i8]* @RAM_1P_str, [1 x i8]* @p_str7, i32 -1, [1 x i8]* @p_str7, [1 x i8]* @p_str7, [1 x i8]* @p_str7, [1 x i8]* @p_str7, [1 x i8]* @p_str7)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:73]   --->   Operation 39 'specmemcore' 'empty_10' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface([32 x float]* %data_OUT_M_real, [32 x float]* %data_OUT_M_imag, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [teach-fpga/01-fft/vhls/fixed/fft.cpp:73]   --->   Operation 40 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 41 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecMemCore([32 x float]* %data_IN_M_real, [1 x i8]* @p_str4, [7 x i8]* @RAM_1P_str, [1 x i8]* @p_str4, i32 -1, [1 x i8]* @p_str4, [1 x i8]* @p_str4, [1 x i8]* @p_str4, [1 x i8]* @p_str4, [1 x i8]* @p_str4)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:74]   --->   Operation 41 'specmemcore' 'empty_11' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 42 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecMemCore([32 x float]* %data_IN_M_imag, [1 x i8]* @p_str5, [7 x i8]* @RAM_1P_str, [1 x i8]* @p_str5, i32 -1, [1 x i8]* @p_str5, [1 x i8]* @p_str5, [1 x i8]* @p_str5, [1 x i8]* @p_str5, [1 x i8]* @p_str5)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:74]   --->   Operation 42 'specmemcore' 'empty_12' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface([32 x float]* %data_IN_M_real, [32 x float]* %data_IN_M_imag, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [teach-fpga/01-fft/vhls/fixed/fft.cpp:74]   --->   Operation 43 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 44 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [teach-fpga/01-fft/vhls/fixed/fft.cpp:75]   --->   Operation 44 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 45 [1/2] (0.00ns)   --->   "call fastcc void @Block_codeRepl11320_([32 x float]* %data_OUT_M_real, [32 x float]* %data_OUT_M_imag, [32 x float]* @xout_M_imag, [32 x float]* @xout_M_real)"   --->   Operation 45 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 46 [1/1] (0.00ns)   --->   "ret void" [teach-fpga/01-fft/vhls/fixed/fft.cpp:104]   --->   Operation 46 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 0ns
+The critical path consists of the following:
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 0ns
+The critical path consists of the following:
+
+ <State 12>: 0ns
+The critical path consists of the following:
+
+ <State 13>: 0ns
+The critical path consists of the following:
+
+ <State 14>: 0ns
+The critical path consists of the following:
+
+ <State 15>: 0ns
+The critical path consists of the following:
+
+ <State 16>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

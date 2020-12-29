@@ -1,0 +1,176 @@
+
+
+================================================================
+== Vivado HLS Report for 'bitreverse'
+================================================================
+* Date:           Tue Dec 29 12:29:47 2020
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        SpecAnalv2
+* Solution:       soln_v2
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 6.508 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       35|       35| 0.350 us | 0.350 us |   35|   35|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                      |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |       Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- bitreversal_label1  |       33|       33|         3|          1|          1|    32|    yes   |
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 5 3 
+3 --> 4 
+4 --> 2 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 6 [1/1] (1.76ns)   --->   "br label %0" [teach-fpga/01-fft/vhls/fixed/fft.cpp:43]   --->   Operation 6 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%i_0_i = phi i6 [ 0, %entry ], [ %i, %bitreversal_label1 ]"   --->   Operation 7 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (1.42ns)   --->   "%icmp_ln43 = icmp eq i6 %i_0_i, -32" [teach-fpga/01-fft/vhls/fixed/fft.cpp:43]   --->   Operation 8 'icmp' 'icmp_ln43' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 9 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (1.82ns)   --->   "%i = add i6 %i_0_i, 1" [teach-fpga/01-fft/vhls/fixed/fft.cpp:43]   --->   Operation 10 'add' 'i' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "br i1 %icmp_ln43, label %bitreverse.exit, label %bitreversal_label1" [teach-fpga/01-fft/vhls/fixed/fft.cpp:43]   --->   Operation 11 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln45 = zext i6 %i_0_i to i64" [teach-fpga/01-fft/vhls/fixed/fft.cpp:45]   --->   Operation 12 'zext' 'zext_ln45' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%rev_32_addr = getelementptr [32 x i5]* @rev_32, i64 0, i64 %zext_ln45" [teach-fpga/01-fft/vhls/fixed/fft.cpp:45]   --->   Operation 13 'getelementptr' 'rev_32_addr' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_2 : Operation 14 [2/2] (3.25ns)   --->   "%index = load i5* %rev_32_addr, align 1" [teach-fpga/01-fft/vhls/fixed/fft.cpp:45]   --->   Operation 14 'load' 'index' <Predicate = (!icmp_ln43)> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 5> <Depth = 32> <ROM>
+
+State 3 <SV = 2> <Delay = 6.50>
+ST_3 : Operation 15 [1/2] (3.25ns)   --->   "%index = load i5* %rev_32_addr, align 1" [teach-fpga/01-fft/vhls/fixed/fft.cpp:45]   --->   Operation 15 'load' 'index' <Predicate = (!icmp_ln43)> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 5> <Depth = 32> <ROM>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln46 = zext i5 %index to i64" [teach-fpga/01-fft/vhls/fixed/fft.cpp:46]   --->   Operation 16 'zext' 'zext_ln46' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%xin_M_real_addr = getelementptr [32 x float]* @xin_M_real, i64 0, i64 %zext_ln46" [teach-fpga/01-fft/vhls/fixed/fft.cpp:46]   --->   Operation 17 'getelementptr' 'xin_M_real_addr' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_3 : Operation 18 [2/2] (3.25ns)   --->   "%xin_M_real_load = load float* %xin_M_real_addr, align 4" [teach-fpga/01-fft/vhls/fixed/fft.cpp:46]   --->   Operation 18 'load' 'xin_M_real_load' <Predicate = (!icmp_ln43)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%xin_M_imag_addr = getelementptr [32 x float]* @xin_M_imag, i64 0, i64 %zext_ln46" [teach-fpga/01-fft/vhls/fixed/fft.cpp:46]   --->   Operation 19 'getelementptr' 'xin_M_imag_addr' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_3 : Operation 20 [2/2] (3.25ns)   --->   "%xin_M_imag_load = load float* %xin_M_imag_addr, align 4" [teach-fpga/01-fft/vhls/fixed/fft.cpp:46]   --->   Operation 20 'load' 'xin_M_imag_load' <Predicate = (!icmp_ln43)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 4 <SV = 3> <Delay = 6.50>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([19 x i8]* @p_str) nounwind" [teach-fpga/01-fft/vhls/fixed/fft.cpp:43]   --->   Operation 21 'specloopname' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([19 x i8]* @p_str)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:43]   --->   Operation 22 'specregionbegin' 'tmp_i' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [teach-fpga/01-fft/vhls/fixed/fft.cpp:44]   --->   Operation 23 'specpipeline' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%data_OUT0_M_real_ad = getelementptr [32 x float]* @data_OUT0_M_real, i64 0, i64 %zext_ln45" [teach-fpga/01-fft/vhls/fixed/fft.cpp:46]   --->   Operation 24 'getelementptr' 'data_OUT0_M_real_ad' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_4 : Operation 25 [1/2] (3.25ns)   --->   "%xin_M_real_load = load float* %xin_M_real_addr, align 4" [teach-fpga/01-fft/vhls/fixed/fft.cpp:46]   --->   Operation 25 'load' 'xin_M_real_load' <Predicate = (!icmp_ln43)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_4 : Operation 26 [1/1] (3.25ns)   --->   "store float %xin_M_real_load, float* %data_OUT0_M_real_ad, align 4" [teach-fpga/01-fft/vhls/fixed/fft.cpp:46]   --->   Operation 26 'store' <Predicate = (!icmp_ln43)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%data_OUT0_M_imag_ad = getelementptr [32 x float]* @data_OUT0_M_imag, i64 0, i64 %zext_ln45" [teach-fpga/01-fft/vhls/fixed/fft.cpp:46]   --->   Operation 27 'getelementptr' 'data_OUT0_M_imag_ad' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_4 : Operation 28 [1/2] (3.25ns)   --->   "%xin_M_imag_load = load float* %xin_M_imag_addr, align 4" [teach-fpga/01-fft/vhls/fixed/fft.cpp:46]   --->   Operation 28 'load' 'xin_M_imag_load' <Predicate = (!icmp_ln43)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_4 : Operation 29 [1/1] (3.25ns)   --->   "store float %xin_M_imag_load, float* %data_OUT0_M_imag_ad, align 4" [teach-fpga/01-fft/vhls/fixed/fft.cpp:46]   --->   Operation 29 'store' <Predicate = (!icmp_ln43)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%empty_2 = call i32 (...)* @_ssdm_op_SpecRegionEnd([19 x i8]* @p_str, i32 %tmp_i)" [teach-fpga/01-fft/vhls/fixed/fft.cpp:47]   --->   Operation 30 'specregionend' 'empty_2' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "br label %0" [teach-fpga/01-fft/vhls/fixed/fft.cpp:43]   --->   Operation 31 'br' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+
+State 5 <SV = 2> <Delay = 0.00>
+ST_5 : Operation 32 [1/1] (0.00ns)   --->   "ret void" [teach-fpga/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 32 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', teach-fpga/01-fft/vhls/fixed/fft.cpp:43) [10]  (1.77 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', teach-fpga/01-fft/vhls/fixed/fft.cpp:43) [10]  (0 ns)
+	'getelementptr' operation ('rev_32_addr', teach-fpga/01-fft/vhls/fixed/fft.cpp:45) [20]  (0 ns)
+	'load' operation ('index', teach-fpga/01-fft/vhls/fixed/fft.cpp:45) on array 'rev_32' [21]  (3.25 ns)
+
+ <State 3>: 6.51ns
+The critical path consists of the following:
+	'load' operation ('index', teach-fpga/01-fft/vhls/fixed/fft.cpp:45) on array 'rev_32' [21]  (3.25 ns)
+	'getelementptr' operation ('xin_M_real_addr', teach-fpga/01-fft/vhls/fixed/fft.cpp:46) [24]  (0 ns)
+	'load' operation ('xin_M_real_load', teach-fpga/01-fft/vhls/fixed/fft.cpp:46) on array 'xin_M_real' [25]  (3.25 ns)
+
+ <State 4>: 6.51ns
+The critical path consists of the following:
+	'load' operation ('xin_M_real_load', teach-fpga/01-fft/vhls/fixed/fft.cpp:46) on array 'xin_M_real' [25]  (3.25 ns)
+	'store' operation ('store_ln46', teach-fpga/01-fft/vhls/fixed/fft.cpp:46) of variable 'xin_M_real_load', teach-fpga/01-fft/vhls/fixed/fft.cpp:46 on array 'data_OUT0_M_real' [26]  (3.25 ns)
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

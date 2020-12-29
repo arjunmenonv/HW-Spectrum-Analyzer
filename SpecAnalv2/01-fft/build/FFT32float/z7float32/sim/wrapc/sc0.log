@@ -1,0 +1,5 @@
+   Build using "/tools/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_FFT.cpp
+   Compiling fft_tb.cpp_pre.cpp.tb.cpp
+   Compiling fft.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
