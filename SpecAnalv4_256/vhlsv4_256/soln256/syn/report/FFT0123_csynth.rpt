@@ -1,0 +1,242 @@
+
+
+================================================================
+== Vivado HLS Report for 'FFT0123'
+================================================================
+* Date:           Thu Dec 31 16:12:34 2020
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        vhlsv4_256
+* Solution:       soln256
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.358 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      145|      145| 1.450 us | 1.450 us |  145|  145|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |              |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- FFT_label1  |      143|      143|        17|          1|          1|   128|    yes   |
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|    322|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|     24|    1802|   3624|    -|
+|Memory           |        2|      -|       0|      0|    -|
+|Multiplexer      |        -|      -|       -|     75|    -|
+|Register         |        4|      -|     901|     67|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        6|     24|    2703|   4088|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        2|     10|       2|      7|    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------+----------------------+---------+-------+-----+-----+-----+
+    |         Instance         |        Module        | BRAM_18K| DSP48E|  FF | LUT | URAM|
+    +--------------------------+----------------------+---------+-------+-----+-----+-----+
+    |FFT_fadd_32ns_32ndEe_U70  |FFT_fadd_32ns_32ndEe  |        0|      2|  205|  390|    0|
+    |FFT_fadd_32ns_32ndEe_U73  |FFT_fadd_32ns_32ndEe  |        0|      2|  205|  390|    0|
+    |FFT_fadd_32ns_32ndEe_U74  |FFT_fadd_32ns_32ndEe  |        0|      2|  205|  390|    0|
+    |FFT_fmul_32ns_32neOg_U75  |FFT_fmul_32ns_32neOg  |        0|      3|  143|  321|    0|
+    |FFT_fmul_32ns_32neOg_U76  |FFT_fmul_32ns_32neOg  |        0|      3|  143|  321|    0|
+    |FFT_fmul_32ns_32neOg_U77  |FFT_fmul_32ns_32neOg  |        0|      3|  143|  321|    0|
+    |FFT_fmul_32ns_32neOg_U78  |FFT_fmul_32ns_32neOg  |        0|      3|  143|  321|    0|
+    |FFT_fsub_32ns_32ncud_U69  |FFT_fsub_32ns_32ncud  |        0|      2|  205|  390|    0|
+    |FFT_fsub_32ns_32ncud_U71  |FFT_fsub_32ns_32ncud  |        0|      2|  205|  390|    0|
+    |FFT_fsub_32ns_32ncud_U72  |FFT_fsub_32ns_32ncud  |        0|      2|  205|  390|    0|
+    +--------------------------+----------------------+---------+-------+-----+-----+-----+
+    |Total                     |                      |        0|     24| 1802| 3624|    0|
+    +--------------------------+----------------------+---------+-------+-----+-----+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    +---------------+---------------------+---------+---+----+-----+------+-----+------+-------------+
+    |     Memory    |        Module       | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +---------------+---------------------+---------+---+----+-----+------+-----+------+-------------+
+    |W_M_imag133_U  |FFT0121_W_M_imag135  |        1|  0|   0|    0|   128|   32|     1|         4096|
+    |W_M_real140_U  |FFT0121_W_M_real142  |        1|  0|   0|    0|   128|   32|     1|         4096|
+    +---------------+---------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total          |                     |        2|  0|   0|    0|   256|   64|     2|         8192|
+    +---------------+---------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |        Variable Name        | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |Llimit_fu_279_p2             |     +    |      0|  0|  39|           3|          32|
+    |Ulimit_fu_273_p2             |     +    |      0|  0|  39|          32|          32|
+    |butterfly_pass_fu_315_p2     |     +    |      0|  0|  39|           1|          32|
+    |butterfly_span_fu_303_p2     |     +    |      0|  0|  39|           1|          32|
+    |i_fu_255_p2                  |     +    |      0|  0|  15|           8|           1|
+    |icmp_ln86_fu_249_p2          |   icmp   |      0|  0|  13|           8|           9|
+    |icmp_ln94_fu_297_p2          |   icmp   |      0|  0|  18|          32|           2|
+    |icmp_ln96_fu_309_p2          |   icmp   |      0|  0|  18|          32|           5|
+    |ap_block_state1              |    or    |      0|  0|   2|           1|           1|
+    |butterfly_pass_11_fu_321_p3  |  select  |      0|  0|  32|           1|          32|
+    |butterfly_pass_12_fu_337_p3  |  select  |      0|  0|  32|           1|          32|
+    |select_ln94_fu_329_p3        |  select  |      0|  0|  32|           1|          32|
+    |ap_enable_pp0                |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1      |    xor   |      0|  0|   2|           2|           1|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |Total                        |          |      0|  0| 322|         124|         245|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+-----+-----------+
+    |            Name            | LUT| Input Size| Bits| Total Bits|
+    +----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                   |  21|          4|    1|          4|
+    |ap_done                     |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1     |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter16    |   9|          2|    1|          2|
+    |butterfly_pass_0_i_reg_187  |   9|          2|   32|         64|
+    |butterfly_span_0_i_reg_176  |   9|          2|   32|         64|
+    |i_0_i_reg_198               |   9|          2|    8|         16|
+    +----------------------------+----+-----------+-----+-----------+
+    |Total                       |  75|         16|   76|        154|
+    +----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------+----+----+-----+-----------+
+    |              Name             | FF | LUT| Bits| Const Bits|
+    +-------------------------------+----+----+-----+-----------+
+    |Product_M_imag_reg_466         |  32|   0|   32|          0|
+    |Product_M_real_reg_460         |  32|   0|   32|          0|
+    |Ulimit_reg_359                 |  32|   0|   32|          0|
+    |ap_CS_fsm                      |   3|   0|    3|          0|
+    |ap_done_reg                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter10       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter11       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter12       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter13       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter14       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter15       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter16       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9        |   1|   0|    1|          0|
+    |butterfly_pass_0_i_reg_187     |  32|   0|   32|          0|
+    |butterfly_span_0_i_reg_176     |  32|   0|   32|          0|
+    |complex_M_imag_writ_7_reg_499  |  32|   0|   32|          0|
+    |complex_M_imag_writ_reg_489    |  32|   0|   32|          0|
+    |complex_M_real_writ_7_reg_494  |  32|   0|   32|          0|
+    |complex_M_real_writ_reg_484    |  32|   0|   32|          0|
+    |i_0_i_reg_198                  |   8|   0|    8|          0|
+    |icmp_ln86_reg_350              |   1|   0|    1|          0|
+    |p_r_M_imag_7_reg_478           |  32|   0|   32|          0|
+    |p_r_M_imag_reg_406             |  32|   0|   32|          0|
+    |p_r_M_real_7_reg_472           |  32|   0|   32|          0|
+    |p_r_M_real_reg_400             |  32|   0|   32|          0|
+    |p_t_imag_reg_418               |  32|   0|   32|          0|
+    |p_t_real_reg_412               |  32|   0|   32|          0|
+    |sext_ln91_6_reg_374            |  64|   0|   64|          0|
+    |sext_ln92_reg_444              |  64|   0|   64|          0|
+    |tmp_3_i_i_i_reg_429            |  32|   0|   32|          0|
+    |tmp_5_i_i_i_reg_434            |  32|   0|   32|          0|
+    |tmp_6_i_i_i_reg_439            |  32|   0|   32|          0|
+    |tmp_i_i_i_reg_424              |  32|   0|   32|          0|
+    |Ulimit_reg_359                 |  64|  32|   32|          0|
+    |icmp_ln86_reg_350              |  64|  32|    1|          0|
+    |sext_ln91_6_reg_374            |   4|   2|   64|          0|
+    |sext_ln92_reg_444              |   3|   1|   64|          0|
+    +-------------------------------+----+----+-----+-----------+
+    |Total                          | 901|  67|  927|          0|
+    +-------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++---------------------------+-----+-----+------------+------------------+--------------+
+|ap_clk                     |  in |    1| ap_ctrl_hs |      FFT0123     | return value |
+|ap_rst                     |  in |    1| ap_ctrl_hs |      FFT0123     | return value |
+|ap_start                   |  in |    1| ap_ctrl_hs |      FFT0123     | return value |
+|ap_done                    | out |    1| ap_ctrl_hs |      FFT0123     | return value |
+|ap_continue                |  in |    1| ap_ctrl_hs |      FFT0123     | return value |
+|ap_idle                    | out |    1| ap_ctrl_hs |      FFT0123     | return value |
+|ap_ready                   | out |    1| ap_ctrl_hs |      FFT0123     | return value |
+|data_OUT3_M_imag_address0  | out |    8|  ap_memory | data_OUT3_M_imag |     array    |
+|data_OUT3_M_imag_ce0       | out |    1|  ap_memory | data_OUT3_M_imag |     array    |
+|data_OUT3_M_imag_we0       | out |    1|  ap_memory | data_OUT3_M_imag |     array    |
+|data_OUT3_M_imag_d0        | out |   32|  ap_memory | data_OUT3_M_imag |     array    |
+|data_OUT3_M_imag_address1  | out |    8|  ap_memory | data_OUT3_M_imag |     array    |
+|data_OUT3_M_imag_ce1       | out |    1|  ap_memory | data_OUT3_M_imag |     array    |
+|data_OUT3_M_imag_we1       | out |    1|  ap_memory | data_OUT3_M_imag |     array    |
+|data_OUT3_M_imag_d1        | out |   32|  ap_memory | data_OUT3_M_imag |     array    |
+|data_OUT3_M_real_address0  | out |    8|  ap_memory | data_OUT3_M_real |     array    |
+|data_OUT3_M_real_ce0       | out |    1|  ap_memory | data_OUT3_M_real |     array    |
+|data_OUT3_M_real_we0       | out |    1|  ap_memory | data_OUT3_M_real |     array    |
+|data_OUT3_M_real_d0        | out |   32|  ap_memory | data_OUT3_M_real |     array    |
+|data_OUT3_M_real_address1  | out |    8|  ap_memory | data_OUT3_M_real |     array    |
+|data_OUT3_M_real_ce1       | out |    1|  ap_memory | data_OUT3_M_real |     array    |
+|data_OUT3_M_real_we1       | out |    1|  ap_memory | data_OUT3_M_real |     array    |
+|data_OUT3_M_real_d1        | out |   32|  ap_memory | data_OUT3_M_real |     array    |
+|data_OUT2_M_real_address0  | out |    8|  ap_memory | data_OUT2_M_real |     array    |
+|data_OUT2_M_real_ce0       | out |    1|  ap_memory | data_OUT2_M_real |     array    |
+|data_OUT2_M_real_q0        |  in |   32|  ap_memory | data_OUT2_M_real |     array    |
+|data_OUT2_M_real_address1  | out |    8|  ap_memory | data_OUT2_M_real |     array    |
+|data_OUT2_M_real_ce1       | out |    1|  ap_memory | data_OUT2_M_real |     array    |
+|data_OUT2_M_real_q1        |  in |   32|  ap_memory | data_OUT2_M_real |     array    |
+|data_OUT2_M_imag_address0  | out |    8|  ap_memory | data_OUT2_M_imag |     array    |
+|data_OUT2_M_imag_ce0       | out |    1|  ap_memory | data_OUT2_M_imag |     array    |
+|data_OUT2_M_imag_q0        |  in |   32|  ap_memory | data_OUT2_M_imag |     array    |
+|data_OUT2_M_imag_address1  | out |    8|  ap_memory | data_OUT2_M_imag |     array    |
+|data_OUT2_M_imag_ce1       | out |    1|  ap_memory | data_OUT2_M_imag |     array    |
+|data_OUT2_M_imag_q1        |  in |   32|  ap_memory | data_OUT2_M_imag |     array    |
++---------------------------+-----+-----+------------+------------------+--------------+
+

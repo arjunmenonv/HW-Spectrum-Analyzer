@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fft.cpp" path="/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv4/vhls_src/fft.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="fft_tb.cpp" path="/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv4/vhls_src/fft_tb.cpp"/>
+    <originFiles name="inp.txt" path="/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv4/test_data/inp.txt"/>
+    <originFiles name="out_black.txt" path="/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv4/test_data/out_black.txt"/>
+    <originFiles name="out_hamm.txt" path="/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv4/test_data/out_hamm.txt"/>
+    <originFiles name="out_hann.txt" path="/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv4/test_data/out_hann.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

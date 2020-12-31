@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <packageLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'Block_codeRepl11627_' to 'Block_codeRepl11627_s'." projectName="vhlsv4_256" solutionName="soln256" date="2020-12-31T16:11:54.777+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'FFT.entry3' to 'FFT_entry3'." projectName="vhlsv4_256" solutionName="soln256" date="2020-12-31T16:11:53.290+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl11627_proc' to 'Block_codeRepl11627_' (vhls_src/fft.cpp:9:24)" projectName="vhlsv4_256" solutionName="soln256" date="2020-12-31T16:11:47.886+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl116_proc143' to 'Block_codeRepl116_pr' (vhls_src/fft.cpp:152:2)" projectName="vhlsv4_256" solutionName="soln256" date="2020-12-31T16:11:44.328+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'data_OUT_FFT._M_imag'  should be updated in process function 'FFT0128', otherwise it may not be synthesized correctly." projectName="vhlsv4_256" solutionName="soln256" date="2020-12-31T16:11:41.651+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'data_OUT_FFT._M_real'  should be updated in process function 'FFT0128', otherwise it may not be synthesized correctly." projectName="vhlsv4_256" solutionName="soln256" date="2020-12-31T16:11:41.644+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'data_OUT7._M_real'  should be updated in process function 'FFT0127', otherwise it may not be synthesized correctly." projectName="vhlsv4_256" solutionName="soln256" date="2020-12-31T16:11:41.634+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'data_OUT7._M_imag'  should be updated in process function 'FFT0127', otherwise it may not be synthesized correctly." projectName="vhlsv4_256" solutionName="soln256" date="2020-12-31T16:11:41.624+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'data_OUT6._M_real'  should be updated in process function 'FFT0126', otherwise it may not be synthesized correctly." projectName="vhlsv4_256" solutionName="soln256" date="2020-12-31T16:11:41.608+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'data_OUT6._M_imag'  should be updated in process function 'FFT0126', otherwise it may not be synthesized correctly." projectName="vhlsv4_256" solutionName="soln256" date="2020-12-31T16:11:41.603+0530" type="Warning"/>
+      </synLog>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'FFT_ap_flog_11_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="vhlsv4_256" solutionName="soln256" date="2020-12-31T16:20:56.391+0530" type="Warning"/>
+      </packageLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
