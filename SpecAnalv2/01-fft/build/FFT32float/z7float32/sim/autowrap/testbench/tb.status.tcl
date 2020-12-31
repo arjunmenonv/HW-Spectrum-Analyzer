@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/teach-fpga/01-fft/build/FFT32float/z7float32/./sim/autowrap/testbench/fft.cpp_pre.cpp.tb.cpp
