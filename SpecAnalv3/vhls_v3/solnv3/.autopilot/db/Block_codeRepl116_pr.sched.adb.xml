@@ -1,0 +1,3318 @@
+<stg><name>Block_codeRepl116_pr</name>
+
+
+<trans_list>
+
+<trans id="234" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="235" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="236" from="3" to="4">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="237" from="4" to="5">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="238" from="5" to="6">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="239" from="6" to="7">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="240" from="7" to="8">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="241" from="8" to="9">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="242" from="9" to="10">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="243" from="10" to="11">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="244" from="11" to="12">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="245" from="12" to="13">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="246" from="13" to="14">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="247" from="14" to="15">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="248" from="15" to="16">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="249" from="16" to="17">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="250" from="17" to="18">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="251" from="18" to="19">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="252" from="19" to="20">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="253" from="20" to="21">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="254" from="21" to="22">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="255" from="22" to="23">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="256" from="23" to="24">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="257" from="24" to="25">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="258" from="25" to="26">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="259" from="26" to="27">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="260" from="27" to="28">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="261" from="28" to="29">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="262" from="29" to="30">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="263" from="30" to="31">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="264" from="31" to="32">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="33" st_id="1" stage="1" lat="1">
+<core>FIFO</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="8" op_0_bw="8" op_1_bw="8">
+<![CDATA[
+entry:4  %win_mode_read = call i8 @_ssdm_op_Read.ap_fifo.i8P(i8* %win_mode)
+
+]]></Node>
+<StgValue><ssdm name="win_mode_read"/></StgValue>
+</operation>
+
+<operation id="34" st_id="1" stage="1" lat="1">
+<core>FIFO</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
+<![CDATA[
+entry:7  call void @_ssdm_op_Write.ap_fifo.i8P(i8* %win_mode_out, i8 %win_mode_read)
+
+]]></Node>
+<StgValue><ssdm name="write_ln115"/></StgValue>
+</operation>
+
+<operation id="35" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="46" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:39  %xin_M_real_addr_32 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 0
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_32"/></StgValue>
+</operation>
+
+<operation id="36" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="78" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:71  %xin_M_imag_addr_32 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 0
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_32"/></StgValue>
+</operation>
+
+<operation id="37" st_id="1" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="79" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+entry:72  %data_IN_M_real_read = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read"/></StgValue>
+</operation>
+
+<operation id="38" st_id="1" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="80" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:73  store float %data_IN_M_real_read, float* %xin_M_real_addr_32, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="39" st_id="1" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="81" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+entry:74  %data_IN_M_imag_read = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read"/></StgValue>
+</operation>
+
+<operation id="40" st_id="1" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="82" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:75  store float %data_IN_M_imag_read, float* %xin_M_imag_addr_32, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="41" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="45" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:38  %xin_M_real_addr_31 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 1
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_31"/></StgValue>
+</operation>
+
+<operation id="42" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="77" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:70  %xin_M_imag_addr_31 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 1
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_31"/></StgValue>
+</operation>
+
+<operation id="43" st_id="2" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="83" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:76  %data_IN_M_real_read_1 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_1"/></StgValue>
+</operation>
+
+<operation id="44" st_id="2" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="84" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:77  store float %data_IN_M_real_read_1, float* %xin_M_real_addr_31, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="45" st_id="2" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="85" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:78  %data_IN_M_imag_read_1 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_1"/></StgValue>
+</operation>
+
+<operation id="46" st_id="2" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="86" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:79  store float %data_IN_M_imag_read_1, float* %xin_M_imag_addr_31, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="47" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="44" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:37  %xin_M_real_addr_30 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 2
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_30"/></StgValue>
+</operation>
+
+<operation id="48" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="76" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:69  %xin_M_imag_addr_30 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 2
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_30"/></StgValue>
+</operation>
+
+<operation id="49" st_id="3" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="87" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:80  %data_IN_M_real_read_2 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_2"/></StgValue>
+</operation>
+
+<operation id="50" st_id="3" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="88" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:81  store float %data_IN_M_real_read_2, float* %xin_M_real_addr_30, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="51" st_id="3" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="89" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:82  %data_IN_M_imag_read_2 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_2"/></StgValue>
+</operation>
+
+<operation id="52" st_id="3" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="90" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:83  store float %data_IN_M_imag_read_2, float* %xin_M_imag_addr_30, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="4" st_id="4">
+
+<operation id="53" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="43" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:36  %xin_M_real_addr_29 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 3
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_29"/></StgValue>
+</operation>
+
+<operation id="54" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="75" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:68  %xin_M_imag_addr_29 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 3
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_29"/></StgValue>
+</operation>
+
+<operation id="55" st_id="4" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="91" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:84  %data_IN_M_real_read_3 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_3"/></StgValue>
+</operation>
+
+<operation id="56" st_id="4" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="92" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:85  store float %data_IN_M_real_read_3, float* %xin_M_real_addr_29, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="57" st_id="4" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="93" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:86  %data_IN_M_imag_read_3 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_3"/></StgValue>
+</operation>
+
+<operation id="58" st_id="4" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="94" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:87  store float %data_IN_M_imag_read_3, float* %xin_M_imag_addr_29, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="5" st_id="5">
+
+<operation id="59" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="42" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:35  %xin_M_real_addr_28 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 4
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_28"/></StgValue>
+</operation>
+
+<operation id="60" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="74" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:67  %xin_M_imag_addr_28 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 4
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_28"/></StgValue>
+</operation>
+
+<operation id="61" st_id="5" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="95" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:88  %data_IN_M_real_read_4 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_4"/></StgValue>
+</operation>
+
+<operation id="62" st_id="5" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="96" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:89  store float %data_IN_M_real_read_4, float* %xin_M_real_addr_28, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="63" st_id="5" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="97" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:90  %data_IN_M_imag_read_4 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_4"/></StgValue>
+</operation>
+
+<operation id="64" st_id="5" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="98" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:91  store float %data_IN_M_imag_read_4, float* %xin_M_imag_addr_28, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="6" st_id="6">
+
+<operation id="65" st_id="6" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="41" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:34  %xin_M_real_addr_27 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 5
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_27"/></StgValue>
+</operation>
+
+<operation id="66" st_id="6" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="73" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:66  %xin_M_imag_addr_27 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 5
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_27"/></StgValue>
+</operation>
+
+<operation id="67" st_id="6" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="99" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:92  %data_IN_M_real_read_5 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_5"/></StgValue>
+</operation>
+
+<operation id="68" st_id="6" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="100" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:93  store float %data_IN_M_real_read_5, float* %xin_M_real_addr_27, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="69" st_id="6" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="101" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:94  %data_IN_M_imag_read_5 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_5"/></StgValue>
+</operation>
+
+<operation id="70" st_id="6" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="102" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:95  store float %data_IN_M_imag_read_5, float* %xin_M_imag_addr_27, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="7" st_id="7">
+
+<operation id="71" st_id="7" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="40" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:33  %xin_M_real_addr_26 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 6
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_26"/></StgValue>
+</operation>
+
+<operation id="72" st_id="7" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="72" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:65  %xin_M_imag_addr_26 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 6
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_26"/></StgValue>
+</operation>
+
+<operation id="73" st_id="7" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="103" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:96  %data_IN_M_real_read_6 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_6"/></StgValue>
+</operation>
+
+<operation id="74" st_id="7" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="104" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:97  store float %data_IN_M_real_read_6, float* %xin_M_real_addr_26, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="75" st_id="7" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="105" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:98  %data_IN_M_imag_read_6 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_6"/></StgValue>
+</operation>
+
+<operation id="76" st_id="7" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="106" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:99  store float %data_IN_M_imag_read_6, float* %xin_M_imag_addr_26, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="8" st_id="8">
+
+<operation id="77" st_id="8" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="39" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:32  %xin_M_real_addr_25 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 7
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_25"/></StgValue>
+</operation>
+
+<operation id="78" st_id="8" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="71" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:64  %xin_M_imag_addr_25 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 7
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_25"/></StgValue>
+</operation>
+
+<operation id="79" st_id="8" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="107" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:100  %data_IN_M_real_read_7 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_7"/></StgValue>
+</operation>
+
+<operation id="80" st_id="8" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="108" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:101  store float %data_IN_M_real_read_7, float* %xin_M_real_addr_25, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="81" st_id="8" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="109" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:102  %data_IN_M_imag_read_7 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_7"/></StgValue>
+</operation>
+
+<operation id="82" st_id="8" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="110" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:103  store float %data_IN_M_imag_read_7, float* %xin_M_imag_addr_25, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="9" st_id="9">
+
+<operation id="83" st_id="9" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="38" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:31  %xin_M_real_addr_24 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 8
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_24"/></StgValue>
+</operation>
+
+<operation id="84" st_id="9" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="70" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:63  %xin_M_imag_addr_24 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 8
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_24"/></StgValue>
+</operation>
+
+<operation id="85" st_id="9" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="111" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:104  %data_IN_M_real_read_8 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_8"/></StgValue>
+</operation>
+
+<operation id="86" st_id="9" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="112" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:105  store float %data_IN_M_real_read_8, float* %xin_M_real_addr_24, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="87" st_id="9" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="113" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:106  %data_IN_M_imag_read_8 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_8"/></StgValue>
+</operation>
+
+<operation id="88" st_id="9" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="114" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:107  store float %data_IN_M_imag_read_8, float* %xin_M_imag_addr_24, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="10" st_id="10">
+
+<operation id="89" st_id="10" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="37" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:30  %xin_M_real_addr_23 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 9
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_23"/></StgValue>
+</operation>
+
+<operation id="90" st_id="10" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="69" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:62  %xin_M_imag_addr_23 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 9
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_23"/></StgValue>
+</operation>
+
+<operation id="91" st_id="10" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="115" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:108  %data_IN_M_real_read_9 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_9"/></StgValue>
+</operation>
+
+<operation id="92" st_id="10" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="116" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:109  store float %data_IN_M_real_read_9, float* %xin_M_real_addr_23, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="93" st_id="10" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="117" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:110  %data_IN_M_imag_read_9 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_9"/></StgValue>
+</operation>
+
+<operation id="94" st_id="10" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="118" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:111  store float %data_IN_M_imag_read_9, float* %xin_M_imag_addr_23, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="11" st_id="11">
+
+<operation id="95" st_id="11" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="36" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:29  %xin_M_real_addr_22 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 10
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_22"/></StgValue>
+</operation>
+
+<operation id="96" st_id="11" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="68" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:61  %xin_M_imag_addr_22 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 10
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_22"/></StgValue>
+</operation>
+
+<operation id="97" st_id="11" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="119" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:112  %data_IN_M_real_read_10 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_10"/></StgValue>
+</operation>
+
+<operation id="98" st_id="11" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="120" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:113  store float %data_IN_M_real_read_10, float* %xin_M_real_addr_22, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="99" st_id="11" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="121" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:114  %data_IN_M_imag_read_10 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_10"/></StgValue>
+</operation>
+
+<operation id="100" st_id="11" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="122" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:115  store float %data_IN_M_imag_read_10, float* %xin_M_imag_addr_22, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="12" st_id="12">
+
+<operation id="101" st_id="12" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="35" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:28  %xin_M_real_addr_21 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 11
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_21"/></StgValue>
+</operation>
+
+<operation id="102" st_id="12" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="67" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:60  %xin_M_imag_addr_21 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 11
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_21"/></StgValue>
+</operation>
+
+<operation id="103" st_id="12" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="123" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:116  %data_IN_M_real_read_11 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_11"/></StgValue>
+</operation>
+
+<operation id="104" st_id="12" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="124" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:117  store float %data_IN_M_real_read_11, float* %xin_M_real_addr_21, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="105" st_id="12" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="125" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:118  %data_IN_M_imag_read_11 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_11"/></StgValue>
+</operation>
+
+<operation id="106" st_id="12" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="126" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:119  store float %data_IN_M_imag_read_11, float* %xin_M_imag_addr_21, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="13" st_id="13">
+
+<operation id="107" st_id="13" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="34" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:27  %xin_M_real_addr_20 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 12
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_20"/></StgValue>
+</operation>
+
+<operation id="108" st_id="13" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="66" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:59  %xin_M_imag_addr_20 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 12
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_20"/></StgValue>
+</operation>
+
+<operation id="109" st_id="13" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="127" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:120  %data_IN_M_real_read_12 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_12"/></StgValue>
+</operation>
+
+<operation id="110" st_id="13" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="128" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:121  store float %data_IN_M_real_read_12, float* %xin_M_real_addr_20, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="111" st_id="13" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="129" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:122  %data_IN_M_imag_read_12 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_12"/></StgValue>
+</operation>
+
+<operation id="112" st_id="13" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="130" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:123  store float %data_IN_M_imag_read_12, float* %xin_M_imag_addr_20, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="14" st_id="14">
+
+<operation id="113" st_id="14" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="33" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:26  %xin_M_real_addr_19 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 13
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_19"/></StgValue>
+</operation>
+
+<operation id="114" st_id="14" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="65" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:58  %xin_M_imag_addr_19 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 13
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_19"/></StgValue>
+</operation>
+
+<operation id="115" st_id="14" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="131" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:124  %data_IN_M_real_read_13 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_13"/></StgValue>
+</operation>
+
+<operation id="116" st_id="14" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="132" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:125  store float %data_IN_M_real_read_13, float* %xin_M_real_addr_19, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="117" st_id="14" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="133" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:126  %data_IN_M_imag_read_13 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_13"/></StgValue>
+</operation>
+
+<operation id="118" st_id="14" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="134" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:127  store float %data_IN_M_imag_read_13, float* %xin_M_imag_addr_19, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="15" st_id="15">
+
+<operation id="119" st_id="15" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="32" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:25  %xin_M_real_addr_18 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 14
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_18"/></StgValue>
+</operation>
+
+<operation id="120" st_id="15" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="64" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:57  %xin_M_imag_addr_18 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 14
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_18"/></StgValue>
+</operation>
+
+<operation id="121" st_id="15" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="135" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:128  %data_IN_M_real_read_14 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_14"/></StgValue>
+</operation>
+
+<operation id="122" st_id="15" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="136" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:129  store float %data_IN_M_real_read_14, float* %xin_M_real_addr_18, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="123" st_id="15" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="137" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:130  %data_IN_M_imag_read_14 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_14"/></StgValue>
+</operation>
+
+<operation id="124" st_id="15" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="138" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:131  store float %data_IN_M_imag_read_14, float* %xin_M_imag_addr_18, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="16" st_id="16">
+
+<operation id="125" st_id="16" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="31" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:24  %xin_M_real_addr_17 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 15
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_17"/></StgValue>
+</operation>
+
+<operation id="126" st_id="16" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="63" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:56  %xin_M_imag_addr_17 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 15
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_17"/></StgValue>
+</operation>
+
+<operation id="127" st_id="16" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="139" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:132  %data_IN_M_real_read_15 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_15"/></StgValue>
+</operation>
+
+<operation id="128" st_id="16" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="140" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:133  store float %data_IN_M_real_read_15, float* %xin_M_real_addr_17, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="129" st_id="16" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="141" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:134  %data_IN_M_imag_read_15 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_15"/></StgValue>
+</operation>
+
+<operation id="130" st_id="16" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="142" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:135  store float %data_IN_M_imag_read_15, float* %xin_M_imag_addr_17, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="17" st_id="17">
+
+<operation id="131" st_id="17" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="30" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:23  %xin_M_real_addr_16 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 16
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_16"/></StgValue>
+</operation>
+
+<operation id="132" st_id="17" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="62" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:55  %xin_M_imag_addr_16 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 16
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_16"/></StgValue>
+</operation>
+
+<operation id="133" st_id="17" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="143" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:136  %data_IN_M_real_read_16 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_16"/></StgValue>
+</operation>
+
+<operation id="134" st_id="17" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="144" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:137  store float %data_IN_M_real_read_16, float* %xin_M_real_addr_16, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="135" st_id="17" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="145" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:138  %data_IN_M_imag_read_16 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_16"/></StgValue>
+</operation>
+
+<operation id="136" st_id="17" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="146" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:139  store float %data_IN_M_imag_read_16, float* %xin_M_imag_addr_16, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="18" st_id="18">
+
+<operation id="137" st_id="18" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="29" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:22  %xin_M_real_addr_15 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 17
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_15"/></StgValue>
+</operation>
+
+<operation id="138" st_id="18" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="61" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:54  %xin_M_imag_addr_15 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 17
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_15"/></StgValue>
+</operation>
+
+<operation id="139" st_id="18" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="147" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:140  %data_IN_M_real_read_17 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_17"/></StgValue>
+</operation>
+
+<operation id="140" st_id="18" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="148" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:141  store float %data_IN_M_real_read_17, float* %xin_M_real_addr_15, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="141" st_id="18" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="149" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:142  %data_IN_M_imag_read_17 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_17"/></StgValue>
+</operation>
+
+<operation id="142" st_id="18" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="150" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:143  store float %data_IN_M_imag_read_17, float* %xin_M_imag_addr_15, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="19" st_id="19">
+
+<operation id="143" st_id="19" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="28" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:21  %xin_M_real_addr_14 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 18
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_14"/></StgValue>
+</operation>
+
+<operation id="144" st_id="19" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="60" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:53  %xin_M_imag_addr_14 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 18
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_14"/></StgValue>
+</operation>
+
+<operation id="145" st_id="19" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="151" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:144  %data_IN_M_real_read_18 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_18"/></StgValue>
+</operation>
+
+<operation id="146" st_id="19" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="152" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:145  store float %data_IN_M_real_read_18, float* %xin_M_real_addr_14, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="147" st_id="19" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="153" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:146  %data_IN_M_imag_read_18 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_18"/></StgValue>
+</operation>
+
+<operation id="148" st_id="19" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="154" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:147  store float %data_IN_M_imag_read_18, float* %xin_M_imag_addr_14, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="20" st_id="20">
+
+<operation id="149" st_id="20" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="27" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:20  %xin_M_real_addr_13 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 19
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_13"/></StgValue>
+</operation>
+
+<operation id="150" st_id="20" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="59" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:52  %xin_M_imag_addr_13 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 19
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_13"/></StgValue>
+</operation>
+
+<operation id="151" st_id="20" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="155" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:148  %data_IN_M_real_read_19 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_19"/></StgValue>
+</operation>
+
+<operation id="152" st_id="20" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="156" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:149  store float %data_IN_M_real_read_19, float* %xin_M_real_addr_13, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="153" st_id="20" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="157" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:150  %data_IN_M_imag_read_19 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_19"/></StgValue>
+</operation>
+
+<operation id="154" st_id="20" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="158" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:151  store float %data_IN_M_imag_read_19, float* %xin_M_imag_addr_13, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="21" st_id="21">
+
+<operation id="155" st_id="21" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="26" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:19  %xin_M_real_addr_12 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 20
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_12"/></StgValue>
+</operation>
+
+<operation id="156" st_id="21" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="58" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:51  %xin_M_imag_addr_12 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 20
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_12"/></StgValue>
+</operation>
+
+<operation id="157" st_id="21" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="159" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:152  %data_IN_M_real_read_20 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_20"/></StgValue>
+</operation>
+
+<operation id="158" st_id="21" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="160" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:153  store float %data_IN_M_real_read_20, float* %xin_M_real_addr_12, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="159" st_id="21" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="161" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:154  %data_IN_M_imag_read_20 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_20"/></StgValue>
+</operation>
+
+<operation id="160" st_id="21" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="162" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:155  store float %data_IN_M_imag_read_20, float* %xin_M_imag_addr_12, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="22" st_id="22">
+
+<operation id="161" st_id="22" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="25" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:18  %xin_M_real_addr_11 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 21
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_11"/></StgValue>
+</operation>
+
+<operation id="162" st_id="22" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="57" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:50  %xin_M_imag_addr_11 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 21
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_11"/></StgValue>
+</operation>
+
+<operation id="163" st_id="22" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="163" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:156  %data_IN_M_real_read_21 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_21"/></StgValue>
+</operation>
+
+<operation id="164" st_id="22" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="164" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:157  store float %data_IN_M_real_read_21, float* %xin_M_real_addr_11, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="165" st_id="22" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="165" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:158  %data_IN_M_imag_read_21 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_21"/></StgValue>
+</operation>
+
+<operation id="166" st_id="22" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="166" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:159  store float %data_IN_M_imag_read_21, float* %xin_M_imag_addr_11, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="23" st_id="23">
+
+<operation id="167" st_id="23" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="24" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:17  %xin_M_real_addr_10 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 22
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_10"/></StgValue>
+</operation>
+
+<operation id="168" st_id="23" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="56" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:49  %xin_M_imag_addr_10 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 22
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_10"/></StgValue>
+</operation>
+
+<operation id="169" st_id="23" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="167" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:160  %data_IN_M_real_read_22 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_22"/></StgValue>
+</operation>
+
+<operation id="170" st_id="23" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="168" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:161  store float %data_IN_M_real_read_22, float* %xin_M_real_addr_10, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="171" st_id="23" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="169" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:162  %data_IN_M_imag_read_22 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_22"/></StgValue>
+</operation>
+
+<operation id="172" st_id="23" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="170" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:163  store float %data_IN_M_imag_read_22, float* %xin_M_imag_addr_10, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="24" st_id="24">
+
+<operation id="173" st_id="24" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="23" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:16  %xin_M_real_addr_9 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 23
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_9"/></StgValue>
+</operation>
+
+<operation id="174" st_id="24" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="55" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:48  %xin_M_imag_addr_9 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 23
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_9"/></StgValue>
+</operation>
+
+<operation id="175" st_id="24" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="171" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:164  %data_IN_M_real_read_23 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_23"/></StgValue>
+</operation>
+
+<operation id="176" st_id="24" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="172" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:165  store float %data_IN_M_real_read_23, float* %xin_M_real_addr_9, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="177" st_id="24" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="173" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:166  %data_IN_M_imag_read_23 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_23"/></StgValue>
+</operation>
+
+<operation id="178" st_id="24" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="174" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:167  store float %data_IN_M_imag_read_23, float* %xin_M_imag_addr_9, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="25" st_id="25">
+
+<operation id="179" st_id="25" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="22" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:15  %xin_M_real_addr_8 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 24
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_8"/></StgValue>
+</operation>
+
+<operation id="180" st_id="25" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="54" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:47  %xin_M_imag_addr_8 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 24
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_8"/></StgValue>
+</operation>
+
+<operation id="181" st_id="25" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="175" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:168  %data_IN_M_real_read_24 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_24"/></StgValue>
+</operation>
+
+<operation id="182" st_id="25" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="176" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:169  store float %data_IN_M_real_read_24, float* %xin_M_real_addr_8, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="183" st_id="25" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="177" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:170  %data_IN_M_imag_read_24 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_24"/></StgValue>
+</operation>
+
+<operation id="184" st_id="25" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="178" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:171  store float %data_IN_M_imag_read_24, float* %xin_M_imag_addr_8, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="26" st_id="26">
+
+<operation id="185" st_id="26" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="21" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:14  %xin_M_real_addr_7 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 25
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_7"/></StgValue>
+</operation>
+
+<operation id="186" st_id="26" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="53" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:46  %xin_M_imag_addr_7 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 25
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_7"/></StgValue>
+</operation>
+
+<operation id="187" st_id="26" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="179" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:172  %data_IN_M_real_read_25 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_25"/></StgValue>
+</operation>
+
+<operation id="188" st_id="26" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="180" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:173  store float %data_IN_M_real_read_25, float* %xin_M_real_addr_7, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="189" st_id="26" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="181" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:174  %data_IN_M_imag_read_25 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_25"/></StgValue>
+</operation>
+
+<operation id="190" st_id="26" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="182" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:175  store float %data_IN_M_imag_read_25, float* %xin_M_imag_addr_7, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="27" st_id="27">
+
+<operation id="191" st_id="27" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="20" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:13  %xin_M_real_addr_6 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 26
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_6"/></StgValue>
+</operation>
+
+<operation id="192" st_id="27" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="52" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:45  %xin_M_imag_addr_6 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 26
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_6"/></StgValue>
+</operation>
+
+<operation id="193" st_id="27" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="183" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:176  %data_IN_M_real_read_26 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_26"/></StgValue>
+</operation>
+
+<operation id="194" st_id="27" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="184" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:177  store float %data_IN_M_real_read_26, float* %xin_M_real_addr_6, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="195" st_id="27" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="185" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:178  %data_IN_M_imag_read_26 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_26"/></StgValue>
+</operation>
+
+<operation id="196" st_id="27" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="186" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:179  store float %data_IN_M_imag_read_26, float* %xin_M_imag_addr_6, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="28" st_id="28">
+
+<operation id="197" st_id="28" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="19" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:12  %xin_M_real_addr_5 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 27
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_5"/></StgValue>
+</operation>
+
+<operation id="198" st_id="28" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="51" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:44  %xin_M_imag_addr_5 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 27
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_5"/></StgValue>
+</operation>
+
+<operation id="199" st_id="28" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="187" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:180  %data_IN_M_real_read_27 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_27"/></StgValue>
+</operation>
+
+<operation id="200" st_id="28" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="188" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:181  store float %data_IN_M_real_read_27, float* %xin_M_real_addr_5, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="201" st_id="28" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="189" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:182  %data_IN_M_imag_read_27 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_27"/></StgValue>
+</operation>
+
+<operation id="202" st_id="28" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="190" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:183  store float %data_IN_M_imag_read_27, float* %xin_M_imag_addr_5, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="29" st_id="29">
+
+<operation id="203" st_id="29" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="18" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:11  %xin_M_real_addr_4 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 28
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_4"/></StgValue>
+</operation>
+
+<operation id="204" st_id="29" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="50" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:43  %xin_M_imag_addr_4 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 28
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_4"/></StgValue>
+</operation>
+
+<operation id="205" st_id="29" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="191" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:184  %data_IN_M_real_read_28 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_28"/></StgValue>
+</operation>
+
+<operation id="206" st_id="29" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="192" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:185  store float %data_IN_M_real_read_28, float* %xin_M_real_addr_4, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="207" st_id="29" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="193" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:186  %data_IN_M_imag_read_28 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_28"/></StgValue>
+</operation>
+
+<operation id="208" st_id="29" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="194" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:187  store float %data_IN_M_imag_read_28, float* %xin_M_imag_addr_4, align 16
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="30" st_id="30">
+
+<operation id="209" st_id="30" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="17" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:10  %xin_M_real_addr_3 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 29
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_3"/></StgValue>
+</operation>
+
+<operation id="210" st_id="30" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="49" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:42  %xin_M_imag_addr_3 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 29
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_3"/></StgValue>
+</operation>
+
+<operation id="211" st_id="30" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="195" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:188  %data_IN_M_real_read_29 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_29"/></StgValue>
+</operation>
+
+<operation id="212" st_id="30" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="196" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:189  store float %data_IN_M_real_read_29, float* %xin_M_real_addr_3, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="213" st_id="30" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="197" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:190  %data_IN_M_imag_read_29 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_29"/></StgValue>
+</operation>
+
+<operation id="214" st_id="30" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="198" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:191  store float %data_IN_M_imag_read_29, float* %xin_M_imag_addr_3, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="31" st_id="31">
+
+<operation id="215" st_id="31" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="16" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:9  %xin_M_real_addr_2 = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 30
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr_2"/></StgValue>
+</operation>
+
+<operation id="216" st_id="31" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="48" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:41  %xin_M_imag_addr_2 = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 30
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr_2"/></StgValue>
+</operation>
+
+<operation id="217" st_id="31" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="199" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:192  %data_IN_M_real_read_30 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_30"/></StgValue>
+</operation>
+
+<operation id="218" st_id="31" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="200" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:193  store float %data_IN_M_real_read_30, float* %xin_M_real_addr_2, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="219" st_id="31" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="201" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:194  %data_IN_M_imag_read_30 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_30"/></StgValue>
+</operation>
+
+<operation id="220" st_id="31" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="202" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:195  store float %data_IN_M_imag_read_30, float* %xin_M_imag_addr_2, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+</state>
+
+<state id="32" st_id="32">
+
+<operation id="221" st_id="32" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="32" op_5_bw="32" op_6_bw="0" op_7_bw="32" op_8_bw="32" op_9_bw="0" op_10_bw="0" op_11_bw="0" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="0" op_17_bw="0">
+<![CDATA[
+entry:0  call void (...)* @_ssdm_op_SpecInterface(float* %data_IN_M_imag, float* %data_IN_M_real, [5 x i8]* @p_str10, i32 1, i32 1, [5 x i8]* @p_str11, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="222" st_id="32" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="32" op_5_bw="32" op_6_bw="0" op_7_bw="32" op_8_bw="32" op_9_bw="0" op_10_bw="0" op_11_bw="0" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="0" op_17_bw="0">
+<![CDATA[
+entry:1  call void (...)* @_ssdm_op_SpecInterface(float* %data_IN_M_imag, float* %data_IN_M_real, [5 x i8]* @p_str10, i32 1, i32 1, [5 x i8]* @p_str11, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="223" st_id="32" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<![CDATA[
+entry:2  call void (...)* @_ssdm_op_SpecInterface(i8* %win_mode_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str133, i32 0, i32 0, [1 x i8]* @p_str134, [1 x i8]* @p_str135, [1 x i8]* @p_str136, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str137, [11 x i8]* @ScalarProp_str)
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="224" st_id="32" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<![CDATA[
+entry:3  call void (...)* @_ssdm_op_SpecInterface(i8* %win_mode, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str24, i32 0, i32 0, [1 x i8]* @p_str25, [1 x i8]* @p_str26, [1 x i8]* @p_str27, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str28, [11 x i8]* @ScalarProp_str)
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="225" st_id="32" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="32" op_5_bw="32" op_6_bw="0" op_7_bw="32" op_8_bw="32" op_9_bw="0" op_10_bw="0" op_11_bw="0" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="0" op_17_bw="0">
+<![CDATA[
+entry:5  call void (...)* @_ssdm_op_SpecInterface(float* %data_IN_M_imag, float* %data_IN_M_real, [5 x i8]* @p_str10, i32 1, i32 1, [5 x i8]* @p_str11, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="226" st_id="32" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="13" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<![CDATA[
+entry:6  call void (...)* @_ssdm_op_SpecInterface(i8* %win_mode_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str133, i32 0, i32 0, [1 x i8]* @p_str134, [1 x i8]* @p_str135, [1 x i8]* @p_str136, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str137, [11 x i8]* @ScalarProp_str)
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="227" st_id="32" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:8  %xin_M_real_addr = getelementptr inbounds [32 x float]* %xin_M_real, i64 0, i64 31
+
+]]></Node>
+<StgValue><ssdm name="xin_M_real_addr"/></StgValue>
+</operation>
+
+<operation id="228" st_id="32" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="47" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:40  %xin_M_imag_addr = getelementptr inbounds [32 x float]* %xin_M_imag, i64 0, i64 31
+
+]]></Node>
+<StgValue><ssdm name="xin_M_imag_addr"/></StgValue>
+</operation>
+
+<operation id="229" st_id="32" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="203" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:196  %data_IN_M_real_read_31 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_real)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_real_read_31"/></StgValue>
+</operation>
+
+<operation id="230" st_id="32" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="204" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:197  store float %data_IN_M_real_read_31, float* %xin_M_real_addr, align 8
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="231" st_id="32" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="205" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+entry:198  %data_IN_M_imag_read_31 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %data_IN_M_imag)
+
+]]></Node>
+<StgValue><ssdm name="data_IN_M_imag_read_31"/></StgValue>
+</operation>
+
+<operation id="232" st_id="32" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="206" bw="0" op_0_bw="32" op_1_bw="5">
+<![CDATA[
+entry:199  store float %data_IN_M_imag_read_31, float* %xin_M_imag_addr, align 4
+
+]]></Node>
+<StgValue><ssdm name="store_ln140"/></StgValue>
+</operation>
+
+<operation id="233" st_id="32" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="207" bw="0">
+<![CDATA[
+entry:200  ret void
+
+]]></Node>
+<StgValue><ssdm name="ret_ln113"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+</ports>
+
+
+<dataflows>
+</dataflows>
+
+
+</stg>

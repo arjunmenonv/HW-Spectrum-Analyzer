@@ -1,0 +1,55 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'FFT'" level="0">
+<item name = "Date">Thu Dec 31 11:13:14 2020
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">vhls_v3</item>
+<item name = "Solution">solnv3</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.358 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">365, 365, 3.650 us, 3.650 us, 99, 99, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_mult_window_fu_174">mult_window, 46, 46, 0.460 us, 0.460 us, 46, 46, none</column>
+<column name="grp_FFT0119_fu_193">FFT0119, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
+<column name="grp_FFT0120_fu_209">FFT0120, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
+<column name="grp_FFT0121_fu_225">FFT0121, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
+<column name="grp_FFT0118_fu_241">FFT0118, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
+<column name="grp_FFT0122_fu_257">FFT0122, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
+<column name="grp_Block_codeRepl11624_s_fu_273">Block_codeRepl11624_s, 98, 98, 0.980 us, 0.980 us, 98, 98, none</column>
+<column name="grp_bitreverse_fu_289">bitreverse, 16, 16, 0.160 us, 0.160 us, 16, 16, none</column>
+<column name="grp_Block_codeRepl116_pr_fu_301">Block_codeRepl116_pr, 31, 31, 0.310 us, 0.310 us, 31, 31, none</column>
+<column name="call_ln113_FFT_entry3_fu_315">FFT_entry3, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
