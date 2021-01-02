@@ -23,7 +23,7 @@ void dispf(float a) {
 	xil_printf("%d.%04d", q, r);
 }
 
-void FFTwrite_in(XFft* InstancePtr, float *InData_r, float *InData_i)
+/*void FFTwrite_in(XFft* InstancePtr, float *InData_r, float *InData_i)
 {
 	XFft_Write_data_IN_M_real_Words(InstancePtr, 0, (int *) InData_r, N);
 	XFft_Write_data_IN_M_imag_Words(InstancePtr, 0, (int *) InData_i, N);
@@ -33,7 +33,7 @@ void FFTread_out(XFft* InstancePtr, float *OutData_r, float *OutData_i)
 {
 	XFft_Read_data_OUT_M_real_Words(InstancePtr, 0, (int *) OutData_r, N);
 	XFft_Read_data_OUT_M_imag_Words(InstancePtr, 0, (int *) OutData_i, N);
-}
+}*/
 
 int main()
 {
@@ -41,19 +41,21 @@ int main()
 	XFft* xfptr = &xf;
 	XCounter xc;
 	XCounter* xcptr = &xc;
+	char win_mode = 0x01;
 	data_comp data_in[N]={
-#include "inp_1.txt"
+#include "inp.txt"
 	};
 
     data_comp data_out[N];
     data_comp data_exp[N] = {
-    #include "out_1.txt"
+    #include "out_hann.txt"
         };
 
     int t_hw0, t_hw1, t_hw2, t_hw3;	// track data write, fft and data read time
     int poll_ctr = 0;
-    float d_in_r[N], d_in_i[N];	// represent data_comp as real and imag floats
-    float d_out_r[N], d_out_i[N];
+    float mag_out[N];
+    //float d_in_r[N], d_in_i[N];	// represent data_comp as real and imag floats
+    //float d_out_r[N], d_out_i[N];
 	float norm[N];
 
   	int result=0;
@@ -64,7 +66,7 @@ int main()
 
     // Software Run
     int t1 = XCounter_Get_return(xcptr);
-   	FFT(data_in,data_out);
+   	FFT(data_in,win_mode, data_out, mag_out);
    	int t2 = XCounter_Get_return(xcptr);
 
    	for(int k=0;k<N;k++){
@@ -78,6 +80,7 @@ int main()
    	xil_printf("SW FFT cycles: %d\r\n", t2-t1);
 
    	// Hardware Run
+   	/*
    	int hw_result = 0;
 	for(int i = 0; i<N; i++)
 	{
@@ -110,5 +113,6 @@ int main()
 	xil_printf("\nFFT computation: %d\r\n", t_hw2 - t_hw1);
 	xil_printf("\nData Read Stage: %d\r\n", t_hw3 - t_hw2);
 	xil_printf("\nNet time: %d\r\n", t_hw3 - t_hw0);
-   	return result + hw_result;
+   	return result + hw_result;*/
+   	return result;
 }
