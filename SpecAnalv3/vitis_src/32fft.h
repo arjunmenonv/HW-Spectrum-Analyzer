@@ -3,7 +3,7 @@
 
 #include <math.h>
 #include <complex>
-#include <ap_fixed.h>
+//#include <ap_fixed.h>
 
 using namespace std;
 #define N 32
