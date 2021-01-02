@@ -7,7 +7,7 @@
 
 module FFT_fadd_32ns_32ndEe
 #(parameter
-    ID         = 11,
+    ID         = 10,
     NUM_STAGE  = 5,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

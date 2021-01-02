@@ -14,40 +14,30 @@
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
 `define AUTOTB_CLOCK_PERIOD_DIV2 5.00
 
-`define AESL_DEPTH_data_IN_M_real 1
-`define AESL_DEPTH_data_IN_M_imag 1
+`define AESL_DEPTH_data_IN 1
 `define AESL_DEPTH_win_mode 1
-`define AESL_DEPTH_data_OUT_M_real 1
-`define AESL_DEPTH_data_OUT_M_imag 1
+`define AESL_DEPTH_data_OUT 1
 `define AESL_DEPTH_mag_OUT 1
-`define AUTOTB_TVIN_data_IN_M_real  "./c.FFT.autotvin_data_IN_M_real.dat"
-`define AUTOTB_TVIN_data_IN_M_imag  "./c.FFT.autotvin_data_IN_M_imag.dat"
+`define AUTOTB_TVIN_data_IN  "./c.FFT.autotvin_data_IN.dat"
 `define AUTOTB_TVIN_win_mode  "./c.FFT.autotvin_win_mode.dat"
-`define AUTOTB_TVIN_data_OUT_M_real  "./c.FFT.autotvin_data_OUT_M_real.dat"
-`define AUTOTB_TVIN_data_OUT_M_imag  "./c.FFT.autotvin_data_OUT_M_imag.dat"
+`define AUTOTB_TVIN_data_OUT  "./c.FFT.autotvin_data_OUT.dat"
 `define AUTOTB_TVIN_mag_OUT  "./c.FFT.autotvin_mag_OUT.dat"
-`define AUTOTB_TVIN_data_IN_M_real_out_wrapc  "./rtl.FFT.autotvin_data_IN_M_real.dat"
-`define AUTOTB_TVIN_data_IN_M_imag_out_wrapc  "./rtl.FFT.autotvin_data_IN_M_imag.dat"
+`define AUTOTB_TVIN_data_IN_out_wrapc  "./rtl.FFT.autotvin_data_IN.dat"
 `define AUTOTB_TVIN_win_mode_out_wrapc  "./rtl.FFT.autotvin_win_mode.dat"
-`define AUTOTB_TVIN_data_OUT_M_real_out_wrapc  "./rtl.FFT.autotvin_data_OUT_M_real.dat"
-`define AUTOTB_TVIN_data_OUT_M_imag_out_wrapc  "./rtl.FFT.autotvin_data_OUT_M_imag.dat"
+`define AUTOTB_TVIN_data_OUT_out_wrapc  "./rtl.FFT.autotvin_data_OUT.dat"
 `define AUTOTB_TVIN_mag_OUT_out_wrapc  "./rtl.FFT.autotvin_mag_OUT.dat"
-`define AUTOTB_TVOUT_data_OUT_M_real  "./c.FFT.autotvout_data_OUT_M_real.dat"
-`define AUTOTB_TVOUT_data_OUT_M_imag  "./c.FFT.autotvout_data_OUT_M_imag.dat"
+`define AUTOTB_TVOUT_data_OUT  "./c.FFT.autotvout_data_OUT.dat"
 `define AUTOTB_TVOUT_mag_OUT  "./c.FFT.autotvout_mag_OUT.dat"
-`define AUTOTB_TVOUT_data_OUT_M_real_out_wrapc  "./impl_rtl.FFT.autotvout_data_OUT_M_real.dat"
-`define AUTOTB_TVOUT_data_OUT_M_imag_out_wrapc  "./impl_rtl.FFT.autotvout_data_OUT_M_imag.dat"
+`define AUTOTB_TVOUT_data_OUT_out_wrapc  "./impl_rtl.FFT.autotvout_data_OUT.dat"
 `define AUTOTB_TVOUT_mag_OUT_out_wrapc  "./impl_rtl.FFT.autotvout_mag_OUT.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 2;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = 365;
-parameter LENGTH_data_IN_M_real = 32;
-parameter LENGTH_data_IN_M_imag = 32;
+parameter LENGTH_data_IN = 32;
 parameter LENGTH_win_mode = 1;
-parameter LENGTH_data_OUT_M_real = 32;
-parameter LENGTH_data_OUT_M_imag = 32;
+parameter LENGTH_data_OUT = 32;
 parameter LENGTH_mag_OUT = 32;
 
 task read_token;
@@ -148,22 +138,16 @@ wire [1 : 0] AXILiteS_RRESP;
 wire  AXILiteS_BVALID;
 wire  AXILiteS_BREADY;
 wire [1 : 0] AXILiteS_BRESP;
-wire [31 : 0] data_IN_M_real_TDATA;
-wire [31 : 0] data_IN_M_imag_TDATA;
-wire [31 : 0] data_OUT_M_real_TDATA;
-wire [31 : 0] data_OUT_M_imag_TDATA;
+wire [63 : 0] data_IN_TDATA;
+wire [63 : 0] data_OUT_TDATA;
 wire [31 : 0] mag_OUT_TDATA;
 wire ap_start;
-wire  data_IN_M_real_TVALID;
-wire  data_IN_M_real_TREADY;
-wire  data_IN_M_imag_TVALID;
-wire  data_IN_M_imag_TREADY;
+wire  data_IN_TVALID;
+wire  data_IN_TREADY;
 wire  mag_OUT_TVALID;
 wire  mag_OUT_TREADY;
-wire  data_OUT_M_real_TVALID;
-wire  data_OUT_M_real_TREADY;
-wire  data_OUT_M_imag_TVALID;
-wire  data_OUT_M_imag_TREADY;
+wire  data_OUT_TVALID;
+wire  data_OUT_TREADY;
 wire ap_done;
 wire ap_ready;
 wire ap_idle;
@@ -214,22 +198,16 @@ wire ap_rst_n_n;
     .s_axi_AXILiteS_BRESP(AXILiteS_BRESP),
     .ap_clk(ap_clk),
     .ap_rst_n(ap_rst_n),
-    .data_IN_M_real_TDATA(data_IN_M_real_TDATA),
-    .data_IN_M_imag_TDATA(data_IN_M_imag_TDATA),
-    .data_OUT_M_real_TDATA(data_OUT_M_real_TDATA),
-    .data_OUT_M_imag_TDATA(data_OUT_M_imag_TDATA),
+    .data_IN_TDATA(data_IN_TDATA),
+    .data_OUT_TDATA(data_OUT_TDATA),
     .mag_OUT_TDATA(mag_OUT_TDATA),
     .ap_start(ap_start),
-    .data_IN_M_real_TVALID(data_IN_M_real_TVALID),
-    .data_IN_M_real_TREADY(data_IN_M_real_TREADY),
-    .data_IN_M_imag_TVALID(data_IN_M_imag_TVALID),
-    .data_IN_M_imag_TREADY(data_IN_M_imag_TREADY),
+    .data_IN_TVALID(data_IN_TVALID),
+    .data_IN_TREADY(data_IN_TREADY),
     .mag_OUT_TVALID(mag_OUT_TVALID),
     .mag_OUT_TREADY(mag_OUT_TREADY),
-    .data_OUT_M_real_TVALID(data_OUT_M_real_TVALID),
-    .data_OUT_M_real_TREADY(data_OUT_M_real_TREADY),
-    .data_OUT_M_imag_TVALID(data_OUT_M_imag_TVALID),
-    .data_OUT_M_imag_TREADY(data_OUT_M_imag_TREADY),
+    .data_OUT_TVALID(data_OUT_TVALID),
+    .data_OUT_TREADY(data_OUT_TREADY),
     .ap_done(ap_done),
     .ap_ready(ap_ready),
     .ap_idle(ap_idle));
@@ -355,136 +333,70 @@ end
 
 
 
+reg [31:0] ap_c_n_tvin_trans_num_data_IN;
 
+reg data_IN_ready_reg; // for self-sync
 
-reg [31:0] ap_c_n_tvin_trans_num_data_IN_M_real;
+wire data_IN_ready;
+wire data_IN_done;
+wire [31:0] data_IN_transaction;
+wire axi_s_data_IN_TVALID;
+wire axi_s_data_IN_TREADY;
 
-reg data_IN_M_real_ready_reg; // for self-sync
-
-wire data_IN_M_real_ready;
-wire data_IN_M_real_done;
-wire [31:0] data_IN_M_real_transaction;
-wire axi_s_data_IN_M_real_TVALID;
-wire axi_s_data_IN_M_real_TREADY;
-
-AESL_axi_s_data_IN_M_real AESL_AXI_S_data_IN_M_real(
+AESL_axi_s_data_IN AESL_AXI_S_data_IN(
     .clk(AESL_clock),
     .reset(AESL_reset),
-    .TRAN_data_IN_M_real_TDATA(data_IN_M_real_TDATA),
-    .TRAN_data_IN_M_real_TVALID(axi_s_data_IN_M_real_TVALID),
-    .TRAN_data_IN_M_real_TREADY(axi_s_data_IN_M_real_TREADY),
-    .ready(data_IN_M_real_ready),
-    .done(data_IN_M_real_done),
-    .transaction(data_IN_M_real_transaction));
+    .TRAN_data_IN_TDATA(data_IN_TDATA),
+    .TRAN_data_IN_TVALID(axi_s_data_IN_TVALID),
+    .TRAN_data_IN_TREADY(axi_s_data_IN_TREADY),
+    .ready(data_IN_ready),
+    .done(data_IN_done),
+    .transaction(data_IN_transaction));
 
-assign data_IN_M_real_ready = ready;
-assign data_IN_M_real_done = 0;
+assign data_IN_ready = ready;
+assign data_IN_done = 0;
 
-assign data_IN_M_real_TVALID = axi_s_data_IN_M_real_TVALID;
+assign data_IN_TVALID = axi_s_data_IN_TVALID;
 
-assign axi_s_data_IN_M_real_TREADY = data_IN_M_real_TREADY;
-reg [31:0] ap_c_n_tvin_trans_num_data_IN_M_imag;
+assign axi_s_data_IN_TREADY = data_IN_TREADY;
+reg [31:0] ap_c_n_tvin_trans_num_data_OUT;
 
-reg data_IN_M_imag_ready_reg; // for self-sync
+reg data_OUT_ready_reg; // for self-sync
 
-wire data_IN_M_imag_ready;
-wire data_IN_M_imag_done;
-wire [31:0] data_IN_M_imag_transaction;
-wire axi_s_data_IN_M_imag_TVALID;
-wire axi_s_data_IN_M_imag_TREADY;
+wire data_OUT_ready;
+wire data_OUT_done;
+wire [31:0] data_OUT_transaction;
+wire axi_s_data_OUT_TVALID;
+wire axi_s_data_OUT_TREADY;
 
-AESL_axi_s_data_IN_M_imag AESL_AXI_S_data_IN_M_imag(
+AESL_axi_s_data_OUT AESL_AXI_S_data_OUT(
     .clk(AESL_clock),
     .reset(AESL_reset),
-    .TRAN_data_IN_M_imag_TDATA(data_IN_M_imag_TDATA),
-    .TRAN_data_IN_M_imag_TVALID(axi_s_data_IN_M_imag_TVALID),
-    .TRAN_data_IN_M_imag_TREADY(axi_s_data_IN_M_imag_TREADY),
-    .ready(data_IN_M_imag_ready),
-    .done(data_IN_M_imag_done),
-    .transaction(data_IN_M_imag_transaction));
+    .TRAN_data_OUT_TDATA(data_OUT_TDATA),
+    .TRAN_data_OUT_TVALID(axi_s_data_OUT_TVALID),
+    .TRAN_data_OUT_TREADY(axi_s_data_OUT_TREADY),
+    .ready(data_OUT_ready),
+    .done(data_OUT_done),
+    .transaction(data_OUT_transaction));
 
-assign data_IN_M_imag_ready = ready;
-assign data_IN_M_imag_done = 0;
+assign data_OUT_ready = 0;
+assign data_OUT_done = AESL_done;
 
-assign data_IN_M_imag_TVALID = axi_s_data_IN_M_imag_TVALID;
+assign axi_s_data_OUT_TVALID = data_OUT_TVALID;
 
-assign axi_s_data_IN_M_imag_TREADY = data_IN_M_imag_TREADY;
-reg [31:0] ap_c_n_tvin_trans_num_data_OUT_M_real;
-
-reg data_OUT_M_real_ready_reg; // for self-sync
-
-wire data_OUT_M_real_ready;
-wire data_OUT_M_real_done;
-wire [31:0] data_OUT_M_real_transaction;
-wire axi_s_data_OUT_M_real_TVALID;
-wire axi_s_data_OUT_M_real_TREADY;
-
-AESL_axi_s_data_OUT_M_real AESL_AXI_S_data_OUT_M_real(
-    .clk(AESL_clock),
-    .reset(AESL_reset),
-    .TRAN_data_OUT_M_real_TDATA(data_OUT_M_real_TDATA),
-    .TRAN_data_OUT_M_real_TVALID(axi_s_data_OUT_M_real_TVALID),
-    .TRAN_data_OUT_M_real_TREADY(axi_s_data_OUT_M_real_TREADY),
-    .ready(data_OUT_M_real_ready),
-    .done(data_OUT_M_real_done),
-    .transaction(data_OUT_M_real_transaction));
-
-assign data_OUT_M_real_ready = 0;
-assign data_OUT_M_real_done = AESL_done;
-
-assign axi_s_data_OUT_M_real_TVALID = data_OUT_M_real_TVALID;
-
-reg reg_data_OUT_M_real_TREADY;
-initial begin : gen_reg_data_OUT_M_real_TREADY_process
+reg reg_data_OUT_TREADY;
+initial begin : gen_reg_data_OUT_TREADY_process
     integer proc_rand;
-    reg_data_OUT_M_real_TREADY = axi_s_data_OUT_M_real_TREADY;
+    reg_data_OUT_TREADY = axi_s_data_OUT_TREADY;
     while(1)
     begin
-        @(axi_s_data_OUT_M_real_TREADY);
-        reg_data_OUT_M_real_TREADY = axi_s_data_OUT_M_real_TREADY;
+        @(axi_s_data_OUT_TREADY);
+        reg_data_OUT_TREADY = axi_s_data_OUT_TREADY;
     end
 end
 
 
-assign data_OUT_M_real_TREADY = reg_data_OUT_M_real_TREADY;
-reg [31:0] ap_c_n_tvin_trans_num_data_OUT_M_imag;
-
-reg data_OUT_M_imag_ready_reg; // for self-sync
-
-wire data_OUT_M_imag_ready;
-wire data_OUT_M_imag_done;
-wire [31:0] data_OUT_M_imag_transaction;
-wire axi_s_data_OUT_M_imag_TVALID;
-wire axi_s_data_OUT_M_imag_TREADY;
-
-AESL_axi_s_data_OUT_M_imag AESL_AXI_S_data_OUT_M_imag(
-    .clk(AESL_clock),
-    .reset(AESL_reset),
-    .TRAN_data_OUT_M_imag_TDATA(data_OUT_M_imag_TDATA),
-    .TRAN_data_OUT_M_imag_TVALID(axi_s_data_OUT_M_imag_TVALID),
-    .TRAN_data_OUT_M_imag_TREADY(axi_s_data_OUT_M_imag_TREADY),
-    .ready(data_OUT_M_imag_ready),
-    .done(data_OUT_M_imag_done),
-    .transaction(data_OUT_M_imag_transaction));
-
-assign data_OUT_M_imag_ready = 0;
-assign data_OUT_M_imag_done = AESL_done;
-
-assign axi_s_data_OUT_M_imag_TVALID = data_OUT_M_imag_TVALID;
-
-reg reg_data_OUT_M_imag_TREADY;
-initial begin : gen_reg_data_OUT_M_imag_TREADY_process
-    integer proc_rand;
-    reg_data_OUT_M_imag_TREADY = axi_s_data_OUT_M_imag_TREADY;
-    while(1)
-    begin
-        @(axi_s_data_OUT_M_imag_TREADY);
-        reg_data_OUT_M_imag_TREADY = axi_s_data_OUT_M_imag_TREADY;
-    end
-end
-
-
-assign data_OUT_M_imag_TREADY = reg_data_OUT_M_imag_TREADY;
+assign data_OUT_TREADY = reg_data_OUT_TREADY;
 reg [31:0] ap_c_n_tvin_trans_num_mag_OUT;
 
 reg mag_OUT_ready_reg; // for self-sync
@@ -607,26 +519,14 @@ end
         @ (posedge AESL_clock);
         @ (posedge AESL_clock);
         @ (posedge AESL_clock);
-    fp1 = $fopen("./rtl.FFT.autotvout_data_OUT_M_real.dat", "r");
-    fp2 = $fopen("./impl_rtl.FFT.autotvout_data_OUT_M_real.dat", "r");
+    fp1 = $fopen("./rtl.FFT.autotvout_data_OUT.dat", "r");
+    fp2 = $fopen("./impl_rtl.FFT.autotvout_data_OUT.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.FFT.autotvout_data_OUT_M_real.dat\"!");
+        $display("Failed to open file \"./rtl.FFT.autotvout_data_OUT.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.FFT.autotvout_data_OUT_M_real.dat\"!");
+        $display("Failed to open file \"./impl_rtl.FFT.autotvout_data_OUT.dat\"!");
     else begin
-        $display("Comparing rtl.FFT.autotvout_data_OUT_M_real.dat with impl_rtl.FFT.autotvout_data_OUT_M_real.dat");
-        post_check(fp1, fp2);
-    end
-    $fclose(fp1);
-    $fclose(fp2);
-    fp1 = $fopen("./rtl.FFT.autotvout_data_OUT_M_imag.dat", "r");
-    fp2 = $fopen("./impl_rtl.FFT.autotvout_data_OUT_M_imag.dat", "r");
-    if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.FFT.autotvout_data_OUT_M_imag.dat\"!");
-    else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.FFT.autotvout_data_OUT_M_imag.dat\"!");
-    else begin
-        $display("Comparing rtl.FFT.autotvout_data_OUT_M_imag.dat with impl_rtl.FFT.autotvout_data_OUT_M_imag.dat");
+        $display("Comparing rtl.FFT.autotvout_data_OUT.dat with impl_rtl.FFT.autotvout_data_OUT.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
@@ -653,21 +553,15 @@ initial begin
 end
 
 
-reg end_data_IN_M_real;
-reg [31:0] size_data_IN_M_real;
-reg [31:0] size_data_IN_M_real_backup;
-reg end_data_IN_M_imag;
-reg [31:0] size_data_IN_M_imag;
-reg [31:0] size_data_IN_M_imag_backup;
+reg end_data_IN;
+reg [31:0] size_data_IN;
+reg [31:0] size_data_IN_backup;
 reg end_win_mode;
 reg [31:0] size_win_mode;
 reg [31:0] size_win_mode_backup;
-reg end_data_OUT_M_real;
-reg [31:0] size_data_OUT_M_real;
-reg [31:0] size_data_OUT_M_real_backup;
-reg end_data_OUT_M_imag;
-reg [31:0] size_data_OUT_M_imag;
-reg [31:0] size_data_OUT_M_imag_backup;
+reg end_data_OUT;
+reg [31:0] size_data_OUT;
+reg [31:0] size_data_OUT_backup;
 reg end_mag_OUT;
 reg [31:0] size_mag_OUT;
 reg [31:0] size_mag_OUT_backup;
@@ -772,176 +666,95 @@ begin
   end
 end
     
-    initial begin : proc_gen_axis_internal_ready_data_IN_M_real
-        data_IN_M_real_ready_reg = 0;
+    initial begin : proc_gen_axis_internal_ready_data_IN
+        data_IN_ready_reg = 0;
         @ (posedge ready_initial);
         forever begin
-            @ (ap_c_n_tvin_trans_num_data_IN_M_real or data_IN_M_real_transaction);
-            if (ap_c_n_tvin_trans_num_data_IN_M_real > data_IN_M_real_transaction) begin
-                data_IN_M_real_ready_reg = 1;
+            @ (ap_c_n_tvin_trans_num_data_IN or data_IN_transaction);
+            if (ap_c_n_tvin_trans_num_data_IN > data_IN_transaction) begin
+                data_IN_ready_reg = 1;
             end else begin
-                data_IN_M_real_ready_reg = 0;
+                data_IN_ready_reg = 0;
             end
         end
     end
     
-    initial begin : proc_gen_axis_internal_ready_data_IN_M_imag
-        data_IN_M_imag_ready_reg = 0;
-        @ (posedge ready_initial);
-        forever begin
-            @ (ap_c_n_tvin_trans_num_data_IN_M_imag or data_IN_M_imag_transaction);
-            if (ap_c_n_tvin_trans_num_data_IN_M_imag > data_IN_M_imag_transaction) begin
-                data_IN_M_imag_ready_reg = 1;
-            end else begin
-                data_IN_M_imag_ready_reg = 0;
-            end
-        end
-    end
+    `define STREAM_SIZE_IN_data_IN "./stream_size_in_data_IN.dat"
     
-    `define STREAM_SIZE_IN_data_IN_M_real "./stream_size_in_data_IN_M_real.dat"
-    
-    initial begin : gen_ap_c_n_tvin_trans_num_data_IN_M_real
-        integer fp_data_IN_M_real;
-        reg [127:0] token_data_IN_M_real;
+    initial begin : gen_ap_c_n_tvin_trans_num_data_IN
+        integer fp_data_IN;
+        reg [127:0] token_data_IN;
         integer ret;
         
-        ap_c_n_tvin_trans_num_data_IN_M_real = 0;
-        end_data_IN_M_real = 0;
+        ap_c_n_tvin_trans_num_data_IN = 0;
+        end_data_IN = 0;
         wait (AESL_reset === 1);
         
-        fp_data_IN_M_real = $fopen(`AUTOTB_TVIN_data_IN_M_real, "r");
-        if(fp_data_IN_M_real == 0) begin
-            $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data_IN_M_real);
+        fp_data_IN = $fopen(`AUTOTB_TVIN_data_IN, "r");
+        if(fp_data_IN == 0) begin
+            $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data_IN);
             $finish;
         end
-        read_token(fp_data_IN_M_real, token_data_IN_M_real); // should be [[[runtime]]]
-        if (token_data_IN_M_real != "[[[runtime]]]") begin
-            $display("ERROR: token_data_IN_M_real != \"[[[runtime]]]\"");
+        read_token(fp_data_IN, token_data_IN); // should be [[[runtime]]]
+        if (token_data_IN != "[[[runtime]]]") begin
+            $display("ERROR: token_data_IN != \"[[[runtime]]]\"");
             $finish;
         end
-        ap_c_n_tvin_trans_num_data_IN_M_real = ap_c_n_tvin_trans_num_data_IN_M_real + 1;
-        read_token(fp_data_IN_M_real, token_data_IN_M_real); // should be [[transaction]] or [[[/runtime]]]
-        if (token_data_IN_M_real == "[[[/runtime]]]") begin
-            $fclose(fp_data_IN_M_real);
-            end_data_IN_M_real = 1;
+        ap_c_n_tvin_trans_num_data_IN = ap_c_n_tvin_trans_num_data_IN + 1;
+        read_token(fp_data_IN, token_data_IN); // should be [[transaction]] or [[[/runtime]]]
+        if (token_data_IN == "[[[/runtime]]]") begin
+            $fclose(fp_data_IN);
+            end_data_IN = 1;
         end else begin
-            end_data_IN_M_real = 0;
-            read_token(fp_data_IN_M_real, token_data_IN_M_real); // should be transaction number
-            read_token(fp_data_IN_M_real, token_data_IN_M_real);
+            end_data_IN = 0;
+            read_token(fp_data_IN, token_data_IN); // should be transaction number
+            read_token(fp_data_IN, token_data_IN);
         end
-        while (token_data_IN_M_real == "[[/transaction]]" && end_data_IN_M_real == 0) begin
-            ap_c_n_tvin_trans_num_data_IN_M_real = ap_c_n_tvin_trans_num_data_IN_M_real + 1;
-            read_token(fp_data_IN_M_real, token_data_IN_M_real); // should be [[transaction]] or [[[/runtime]]]
-            if (token_data_IN_M_real == "[[[/runtime]]]") begin
-                $fclose(fp_data_IN_M_real);
-                end_data_IN_M_real = 1;
+        while (token_data_IN == "[[/transaction]]" && end_data_IN == 0) begin
+            ap_c_n_tvin_trans_num_data_IN = ap_c_n_tvin_trans_num_data_IN + 1;
+            read_token(fp_data_IN, token_data_IN); // should be [[transaction]] or [[[/runtime]]]
+            if (token_data_IN == "[[[/runtime]]]") begin
+                $fclose(fp_data_IN);
+                end_data_IN = 1;
             end else begin
-                end_data_IN_M_real = 0;
-                read_token(fp_data_IN_M_real, token_data_IN_M_real); // should be transaction number
-                read_token(fp_data_IN_M_real, token_data_IN_M_real);
+                end_data_IN = 0;
+                read_token(fp_data_IN, token_data_IN); // should be transaction number
+                read_token(fp_data_IN, token_data_IN);
             end
         end
         forever begin
             @ (posedge AESL_clock);
-            if (end_data_IN_M_real == 0) begin
-                if ((data_IN_M_real_TREADY & data_IN_M_real_TVALID) == 1) begin
-                    read_token(fp_data_IN_M_real, token_data_IN_M_real);
-                    while (token_data_IN_M_real == "[[/transaction]]" && end_data_IN_M_real == 0) begin
-                        ap_c_n_tvin_trans_num_data_IN_M_real = ap_c_n_tvin_trans_num_data_IN_M_real + 1;
-                        read_token(fp_data_IN_M_real, token_data_IN_M_real); // should be [[transaction]] or [[[/runtime]]]
-                        if (token_data_IN_M_real == "[[[/runtime]]]") begin
-                            $fclose(fp_data_IN_M_real);
-                            end_data_IN_M_real = 1;
+            if (end_data_IN == 0) begin
+                if ((data_IN_TREADY & data_IN_TVALID) == 1) begin
+                    read_token(fp_data_IN, token_data_IN);
+                    while (token_data_IN == "[[/transaction]]" && end_data_IN == 0) begin
+                        ap_c_n_tvin_trans_num_data_IN = ap_c_n_tvin_trans_num_data_IN + 1;
+                        read_token(fp_data_IN, token_data_IN); // should be [[transaction]] or [[[/runtime]]]
+                        if (token_data_IN == "[[[/runtime]]]") begin
+                            $fclose(fp_data_IN);
+                            end_data_IN = 1;
                         end else begin
-                            end_data_IN_M_real = 0;
-                            read_token(fp_data_IN_M_real, token_data_IN_M_real); // should be transaction number
-                            read_token(fp_data_IN_M_real, token_data_IN_M_real);
+                            end_data_IN = 0;
+                            read_token(fp_data_IN, token_data_IN); // should be transaction number
+                            read_token(fp_data_IN, token_data_IN);
                         end
                     end
                 end
             end else begin
-                ap_c_n_tvin_trans_num_data_IN_M_real = ap_c_n_tvin_trans_num_data_IN_M_real + 1;
-            end
-        end
-    end
-    
-    
-    `define STREAM_SIZE_IN_data_IN_M_imag "./stream_size_in_data_IN_M_imag.dat"
-    
-    initial begin : gen_ap_c_n_tvin_trans_num_data_IN_M_imag
-        integer fp_data_IN_M_imag;
-        reg [127:0] token_data_IN_M_imag;
-        integer ret;
-        
-        ap_c_n_tvin_trans_num_data_IN_M_imag = 0;
-        end_data_IN_M_imag = 0;
-        wait (AESL_reset === 1);
-        
-        fp_data_IN_M_imag = $fopen(`AUTOTB_TVIN_data_IN_M_imag, "r");
-        if(fp_data_IN_M_imag == 0) begin
-            $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_data_IN_M_imag);
-            $finish;
-        end
-        read_token(fp_data_IN_M_imag, token_data_IN_M_imag); // should be [[[runtime]]]
-        if (token_data_IN_M_imag != "[[[runtime]]]") begin
-            $display("ERROR: token_data_IN_M_imag != \"[[[runtime]]]\"");
-            $finish;
-        end
-        ap_c_n_tvin_trans_num_data_IN_M_imag = ap_c_n_tvin_trans_num_data_IN_M_imag + 1;
-        read_token(fp_data_IN_M_imag, token_data_IN_M_imag); // should be [[transaction]] or [[[/runtime]]]
-        if (token_data_IN_M_imag == "[[[/runtime]]]") begin
-            $fclose(fp_data_IN_M_imag);
-            end_data_IN_M_imag = 1;
-        end else begin
-            end_data_IN_M_imag = 0;
-            read_token(fp_data_IN_M_imag, token_data_IN_M_imag); // should be transaction number
-            read_token(fp_data_IN_M_imag, token_data_IN_M_imag);
-        end
-        while (token_data_IN_M_imag == "[[/transaction]]" && end_data_IN_M_imag == 0) begin
-            ap_c_n_tvin_trans_num_data_IN_M_imag = ap_c_n_tvin_trans_num_data_IN_M_imag + 1;
-            read_token(fp_data_IN_M_imag, token_data_IN_M_imag); // should be [[transaction]] or [[[/runtime]]]
-            if (token_data_IN_M_imag == "[[[/runtime]]]") begin
-                $fclose(fp_data_IN_M_imag);
-                end_data_IN_M_imag = 1;
-            end else begin
-                end_data_IN_M_imag = 0;
-                read_token(fp_data_IN_M_imag, token_data_IN_M_imag); // should be transaction number
-                read_token(fp_data_IN_M_imag, token_data_IN_M_imag);
-            end
-        end
-        forever begin
-            @ (posedge AESL_clock);
-            if (end_data_IN_M_imag == 0) begin
-                if ((data_IN_M_imag_TREADY & data_IN_M_imag_TVALID) == 1) begin
-                    read_token(fp_data_IN_M_imag, token_data_IN_M_imag);
-                    while (token_data_IN_M_imag == "[[/transaction]]" && end_data_IN_M_imag == 0) begin
-                        ap_c_n_tvin_trans_num_data_IN_M_imag = ap_c_n_tvin_trans_num_data_IN_M_imag + 1;
-                        read_token(fp_data_IN_M_imag, token_data_IN_M_imag); // should be [[transaction]] or [[[/runtime]]]
-                        if (token_data_IN_M_imag == "[[[/runtime]]]") begin
-                            $fclose(fp_data_IN_M_imag);
-                            end_data_IN_M_imag = 1;
-                        end else begin
-                            end_data_IN_M_imag = 0;
-                            read_token(fp_data_IN_M_imag, token_data_IN_M_imag); // should be transaction number
-                            read_token(fp_data_IN_M_imag, token_data_IN_M_imag);
-                        end
-                    end
-                end
-            end else begin
-                ap_c_n_tvin_trans_num_data_IN_M_imag = ap_c_n_tvin_trans_num_data_IN_M_imag + 1;
+                ap_c_n_tvin_trans_num_data_IN = ap_c_n_tvin_trans_num_data_IN + 1;
             end
         end
     end
     
 
-reg dump_tvout_finish_data_OUT_M_real;
+reg dump_tvout_finish_data_OUT;
 
-initial begin : dump_tvout_runtime_sign_data_OUT_M_real
+initial begin : dump_tvout_runtime_sign_data_OUT
     integer fp;
-    dump_tvout_finish_data_OUT_M_real = 0;
-    fp = $fopen(`AUTOTB_TVOUT_data_OUT_M_real_out_wrapc, "w");
+    dump_tvout_finish_data_OUT = 0;
+    fp = $fopen(`AUTOTB_TVOUT_data_OUT_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_data_OUT_M_real_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_data_OUT_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -952,45 +765,15 @@ initial begin : dump_tvout_runtime_sign_data_OUT_M_real
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_data_OUT_M_real_out_wrapc, "a");
+    fp = $fopen(`AUTOTB_TVOUT_data_OUT_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_data_OUT_M_real_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_data_OUT_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_data_OUT_M_real = 1;
-end
-
-
-reg dump_tvout_finish_data_OUT_M_imag;
-
-initial begin : dump_tvout_runtime_sign_data_OUT_M_imag
-    integer fp;
-    dump_tvout_finish_data_OUT_M_imag = 0;
-    fp = $fopen(`AUTOTB_TVOUT_data_OUT_M_imag_out_wrapc, "w");
-    if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_data_OUT_M_imag_out_wrapc);
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
-    end
-    $fdisplay(fp,"[[[runtime]]]");
-    $fclose(fp);
-    wait (done_cnt == AUTOTB_TRANSACTION_NUM);
-    // last transaction is saved at negedge right after last done
-    @ (posedge AESL_clock);
-    @ (posedge AESL_clock);
-    @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_data_OUT_M_imag_out_wrapc, "a");
-    if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_data_OUT_M_imag_out_wrapc);
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
-    end
-    $fdisplay(fp,"[[[/runtime]]]");
-    $fclose(fp);
-    dump_tvout_finish_data_OUT_M_imag = 1;
+    dump_tvout_finish_data_OUT = 1;
 end
 
 

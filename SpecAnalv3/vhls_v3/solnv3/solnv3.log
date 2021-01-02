@@ -385,3 +385,1911 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'vhls_src/fft.cpp' ... 
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:129:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:130:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:131:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:132:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:133:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:134:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:136:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:137:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:138:16
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: vhls_src/fft.cpp:140:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: vhls_src/fft.cpp:153:2
+WARNING: [HLS 200-471] Dataflow form checks found 11 issue(s) in file vhls_src/fft.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:39 ; elapsed = 00:01:52 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 753 ; free virtual = 3435
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:39 ; elapsed = 00:01:52 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 753 ; free virtual = 3435
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:44 ; elapsed = 00:01:57 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 604 ; free virtual = 3313
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'mult_window' (vhls_src/fft.cpp:56) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>.1' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0' (vhls_src/fft.cpp:76) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (vhls_src/fft.cpp:77) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (vhls_src/fft.cpp:78) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/common/hls_log_float.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'log10f' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/c/logfloat.cpp:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'log10f' into 'std::log10' (/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath:323) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::log10' into 'polarOUT' (vhls_src/fft.cpp:109) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:45 ; elapsed = 00:01:58 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 575 ; free virtual = 3286
+INFO: [XFORM 203-1101] Packing variable 'data_OUT' (vhls_src/fft.cpp:113) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'data_IN' (vhls_src/fft.cpp:113) into a 64-bit variable.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (vhls_src/fft.cpp:140) in function 'FFT' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (vhls_src/fft.cpp:153) in function 'FFT' completely with a factor of 32.
+WARNING: [XFORM 203-505] Pipeline directive for loop 'Loop-2' (vhls_src/fft.cpp:153) in function 'FFT' has been removed because the loop is unrolled completely.
+INFO: [HLS 200-489] Unrolling loop 'bitreversal_label1' (vhls_src/fft.cpp:61) in function 'bitreverse' completely with a factor of 32.
+WARNING: [XFORM 203-505] Pipeline directive for loop 'bitreversal_label1' (vhls_src/fft.cpp:61) in function 'bitreverse' has been removed because the loop is unrolled completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (vhls_src/fft.cpp:24) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2' (vhls_src/fft.cpp:32) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3' (vhls_src/fft.cpp:40) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4' (vhls_src/fft.cpp:47) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-5' (vhls_src/fft.cpp:53) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'mult_window' (vhls_src/fft.cpp:56) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>.1' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0118' (vhls_src/fft.cpp:76) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0118' (vhls_src/fft.cpp:77) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0118' (vhls_src/fft.cpp:78) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0119' (vhls_src/fft.cpp:76) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0119' (vhls_src/fft.cpp:77) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0119' (vhls_src/fft.cpp:78) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0120' (vhls_src/fft.cpp:76) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0120' (vhls_src/fft.cpp:77) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0120' (vhls_src/fft.cpp:78) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0121' (vhls_src/fft.cpp:76) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0121' (vhls_src/fft.cpp:77) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0121' (vhls_src/fft.cpp:78) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0122' (vhls_src/fft.cpp:76) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0122' (vhls_src/fft.cpp:77) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0122' (vhls_src/fft.cpp:78) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/common/hls_log_float.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'log10f' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/c/logfloat.cpp:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'log10f' into 'std::log10' (/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath:323) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::log10' into 'polarOUT' (vhls_src/fft.cpp:109) automatically.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT1._M_imag'  should be updated in process function 'FFT0118', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT1._M_real'  should be updated in process function 'FFT0118', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT2._M_imag'  should be updated in process function 'FFT0119', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT2._M_real'  should be updated in process function 'FFT0119', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT3._M_imag'  should be updated in process function 'FFT0120', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT3._M_real'  should be updated in process function 'FFT0120', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT4._M_imag'  should be updated in process function 'FFT0121', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT4._M_real'  should be updated in process function 'FFT0121', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUTfft._M_real'  should be updated in process function 'FFT0122', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUTfft._M_imag'  should be updated in process function 'FFT0122', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'FFT', detected/extracted 9 process function(s): 
+	 'Block_codeRepl124_proc131'
+	 'mult_window'
+	 'bitreverse'
+	 'FFT0118'
+	 'FFT0119'
+	 'FFT0120'
+	 'FFT0121'
+	 'FFT0122'
+	 'Block_codeRepl12432_proc'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:71:46) to (vhls_src/fft.cpp:71:40) in function 'FFT0122'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:71:46) to (vhls_src/fft.cpp:71:40) in function 'FFT0121'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:71:46) to (vhls_src/fft.cpp:71:40) in function 'FFT0120'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:71:46) to (vhls_src/fft.cpp:71:40) in function 'FFT0119'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:71:46) to (vhls_src/fft.cpp:71:40) in function 'FFT0118'... converting 4 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'polarOUT' into 'Block_codeRepl12432_proc' (vhls_src/fft.cpp:151) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:49 ; elapsed = 00:02:02 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 487 ; free virtual = 3211
+WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl124_proc131' to 'Block_codeRepl124_pr' (vhls_src/fft.cpp:117:1)
+WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl12432_proc' to 'Block_codeRepl12432_' (vhls_src/fft.cpp:9:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:49:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:44:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:36:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:28:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'prod_IN._M_real' (vhls_src/fft.cpp:56:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real' (vhls_src/fft.cpp:65:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUTfft._M_real' (vhls_src/fft.cpp:77:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUTfft._M_real' (vhls_src/fft.cpp:78:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xout_mag' (vhls_src/fft.cpp:109:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real' (vhls_src/fft.cpp:142:2)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:51 ; elapsed = 00:02:05 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 377 ; free virtual = 3104
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+WARNING: [SYN 201-103] Legalizing function name 'FFT.entry3' to 'FFT_entry3'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_codeRepl12432_' to 'Block_codeRepl12432_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 125.09 seconds; current allocated memory: 461.091 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 461.143 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_codeRepl124_pr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 461.877 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 462.655 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mult_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 12.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 463.120 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 464.831 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bitreverse' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 465.413 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 466.097 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0118' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 466.344 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 466.731 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0119' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 467.047 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 467.428 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0120' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 467.786 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 468.169 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0121' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 468.490 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 468.906 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0122' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 469.230 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 469.615 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_codeRepl12432_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 33.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.05 seconds; current allocated memory: 470.774 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.92 seconds; current allocated memory: 472.215 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.62 seconds; current allocated memory: 472.406 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.47 seconds; current allocated memory: 472.971 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT_entry3'.
+INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 473.264 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_codeRepl124_pr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_codeRepl124_pr'.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 474.657 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mult_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'mult_window_Blackman32' to 'mult_window_Blackbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_fsub_32ns_32ncud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fadd_32ns_32ns_32_5_full_dsp_1' to 'FFT_fadd_32ns_32ndEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fmul_32ns_32ns_32_4_max_dsp_1' to 'FFT_fmul_32ns_32neOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mult_window'.
+INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 479.070 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bitreverse' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bitreverse'.
+INFO: [HLS 200-111]  Elapsed time: 0.8 seconds; current allocated memory: 481.875 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0118' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0118'.
+INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 485.332 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0119' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0119'.
+INFO: [HLS 200-111]  Elapsed time: 0.56 seconds; current allocated memory: 487.365 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0120' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0120'.
+INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 489.392 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0121' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0121'.
+INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 491.499 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0122' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0122'.
+INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 493.546 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_codeRepl12432_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Block_codeRepl12432_s_xout_mag' to 'Block_codeRepl124fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_flog_32ns_32ns_32_13_full_dsp_1' to 'FFT_flog_32ns_32ng8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_flog_32ns_32ng8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_codeRepl12432_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.7 seconds; current allocated memory: 497.007 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_IN' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/win_mode' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_OUT' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/mag_OUT' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'FFT' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'win_mode' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_real' to 'FFT_data_OUT0_M_rhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_imag' to 'FFT_data_OUT0_M_iibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_imag' to 'FFT_data_OUT1_M_ijbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_real' to 'FFT_data_OUT1_M_rkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT2_M_imag' to 'FFT_data_OUT2_M_ilbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT2_M_real' to 'FFT_data_OUT2_M_rmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT3_M_imag' to 'FFT_data_OUT3_M_incg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT3_M_real' to 'FFT_data_OUT3_M_rocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT4_M_imag' to 'FFT_data_OUT4_M_ipcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT4_M_real' to 'FFT_data_OUT4_M_rqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUTfft_M_real' to 'FFT_data_OUTfft_MrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUTfft_M_imag' to 'FFT_data_OUTfft_Msc4' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT'.
+INFO: [HLS 200-111]  Elapsed time: 1.48 seconds; current allocated memory: 504.404 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 119.65 MHz
+INFO: [RTMG 210-279] Implementing memory 'mult_window_Blackbkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'mult_window_Hamm32_rom' using auto ROMs.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'vhls_src/fft.cpp' ... 
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:133:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:134:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:135:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:136:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:137:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:138:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:140:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:141:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:142:16
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: vhls_src/fft.cpp:144:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: vhls_src/fft.cpp:157:2
+WARNING: [HLS 200-471] Dataflow form checks found 11 issue(s) in file vhls_src/fft.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 1611.953 ; gain = 1163.754 ; free physical = 713 ; free virtual = 3380
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 1611.953 ; gain = 1163.754 ; free physical = 713 ; free virtual = 3380
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:43 ; elapsed = 00:01:50 . Memory (MB): peak = 1611.953 ; gain = 1163.754 ; free physical = 566 ; free virtual = 3259
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'mult_window' (vhls_src/fft.cpp:61) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>.1' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/common/hls_log_float.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'log10f' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/c/logfloat.cpp:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'log10f' into 'std::log10' (/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath:323) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::log10' into 'polarOUT' (vhls_src/fft.cpp:114) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:44 ; elapsed = 00:01:50 . Memory (MB): peak = 1611.953 ; gain = 1163.754 ; free physical = 533 ; free virtual = 3232
+INFO: [XFORM 203-1101] Packing variable 'data_OUT' (vhls_src/fft.cpp:118) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'data_IN' (vhls_src/fft.cpp:118) into a 64-bit variable.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (vhls_src/fft.cpp:144) in function 'FFT' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (vhls_src/fft.cpp:157) in function 'FFT' completely with a factor of 32.
+WARNING: [XFORM 203-505] Pipeline directive for loop 'Loop-2' (vhls_src/fft.cpp:157) in function 'FFT' has been removed because the loop is unrolled completely.
+INFO: [HLS 200-489] Unrolling loop 'bitreversal_label1' (vhls_src/fft.cpp:66) in function 'bitreverse' completely with a factor of 32.
+WARNING: [XFORM 203-505] Pipeline directive for loop 'bitreversal_label1' (vhls_src/fft.cpp:66) in function 'bitreverse' has been removed because the loop is unrolled completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (vhls_src/fft.cpp:29) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2' (vhls_src/fft.cpp:37) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3' (vhls_src/fft.cpp:45) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4' (vhls_src/fft.cpp:52) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-5' (vhls_src/fft.cpp:58) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'mult_window' (vhls_src/fft.cpp:61) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>.1' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0118' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0118' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0118' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0119' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0119' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0119' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0120' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0120' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0120' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0121' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0121' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0121' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0122' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0122' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0122' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/common/hls_log_float.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'log10f' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/c/logfloat.cpp:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'log10f' into 'std::log10' (/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath:323) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::log10' into 'polarOUT' (vhls_src/fft.cpp:114) automatically.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT1._M_imag'  should be updated in process function 'FFT0118', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT1._M_real'  should be updated in process function 'FFT0118', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT2._M_imag'  should be updated in process function 'FFT0119', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT2._M_real'  should be updated in process function 'FFT0119', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT3._M_imag'  should be updated in process function 'FFT0120', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT3._M_real'  should be updated in process function 'FFT0120', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT4._M_imag'  should be updated in process function 'FFT0121', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT4._M_real'  should be updated in process function 'FFT0121', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUTfft._M_real'  should be updated in process function 'FFT0122', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUTfft._M_imag'  should be updated in process function 'FFT0122', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'FFT', detected/extracted 9 process function(s): 
+	 'Block_codeRepl124_proc131'
+	 'mult_window'
+	 'bitreverse'
+	 'FFT0118'
+	 'FFT0119'
+	 'FFT0120'
+	 'FFT0121'
+	 'FFT0122'
+	 'Block_codeRepl12432_proc'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0122'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0121'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0120'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0119'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0118'... converting 4 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'polarOUT' into 'Block_codeRepl12432_proc' (vhls_src/fft.cpp:155) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:48 ; elapsed = 00:01:55 . Memory (MB): peak = 1611.953 ; gain = 1163.754 ; free physical = 459 ; free virtual = 3158
+WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl124_proc131' to 'Block_codeRepl124_pr' (vhls_src/fft.cpp:122:1)
+WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl12432_proc' to 'Block_codeRepl12432_' (vhls_src/fft.cpp:9:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:54:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:49:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:41:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:33:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'prod_IN._M_real' (vhls_src/fft.cpp:61:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real' (vhls_src/fft.cpp:70:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUTfft._M_real' (vhls_src/fft.cpp:82:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUTfft._M_real' (vhls_src/fft.cpp:83:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xout_mag' (vhls_src/fft.cpp:114:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real' (vhls_src/fft.cpp:146:2)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:50 ; elapsed = 00:01:57 . Memory (MB): peak = 1611.953 ; gain = 1163.754 ; free physical = 349 ; free virtual = 3052
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+WARNING: [SYN 201-103] Legalizing function name 'FFT.entry3' to 'FFT_entry3'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_codeRepl12432_' to 'Block_codeRepl12432_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 117.54 seconds; current allocated memory: 445.072 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 445.123 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_codeRepl124_pr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 445.861 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 446.636 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mult_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 12.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.62 seconds; current allocated memory: 447.117 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 448.829 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bitreverse' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.62 seconds; current allocated memory: 449.380 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 450.063 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0118' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 450.328 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 450.713 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0119' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 451.047 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 451.428 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0120' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 451.769 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 452.150 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0121' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 452.475 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 452.891 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0122' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 453.230 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 453.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_codeRepl12432_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 33.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.7 seconds; current allocated memory: 454.787 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.93 seconds; current allocated memory: 456.229 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 456.388 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.48 seconds; current allocated memory: 456.953 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT_entry3'.
+INFO: [HLS 200-111]  Elapsed time: 0.73 seconds; current allocated memory: 457.229 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_codeRepl124_pr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_codeRepl124_pr'.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 458.641 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mult_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'mult_window_Blackman32' to 'mult_window_Blackbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_fsub_32ns_32ncud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fadd_32ns_32ns_32_5_full_dsp_1' to 'FFT_fadd_32ns_32ndEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fmul_32ns_32ns_32_4_max_dsp_1' to 'FFT_fmul_32ns_32neOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mult_window'.
+INFO: [HLS 200-111]  Elapsed time: 0.49 seconds; current allocated memory: 463.052 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bitreverse' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bitreverse'.
+INFO: [HLS 200-111]  Elapsed time: 0.81 seconds; current allocated memory: 465.856 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0118' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0118'.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 469.314 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0119' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0119'.
+INFO: [HLS 200-111]  Elapsed time: 0.56 seconds; current allocated memory: 471.350 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0120' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0120'.
+INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 473.374 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0121' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0121'.
+INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 475.483 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0122' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0122'.
+INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 477.528 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_codeRepl12432_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Block_codeRepl12432_s_xout_mag' to 'Block_codeRepl124fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_flog_32ns_32ns_32_13_full_dsp_1' to 'FFT_flog_32ns_32ng8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_flog_32ns_32ng8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_codeRepl12432_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.7 seconds; current allocated memory: 480.991 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_IN' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/win_mode' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_OUT' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/mag_OUT' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'FFT' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'win_mode' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_real' to 'FFT_data_OUT0_M_rhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_imag' to 'FFT_data_OUT0_M_iibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_imag' to 'FFT_data_OUT1_M_ijbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_real' to 'FFT_data_OUT1_M_rkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT2_M_imag' to 'FFT_data_OUT2_M_ilbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT2_M_real' to 'FFT_data_OUT2_M_rmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT3_M_imag' to 'FFT_data_OUT3_M_incg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT3_M_real' to 'FFT_data_OUT3_M_rocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT4_M_imag' to 'FFT_data_OUT4_M_ipcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT4_M_real' to 'FFT_data_OUT4_M_rqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUTfft_M_real' to 'FFT_data_OUTfft_MrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUTfft_M_imag' to 'FFT_data_OUTfft_Msc4' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT'.
+INFO: [HLS 200-111]  Elapsed time: 1.66 seconds; current allocated memory: 488.387 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 119.65 MHz
+INFO: [RTMG 210-279] Implementing memory 'mult_window_Blackbkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'mult_window_Hamm32_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'mult_window_Hann32_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'mult_window_window_ram (RAM)' using block RAMs.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'vhls_src/fft.cpp' ... 
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:134:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:135:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:136:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:137:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:138:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:139:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:141:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:142:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:143:16
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: vhls_src/fft.cpp:145:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: vhls_src/fft.cpp:158:2
+WARNING: [HLS 200-471] Dataflow form checks found 11 issue(s) in file vhls_src/fft.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:39 ; elapsed = 00:01:51 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 654 ; free virtual = 2791
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:39 ; elapsed = 00:01:51 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 654 ; free virtual = 2791
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:44 ; elapsed = 00:01:57 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 507 ; free virtual = 2670
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'mult_window' (vhls_src/fft.cpp:61) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>.1' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/common/hls_log_float.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'log10f' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/c/logfloat.cpp:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'log10f' into 'std::log10' (/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath:323) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::log10' into 'polarOUT' (vhls_src/fft.cpp:114) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:45 ; elapsed = 00:01:57 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 477 ; free virtual = 2642
+INFO: [XFORM 203-1101] Packing variable 'data_OUT' (vhls_src/fft.cpp:118) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'data_IN' (vhls_src/fft.cpp:118) into a 64-bit variable.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (vhls_src/fft.cpp:145) in function 'FFT' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (vhls_src/fft.cpp:158) in function 'FFT' completely with a factor of 32.
+WARNING: [XFORM 203-505] Pipeline directive for loop 'Loop-2' (vhls_src/fft.cpp:158) in function 'FFT' has been removed because the loop is unrolled completely.
+INFO: [HLS 200-489] Unrolling loop 'bitreversal_label1' (vhls_src/fft.cpp:66) in function 'bitreverse' completely with a factor of 32.
+WARNING: [XFORM 203-505] Pipeline directive for loop 'bitreversal_label1' (vhls_src/fft.cpp:66) in function 'bitreverse' has been removed because the loop is unrolled completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (vhls_src/fft.cpp:29) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2' (vhls_src/fft.cpp:37) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3' (vhls_src/fft.cpp:45) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4' (vhls_src/fft.cpp:52) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-5' (vhls_src/fft.cpp:58) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'mult_window' (vhls_src/fft.cpp:61) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>.1' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0118' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0118' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0118' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0119' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0119' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0119' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0120' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0120' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0120' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0121' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0121' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0121' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0122' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0122' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0122' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/common/hls_log_float.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'log10f' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/c/logfloat.cpp:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'log10f' into 'std::log10' (/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath:323) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::log10' into 'polarOUT' (vhls_src/fft.cpp:114) automatically.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT1._M_imag'  should be updated in process function 'FFT0118', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT1._M_real'  should be updated in process function 'FFT0118', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT2._M_imag'  should be updated in process function 'FFT0119', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT2._M_real'  should be updated in process function 'FFT0119', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT3._M_imag'  should be updated in process function 'FFT0120', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT3._M_real'  should be updated in process function 'FFT0120', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT4._M_imag'  should be updated in process function 'FFT0121', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT4._M_real'  should be updated in process function 'FFT0121', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUTfft._M_real'  should be updated in process function 'FFT0122', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUTfft._M_imag'  should be updated in process function 'FFT0122', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'FFT', detected/extracted 9 process function(s): 
+	 'Block_codeRepl124_proc131'
+	 'mult_window'
+	 'bitreverse'
+	 'FFT0118'
+	 'FFT0119'
+	 'FFT0120'
+	 'FFT0121'
+	 'FFT0122'
+	 'Block_codeRepl12432_proc'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0122'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0121'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0120'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0119'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0118'... converting 4 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'polarOUT' into 'Block_codeRepl12432_proc' (vhls_src/fft.cpp:156) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:49 ; elapsed = 00:02:02 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 392 ; free virtual = 2568
+WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl124_proc131' to 'Block_codeRepl124_pr' (vhls_src/fft.cpp:123:1)
+WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl12432_proc' to 'Block_codeRepl12432_' (vhls_src/fft.cpp:9:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:54:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:49:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:41:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:33:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'prod_IN._M_real' (vhls_src/fft.cpp:61:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real' (vhls_src/fft.cpp:70:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUTfft._M_real' (vhls_src/fft.cpp:82:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUTfft._M_real' (vhls_src/fft.cpp:83:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xout_mag' (vhls_src/fft.cpp:114:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real' (vhls_src/fft.cpp:147:2)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:51 ; elapsed = 00:02:05 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 285 ; free virtual = 2462
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+WARNING: [SYN 201-103] Legalizing function name 'FFT.entry3' to 'FFT_entry3'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_codeRepl12432_' to 'Block_codeRepl12432_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 125.73 seconds; current allocated memory: 461.122 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 461.173 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_codeRepl124_pr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 461.922 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 462.699 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mult_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 12.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 463.166 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 464.876 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bitreverse' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 465.472 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 466.158 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0118' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 466.418 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 466.806 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0119' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 467.095 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 467.475 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0120' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 467.819 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 468.201 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0121' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 468.537 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 468.957 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0122' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 469.293 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 469.676 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_codeRepl12432_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 33.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.77 seconds; current allocated memory: 470.838 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.94 seconds; current allocated memory: 472.280 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 472.453 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.53 seconds; current allocated memory: 473.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT_entry3'.
+INFO: [HLS 200-111]  Elapsed time: 0.74 seconds; current allocated memory: 473.329 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_codeRepl124_pr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_codeRepl124_pr'.
+INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 474.698 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mult_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'mult_window_Blackman32' to 'mult_window_Blackbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_fsub_32ns_32ncud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fadd_32ns_32ns_32_5_full_dsp_1' to 'FFT_fadd_32ns_32ndEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fmul_32ns_32ns_32_4_max_dsp_1' to 'FFT_fmul_32ns_32neOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mult_window'.
+INFO: [HLS 200-111]  Elapsed time: 0.52 seconds; current allocated memory: 479.154 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bitreverse' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bitreverse'.
+INFO: [HLS 200-111]  Elapsed time: 0.82 seconds; current allocated memory: 481.944 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0118' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0118'.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 485.386 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0119' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0119'.
+INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 487.392 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0120' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0120'.
+INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 489.418 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0121' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0121'.
+INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 491.573 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0122' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0122'.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 493.618 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_codeRepl12432_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Block_codeRepl12432_s_xout_mag' to 'Block_codeRepl124fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_flog_32ns_32ns_32_13_full_dsp_1' to 'FFT_flog_32ns_32ng8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_flog_32ns_32ng8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_codeRepl12432_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.7 seconds; current allocated memory: 497.053 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_IN' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/win_mode' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_OUT' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/mag_OUT' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'FFT' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Bundling port 'win_mode' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_real' to 'FFT_data_OUT0_M_rhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_imag' to 'FFT_data_OUT0_M_iibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_imag' to 'FFT_data_OUT1_M_ijbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_real' to 'FFT_data_OUT1_M_rkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT2_M_imag' to 'FFT_data_OUT2_M_ilbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT2_M_real' to 'FFT_data_OUT2_M_rmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT3_M_imag' to 'FFT_data_OUT3_M_incg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT3_M_real' to 'FFT_data_OUT3_M_rocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT4_M_imag' to 'FFT_data_OUT4_M_ipcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT4_M_real' to 'FFT_data_OUT4_M_rqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUTfft_M_real' to 'FFT_data_OUTfft_MrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUTfft_M_imag' to 'FFT_data_OUTfft_Msc4' due to the length limit 20
+WARNING: [HLS 200-631] Ignoring ap_ctrl_none interface for FFT due to FFT.entry3 with non-FIFO I/O
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT'.
+INFO: [HLS 200-111]  Elapsed time: 1.45 seconds; current allocated memory: 504.403 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 119.65 MHz
+INFO: [RTMG 210-279] Implementing memory 'mult_window_Blackbkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'mult_window_Hamm32_rom' using auto ROMs.
+INFO: [RTMG 210-279]==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'vhls_src/fft.cpp' ... 
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:134:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:135:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:136:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:137:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:138:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:139:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:141:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:142:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:143:16
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: vhls_src/fft.cpp:145:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: vhls_src/fft.cpp:158:2
+WARNING: [HLS 200-471] Dataflow form checks found 11 issue(s) in file vhls_src/fft.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:45 ; elapsed = 00:02:11 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 627 ; free virtual = 2359
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:45 ; elapsed = 00:02:11 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 627 ; free virtual = 2359
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:50 ; elapsed = 00:02:16 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 483 ; free virtual = 2243
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'mult_window' (vhls_src/fft.cpp:61) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>.1' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/common/hls_log_float.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'log10f' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/c/logfloat.cpp:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'log10f' into 'std::log10' (/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath:323) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::log10' into 'polarOUT' (vhls_src/fft.cpp:114) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:50 ; elapsed = 00:02:17 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 455 ; free virtual = 2216
+INFO: [XFORM 203-1101] Packing variable 'data_OUT' (vhls_src/fft.cpp:118) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'data_IN' (vhls_src/fft.cpp:118) into a 64-bit variable.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (vhls_src/fft.cpp:145) in function 'FFT' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (vhls_src/fft.cpp:158) in function 'FFT' completely with a factor of 32.
+WARNING: [XFORM 203-505] Pipeline directive for loop 'Loop-2' (vhls_src/fft.cpp:158) in function 'FFT' has been removed because the loop is unrolled completely.
+INFO: [HLS 200-489] Unrolling loop 'bitreversal_label1' (vhls_src/fft.cpp:66) in function 'bitreverse' completely with a factor of 32.
+WARNING: [XFORM 203-505] Pipeline directive for loop 'bitreversal_label1' (vhls_src/fft.cpp:66) in function 'bitreverse' has been removed because the loop is unrolled completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (vhls_src/fft.cpp:29) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2' (vhls_src/fft.cpp:37) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3' (vhls_src/fft.cpp:45) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4' (vhls_src/fft.cpp:52) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-5' (vhls_src/fft.cpp:58) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'mult_window' (vhls_src/fft.cpp:61) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>.1' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0118' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0118' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0118' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0119' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0119' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0119' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0120' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0120' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0120' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0121' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0121' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0121' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0122' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0122' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0122' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/common/hls_log_float.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'log10f' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/c/logfloat.cpp:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'log10f' into 'std::log10' (/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath:323) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::log10' into 'polarOUT' (vhls_src/fft.cpp:114) automatically.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT1._M_imag'  should be updated in process function 'FFT0118', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT1._M_real'  should be updated in process function 'FFT0118', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT2._M_imag'  should be updated in process function 'FFT0119', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT2._M_real'  should be updated in process function 'FFT0119', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT3._M_imag'  should be updated in process function 'FFT0120', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT3._M_real'  should be updated in process function 'FFT0120', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT4._M_imag'  should be updated in process function 'FFT0121', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT4._M_real'  should be updated in process function 'FFT0121', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUTfft._M_real'  should be updated in process function 'FFT0122', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUTfft._M_imag'  should be updated in process function 'FFT0122', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'FFT', detected/extracted 9 process function(s): 
+	 'Block_codeRepl124_proc131'
+	 'mult_window'
+	 'bitreverse'
+	 'FFT0118'
+	 'FFT0119'
+	 'FFT0120'
+	 'FFT0121'
+	 'FFT0122'
+	 'Block_codeRepl12432_proc'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0122'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0121'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0120'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0119'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0118'... converting 4 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'polarOUT' into 'Block_codeRepl12432_proc' (vhls_src/fft.cpp:156) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:54 ; elapsed = 00:02:22 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 365 ; free virtual = 2135
+WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl124_proc131' to 'Block_codeRepl124_pr' (vhls_src/fft.cpp:123:1)
+WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl12432_proc' to 'Block_codeRepl12432_' (vhls_src/fft.cpp:9:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:54:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:49:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:41:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:33:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'prod_IN._M_real' (vhls_src/fft.cpp:61:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real' (vhls_src/fft.cpp:70:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUTfft._M_real' (vhls_src/fft.cpp:82:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUTfft._M_real' (vhls_src/fft.cpp:83:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xout_mag' (vhls_src/fft.cpp:114:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real' (vhls_src/fft.cpp:147:2)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:57 ; elapsed = 00:02:25 . Memory (MB): peak = 1595.949 ; gain = 1163.754 ; free physical = 265 ; free virtual = 2040
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+WARNING: [SYN 201-103] Legalizing function name 'FFT.entry3' to 'FFT_entry3'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_codeRepl12432_' to 'Block_codeRepl12432_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 144.91 seconds; current allocated memory: 461.097 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 461.149 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_codeRepl124_pr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 461.870 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 462.647 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mult_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 12.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 463.145 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 464.853 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bitreverse' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 465.404 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 466.090 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0118' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 466.384 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 466.769 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0119' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 467.073 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 467.454 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0120' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 467.798 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 468.182 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0121' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 468.533 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 468.951 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0122' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 469.274 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 469.658 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_codeRepl12432_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 33.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.71 seconds; current allocated memory: 470.805 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.97 seconds; current allocated memory: 472.262 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 472.436 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.63 seconds; current allocated memory: 473.001 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT_entry3'.
+INFO: [HLS 200-111]  Elapsed time: 0.78 seconds; current allocated memory: 473.278 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_codeRepl124_pr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_codeRepl124_pr'.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 474.674 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mult_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'mult_window_Blackman32' to 'mult_window_Blackbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_fsub_32ns_32ncud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fadd_32ns_32ns_32_5_full_dsp_1' to 'FFT_fadd_32ns_32ndEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fmul_32ns_32ns_32_4_max_dsp_1' to 'FFT_fmul_32ns_32neOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mult_window'.
+INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 479.113 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bitreverse' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bitreverse'.
+INFO: [HLS 200-111]  Elapsed time: 0.83 seconds; current allocated memory: 481.916 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0118' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0118'.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 485.374 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0119' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0119'.
+INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 487.382 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0120' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0120'.
+INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 489.407 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0121' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0121'.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 491.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0122' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0122'.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 493.608 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_codeRepl12432_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Block_codeRepl12432_s_xout_mag' to 'Block_codeRepl124fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_flog_32ns_32ns_32_13_full_dsp_1' to 'FFT_flog_32ns_32ng8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_flog_32ns_32ng8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_codeRepl12432_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 497.040 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_IN' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/win_mode' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_OUT' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/mag_OUT' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'FFT' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'win_mode' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_real' to 'FFT_data_OUT0_M_rhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_imag' to 'FFT_data_OUT0_M_iibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_imag' to 'FFT_data_OUT1_M_ijbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_real' to 'FFT_data_OUT1_M_rkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT2_M_imag' to 'FFT_data_OUT2_M_ilbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT2_M_real' to 'FFT_data_OUT2_M_rmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT3_M_imag' to 'FFT_data_OUT3_M_incg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT3_M_real' to 'FFT_data_OUT3_M_rocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT4_M_imag' to 'FFT_data_OUT4_M_ipcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT4_M_real' to 'FFT_data_OUT4_M_rqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUTfft_M_real' to 'FFT_data_OUTfft_MrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUTfft_M_imag' to 'FFT_data_OUTfft_Msc4' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT'.
+INFO: [HLS 200-111]  Elapsed time: 1.39 seconds; current allocated memory: 504.479 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 119.65 MHz
+INFO: [RTMG 210-279] Implementing memory 'mult_window_Blackbkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'mult_window_Hamm32_rom' using auto ROMs.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'vhls_src/fft.cpp' ... 
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:134:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:135:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:136:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:137:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:138:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:139:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:141:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:142:19
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: vhls_src/fft.cpp:143:16
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: vhls_src/fft.cpp:145:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: vhls_src/fft.cpp:158:2
+WARNING: [HLS 200-471] Dataflow form checks found 11 issue(s) in file vhls_src/fft.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:35 ; elapsed = 00:01:44 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 655 ; free virtual = 4799
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:35 ; elapsed = 00:01:44 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 655 ; free virtual = 4799
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:40 ; elapsed = 00:01:50 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 508 ; free virtual = 4679
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'mult_window' (vhls_src/fft.cpp:61) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>.1' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/common/hls_log_float.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'log10f' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/c/logfloat.cpp:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'log10f' into 'std::log10' (/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath:323) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::log10' into 'polarOUT' (vhls_src/fft.cpp:114) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:40 ; elapsed = 00:01:50 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 472 ; free virtual = 4651
+INFO: [XFORM 203-1101] Packing variable 'data_OUT' (vhls_src/fft.cpp:118) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'data_IN' (vhls_src/fft.cpp:118) into a 64-bit variable.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (vhls_src/fft.cpp:145) in function 'FFT' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (vhls_src/fft.cpp:158) in function 'FFT' completely with a factor of 32.
+WARNING: [XFORM 203-505] Pipeline directive for loop 'Loop-2' (vhls_src/fft.cpp:158) in function 'FFT' has been removed because the loop is unrolled completely.
+INFO: [HLS 200-489] Unrolling loop 'bitreversal_label1' (vhls_src/fft.cpp:66) in function 'bitreverse' completely with a factor of 32.
+WARNING: [XFORM 203-505] Pipeline directive for loop 'bitreversal_label1' (vhls_src/fft.cpp:66) in function 'bitreverse' has been removed because the loop is unrolled completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (vhls_src/fft.cpp:29) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2' (vhls_src/fft.cpp:37) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3' (vhls_src/fft.cpp:45) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4' (vhls_src/fft.cpp:52) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-5' (vhls_src/fft.cpp:58) in function 'mult_window' partially with a factor of 2.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'mult_window' (vhls_src/fft.cpp:61) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>.1' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'std::operator-<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0118' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0118' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0118' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0119' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0119' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0119' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0120' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0120' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0120' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0121' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0121' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0121' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'FFT0122' (vhls_src/fft.cpp:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'FFT0122' (vhls_src/fft.cpp:82) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'FFT0122' (vhls_src/fft.cpp:83) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log' into 'log_reduce::log10' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/common/hls_log_float.cpp:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'log_reduce::log10' into 'log10f' (/wrk/2020.1/continuous/2020_05_27_2902540/src/products/hls/hls_lib/hlsmath/src/c/logfloat.cpp:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'log10f' into 'std::log10' (/tools/Xilinx/Vivado/2020.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath:323) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::log10' into 'polarOUT' (vhls_src/fft.cpp:114) automatically.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT1._M_imag'  should be updated in process function 'FFT0118', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT1._M_real'  should be updated in process function 'FFT0118', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT2._M_imag'  should be updated in process function 'FFT0119', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT2._M_real'  should be updated in process function 'FFT0119', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT3._M_imag'  should be updated in process function 'FFT0120', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT3._M_real'  should be updated in process function 'FFT0120', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT4._M_imag'  should be updated in process function 'FFT0121', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUT4._M_real'  should be updated in process function 'FFT0121', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUTfft._M_real'  should be updated in process function 'FFT0122', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'data_OUTfft._M_imag'  should be updated in process function 'FFT0122', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'FFT', detected/extracted 9 process function(s): 
+	 'Block_codeRepl124_proc131'
+	 'mult_window'
+	 'bitreverse'
+	 'FFT0118'
+	 'FFT0119'
+	 'FFT0120'
+	 'FFT0121'
+	 'FFT0122'
+	 'Block_codeRepl12432_proc'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0122'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0121'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0120'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0119'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (vhls_src/fft.cpp:76:46) to (vhls_src/fft.cpp:76:40) in function 'FFT0118'... converting 4 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'polarOUT' into 'Block_codeRepl12432_proc' (vhls_src/fft.cpp:156) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:44 ; elapsed = 00:01:54 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 385 ; free virtual = 4576
+WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl124_proc131' to 'Block_codeRepl124_pr' (vhls_src/fft.cpp:123:1)
+WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl12432_proc' to 'Block_codeRepl12432_' (vhls_src/fft.cpp:9:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:54:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:49:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:41:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'window' (vhls_src/fft.cpp:33:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'prod_IN._M_real' (vhls_src/fft.cpp:61:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUT0._M_real' (vhls_src/fft.cpp:70:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUTfft._M_real' (vhls_src/fft.cpp:82:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_OUTfft._M_real' (vhls_src/fft.cpp:83:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'xout_mag' (vhls_src/fft.cpp:114:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'xin._M_real' (vhls_src/fft.cpp:147:2)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:47 ; elapsed = 00:01:58 . Memory (MB): peak = 1659.949 ; gain = 1227.754 ; free physical = 269 ; free virtual = 4471
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FFT' ...
+WARNING: [SYN 201-103] Legalizing function name 'FFT.entry3' to 'FFT_entry3'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_codeRepl12432_' to 'Block_codeRepl12432_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 118.72 seconds; current allocated memory: 461.109 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 461.160 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_codeRepl124_pr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 461.875 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 462.652 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mult_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 12.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 463.149 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 464.859 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bitreverse' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 465.409 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 466.095 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0118' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.56 seconds; current allocated memory: 466.387 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 466.772 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0119' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 467.076 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 467.457 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0120' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.49 seconds; current allocated memory: 467.798 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 468.183 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0121' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 468.533 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 468.952 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT0122' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FFT_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 17.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 469.273 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 469.657 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_codeRepl12432_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 33.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.77 seconds; current allocated memory: 470.802 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.94 seconds; current allocated memory: 472.261 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.62 seconds; current allocated memory: 472.437 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.5 seconds; current allocated memory: 473.001 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT_entry3'.
+INFO: [HLS 200-111]  Elapsed time: 2.01 seconds; current allocated memory: 473.277 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_codeRepl124_pr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_codeRepl124_pr'.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 474.675 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mult_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'mult_window_Blackman32' to 'mult_window_Blackbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fsub_32ns_32ns_32_5_full_dsp_1' to 'FFT_fsub_32ns_32ncud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fadd_32ns_32ns_32_5_full_dsp_1' to 'FFT_fadd_32ns_32ndEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_fmul_32ns_32ns_32_4_max_dsp_1' to 'FFT_fmul_32ns_32neOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mult_window'.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 479.117 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bitreverse' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bitreverse'.
+INFO: [HLS 200-111]  Elapsed time: 0.82 seconds; current allocated memory: 481.920 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0118' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0118'.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 485.377 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0119' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0119'.
+INFO: [HLS 200-111]  Elapsed time: 0.56 seconds; current allocated memory: 487.387 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0120' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0120'.
+INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 489.413 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0121' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0121'.
+INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 491.565 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT0122' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fsub_32ns_32ncud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT0122'.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 493.612 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_codeRepl12432_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Block_codeRepl12432_s_xout_mag' to 'Block_codeRepl124fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_flog_32ns_32ns_32_13_full_dsp_1' to 'FFT_flog_32ns_32ng8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FFT_fadd_32ns_32ndEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_flog_32ns_32ng8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'FFT_fmul_32ns_32neOg': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_codeRepl12432_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.69 seconds; current allocated memory: 497.047 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FFT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_IN' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/win_mode' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/data_OUT' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FFT/mag_OUT' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'FFT' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'win_mode' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_real' to 'FFT_data_OUT0_M_rhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT0_M_imag' to 'FFT_data_OUT0_M_iibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_imag' to 'FFT_data_OUT1_M_ijbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT1_M_real' to 'FFT_data_OUT1_M_rkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT2_M_imag' to 'FFT_data_OUT2_M_ilbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT2_M_real' to 'FFT_data_OUT2_M_rmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT3_M_imag' to 'FFT_data_OUT3_M_incg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT3_M_real' to 'FFT_data_OUT3_M_rocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT4_M_imag' to 'FFT_data_OUT4_M_ipcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUT4_M_real' to 'FFT_data_OUT4_M_rqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUTfft_M_real' to 'FFT_data_OUTfft_MrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FFT_data_OUTfft_M_imag' to 'FFT_data_OUTfft_Msc4' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FFT'.
+INFO: [HLS 200-111]  Elapsed time: 1.49 seconds; current allocated memory: 504.487 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 119.65 MHz
+INFO: [RTMG 210-279] Implementing memory 'mult_window_Blackbkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'mult_window_Hamm32_rom' using auto ROMs.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

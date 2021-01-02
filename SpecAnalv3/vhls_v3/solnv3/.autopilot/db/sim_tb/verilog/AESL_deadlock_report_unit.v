@@ -144,7 +144,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                     proc_path = "FFT.FFT_entry3_U0";
                 end
                 1 : begin
-                    proc_path = "FFT.Block_codeRepl116_pr_U0";
+                    proc_path = "FFT.Block_codeRepl124_pr_U0";
                 end
                 2 : begin
                     proc_path = "FFT.mult_window_U0";
@@ -168,7 +168,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                     proc_path = "FFT.FFT0122_U0";
                 end
                 9 : begin
-                    proc_path = "FFT.Block_codeRepl11624_U0";
+                    proc_path = "FFT.Block_codeRepl12432_U0";
                 end
                 default : begin
                     proc_path = "unknown";
@@ -249,9 +249,9 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                                 $fdisplay(fp, "Dependence_Channel_status NULL");
                             end
                         end
-                        if (((AESL_inst_FFT.FFT_entry3_U0_ap_ready_count[0]) & AESL_inst_FFT.FFT_entry3_U0.ap_idle & ~(AESL_inst_FFT.Block_codeRepl116_pr_U0_ap_ready_count[0]))) begin
+                        if (((AESL_inst_FFT.FFT_entry3_U0_ap_ready_count[0]) & AESL_inst_FFT.FFT_entry3_U0.ap_idle & ~(AESL_inst_FFT.Block_codeRepl124_pr_U0_ap_ready_count[0]))) begin
                             chan_path = "";
-                            if (((AESL_inst_FFT.FFT_entry3_U0_ap_ready_count[0]) & AESL_inst_FFT.FFT_entry3_U0.ap_idle & ~(AESL_inst_FFT.Block_codeRepl116_pr_U0_ap_ready_count[0]))) begin
+                            if (((AESL_inst_FFT.FFT_entry3_U0_ap_ready_count[0]) & AESL_inst_FFT.FFT_entry3_U0.ap_idle & ~(AESL_inst_FFT.Block_codeRepl124_pr_U0_ap_ready_count[0]))) begin
                                 $display("//      Deadlocked by sync logic between input processes");
                                 $display("//      Please increase channel depth");
                             end
@@ -262,7 +262,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                 1 : begin
                     case(index2)
                     2: begin
-                        if (~AESL_inst_FFT.xin_M_imag_U.i_full_n & AESL_inst_FFT.Block_codeRepl116_pr_U0.ap_done & deadlock_detector.ap_done_reg_0 & ~AESL_inst_FFT.xin_M_imag_U.t_read) begin
+                        if (~AESL_inst_FFT.xin_M_imag_U.i_full_n & AESL_inst_FFT.Block_codeRepl124_pr_U0.ap_done & deadlock_detector.ap_done_reg_0 & ~AESL_inst_FFT.xin_M_imag_U.t_read) begin
                             chan_path = "FFT.xin_M_imag_U";
                             if (~AESL_inst_FFT.xin_M_imag_U.t_empty_n) begin
                                 $display("//      Channel: %0s, EMPTY", chan_path);
@@ -280,7 +280,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                                 $fdisplay(fp, "Dependence_Channel_status NULL");
                             end
                         end
-                        if (~AESL_inst_FFT.xin_M_real_U.i_full_n & AESL_inst_FFT.Block_codeRepl116_pr_U0.ap_done & deadlock_detector.ap_done_reg_0 & ~AESL_inst_FFT.xin_M_real_U.t_read) begin
+                        if (~AESL_inst_FFT.xin_M_real_U.i_full_n & AESL_inst_FFT.Block_codeRepl124_pr_U0.ap_done & deadlock_detector.ap_done_reg_0 & ~AESL_inst_FFT.xin_M_real_U.t_read) begin
                             chan_path = "FFT.xin_M_real_U";
                             if (~AESL_inst_FFT.xin_M_real_U.t_empty_n) begin
                                 $display("//      Channel: %0s, EMPTY", chan_path);
@@ -298,7 +298,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                                 $fdisplay(fp, "Dependence_Channel_status NULL");
                             end
                         end
-                        if (~AESL_inst_FFT.Block_codeRepl116_pr_U0.win_mode_out_blk_n) begin
+                        if (~AESL_inst_FFT.Block_codeRepl124_pr_U0.win_mode_out_blk_n) begin
                             chan_path = "FFT.win_mode_c_U";
                             if (~AESL_inst_FFT.win_mode_c_U.if_empty_n) begin
                                 $display("//      Channel: %0s, EMPTY", chan_path);
@@ -318,7 +318,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                         end
                     end
                     0: begin
-                        if (~AESL_inst_FFT.Block_codeRepl116_pr_U0.win_mode_blk_n) begin
+                        if (~AESL_inst_FFT.Block_codeRepl124_pr_U0.win_mode_blk_n) begin
                             chan_path = "FFT.win_mode_c1_U";
                             if (~AESL_inst_FFT.win_mode_c1_U.if_empty_n) begin
                                 $display("//      Channel: %0s, EMPTY", chan_path);
@@ -336,9 +336,9 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                                 $fdisplay(fp, "Dependence_Channel_status NULL");
                             end
                         end
-                        if (((AESL_inst_FFT.Block_codeRepl116_pr_U0_ap_ready_count[0]) & AESL_inst_FFT.Block_codeRepl116_pr_U0.ap_idle & ~(AESL_inst_FFT.FFT_entry3_U0_ap_ready_count[0]))) begin
+                        if (((AESL_inst_FFT.Block_codeRepl124_pr_U0_ap_ready_count[0]) & AESL_inst_FFT.Block_codeRepl124_pr_U0.ap_idle & ~(AESL_inst_FFT.FFT_entry3_U0_ap_ready_count[0]))) begin
                             chan_path = "";
-                            if (((AESL_inst_FFT.Block_codeRepl116_pr_U0_ap_ready_count[0]) & AESL_inst_FFT.Block_codeRepl116_pr_U0.ap_idle & ~(AESL_inst_FFT.FFT_entry3_U0_ap_ready_count[0]))) begin
+                            if (((AESL_inst_FFT.Block_codeRepl124_pr_U0_ap_ready_count[0]) & AESL_inst_FFT.Block_codeRepl124_pr_U0.ap_idle & ~(AESL_inst_FFT.FFT_entry3_U0_ap_ready_count[0]))) begin
                                 $display("//      Deadlocked by sync logic between input processes");
                                 $display("//      Please increase channel depth");
                             end
@@ -927,7 +927,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                 9 : begin
                     case(index2)
                     8: begin
-                        if (~AESL_inst_FFT.data_OUTfft_M_imag_U.t_empty_n & (AESL_inst_FFT.Block_codeRepl11624_U0.ap_ready | AESL_inst_FFT.Block_codeRepl11624_U0.ap_idle) & ~AESL_inst_FFT.data_OUTfft_M_imag_U.i_write) begin
+                        if (~AESL_inst_FFT.data_OUTfft_M_imag_U.t_empty_n & (AESL_inst_FFT.Block_codeRepl12432_U0.ap_ready | AESL_inst_FFT.Block_codeRepl12432_U0.ap_idle) & ~AESL_inst_FFT.data_OUTfft_M_imag_U.i_write) begin
                             chan_path = "FFT.data_OUTfft_M_imag_U";
                             if (~AESL_inst_FFT.data_OUTfft_M_imag_U.t_empty_n) begin
                                 $display("//      Channel: %0s, EMPTY", chan_path);
@@ -945,7 +945,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                                 $fdisplay(fp, "Dependence_Channel_status NULL");
                             end
                         end
-                        if (~AESL_inst_FFT.data_OUTfft_M_real_U.t_empty_n & (AESL_inst_FFT.Block_codeRepl11624_U0.ap_ready | AESL_inst_FFT.Block_codeRepl11624_U0.ap_idle) & ~AESL_inst_FFT.data_OUTfft_M_real_U.i_write) begin
+                        if (~AESL_inst_FFT.data_OUTfft_M_real_U.t_empty_n & (AESL_inst_FFT.Block_codeRepl12432_U0.ap_ready | AESL_inst_FFT.Block_codeRepl12432_U0.ap_idle) & ~AESL_inst_FFT.data_OUTfft_M_real_U.i_write) begin
                             chan_path = "FFT.data_OUTfft_M_real_U";
                             if (~AESL_inst_FFT.data_OUTfft_M_real_U.t_empty_n) begin
                                 $display("//      Channel: %0s, EMPTY", chan_path);

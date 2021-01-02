@@ -16,6 +16,7 @@ const int FFT::C_S_AXI_DATA_WIDTH = "100000";
 const int FFT::C_S_AXI_WSTRB_WIDTH = "100";
 const int FFT::C_S_AXI_ADDR_WIDTH = "100000";
 const sc_logic FFT::ap_const_logic_1 = sc_dt::Log_1;
+const sc_lv<64> FFT::ap_const_lv64_0 = "0000000000000000000000000000000000000000000000000000000000000000";
 const sc_lv<32> FFT::ap_const_lv32_0 = "00000000000000000000000000000000";
 const sc_logic FFT::ap_const_logic_0 = sc_dt::Log_0;
 const sc_lv<2> FFT::ap_const_lv2_0 = "00";
@@ -60,34 +61,31 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     FFT_entry3_U0->win_mode_out_din(FFT_entry3_U0_win_mode_out_din);
     FFT_entry3_U0->win_mode_out_full_n(win_mode_c1_full_n);
     FFT_entry3_U0->win_mode_out_write(FFT_entry3_U0_win_mode_out_write);
-    Block_codeRepl116_pr_U0 = new Block_codeRepl116_pr("Block_codeRepl116_pr_U0");
-    Block_codeRepl116_pr_U0->ap_clk(ap_clk);
-    Block_codeRepl116_pr_U0->ap_rst(ap_rst_n_inv);
-    Block_codeRepl116_pr_U0->ap_start(Block_codeRepl116_pr_U0_ap_start);
-    Block_codeRepl116_pr_U0->ap_done(Block_codeRepl116_pr_U0_ap_done);
-    Block_codeRepl116_pr_U0->ap_continue(Block_codeRepl116_pr_U0_ap_continue);
-    Block_codeRepl116_pr_U0->ap_idle(Block_codeRepl116_pr_U0_ap_idle);
-    Block_codeRepl116_pr_U0->ap_ready(Block_codeRepl116_pr_U0_ap_ready);
-    Block_codeRepl116_pr_U0->data_IN_M_real_TDATA(data_IN_M_real_TDATA);
-    Block_codeRepl116_pr_U0->data_IN_M_real_TVALID(data_IN_M_real_TVALID);
-    Block_codeRepl116_pr_U0->data_IN_M_real_TREADY(Block_codeRepl116_pr_U0_data_IN_M_real_TREADY);
-    Block_codeRepl116_pr_U0->data_IN_M_imag_TDATA(data_IN_M_imag_TDATA);
-    Block_codeRepl116_pr_U0->data_IN_M_imag_TVALID(data_IN_M_imag_TVALID);
-    Block_codeRepl116_pr_U0->data_IN_M_imag_TREADY(Block_codeRepl116_pr_U0_data_IN_M_imag_TREADY);
-    Block_codeRepl116_pr_U0->xin_M_imag_address0(Block_codeRepl116_pr_U0_xin_M_imag_address0);
-    Block_codeRepl116_pr_U0->xin_M_imag_ce0(Block_codeRepl116_pr_U0_xin_M_imag_ce0);
-    Block_codeRepl116_pr_U0->xin_M_imag_we0(Block_codeRepl116_pr_U0_xin_M_imag_we0);
-    Block_codeRepl116_pr_U0->xin_M_imag_d0(Block_codeRepl116_pr_U0_xin_M_imag_d0);
-    Block_codeRepl116_pr_U0->xin_M_real_address0(Block_codeRepl116_pr_U0_xin_M_real_address0);
-    Block_codeRepl116_pr_U0->xin_M_real_ce0(Block_codeRepl116_pr_U0_xin_M_real_ce0);
-    Block_codeRepl116_pr_U0->xin_M_real_we0(Block_codeRepl116_pr_U0_xin_M_real_we0);
-    Block_codeRepl116_pr_U0->xin_M_real_d0(Block_codeRepl116_pr_U0_xin_M_real_d0);
-    Block_codeRepl116_pr_U0->win_mode_dout(win_mode_c1_dout);
-    Block_codeRepl116_pr_U0->win_mode_empty_n(win_mode_c1_empty_n);
-    Block_codeRepl116_pr_U0->win_mode_read(Block_codeRepl116_pr_U0_win_mode_read);
-    Block_codeRepl116_pr_U0->win_mode_out_din(Block_codeRepl116_pr_U0_win_mode_out_din);
-    Block_codeRepl116_pr_U0->win_mode_out_full_n(win_mode_c_full_n);
-    Block_codeRepl116_pr_U0->win_mode_out_write(Block_codeRepl116_pr_U0_win_mode_out_write);
+    Block_codeRepl124_pr_U0 = new Block_codeRepl124_pr("Block_codeRepl124_pr_U0");
+    Block_codeRepl124_pr_U0->ap_clk(ap_clk);
+    Block_codeRepl124_pr_U0->ap_rst(ap_rst_n_inv);
+    Block_codeRepl124_pr_U0->ap_start(Block_codeRepl124_pr_U0_ap_start);
+    Block_codeRepl124_pr_U0->ap_done(Block_codeRepl124_pr_U0_ap_done);
+    Block_codeRepl124_pr_U0->ap_continue(Block_codeRepl124_pr_U0_ap_continue);
+    Block_codeRepl124_pr_U0->ap_idle(Block_codeRepl124_pr_U0_ap_idle);
+    Block_codeRepl124_pr_U0->ap_ready(Block_codeRepl124_pr_U0_ap_ready);
+    Block_codeRepl124_pr_U0->data_IN_TDATA(data_IN_TDATA);
+    Block_codeRepl124_pr_U0->data_IN_TVALID(data_IN_TVALID);
+    Block_codeRepl124_pr_U0->data_IN_TREADY(Block_codeRepl124_pr_U0_data_IN_TREADY);
+    Block_codeRepl124_pr_U0->xin_M_imag_address0(Block_codeRepl124_pr_U0_xin_M_imag_address0);
+    Block_codeRepl124_pr_U0->xin_M_imag_ce0(Block_codeRepl124_pr_U0_xin_M_imag_ce0);
+    Block_codeRepl124_pr_U0->xin_M_imag_we0(Block_codeRepl124_pr_U0_xin_M_imag_we0);
+    Block_codeRepl124_pr_U0->xin_M_imag_d0(Block_codeRepl124_pr_U0_xin_M_imag_d0);
+    Block_codeRepl124_pr_U0->xin_M_real_address0(Block_codeRepl124_pr_U0_xin_M_real_address0);
+    Block_codeRepl124_pr_U0->xin_M_real_ce0(Block_codeRepl124_pr_U0_xin_M_real_ce0);
+    Block_codeRepl124_pr_U0->xin_M_real_we0(Block_codeRepl124_pr_U0_xin_M_real_we0);
+    Block_codeRepl124_pr_U0->xin_M_real_d0(Block_codeRepl124_pr_U0_xin_M_real_d0);
+    Block_codeRepl124_pr_U0->win_mode_dout(win_mode_c1_dout);
+    Block_codeRepl124_pr_U0->win_mode_empty_n(win_mode_c1_empty_n);
+    Block_codeRepl124_pr_U0->win_mode_read(Block_codeRepl124_pr_U0_win_mode_read);
+    Block_codeRepl124_pr_U0->win_mode_out_din(Block_codeRepl124_pr_U0_win_mode_out_din);
+    Block_codeRepl124_pr_U0->win_mode_out_full_n(win_mode_c_full_n);
+    Block_codeRepl124_pr_U0->win_mode_out_write(Block_codeRepl124_pr_U0_win_mode_out_write);
     mult_window_U0 = new mult_window("mult_window_U0");
     mult_window_U0->ap_clk(ap_clk);
     mult_window_U0->ap_rst(ap_rst_n_inv);
@@ -343,36 +341,33 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     FFT0122_U0->data_OUTfft_M_imag_ce1(FFT0122_U0_data_OUTfft_M_imag_ce1);
     FFT0122_U0->data_OUTfft_M_imag_we1(FFT0122_U0_data_OUTfft_M_imag_we1);
     FFT0122_U0->data_OUTfft_M_imag_d1(FFT0122_U0_data_OUTfft_M_imag_d1);
-    Block_codeRepl11624_U0 = new Block_codeRepl11624_s("Block_codeRepl11624_U0");
-    Block_codeRepl11624_U0->ap_clk(ap_clk);
-    Block_codeRepl11624_U0->ap_rst(ap_rst_n_inv);
-    Block_codeRepl11624_U0->ap_start(Block_codeRepl11624_U0_ap_start);
-    Block_codeRepl11624_U0->ap_done(Block_codeRepl11624_U0_ap_done);
-    Block_codeRepl11624_U0->ap_continue(Block_codeRepl11624_U0_ap_continue);
-    Block_codeRepl11624_U0->ap_idle(Block_codeRepl11624_U0_ap_idle);
-    Block_codeRepl11624_U0->ap_ready(Block_codeRepl11624_U0_ap_ready);
-    Block_codeRepl11624_U0->mag_OUT_TDATA(Block_codeRepl11624_U0_mag_OUT_TDATA);
-    Block_codeRepl11624_U0->mag_OUT_TVALID(Block_codeRepl11624_U0_mag_OUT_TVALID);
-    Block_codeRepl11624_U0->mag_OUT_TREADY(mag_OUT_TREADY);
-    Block_codeRepl11624_U0->data_OUT_M_real_TDATA(Block_codeRepl11624_U0_data_OUT_M_real_TDATA);
-    Block_codeRepl11624_U0->data_OUT_M_real_TVALID(Block_codeRepl11624_U0_data_OUT_M_real_TVALID);
-    Block_codeRepl11624_U0->data_OUT_M_real_TREADY(data_OUT_M_real_TREADY);
-    Block_codeRepl11624_U0->data_OUT_M_imag_TDATA(Block_codeRepl11624_U0_data_OUT_M_imag_TDATA);
-    Block_codeRepl11624_U0->data_OUT_M_imag_TVALID(Block_codeRepl11624_U0_data_OUT_M_imag_TVALID);
-    Block_codeRepl11624_U0->data_OUT_M_imag_TREADY(data_OUT_M_imag_TREADY);
-    Block_codeRepl11624_U0->data_OUTfft_M_imag_address0(Block_codeRepl11624_U0_data_OUTfft_M_imag_address0);
-    Block_codeRepl11624_U0->data_OUTfft_M_imag_ce0(Block_codeRepl11624_U0_data_OUTfft_M_imag_ce0);
-    Block_codeRepl11624_U0->data_OUTfft_M_imag_q0(data_OUTfft_M_imag_t_q0);
-    Block_codeRepl11624_U0->data_OUTfft_M_real_address0(Block_codeRepl11624_U0_data_OUTfft_M_real_address0);
-    Block_codeRepl11624_U0->data_OUTfft_M_real_ce0(Block_codeRepl11624_U0_data_OUTfft_M_real_ce0);
-    Block_codeRepl11624_U0->data_OUTfft_M_real_q0(data_OUTfft_M_real_t_q0);
+    Block_codeRepl12432_U0 = new Block_codeRepl12432_s("Block_codeRepl12432_U0");
+    Block_codeRepl12432_U0->ap_clk(ap_clk);
+    Block_codeRepl12432_U0->ap_rst(ap_rst_n_inv);
+    Block_codeRepl12432_U0->ap_start(Block_codeRepl12432_U0_ap_start);
+    Block_codeRepl12432_U0->ap_done(Block_codeRepl12432_U0_ap_done);
+    Block_codeRepl12432_U0->ap_continue(Block_codeRepl12432_U0_ap_continue);
+    Block_codeRepl12432_U0->ap_idle(Block_codeRepl12432_U0_ap_idle);
+    Block_codeRepl12432_U0->ap_ready(Block_codeRepl12432_U0_ap_ready);
+    Block_codeRepl12432_U0->mag_OUT_TDATA(Block_codeRepl12432_U0_mag_OUT_TDATA);
+    Block_codeRepl12432_U0->mag_OUT_TVALID(Block_codeRepl12432_U0_mag_OUT_TVALID);
+    Block_codeRepl12432_U0->mag_OUT_TREADY(mag_OUT_TREADY);
+    Block_codeRepl12432_U0->data_OUT_TDATA(Block_codeRepl12432_U0_data_OUT_TDATA);
+    Block_codeRepl12432_U0->data_OUT_TVALID(Block_codeRepl12432_U0_data_OUT_TVALID);
+    Block_codeRepl12432_U0->data_OUT_TREADY(data_OUT_TREADY);
+    Block_codeRepl12432_U0->data_OUTfft_M_imag_address0(Block_codeRepl12432_U0_data_OUTfft_M_imag_address0);
+    Block_codeRepl12432_U0->data_OUTfft_M_imag_ce0(Block_codeRepl12432_U0_data_OUTfft_M_imag_ce0);
+    Block_codeRepl12432_U0->data_OUTfft_M_imag_q0(data_OUTfft_M_imag_t_q0);
+    Block_codeRepl12432_U0->data_OUTfft_M_real_address0(Block_codeRepl12432_U0_data_OUTfft_M_real_address0);
+    Block_codeRepl12432_U0->data_OUTfft_M_real_ce0(Block_codeRepl12432_U0_data_OUTfft_M_real_ce0);
+    Block_codeRepl12432_U0->data_OUTfft_M_real_q0(data_OUTfft_M_real_t_q0);
     xin_M_imag_U = new FFT_xin_M_imag("xin_M_imag_U");
     xin_M_imag_U->clk(ap_clk);
     xin_M_imag_U->reset(ap_rst_n_inv);
-    xin_M_imag_U->i_address0(Block_codeRepl116_pr_U0_xin_M_imag_address0);
-    xin_M_imag_U->i_ce0(Block_codeRepl116_pr_U0_xin_M_imag_ce0);
-    xin_M_imag_U->i_we0(Block_codeRepl116_pr_U0_xin_M_imag_we0);
-    xin_M_imag_U->i_d0(Block_codeRepl116_pr_U0_xin_M_imag_d0);
+    xin_M_imag_U->i_address0(Block_codeRepl124_pr_U0_xin_M_imag_address0);
+    xin_M_imag_U->i_ce0(Block_codeRepl124_pr_U0_xin_M_imag_ce0);
+    xin_M_imag_U->i_we0(Block_codeRepl124_pr_U0_xin_M_imag_we0);
+    xin_M_imag_U->i_d0(Block_codeRepl124_pr_U0_xin_M_imag_d0);
     xin_M_imag_U->i_q0(xin_M_imag_i_q0);
     xin_M_imag_U->i_address1(ap_var_for_const1);
     xin_M_imag_U->i_ce1(ap_var_for_const2);
@@ -394,10 +389,10 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     xin_M_real_U = new FFT_xin_M_imag("xin_M_real_U");
     xin_M_real_U->clk(ap_clk);
     xin_M_real_U->reset(ap_rst_n_inv);
-    xin_M_real_U->i_address0(Block_codeRepl116_pr_U0_xin_M_real_address0);
-    xin_M_real_U->i_ce0(Block_codeRepl116_pr_U0_xin_M_real_ce0);
-    xin_M_real_U->i_we0(Block_codeRepl116_pr_U0_xin_M_real_we0);
-    xin_M_real_U->i_d0(Block_codeRepl116_pr_U0_xin_M_real_d0);
+    xin_M_real_U->i_address0(Block_codeRepl124_pr_U0_xin_M_real_address0);
+    xin_M_real_U->i_ce0(Block_codeRepl124_pr_U0_xin_M_real_ce0);
+    xin_M_real_U->i_we0(Block_codeRepl124_pr_U0_xin_M_real_we0);
+    xin_M_real_U->i_d0(Block_codeRepl124_pr_U0_xin_M_real_d0);
     xin_M_real_U->i_q0(xin_M_real_i_q0);
     xin_M_real_U->i_address1(ap_var_for_const1);
     xin_M_real_U->i_ce1(ap_var_for_const2);
@@ -776,8 +771,8 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     data_OUTfft_M_real_U->i_ce1(FFT0122_U0_data_OUTfft_M_real_ce1);
     data_OUTfft_M_real_U->i_we1(FFT0122_U0_data_OUTfft_M_real_we1);
     data_OUTfft_M_real_U->i_d1(FFT0122_U0_data_OUTfft_M_real_d1);
-    data_OUTfft_M_real_U->t_address0(Block_codeRepl11624_U0_data_OUTfft_M_real_address0);
-    data_OUTfft_M_real_U->t_ce0(Block_codeRepl11624_U0_data_OUTfft_M_real_ce0);
+    data_OUTfft_M_real_U->t_address0(Block_codeRepl12432_U0_data_OUTfft_M_real_address0);
+    data_OUTfft_M_real_U->t_ce0(Block_codeRepl12432_U0_data_OUTfft_M_real_ce0);
     data_OUTfft_M_real_U->t_we0(ap_var_for_const2);
     data_OUTfft_M_real_U->t_d0(ap_var_for_const3);
     data_OUTfft_M_real_U->t_q0(data_OUTfft_M_real_t_q0);
@@ -790,7 +785,7 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     data_OUTfft_M_real_U->i_full_n(data_OUTfft_M_real_i_full_n);
     data_OUTfft_M_real_U->i_write(ap_channel_done_data_OUTfft_M_real);
     data_OUTfft_M_real_U->t_empty_n(data_OUTfft_M_real_t_empty_n);
-    data_OUTfft_M_real_U->t_read(Block_codeRepl11624_U0_ap_ready);
+    data_OUTfft_M_real_U->t_read(Block_codeRepl12432_U0_ap_ready);
     data_OUTfft_M_imag_U = new FFT_data_OUTfft_MrcU("data_OUTfft_M_imag_U");
     data_OUTfft_M_imag_U->clk(ap_clk);
     data_OUTfft_M_imag_U->reset(ap_rst_n_inv);
@@ -803,8 +798,8 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     data_OUTfft_M_imag_U->i_ce1(FFT0122_U0_data_OUTfft_M_imag_ce1);
     data_OUTfft_M_imag_U->i_we1(FFT0122_U0_data_OUTfft_M_imag_we1);
     data_OUTfft_M_imag_U->i_d1(FFT0122_U0_data_OUTfft_M_imag_d1);
-    data_OUTfft_M_imag_U->t_address0(Block_codeRepl11624_U0_data_OUTfft_M_imag_address0);
-    data_OUTfft_M_imag_U->t_ce0(Block_codeRepl11624_U0_data_OUTfft_M_imag_ce0);
+    data_OUTfft_M_imag_U->t_address0(Block_codeRepl12432_U0_data_OUTfft_M_imag_address0);
+    data_OUTfft_M_imag_U->t_ce0(Block_codeRepl12432_U0_data_OUTfft_M_imag_ce0);
     data_OUTfft_M_imag_U->t_we0(ap_var_for_const2);
     data_OUTfft_M_imag_U->t_d0(ap_var_for_const3);
     data_OUTfft_M_imag_U->t_q0(data_OUTfft_M_imag_t_q0);
@@ -817,7 +812,7 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     data_OUTfft_M_imag_U->i_full_n(data_OUTfft_M_imag_i_full_n);
     data_OUTfft_M_imag_U->i_write(ap_channel_done_data_OUTfft_M_imag);
     data_OUTfft_M_imag_U->t_empty_n(data_OUTfft_M_imag_t_empty_n);
-    data_OUTfft_M_imag_U->t_read(Block_codeRepl11624_U0_ap_ready);
+    data_OUTfft_M_imag_U->t_read(Block_codeRepl12432_U0_ap_ready);
     win_mode_c1_U = new fifo_w8_d2_A("win_mode_c1_U");
     win_mode_c1_U->clk(ap_clk);
     win_mode_c1_U->reset(ap_rst_n_inv);
@@ -828,15 +823,15 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     win_mode_c1_U->if_write(FFT_entry3_U0_win_mode_out_write);
     win_mode_c1_U->if_dout(win_mode_c1_dout);
     win_mode_c1_U->if_empty_n(win_mode_c1_empty_n);
-    win_mode_c1_U->if_read(Block_codeRepl116_pr_U0_win_mode_read);
+    win_mode_c1_U->if_read(Block_codeRepl124_pr_U0_win_mode_read);
     win_mode_c_U = new fifo_w8_d2_A("win_mode_c_U");
     win_mode_c_U->clk(ap_clk);
     win_mode_c_U->reset(ap_rst_n_inv);
     win_mode_c_U->if_read_ce(ap_var_for_const0);
     win_mode_c_U->if_write_ce(ap_var_for_const0);
-    win_mode_c_U->if_din(Block_codeRepl116_pr_U0_win_mode_out_din);
+    win_mode_c_U->if_din(Block_codeRepl124_pr_U0_win_mode_out_din);
     win_mode_c_U->if_full_n(win_mode_c_full_n);
-    win_mode_c_U->if_write(Block_codeRepl116_pr_U0_win_mode_out_write);
+    win_mode_c_U->if_write(Block_codeRepl124_pr_U0_win_mode_out_write);
     win_mode_c_U->if_dout(win_mode_c_dout);
     win_mode_c_U->if_empty_n(win_mode_c_empty_n);
     win_mode_c_U->if_read(mult_window_U0_win_mode_read);
@@ -845,32 +840,32 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     dont_initialize();
     sensitive << ( ap_clk.pos() );
 
-    SC_METHOD(thread_Block_codeRepl11624_U0_ap_continue);
+    SC_METHOD(thread_Block_codeRepl12432_U0_ap_continue);
 
-    SC_METHOD(thread_Block_codeRepl11624_U0_ap_start);
+    SC_METHOD(thread_Block_codeRepl12432_U0_ap_start);
     sensitive << ( data_OUTfft_M_real_t_empty_n );
     sensitive << ( data_OUTfft_M_imag_t_empty_n );
 
-    SC_METHOD(thread_Block_codeRepl11624_U0_start_full_n);
+    SC_METHOD(thread_Block_codeRepl12432_U0_start_full_n);
 
-    SC_METHOD(thread_Block_codeRepl11624_U0_start_write);
+    SC_METHOD(thread_Block_codeRepl12432_U0_start_write);
 
-    SC_METHOD(thread_Block_codeRepl116_pr_U0_ap_continue);
+    SC_METHOD(thread_Block_codeRepl124_pr_U0_ap_continue);
     sensitive << ( ap_sync_channel_write_xin_M_real );
     sensitive << ( ap_sync_channel_write_xin_M_imag );
 
-    SC_METHOD(thread_Block_codeRepl116_pr_U0_ap_start);
+    SC_METHOD(thread_Block_codeRepl124_pr_U0_ap_start);
     sensitive << ( ap_start );
-    sensitive << ( ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready );
+    sensitive << ( ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready );
 
-    SC_METHOD(thread_Block_codeRepl116_pr_U0_start_full_n);
+    SC_METHOD(thread_Block_codeRepl124_pr_U0_start_full_n);
 
-    SC_METHOD(thread_Block_codeRepl116_pr_U0_start_write);
+    SC_METHOD(thread_Block_codeRepl124_pr_U0_start_write);
 
-    SC_METHOD(thread_Block_codeRepl116_pr_U0_xin_M_imag_full_n);
+    SC_METHOD(thread_Block_codeRepl124_pr_U0_xin_M_imag_full_n);
     sensitive << ( xin_M_imag_i_full_n );
 
-    SC_METHOD(thread_Block_codeRepl116_pr_U0_xin_M_real_full_n);
+    SC_METHOD(thread_Block_codeRepl124_pr_U0_xin_M_real_full_n);
     sensitive << ( xin_M_real_i_full_n );
 
     SC_METHOD(thread_FFT0118_U0_ap_continue);
@@ -1030,19 +1025,19 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( ap_sync_reg_channel_write_prod_IN_M_real );
 
     SC_METHOD(thread_ap_channel_done_xin_M_imag);
-    sensitive << ( Block_codeRepl116_pr_U0_ap_done );
+    sensitive << ( Block_codeRepl124_pr_U0_ap_done );
     sensitive << ( ap_sync_reg_channel_write_xin_M_imag );
 
     SC_METHOD(thread_ap_channel_done_xin_M_real);
-    sensitive << ( Block_codeRepl116_pr_U0_ap_done );
+    sensitive << ( Block_codeRepl124_pr_U0_ap_done );
     sensitive << ( ap_sync_reg_channel_write_xin_M_real );
 
     SC_METHOD(thread_ap_done);
-    sensitive << ( Block_codeRepl11624_U0_ap_done );
+    sensitive << ( Block_codeRepl12432_U0_ap_done );
 
     SC_METHOD(thread_ap_idle);
     sensitive << ( FFT_entry3_U0_ap_idle );
-    sensitive << ( Block_codeRepl116_pr_U0_ap_idle );
+    sensitive << ( Block_codeRepl124_pr_U0_ap_idle );
     sensitive << ( mult_window_U0_ap_idle );
     sensitive << ( bitreverse_U0_ap_idle );
     sensitive << ( FFT0118_U0_ap_idle );
@@ -1050,7 +1045,7 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( FFT0120_U0_ap_idle );
     sensitive << ( FFT0121_U0_ap_idle );
     sensitive << ( FFT0122_U0_ap_idle );
-    sensitive << ( Block_codeRepl11624_U0_ap_idle );
+    sensitive << ( Block_codeRepl12432_U0_ap_idle );
     sensitive << ( xin_M_imag_t_empty_n );
     sensitive << ( xin_M_real_t_empty_n );
     sensitive << ( prod_IN_M_real_t_empty_n );
@@ -1074,9 +1069,9 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     SC_METHOD(thread_ap_rst_n_inv);
     sensitive << ( ap_rst_n );
 
-    SC_METHOD(thread_ap_sync_Block_codeRepl116_pr_U0_ap_ready);
-    sensitive << ( Block_codeRepl116_pr_U0_ap_ready );
-    sensitive << ( ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready );
+    SC_METHOD(thread_ap_sync_Block_codeRepl124_pr_U0_ap_ready);
+    sensitive << ( Block_codeRepl124_pr_U0_ap_ready );
+    sensitive << ( ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready );
 
     SC_METHOD(thread_ap_sync_FFT_entry3_U0_ap_ready);
     sensitive << ( FFT_entry3_U0_ap_ready );
@@ -1154,22 +1149,22 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
     SC_METHOD(thread_ap_sync_channel_write_xin_M_imag);
     sensitive << ( ap_channel_done_xin_M_imag );
-    sensitive << ( Block_codeRepl116_pr_U0_xin_M_imag_full_n );
+    sensitive << ( Block_codeRepl124_pr_U0_xin_M_imag_full_n );
     sensitive << ( ap_sync_reg_channel_write_xin_M_imag );
 
     SC_METHOD(thread_ap_sync_channel_write_xin_M_real);
     sensitive << ( ap_channel_done_xin_M_real );
-    sensitive << ( Block_codeRepl116_pr_U0_xin_M_real_full_n );
+    sensitive << ( Block_codeRepl124_pr_U0_xin_M_real_full_n );
     sensitive << ( ap_sync_reg_channel_write_xin_M_real );
 
     SC_METHOD(thread_ap_sync_continue);
 
     SC_METHOD(thread_ap_sync_done);
-    sensitive << ( Block_codeRepl11624_U0_ap_done );
+    sensitive << ( Block_codeRepl12432_U0_ap_done );
 
     SC_METHOD(thread_ap_sync_ready);
     sensitive << ( ap_sync_FFT_entry3_U0_ap_ready );
-    sensitive << ( ap_sync_Block_codeRepl116_pr_U0_ap_ready );
+    sensitive << ( ap_sync_Block_codeRepl124_pr_U0_ap_ready );
 
     SC_METHOD(thread_bitreverse_U0_ap_continue);
     sensitive << ( ap_sync_channel_write_data_OUT0_M_imag );
@@ -1189,29 +1184,20 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
     SC_METHOD(thread_bitreverse_U0_start_write);
 
-    SC_METHOD(thread_data_IN_M_imag_TREADY);
-    sensitive << ( Block_codeRepl116_pr_U0_data_IN_M_imag_TREADY );
+    SC_METHOD(thread_data_IN_TREADY);
+    sensitive << ( Block_codeRepl124_pr_U0_data_IN_TREADY );
 
-    SC_METHOD(thread_data_IN_M_real_TREADY);
-    sensitive << ( Block_codeRepl116_pr_U0_data_IN_M_real_TREADY );
+    SC_METHOD(thread_data_OUT_TDATA);
+    sensitive << ( Block_codeRepl12432_U0_data_OUT_TDATA );
 
-    SC_METHOD(thread_data_OUT_M_imag_TDATA);
-    sensitive << ( Block_codeRepl11624_U0_data_OUT_M_imag_TDATA );
-
-    SC_METHOD(thread_data_OUT_M_imag_TVALID);
-    sensitive << ( Block_codeRepl11624_U0_data_OUT_M_imag_TVALID );
-
-    SC_METHOD(thread_data_OUT_M_real_TDATA);
-    sensitive << ( Block_codeRepl11624_U0_data_OUT_M_real_TDATA );
-
-    SC_METHOD(thread_data_OUT_M_real_TVALID);
-    sensitive << ( Block_codeRepl11624_U0_data_OUT_M_real_TVALID );
+    SC_METHOD(thread_data_OUT_TVALID);
+    sensitive << ( Block_codeRepl12432_U0_data_OUT_TVALID );
 
     SC_METHOD(thread_mag_OUT_TDATA);
-    sensitive << ( Block_codeRepl11624_U0_mag_OUT_TDATA );
+    sensitive << ( Block_codeRepl12432_U0_mag_OUT_TDATA );
 
     SC_METHOD(thread_mag_OUT_TVALID);
-    sensitive << ( Block_codeRepl11624_U0_mag_OUT_TVALID );
+    sensitive << ( Block_codeRepl12432_U0_mag_OUT_TVALID );
 
     SC_METHOD(thread_mult_window_U0_ap_continue);
     sensitive << ( ap_sync_channel_write_prod_IN_M_imag );
@@ -1268,8 +1254,8 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     ap_sync_reg_channel_write_data_OUTfft_M_real = SC_LOGIC_0;
     ap_sync_reg_FFT_entry3_U0_ap_ready = SC_LOGIC_0;
     FFT_entry3_U0_ap_ready_count = "00";
-    ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready = SC_LOGIC_0;
-    Block_codeRepl116_pr_U0_ap_ready_count = "00";
+    ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready = SC_LOGIC_0;
+    Block_codeRepl124_pr_U0_ap_ready_count = "00";
     static int apTFileNum = 0;
     stringstream apTFilenSS;
     apTFilenSS << "FFT_sc_trace_" << apTFileNum ++;
@@ -1297,22 +1283,16 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, s_axi_AXILiteS_BRESP, "(port)s_axi_AXILiteS_BRESP");
     sc_trace(mVcdFile, ap_clk, "(port)ap_clk");
     sc_trace(mVcdFile, ap_rst_n, "(port)ap_rst_n");
-    sc_trace(mVcdFile, data_IN_M_real_TDATA, "(port)data_IN_M_real_TDATA");
-    sc_trace(mVcdFile, data_IN_M_imag_TDATA, "(port)data_IN_M_imag_TDATA");
-    sc_trace(mVcdFile, data_OUT_M_real_TDATA, "(port)data_OUT_M_real_TDATA");
-    sc_trace(mVcdFile, data_OUT_M_imag_TDATA, "(port)data_OUT_M_imag_TDATA");
+    sc_trace(mVcdFile, data_IN_TDATA, "(port)data_IN_TDATA");
+    sc_trace(mVcdFile, data_OUT_TDATA, "(port)data_OUT_TDATA");
     sc_trace(mVcdFile, mag_OUT_TDATA, "(port)mag_OUT_TDATA");
     sc_trace(mVcdFile, ap_start, "(port)ap_start");
-    sc_trace(mVcdFile, data_IN_M_real_TVALID, "(port)data_IN_M_real_TVALID");
-    sc_trace(mVcdFile, data_IN_M_real_TREADY, "(port)data_IN_M_real_TREADY");
-    sc_trace(mVcdFile, data_IN_M_imag_TVALID, "(port)data_IN_M_imag_TVALID");
-    sc_trace(mVcdFile, data_IN_M_imag_TREADY, "(port)data_IN_M_imag_TREADY");
+    sc_trace(mVcdFile, data_IN_TVALID, "(port)data_IN_TVALID");
+    sc_trace(mVcdFile, data_IN_TREADY, "(port)data_IN_TREADY");
     sc_trace(mVcdFile, mag_OUT_TVALID, "(port)mag_OUT_TVALID");
     sc_trace(mVcdFile, mag_OUT_TREADY, "(port)mag_OUT_TREADY");
-    sc_trace(mVcdFile, data_OUT_M_real_TVALID, "(port)data_OUT_M_real_TVALID");
-    sc_trace(mVcdFile, data_OUT_M_real_TREADY, "(port)data_OUT_M_real_TREADY");
-    sc_trace(mVcdFile, data_OUT_M_imag_TVALID, "(port)data_OUT_M_imag_TVALID");
-    sc_trace(mVcdFile, data_OUT_M_imag_TREADY, "(port)data_OUT_M_imag_TREADY");
+    sc_trace(mVcdFile, data_OUT_TVALID, "(port)data_OUT_TVALID");
+    sc_trace(mVcdFile, data_OUT_TREADY, "(port)data_OUT_TREADY");
     sc_trace(mVcdFile, ap_done, "(port)ap_done");
     sc_trace(mVcdFile, ap_ready, "(port)ap_ready");
     sc_trace(mVcdFile, ap_idle, "(port)ap_idle");
@@ -1327,30 +1307,29 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, FFT_entry3_U0_ap_ready, "FFT_entry3_U0_ap_ready");
     sc_trace(mVcdFile, FFT_entry3_U0_win_mode_out_din, "FFT_entry3_U0_win_mode_out_din");
     sc_trace(mVcdFile, FFT_entry3_U0_win_mode_out_write, "FFT_entry3_U0_win_mode_out_write");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_ap_start, "Block_codeRepl116_pr_U0_ap_start");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_ap_done, "Block_codeRepl116_pr_U0_ap_done");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_ap_continue, "Block_codeRepl116_pr_U0_ap_continue");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_ap_idle, "Block_codeRepl116_pr_U0_ap_idle");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_ap_ready, "Block_codeRepl116_pr_U0_ap_ready");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_data_IN_M_real_TREADY, "Block_codeRepl116_pr_U0_data_IN_M_real_TREADY");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_data_IN_M_imag_TREADY, "Block_codeRepl116_pr_U0_data_IN_M_imag_TREADY");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_xin_M_imag_address0, "Block_codeRepl116_pr_U0_xin_M_imag_address0");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_xin_M_imag_ce0, "Block_codeRepl116_pr_U0_xin_M_imag_ce0");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_xin_M_imag_we0, "Block_codeRepl116_pr_U0_xin_M_imag_we0");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_xin_M_imag_d0, "Block_codeRepl116_pr_U0_xin_M_imag_d0");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_xin_M_real_address0, "Block_codeRepl116_pr_U0_xin_M_real_address0");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_xin_M_real_ce0, "Block_codeRepl116_pr_U0_xin_M_real_ce0");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_xin_M_real_we0, "Block_codeRepl116_pr_U0_xin_M_real_we0");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_xin_M_real_d0, "Block_codeRepl116_pr_U0_xin_M_real_d0");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_win_mode_read, "Block_codeRepl116_pr_U0_win_mode_read");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_win_mode_out_din, "Block_codeRepl116_pr_U0_win_mode_out_din");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_win_mode_out_write, "Block_codeRepl116_pr_U0_win_mode_out_write");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_ap_start, "Block_codeRepl124_pr_U0_ap_start");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_ap_done, "Block_codeRepl124_pr_U0_ap_done");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_ap_continue, "Block_codeRepl124_pr_U0_ap_continue");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_ap_idle, "Block_codeRepl124_pr_U0_ap_idle");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_ap_ready, "Block_codeRepl124_pr_U0_ap_ready");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_data_IN_TREADY, "Block_codeRepl124_pr_U0_data_IN_TREADY");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_xin_M_imag_address0, "Block_codeRepl124_pr_U0_xin_M_imag_address0");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_xin_M_imag_ce0, "Block_codeRepl124_pr_U0_xin_M_imag_ce0");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_xin_M_imag_we0, "Block_codeRepl124_pr_U0_xin_M_imag_we0");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_xin_M_imag_d0, "Block_codeRepl124_pr_U0_xin_M_imag_d0");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_xin_M_real_address0, "Block_codeRepl124_pr_U0_xin_M_real_address0");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_xin_M_real_ce0, "Block_codeRepl124_pr_U0_xin_M_real_ce0");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_xin_M_real_we0, "Block_codeRepl124_pr_U0_xin_M_real_we0");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_xin_M_real_d0, "Block_codeRepl124_pr_U0_xin_M_real_d0");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_win_mode_read, "Block_codeRepl124_pr_U0_win_mode_read");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_win_mode_out_din, "Block_codeRepl124_pr_U0_win_mode_out_din");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_win_mode_out_write, "Block_codeRepl124_pr_U0_win_mode_out_write");
     sc_trace(mVcdFile, ap_channel_done_xin_M_real, "ap_channel_done_xin_M_real");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_xin_M_real_full_n, "Block_codeRepl116_pr_U0_xin_M_real_full_n");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_xin_M_real_full_n, "Block_codeRepl124_pr_U0_xin_M_real_full_n");
     sc_trace(mVcdFile, ap_sync_reg_channel_write_xin_M_real, "ap_sync_reg_channel_write_xin_M_real");
     sc_trace(mVcdFile, ap_sync_channel_write_xin_M_real, "ap_sync_channel_write_xin_M_real");
     sc_trace(mVcdFile, ap_channel_done_xin_M_imag, "ap_channel_done_xin_M_imag");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_xin_M_imag_full_n, "Block_codeRepl116_pr_U0_xin_M_imag_full_n");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_xin_M_imag_full_n, "Block_codeRepl124_pr_U0_xin_M_imag_full_n");
     sc_trace(mVcdFile, ap_sync_reg_channel_write_xin_M_imag, "ap_sync_reg_channel_write_xin_M_imag");
     sc_trace(mVcdFile, ap_sync_channel_write_xin_M_imag, "ap_sync_channel_write_xin_M_imag");
     sc_trace(mVcdFile, mult_window_U0_ap_start, "mult_window_U0_ap_start");
@@ -1613,21 +1592,19 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, FFT0122_U0_data_OUTfft_M_real_full_n, "FFT0122_U0_data_OUTfft_M_real_full_n");
     sc_trace(mVcdFile, ap_sync_reg_channel_write_data_OUTfft_M_real, "ap_sync_reg_channel_write_data_OUTfft_M_real");
     sc_trace(mVcdFile, ap_sync_channel_write_data_OUTfft_M_real, "ap_sync_channel_write_data_OUTfft_M_real");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_ap_start, "Block_codeRepl11624_U0_ap_start");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_ap_done, "Block_codeRepl11624_U0_ap_done");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_ap_continue, "Block_codeRepl11624_U0_ap_continue");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_ap_idle, "Block_codeRepl11624_U0_ap_idle");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_ap_ready, "Block_codeRepl11624_U0_ap_ready");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_mag_OUT_TDATA, "Block_codeRepl11624_U0_mag_OUT_TDATA");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_mag_OUT_TVALID, "Block_codeRepl11624_U0_mag_OUT_TVALID");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_data_OUT_M_real_TDATA, "Block_codeRepl11624_U0_data_OUT_M_real_TDATA");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_data_OUT_M_real_TVALID, "Block_codeRepl11624_U0_data_OUT_M_real_TVALID");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_data_OUT_M_imag_TDATA, "Block_codeRepl11624_U0_data_OUT_M_imag_TDATA");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_data_OUT_M_imag_TVALID, "Block_codeRepl11624_U0_data_OUT_M_imag_TVALID");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_data_OUTfft_M_imag_address0, "Block_codeRepl11624_U0_data_OUTfft_M_imag_address0");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_data_OUTfft_M_imag_ce0, "Block_codeRepl11624_U0_data_OUTfft_M_imag_ce0");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_data_OUTfft_M_real_address0, "Block_codeRepl11624_U0_data_OUTfft_M_real_address0");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_data_OUTfft_M_real_ce0, "Block_codeRepl11624_U0_data_OUTfft_M_real_ce0");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_ap_start, "Block_codeRepl12432_U0_ap_start");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_ap_done, "Block_codeRepl12432_U0_ap_done");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_ap_continue, "Block_codeRepl12432_U0_ap_continue");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_ap_idle, "Block_codeRepl12432_U0_ap_idle");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_ap_ready, "Block_codeRepl12432_U0_ap_ready");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_mag_OUT_TDATA, "Block_codeRepl12432_U0_mag_OUT_TDATA");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_mag_OUT_TVALID, "Block_codeRepl12432_U0_mag_OUT_TVALID");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_data_OUT_TDATA, "Block_codeRepl12432_U0_data_OUT_TDATA");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_data_OUT_TVALID, "Block_codeRepl12432_U0_data_OUT_TVALID");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_data_OUTfft_M_imag_address0, "Block_codeRepl12432_U0_data_OUTfft_M_imag_address0");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_data_OUTfft_M_imag_ce0, "Block_codeRepl12432_U0_data_OUTfft_M_imag_ce0");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_data_OUTfft_M_real_address0, "Block_codeRepl12432_U0_data_OUTfft_M_real_address0");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_data_OUTfft_M_real_ce0, "Block_codeRepl12432_U0_data_OUTfft_M_real_ce0");
     sc_trace(mVcdFile, ap_sync_continue, "ap_sync_continue");
     sc_trace(mVcdFile, xin_M_imag_i_q0, "xin_M_imag_i_q0");
     sc_trace(mVcdFile, xin_M_imag_i_q1, "xin_M_imag_i_q1");
@@ -1736,13 +1713,13 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, ap_sync_reg_FFT_entry3_U0_ap_ready, "ap_sync_reg_FFT_entry3_U0_ap_ready");
     sc_trace(mVcdFile, ap_sync_FFT_entry3_U0_ap_ready, "ap_sync_FFT_entry3_U0_ap_ready");
     sc_trace(mVcdFile, FFT_entry3_U0_ap_ready_count, "FFT_entry3_U0_ap_ready_count");
-    sc_trace(mVcdFile, ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready, "ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready");
-    sc_trace(mVcdFile, ap_sync_Block_codeRepl116_pr_U0_ap_ready, "ap_sync_Block_codeRepl116_pr_U0_ap_ready");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_ap_ready_count, "Block_codeRepl116_pr_U0_ap_ready_count");
+    sc_trace(mVcdFile, ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready, "ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready");
+    sc_trace(mVcdFile, ap_sync_Block_codeRepl124_pr_U0_ap_ready, "ap_sync_Block_codeRepl124_pr_U0_ap_ready");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_ap_ready_count, "Block_codeRepl124_pr_U0_ap_ready_count");
     sc_trace(mVcdFile, FFT_entry3_U0_start_full_n, "FFT_entry3_U0_start_full_n");
     sc_trace(mVcdFile, FFT_entry3_U0_start_write, "FFT_entry3_U0_start_write");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_start_full_n, "Block_codeRepl116_pr_U0_start_full_n");
-    sc_trace(mVcdFile, Block_codeRepl116_pr_U0_start_write, "Block_codeRepl116_pr_U0_start_write");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_start_full_n, "Block_codeRepl124_pr_U0_start_full_n");
+    sc_trace(mVcdFile, Block_codeRepl124_pr_U0_start_write, "Block_codeRepl124_pr_U0_start_write");
     sc_trace(mVcdFile, mult_window_U0_start_full_n, "mult_window_U0_start_full_n");
     sc_trace(mVcdFile, mult_window_U0_start_write, "mult_window_U0_start_write");
     sc_trace(mVcdFile, bitreverse_U0_start_full_n, "bitreverse_U0_start_full_n");
@@ -1757,8 +1734,8 @@ FFT::FFT(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, FFT0121_U0_start_write, "FFT0121_U0_start_write");
     sc_trace(mVcdFile, FFT0122_U0_start_full_n, "FFT0122_U0_start_full_n");
     sc_trace(mVcdFile, FFT0122_U0_start_write, "FFT0122_U0_start_write");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_start_full_n, "Block_codeRepl11624_U0_start_full_n");
-    sc_trace(mVcdFile, Block_codeRepl11624_U0_start_write, "Block_codeRepl11624_U0_start_write");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_start_full_n, "Block_codeRepl12432_U0_start_full_n");
+    sc_trace(mVcdFile, Block_codeRepl12432_U0_start_write, "Block_codeRepl12432_U0_start_write");
 #endif
 
     }
@@ -1776,7 +1753,7 @@ FFT::~FFT() {
     mHdltvoutHandle.close();
     delete FFT_AXILiteS_s_axi_U;
     delete FFT_entry3_U0;
-    delete Block_codeRepl116_pr_U0;
+    delete Block_codeRepl124_pr_U0;
     delete mult_window_U0;
     delete bitreverse_U0;
     delete FFT0118_U0;
@@ -1784,7 +1761,7 @@ FFT::~FFT() {
     delete FFT0120_U0;
     delete FFT0121_U0;
     delete FFT0122_U0;
-    delete Block_codeRepl11624_U0;
+    delete Block_codeRepl12432_U0;
     delete xin_M_imag_U;
     delete xin_M_real_U;
     delete prod_IN_M_real_U;
@@ -1823,11 +1800,11 @@ void FFT::thread_ap_var_for_const1() {
 
 void FFT::thread_ap_clk_no_reset_() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sync_ready.read()) && 
-         esl_seteq<1,1,1>(Block_codeRepl116_pr_U0_ap_ready.read(), ap_const_logic_0))) {
-        Block_codeRepl116_pr_U0_ap_ready_count = (!Block_codeRepl116_pr_U0_ap_ready_count.read().is_01() || !ap_const_lv2_1.is_01())? sc_lv<2>(): (sc_biguint<2>(Block_codeRepl116_pr_U0_ap_ready_count.read()) - sc_biguint<2>(ap_const_lv2_1));
+         esl_seteq<1,1,1>(Block_codeRepl124_pr_U0_ap_ready.read(), ap_const_logic_0))) {
+        Block_codeRepl124_pr_U0_ap_ready_count = (!Block_codeRepl124_pr_U0_ap_ready_count.read().is_01() || !ap_const_lv2_1.is_01())? sc_lv<2>(): (sc_biguint<2>(Block_codeRepl124_pr_U0_ap_ready_count.read()) - sc_biguint<2>(ap_const_lv2_1));
     } else if ((esl_seteq<1,1,1>(ap_const_logic_0, ap_sync_ready.read()) && 
-                esl_seteq<1,1,1>(ap_const_logic_1, Block_codeRepl116_pr_U0_ap_ready.read()))) {
-        Block_codeRepl116_pr_U0_ap_ready_count = (!Block_codeRepl116_pr_U0_ap_ready_count.read().is_01() || !ap_const_lv2_1.is_01())? sc_lv<2>(): (sc_biguint<2>(Block_codeRepl116_pr_U0_ap_ready_count.read()) + sc_biguint<2>(ap_const_lv2_1));
+                esl_seteq<1,1,1>(ap_const_logic_1, Block_codeRepl124_pr_U0_ap_ready.read()))) {
+        Block_codeRepl124_pr_U0_ap_ready_count = (!Block_codeRepl124_pr_U0_ap_ready_count.read().is_01() || !ap_const_lv2_1.is_01())? sc_lv<2>(): (sc_biguint<2>(Block_codeRepl124_pr_U0_ap_ready_count.read()) + sc_biguint<2>(ap_const_lv2_1));
     }
     if ((esl_seteq<1,1,1>(FFT_entry3_U0_ap_ready.read(), ap_const_logic_0) && 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_sync_ready.read()))) {
@@ -1837,13 +1814,13 @@ void FFT::thread_ap_clk_no_reset_() {
         FFT_entry3_U0_ap_ready_count = (!FFT_entry3_U0_ap_ready_count.read().is_01() || !ap_const_lv2_1.is_01())? sc_lv<2>(): (sc_biguint<2>(FFT_entry3_U0_ap_ready_count.read()) + sc_biguint<2>(ap_const_lv2_1));
     }
     if ( ap_rst_n_inv.read() == ap_const_logic_1) {
-        ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready = ap_const_logic_0;
+        ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready = ap_const_logic_0;
     } else {
         if (esl_seteq<1,1,1>(ap_const_logic_1, (ap_start.read() & 
              ap_sync_ready.read()))) {
-            ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready = ap_const_logic_0;
+            ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready = ap_const_logic_0;
         } else {
-            ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready = ap_sync_Block_codeRepl116_pr_U0_ap_ready.read();
+            ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready = ap_sync_Block_codeRepl124_pr_U0_ap_ready.read();
         }
     }
     if ( ap_rst_n_inv.read() == ap_const_logic_1) {
@@ -1999,8 +1976,8 @@ void FFT::thread_ap_clk_no_reset_() {
     if ( ap_rst_n_inv.read() == ap_const_logic_1) {
         ap_sync_reg_channel_write_xin_M_imag = ap_const_logic_0;
     } else {
-        if (esl_seteq<1,1,1>(ap_const_logic_1, (Block_codeRepl116_pr_U0_ap_done.read() & 
-             Block_codeRepl116_pr_U0_ap_continue.read()))) {
+        if (esl_seteq<1,1,1>(ap_const_logic_1, (Block_codeRepl124_pr_U0_ap_done.read() & 
+             Block_codeRepl124_pr_U0_ap_continue.read()))) {
             ap_sync_reg_channel_write_xin_M_imag = ap_const_logic_0;
         } else {
             ap_sync_reg_channel_write_xin_M_imag = ap_sync_channel_write_xin_M_imag.read();
@@ -2009,8 +1986,8 @@ void FFT::thread_ap_clk_no_reset_() {
     if ( ap_rst_n_inv.read() == ap_const_logic_1) {
         ap_sync_reg_channel_write_xin_M_real = ap_const_logic_0;
     } else {
-        if (esl_seteq<1,1,1>(ap_const_logic_1, (Block_codeRepl116_pr_U0_ap_done.read() & 
-             Block_codeRepl116_pr_U0_ap_continue.read()))) {
+        if (esl_seteq<1,1,1>(ap_const_logic_1, (Block_codeRepl124_pr_U0_ap_done.read() & 
+             Block_codeRepl124_pr_U0_ap_continue.read()))) {
             ap_sync_reg_channel_write_xin_M_real = ap_const_logic_0;
         } else {
             ap_sync_reg_channel_write_xin_M_real = ap_sync_channel_write_xin_M_real.read();
@@ -2018,45 +1995,45 @@ void FFT::thread_ap_clk_no_reset_() {
     }
 }
 
-void FFT::thread_Block_codeRepl11624_U0_ap_continue() {
-    Block_codeRepl11624_U0_ap_continue = ap_const_logic_1;
+void FFT::thread_Block_codeRepl12432_U0_ap_continue() {
+    Block_codeRepl12432_U0_ap_continue = ap_const_logic_1;
 }
 
-void FFT::thread_Block_codeRepl11624_U0_ap_start() {
-    Block_codeRepl11624_U0_ap_start = (data_OUTfft_M_real_t_empty_n.read() & data_OUTfft_M_imag_t_empty_n.read());
+void FFT::thread_Block_codeRepl12432_U0_ap_start() {
+    Block_codeRepl12432_U0_ap_start = (data_OUTfft_M_real_t_empty_n.read() & data_OUTfft_M_imag_t_empty_n.read());
 }
 
-void FFT::thread_Block_codeRepl11624_U0_start_full_n() {
-    Block_codeRepl11624_U0_start_full_n = ap_const_logic_1;
+void FFT::thread_Block_codeRepl12432_U0_start_full_n() {
+    Block_codeRepl12432_U0_start_full_n = ap_const_logic_1;
 }
 
-void FFT::thread_Block_codeRepl11624_U0_start_write() {
-    Block_codeRepl11624_U0_start_write = ap_const_logic_0;
+void FFT::thread_Block_codeRepl12432_U0_start_write() {
+    Block_codeRepl12432_U0_start_write = ap_const_logic_0;
 }
 
-void FFT::thread_Block_codeRepl116_pr_U0_ap_continue() {
-    Block_codeRepl116_pr_U0_ap_continue = (ap_sync_channel_write_xin_M_real.read() & ap_sync_channel_write_xin_M_imag.read());
+void FFT::thread_Block_codeRepl124_pr_U0_ap_continue() {
+    Block_codeRepl124_pr_U0_ap_continue = (ap_sync_channel_write_xin_M_real.read() & ap_sync_channel_write_xin_M_imag.read());
 }
 
-void FFT::thread_Block_codeRepl116_pr_U0_ap_start() {
-    Block_codeRepl116_pr_U0_ap_start = (ap_start.read() & (ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready.read() ^ 
+void FFT::thread_Block_codeRepl124_pr_U0_ap_start() {
+    Block_codeRepl124_pr_U0_ap_start = (ap_start.read() & (ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready.read() ^ 
   ap_const_logic_1));
 }
 
-void FFT::thread_Block_codeRepl116_pr_U0_start_full_n() {
-    Block_codeRepl116_pr_U0_start_full_n = ap_const_logic_1;
+void FFT::thread_Block_codeRepl124_pr_U0_start_full_n() {
+    Block_codeRepl124_pr_U0_start_full_n = ap_const_logic_1;
 }
 
-void FFT::thread_Block_codeRepl116_pr_U0_start_write() {
-    Block_codeRepl116_pr_U0_start_write = ap_const_logic_0;
+void FFT::thread_Block_codeRepl124_pr_U0_start_write() {
+    Block_codeRepl124_pr_U0_start_write = ap_const_logic_0;
 }
 
-void FFT::thread_Block_codeRepl116_pr_U0_xin_M_imag_full_n() {
-    Block_codeRepl116_pr_U0_xin_M_imag_full_n = xin_M_imag_i_full_n.read();
+void FFT::thread_Block_codeRepl124_pr_U0_xin_M_imag_full_n() {
+    Block_codeRepl124_pr_U0_xin_M_imag_full_n = xin_M_imag_i_full_n.read();
 }
 
-void FFT::thread_Block_codeRepl116_pr_U0_xin_M_real_full_n() {
-    Block_codeRepl116_pr_U0_xin_M_real_full_n = xin_M_real_i_full_n.read();
+void FFT::thread_Block_codeRepl124_pr_U0_xin_M_real_full_n() {
+    Block_codeRepl124_pr_U0_xin_M_real_full_n = xin_M_real_i_full_n.read();
 }
 
 void FFT::thread_FFT0118_U0_ap_continue() {
@@ -2267,21 +2244,21 @@ void FFT::thread_ap_channel_done_prod_IN_M_real() {
 }
 
 void FFT::thread_ap_channel_done_xin_M_imag() {
-    ap_channel_done_xin_M_imag = (Block_codeRepl116_pr_U0_ap_done.read() & (ap_sync_reg_channel_write_xin_M_imag.read() ^ 
+    ap_channel_done_xin_M_imag = (Block_codeRepl124_pr_U0_ap_done.read() & (ap_sync_reg_channel_write_xin_M_imag.read() ^ 
   ap_const_logic_1));
 }
 
 void FFT::thread_ap_channel_done_xin_M_real() {
-    ap_channel_done_xin_M_real = (Block_codeRepl116_pr_U0_ap_done.read() & (ap_sync_reg_channel_write_xin_M_real.read() ^ 
+    ap_channel_done_xin_M_real = (Block_codeRepl124_pr_U0_ap_done.read() & (ap_sync_reg_channel_write_xin_M_real.read() ^ 
   ap_const_logic_1));
 }
 
 void FFT::thread_ap_done() {
-    ap_done = Block_codeRepl11624_U0_ap_done.read();
+    ap_done = Block_codeRepl12432_U0_ap_done.read();
 }
 
 void FFT::thread_ap_idle() {
-    ap_idle = (FFT_entry3_U0_ap_idle.read() & Block_codeRepl116_pr_U0_ap_idle.read() & mult_window_U0_ap_idle.read() & bitreverse_U0_ap_idle.read() & FFT0118_U0_ap_idle.read() & FFT0119_U0_ap_idle.read() & FFT0120_U0_ap_idle.read() & FFT0121_U0_ap_idle.read() & FFT0122_U0_ap_idle.read() & Block_codeRepl11624_U0_ap_idle.read() & (xin_M_imag_t_empty_n.read() ^ 
+    ap_idle = (FFT_entry3_U0_ap_idle.read() & Block_codeRepl124_pr_U0_ap_idle.read() & mult_window_U0_ap_idle.read() & bitreverse_U0_ap_idle.read() & FFT0118_U0_ap_idle.read() & FFT0119_U0_ap_idle.read() & FFT0120_U0_ap_idle.read() & FFT0121_U0_ap_idle.read() & FFT0122_U0_ap_idle.read() & Block_codeRepl12432_U0_ap_idle.read() & (xin_M_imag_t_empty_n.read() ^ 
   ap_const_logic_1) & (xin_M_real_t_empty_n.read() ^ 
   ap_const_logic_1) & (prod_IN_M_real_t_empty_n.read() ^ 
   ap_const_logic_1) & (prod_IN_M_imag_t_empty_n.read() ^ 
@@ -2308,8 +2285,8 @@ void FFT::thread_ap_rst_n_inv() {
     ap_rst_n_inv =  (sc_logic) (~ap_rst_n.read());
 }
 
-void FFT::thread_ap_sync_Block_codeRepl116_pr_U0_ap_ready() {
-    ap_sync_Block_codeRepl116_pr_U0_ap_ready = (Block_codeRepl116_pr_U0_ap_ready.read() | ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready.read());
+void FFT::thread_ap_sync_Block_codeRepl124_pr_U0_ap_ready() {
+    ap_sync_Block_codeRepl124_pr_U0_ap_ready = (Block_codeRepl124_pr_U0_ap_ready.read() | ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready.read());
 }
 
 void FFT::thread_ap_sync_FFT_entry3_U0_ap_ready() {
@@ -2388,12 +2365,12 @@ void FFT::thread_ap_sync_channel_write_prod_IN_M_real() {
 
 void FFT::thread_ap_sync_channel_write_xin_M_imag() {
     ap_sync_channel_write_xin_M_imag = ((ap_channel_done_xin_M_imag.read() & 
-  Block_codeRepl116_pr_U0_xin_M_imag_full_n.read()) | ap_sync_reg_channel_write_xin_M_imag.read());
+  Block_codeRepl124_pr_U0_xin_M_imag_full_n.read()) | ap_sync_reg_channel_write_xin_M_imag.read());
 }
 
 void FFT::thread_ap_sync_channel_write_xin_M_real() {
     ap_sync_channel_write_xin_M_real = ((ap_channel_done_xin_M_real.read() & 
-  Block_codeRepl116_pr_U0_xin_M_real_full_n.read()) | ap_sync_reg_channel_write_xin_M_real.read());
+  Block_codeRepl124_pr_U0_xin_M_real_full_n.read()) | ap_sync_reg_channel_write_xin_M_real.read());
 }
 
 void FFT::thread_ap_sync_continue() {
@@ -2401,11 +2378,11 @@ void FFT::thread_ap_sync_continue() {
 }
 
 void FFT::thread_ap_sync_done() {
-    ap_sync_done = Block_codeRepl11624_U0_ap_done.read();
+    ap_sync_done = Block_codeRepl12432_U0_ap_done.read();
 }
 
 void FFT::thread_ap_sync_ready() {
-    ap_sync_ready = (ap_sync_FFT_entry3_U0_ap_ready.read() & ap_sync_Block_codeRepl116_pr_U0_ap_ready.read());
+    ap_sync_ready = (ap_sync_FFT_entry3_U0_ap_ready.read() & ap_sync_Block_codeRepl124_pr_U0_ap_ready.read());
 }
 
 void FFT::thread_bitreverse_U0_ap_continue() {
@@ -2432,36 +2409,24 @@ void FFT::thread_bitreverse_U0_start_write() {
     bitreverse_U0_start_write = ap_const_logic_0;
 }
 
-void FFT::thread_data_IN_M_imag_TREADY() {
-    data_IN_M_imag_TREADY = Block_codeRepl116_pr_U0_data_IN_M_imag_TREADY.read();
+void FFT::thread_data_IN_TREADY() {
+    data_IN_TREADY = Block_codeRepl124_pr_U0_data_IN_TREADY.read();
 }
 
-void FFT::thread_data_IN_M_real_TREADY() {
-    data_IN_M_real_TREADY = Block_codeRepl116_pr_U0_data_IN_M_real_TREADY.read();
+void FFT::thread_data_OUT_TDATA() {
+    data_OUT_TDATA = Block_codeRepl12432_U0_data_OUT_TDATA.read();
 }
 
-void FFT::thread_data_OUT_M_imag_TDATA() {
-    data_OUT_M_imag_TDATA = Block_codeRepl11624_U0_data_OUT_M_imag_TDATA.read();
-}
-
-void FFT::thread_data_OUT_M_imag_TVALID() {
-    data_OUT_M_imag_TVALID = Block_codeRepl11624_U0_data_OUT_M_imag_TVALID.read();
-}
-
-void FFT::thread_data_OUT_M_real_TDATA() {
-    data_OUT_M_real_TDATA = Block_codeRepl11624_U0_data_OUT_M_real_TDATA.read();
-}
-
-void FFT::thread_data_OUT_M_real_TVALID() {
-    data_OUT_M_real_TVALID = Block_codeRepl11624_U0_data_OUT_M_real_TVALID.read();
+void FFT::thread_data_OUT_TVALID() {
+    data_OUT_TVALID = Block_codeRepl12432_U0_data_OUT_TVALID.read();
 }
 
 void FFT::thread_mag_OUT_TDATA() {
-    mag_OUT_TDATA = Block_codeRepl11624_U0_mag_OUT_TDATA.read();
+    mag_OUT_TDATA = Block_codeRepl12432_U0_mag_OUT_TDATA.read();
 }
 
 void FFT::thread_mag_OUT_TVALID() {
-    mag_OUT_TVALID = Block_codeRepl11624_U0_mag_OUT_TVALID.read();
+    mag_OUT_TVALID = Block_codeRepl12432_U0_mag_OUT_TVALID.read();
 }
 
 void FFT::thread_mult_window_U0_ap_continue() {
@@ -2534,22 +2499,16 @@ void FFT::thread_hdltv_gen() {
         mHdltvinHandle << " , " <<  " \"s_axi_AXILiteS_BREADY\" :  \"" << s_axi_AXILiteS_BREADY.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"s_axi_AXILiteS_BRESP\" :  \"" << s_axi_AXILiteS_BRESP.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"ap_rst_n\" :  \"" << ap_rst_n.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"data_IN_M_real_TDATA\" :  \"" << data_IN_M_real_TDATA.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"data_IN_M_imag_TDATA\" :  \"" << data_IN_M_imag_TDATA.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"data_OUT_M_real_TDATA\" :  \"" << data_OUT_M_real_TDATA.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"data_OUT_M_imag_TDATA\" :  \"" << data_OUT_M_imag_TDATA.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"data_IN_TDATA\" :  \"" << data_IN_TDATA.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"data_OUT_TDATA\" :  \"" << data_OUT_TDATA.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"mag_OUT_TDATA\" :  \"" << mag_OUT_TDATA.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"ap_start\" :  \"" << ap_start.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"data_IN_M_real_TVALID\" :  \"" << data_IN_M_real_TVALID.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"data_IN_M_real_TREADY\" :  \"" << data_IN_M_real_TREADY.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"data_IN_M_imag_TVALID\" :  \"" << data_IN_M_imag_TVALID.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"data_IN_M_imag_TREADY\" :  \"" << data_IN_M_imag_TREADY.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"data_IN_TVALID\" :  \"" << data_IN_TVALID.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"data_IN_TREADY\" :  \"" << data_IN_TREADY.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"mag_OUT_TVALID\" :  \"" << mag_OUT_TVALID.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"mag_OUT_TREADY\" :  \"" << mag_OUT_TREADY.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"data_OUT_M_real_TVALID\" :  \"" << data_OUT_M_real_TVALID.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"data_OUT_M_real_TREADY\" :  \"" << data_OUT_M_real_TREADY.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"data_OUT_M_imag_TVALID\" :  \"" << data_OUT_M_imag_TVALID.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"data_OUT_M_imag_TREADY\" :  \"" << data_OUT_M_imag_TREADY.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"data_OUT_TVALID\" :  \"" << data_OUT_TVALID.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"data_OUT_TREADY\" :  \"" << data_OUT_TREADY.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"ap_done\" :  \"" << ap_done.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"ap_ready\" :  \"" << ap_ready.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"ap_idle\" :  \"" << ap_idle.read() << "\" ";

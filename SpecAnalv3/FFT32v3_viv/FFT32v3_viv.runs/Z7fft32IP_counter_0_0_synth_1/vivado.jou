@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Jan  1 21:31:15 2021
+# Process ID: 16186
+# Current directory: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/FFT32v3_viv/FFT32v3_viv.runs/Z7fft32IP_counter_0_0_synth_1
+# Command line: vivado -log Z7fft32IP_counter_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Z7fft32IP_counter_0_0.tcl
+# Log file: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/FFT32v3_viv/FFT32v3_viv.runs/Z7fft32IP_counter_0_0_synth_1/Z7fft32IP_counter_0_0.vds
+# Journal file: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/FFT32v3_viv/FFT32v3_viv.runs/Z7fft32IP_counter_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source Z7fft32IP_counter_0_0.tcl -notrace

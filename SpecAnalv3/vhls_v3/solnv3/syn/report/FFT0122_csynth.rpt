@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'FFT0122'
 ================================================================
-* Date:           Thu Dec 31 11:13:18 2020
+* Date:           Fri Jan  1 20:14:36 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        vhls_v3
@@ -73,16 +73,16 @@
     +---------------------------+----------------------+---------+-------+-----+-----+-----+
     |          Instance         |        Module        | BRAM_18K| DSP48E|  FF | LUT | URAM|
     +---------------------------+----------------------+---------+-------+-----+-----+-----+
-    |FFT_fadd_32ns_32ndEe_U97   |FFT_fadd_32ns_32ndEe  |        0|      2|  205|  390|    0|
+    |FFT_fadd_32ns_32ndEe_U96   |FFT_fadd_32ns_32ndEe  |        0|      2|  205|  390|    0|
+    |FFT_fadd_32ns_32ndEe_U99   |FFT_fadd_32ns_32ndEe  |        0|      2|  205|  390|    0|
     |FFT_fadd_32ns_32ndEe_U100  |FFT_fadd_32ns_32ndEe  |        0|      2|  205|  390|    0|
-    |FFT_fadd_32ns_32ndEe_U101  |FFT_fadd_32ns_32ndEe  |        0|      2|  205|  390|    0|
+    |FFT_fmul_32ns_32neOg_U101  |FFT_fmul_32ns_32neOg  |        0|      3|  143|  321|    0|
     |FFT_fmul_32ns_32neOg_U102  |FFT_fmul_32ns_32neOg  |        0|      3|  143|  321|    0|
     |FFT_fmul_32ns_32neOg_U103  |FFT_fmul_32ns_32neOg  |        0|      3|  143|  321|    0|
     |FFT_fmul_32ns_32neOg_U104  |FFT_fmul_32ns_32neOg  |        0|      3|  143|  321|    0|
-    |FFT_fmul_32ns_32neOg_U105  |FFT_fmul_32ns_32neOg  |        0|      3|  143|  321|    0|
-    |FFT_fsub_32ns_32ncud_U96   |FFT_fsub_32ns_32ncud  |        0|      2|  205|  390|    0|
+    |FFT_fsub_32ns_32ncud_U95   |FFT_fsub_32ns_32ncud  |        0|      2|  205|  390|    0|
+    |FFT_fsub_32ns_32ncud_U97   |FFT_fsub_32ns_32ncud  |        0|      2|  205|  390|    0|
     |FFT_fsub_32ns_32ncud_U98   |FFT_fsub_32ns_32ncud  |        0|      2|  205|  390|    0|
-    |FFT_fsub_32ns_32ncud_U99   |FFT_fsub_32ns_32ncud  |        0|      2|  205|  390|    0|
     +---------------------------+----------------------+---------+-------+-----+-----+-----+
     |Total                      |                      |        0|     24| 1802| 3624|    0|
     +---------------------------+----------------------+---------+-------+-----+-----+-----+
@@ -112,12 +112,12 @@
     |butterfly_pass_fu_313_p2    |     +    |      0|  0|  39|           1|          32|
     |butterfly_span_fu_299_p2    |     +    |      0|  0|  39|           1|          32|
     |i_fu_257_p2                 |     +    |      0|  0|  15|           5|           1|
-    |icmp_ln71_fu_251_p2         |   icmp   |      0|  0|  11|           5|           6|
-    |icmp_ln79_fu_293_p2         |   icmp   |      0|  0|  18|          32|           4|
+    |icmp_ln76_fu_251_p2         |   icmp   |      0|  0|  11|           5|           6|
+    |icmp_ln84_fu_293_p2         |   icmp   |      0|  0|  18|          32|           4|
     |ap_block_state1             |    or    |      0|  0|   2|           1|           1|
     |butterfly_pass_1_fu_319_p3  |  select  |      0|  0|  32|           1|          32|
     |butterfly_pass_2_fu_335_p3  |  select  |      0|  0|  32|           1|          32|
-    |select_ln79_fu_327_p3       |  select  |      0|  0|  32|           1|          32|
+    |select_ln84_fu_327_p3       |  select  |      0|  0|  32|           1|          32|
     |ap_enable_pp0               |    xor   |      0|  0|   2|           1|           2|
     |ap_enable_reg_pp0_iter1     |    xor   |      0|  0|   2|           2|           1|
     +----------------------------+----------+-------+---+----+------------+------------+
@@ -171,7 +171,7 @@
     |complex_M_real_writ_2_reg_492  |  32|   0|   32|          0|
     |complex_M_real_writ_reg_482    |  32|   0|   32|          0|
     |i_0_reg_200                    |   5|   0|    5|          0|
-    |icmp_ln71_reg_348              |   1|   0|    1|          0|
+    |icmp_ln76_reg_348              |   1|   0|    1|          0|
     |index_reg_178                  |  32|   0|   32|          0|
     |p_r_M_imag_2_reg_476           |  32|   0|   32|          0|
     |p_r_M_imag_reg_404             |  32|   0|   32|          0|
@@ -179,16 +179,16 @@
     |p_r_M_real_reg_398             |  32|   0|   32|          0|
     |p_t_imag_reg_416               |  32|   0|   32|          0|
     |p_t_real_reg_410               |  32|   0|   32|          0|
-    |sext_ln76_1_reg_372            |  64|   0|   64|          0|
-    |sext_ln77_reg_442              |  64|   0|   64|          0|
+    |sext_ln81_1_reg_372            |  64|   0|   64|          0|
+    |sext_ln82_reg_442              |  64|   0|   64|          0|
     |tmp_3_i_i_reg_427              |  32|   0|   32|          0|
     |tmp_5_i_i_reg_432              |  32|   0|   32|          0|
     |tmp_6_i_i_reg_437              |  32|   0|   32|          0|
     |tmp_i_i_reg_422                |  32|   0|   32|          0|
     |Ulimit_reg_357                 |  64|  32|   32|          0|
-    |icmp_ln71_reg_348              |  64|  32|    1|          0|
-    |sext_ln76_1_reg_372            |   4|   2|   64|          0|
-    |sext_ln77_reg_442              |   3|   1|   64|          0|
+    |icmp_ln76_reg_348              |  64|  32|    1|          0|
+    |sext_ln81_1_reg_372            |   4|   2|   64|          0|
+    |sext_ln82_reg_442              |   3|   1|   64|          0|
     +-------------------------------+----+----+-----+-----------+
     |Total                          | 898|  67|  924|          0|
     +-------------------------------+----+----+-----+-----------+

@@ -8,7 +8,7 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
 # 1 "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/vhls_src/fft.cpp"
-# 11 "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/vhls_src/fft.cpp"
+# 17 "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/vhls_src/fft.cpp"
 # 1 "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/vhls_src/32fft.h" 1
 
 
@@ -70033,7 +70033,7 @@ const float Blackman32[32] = {
 };
 # 17 "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/vhls_src/32fft.h" 2
 void FFT(data_comp data_IN[32], char win_mode, data_comp data_OUT[32], data_t mag_OUT[32]);
-# 12 "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/vhls_src/fft.cpp" 2
+# 18 "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/vhls_src/fft.cpp" 2
 
 # 1 "/tools/Xilinx/Vivado/2020.1/include/hls_math.h" 1
 # 36 "/tools/Xilinx/Vivado/2020.1/include/hls_math.h"
@@ -86170,8 +86170,7 @@ namespace hls {
     uint32_t logb(uint32_t);
 
 };
-# 14 "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/vhls_src/fft.cpp" 2
-
+# 20 "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/vhls_src/fft.cpp" 2
 
 using namespace std;
 
@@ -86252,7 +86251,7 @@ void polarOUT(data_comp data_IN[32], data_t mag_OUT[32])
  data_t in_r[32], in_i[32];
  for(int i = 0; i<32; i++){
 #pragma HLS PIPELINE
-# 106 "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/vhls_src/fft.cpp"
+# 111 "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/vhls_src/fft.cpp"
   in_r[i] = data_IN[i].real();
   in_i[i] = data_IN[i].imag();
   mag_sqr[i] = in_r[i]*in_r[i] + in_i[i]*in_i[i];
@@ -86261,12 +86260,21 @@ void polarOUT(data_comp data_IN[32], data_t mag_OUT[32])
 }
 
 void FFT(data_comp data_IN[32], char win_mode, data_comp data_OUT[32], data_t mag_OUT[32]){
+
+#pragma HLS DATA_PACK variable=data_OUT
+#pragma HLS DATA_PACK variable=data_IN
 #pragma HLS INTERFACE s_axilite port=win_mode
 #pragma HLS DATAFLOW
 #pragma HLS INTERFACE axis register both port=mag_OUT
 #pragma HLS INTERFACE axis register both port=data_OUT
 #pragma HLS INTERFACE axis register both port=data_IN
-# 127 "/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3/vhls_src/fft.cpp"
+
+
+
+
+
+
+
  static data_comp prod_IN[32];
  static data_comp data_OUT0[32];
  static data_comp data_OUT1[32];

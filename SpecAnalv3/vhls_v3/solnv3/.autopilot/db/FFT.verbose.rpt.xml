@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'FFT'" level="0">
-<item name = "Date">Thu Dec 31 11:13:21 2020
+<item name = "Date">Fri Jan  1 20:14:38 2021
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">vhls_v3</item>
@@ -32,14 +32,14 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="mult_window_U0">mult_window, 46, 46, 0.460 us, 0.460 us, 46, 46, none</column>
+<column name="Block_codeRepl12432_U0">Block_codeRepl12432_s, 98, 98, 0.980 us, 0.980 us, 98, 98, none</column>
 <column name="FFT0119_U0">FFT0119, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
 <column name="FFT0120_U0">FFT0120, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
 <column name="FFT0121_U0">FFT0121, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
 <column name="FFT0118_U0">FFT0118, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
 <column name="FFT0122_U0">FFT0122, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
-<column name="Block_codeRepl11624_U0">Block_codeRepl11624_s, 98, 98, 0.980 us, 0.980 us, 98, 98, none</column>
 <column name="bitreverse_U0">bitreverse, 16, 16, 0.160 us, 0.160 us, 16, 16, none</column>
-<column name="Block_codeRepl116_pr_U0">Block_codeRepl116_pr, 31, 31, 0.310 us, 0.310 us, 31, 31, none</column>
+<column name="Block_codeRepl124_pr_U0">Block_codeRepl124_pr, 31, 31, 0.310 us, 0.310 us, 31, 31, none</column>
 <column name="FFT_entry3_U0">FFT_entry3, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
 </table>
 </item>
@@ -59,20 +59,20 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 128, -</column>
 <column name="FIFO">0, -, 10, 40, -</column>
-<column name="Instance">26, 179, 18479, 29588, 0</column>
+<column name="Instance">26, 179, 18479, 30015, 0</column>
 <column name="Memory">32, -, 0, 0, 0</column>
 <column name="Multiplexer">-, -, -, 180, -</column>
 <column name="Register">-, -, 22, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">20, 81, 17, 56, 0</specialColumn>
+<specialColumn name="Utilization (%)">20, 81, 17, 57, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="Block_codeRepl11624_U0">Block_codeRepl11624_s, 1, 27, 1729, 3075, 0</column>
-<column name="Block_codeRepl116_pr_U0">Block_codeRepl116_pr, 0, 0, 33, 496, 0</column>
+<column name="Block_codeRepl12432_U0">Block_codeRepl12432_s, 1, 27, 1729, 3215, 0</column>
+<column name="Block_codeRepl124_pr_U0">Block_codeRepl124_pr, 0, 0, 33, 783, 0</column>
 <column name="FFT0118_U0">FFT0118, 4, 24, 2764, 4084, 0</column>
 <column name="FFT0119_U0">FFT0119, 4, 24, 2764, 4102, 0</column>
 <column name="FFT0120_U0">FFT0120, 4, 24, 2764, 4102, 0</column>
@@ -116,11 +116,11 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="Block_codeRepl116_pr_U0_ap_ready_count">+, 0, 0, 10, 2, 1</column>
+<column name="Block_codeRepl124_pr_U0_ap_ready_count">+, 0, 0, 10, 2, 1</column>
 <column name="FFT_entry3_U0_ap_ready_count">+, 0, 0, 10, 2, 1</column>
-<column name="Block_codeRepl11624_U0_ap_start">and, 0, 0, 2, 1, 1</column>
-<column name="Block_codeRepl116_pr_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
-<column name="Block_codeRepl116_pr_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Block_codeRepl12432_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Block_codeRepl124_pr_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="Block_codeRepl124_pr_U0_ap_start">and, 0, 0, 2, 1, 1</column>
 <column name="FFT0118_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
 <column name="FFT0118_U0_ap_start">and, 0, 0, 2, 1, 1</column>
 <column name="FFT0119_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
@@ -154,7 +154,7 @@
 <column name="bitreverse_U0_ap_start">and, 0, 0, 2, 1, 1</column>
 <column name="mult_window_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
 <column name="mult_window_U0_ap_start">and, 0, 0, 2, 1, 1</column>
-<column name="ap_sync_Block_codeRepl116_pr_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Block_codeRepl124_pr_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_FFT_entry3_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_channel_write_data_OUT0_M_imag">or, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_channel_write_data_OUT0_M_real">or, 0, 0, 2, 1, 1</column>
@@ -176,9 +176,9 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="Block_codeRepl116_pr_U0_ap_ready_count">9, 2, 2, 4</column>
+<column name="Block_codeRepl124_pr_U0_ap_ready_count">9, 2, 2, 4</column>
 <column name="FFT_entry3_U0_ap_ready_count">9, 2, 2, 4</column>
-<column name="ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready">9, 2, 1, 2</column>
 <column name="ap_sync_reg_FFT_entry3_U0_ap_ready">9, 2, 1, 2</column>
 <column name="ap_sync_reg_channel_write_data_OUT0_M_imag">9, 2, 1, 2</column>
 <column name="ap_sync_reg_channel_write_data_OUT0_M_real">9, 2, 1, 2</column>
@@ -200,9 +200,9 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="Block_codeRepl116_pr_U0_ap_ready_count">2, 0, 2, 0</column>
+<column name="Block_codeRepl124_pr_U0_ap_ready_count">2, 0, 2, 0</column>
 <column name="FFT_entry3_U0_ap_ready_count">2, 0, 2, 0</column>
-<column name="ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready">1, 0, 1, 0</column>
 <column name="ap_sync_reg_FFT_entry3_U0_ap_ready">1, 0, 1, 0</column>
 <column name="ap_sync_reg_channel_write_data_OUT0_M_imag">1, 0, 1, 0</column>
 <column name="ap_sync_reg_channel_write_data_OUT0_M_real">1, 0, 1, 0</column>
@@ -252,18 +252,12 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, FFT, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, FFT, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, FFT, return value</column>
-<column name="data_IN_M_real_TDATA">in, 32, axis, data_IN_M_real, pointer</column>
-<column name="data_IN_M_real_TVALID">in, 1, axis, data_IN_M_real, pointer</column>
-<column name="data_IN_M_real_TREADY">out, 1, axis, data_IN_M_real, pointer</column>
-<column name="data_IN_M_imag_TDATA">in, 32, axis, data_IN_M_imag, pointer</column>
-<column name="data_IN_M_imag_TVALID">in, 1, axis, data_IN_M_imag, pointer</column>
-<column name="data_IN_M_imag_TREADY">out, 1, axis, data_IN_M_imag, pointer</column>
-<column name="data_OUT_M_real_TDATA">out, 32, axis, data_OUT_M_real, pointer</column>
-<column name="data_OUT_M_real_TVALID">out, 1, axis, data_OUT_M_real, pointer</column>
-<column name="data_OUT_M_real_TREADY">in, 1, axis, data_OUT_M_real, pointer</column>
-<column name="data_OUT_M_imag_TDATA">out, 32, axis, data_OUT_M_imag, pointer</column>
-<column name="data_OUT_M_imag_TVALID">out, 1, axis, data_OUT_M_imag, pointer</column>
-<column name="data_OUT_M_imag_TREADY">in, 1, axis, data_OUT_M_imag, pointer</column>
+<column name="data_IN_TDATA">in, 64, axis, data_IN, pointer</column>
+<column name="data_IN_TVALID">in, 1, axis, data_IN, pointer</column>
+<column name="data_IN_TREADY">out, 1, axis, data_IN, pointer</column>
+<column name="data_OUT_TDATA">out, 64, axis, data_OUT, pointer</column>
+<column name="data_OUT_TVALID">out, 1, axis, data_OUT, pointer</column>
+<column name="data_OUT_TREADY">in, 1, axis, data_OUT, pointer</column>
 <column name="mag_OUT_TDATA">out, 32, axis, mag_OUT, pointer</column>
 <column name="mag_OUT_TVALID">out, 1, axis, mag_OUT, pointer</column>
 <column name="mag_OUT_TREADY">in, 1, axis, mag_OUT, pointer</column>

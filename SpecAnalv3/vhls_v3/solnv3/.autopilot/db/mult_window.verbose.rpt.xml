@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'mult_window'" level="0">
-<item name = "Date">Thu Dec 31 11:13:15 2020
+<item name = "Date">Fri Jan  1 20:14:32 2021
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">vhls_v3</item>
@@ -66,8 +66,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="FFT_fadd_32ns_32ndEe_U11">FFT_fadd_32ns_32ndEe, 0, 2, 205, 390, 0</column>
-<column name="FFT_fadd_32ns_32ndEe_U13">FFT_fadd_32ns_32ndEe, 0, 2, 205, 390, 0</column>
+<column name="FFT_fadd_32ns_32ndEe_U10">FFT_fadd_32ns_32ndEe, 0, 2, 205, 390, 0</column>
+<column name="FFT_fadd_32ns_32ndEe_U12">FFT_fadd_32ns_32ndEe, 0, 2, 205, 390, 0</column>
+<column name="FFT_fmul_32ns_32neOg_U13">FFT_fmul_32ns_32neOg, 0, 3, 143, 321, 0</column>
 <column name="FFT_fmul_32ns_32neOg_U14">FFT_fmul_32ns_32neOg, 0, 3, 143, 321, 0</column>
 <column name="FFT_fmul_32ns_32neOg_U15">FFT_fmul_32ns_32neOg, 0, 3, 143, 321, 0</column>
 <column name="FFT_fmul_32ns_32neOg_U16">FFT_fmul_32ns_32neOg, 0, 3, 143, 321, 0</column>
@@ -75,9 +76,8 @@
 <column name="FFT_fmul_32ns_32neOg_U18">FFT_fmul_32ns_32neOg, 0, 3, 143, 321, 0</column>
 <column name="FFT_fmul_32ns_32neOg_U19">FFT_fmul_32ns_32neOg, 0, 3, 143, 321, 0</column>
 <column name="FFT_fmul_32ns_32neOg_U20">FFT_fmul_32ns_32neOg, 0, 3, 143, 321, 0</column>
-<column name="FFT_fmul_32ns_32neOg_U21">FFT_fmul_32ns_32neOg, 0, 3, 143, 321, 0</column>
-<column name="FFT_fsub_32ns_32ncud_U10">FFT_fsub_32ns_32ncud, 0, 2, 205, 390, 0</column>
-<column name="FFT_fsub_32ns_32ncud_U12">FFT_fsub_32ns_32ncud, 0, 2, 205, 390, 0</column>
+<column name="FFT_fsub_32ns_32ncud_U9">FFT_fsub_32ns_32ncud, 0, 2, 205, 390, 0</column>
+<column name="FFT_fsub_32ns_32ncud_U11">FFT_fsub_32ns_32ncud, 0, 2, 205, 390, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -98,22 +98,22 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln24_fu_555_p2">+, 0, 0, 15, 2, 6</column>
-<column name="add_ln32_fu_523_p2">+, 0, 0, 15, 2, 6</column>
-<column name="add_ln40_fu_491_p2">+, 0, 0, 15, 2, 6</column>
-<column name="add_ln47_fu_587_p2">+, 0, 0, 15, 2, 6</column>
-<column name="add_ln53_fu_623_p2">+, 0, 0, 15, 2, 6</column>
-<column name="icmp_ln24_fu_529_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln32_fu_497_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln40_fu_465_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln47_fu_561_p2">icmp, 0, 0, 11, 6, 7</column>
-<column name="icmp_ln53_fu_593_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="add_ln29_fu_555_p2">+, 0, 0, 15, 2, 6</column>
+<column name="add_ln37_fu_523_p2">+, 0, 0, 15, 2, 6</column>
+<column name="add_ln45_fu_491_p2">+, 0, 0, 15, 2, 6</column>
+<column name="add_ln52_fu_587_p2">+, 0, 0, 15, 2, 6</column>
+<column name="add_ln58_fu_623_p2">+, 0, 0, 15, 2, 6</column>
+<column name="icmp_ln29_fu_529_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln37_fu_497_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln45_fu_465_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln52_fu_561_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="icmp_ln58_fu_593_p2">icmp, 0, 0, 11, 6, 7</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln24_fu_544_p2">or, 0, 0, 5, 5, 1</column>
-<column name="or_ln32_fu_512_p2">or, 0, 0, 5, 5, 1</column>
-<column name="or_ln40_fu_480_p2">or, 0, 0, 5, 5, 1</column>
-<column name="or_ln47_fu_576_p2">or, 0, 0, 5, 5, 1</column>
-<column name="or_ln53_fu_610_p2">or, 0, 0, 5, 5, 1</column>
+<column name="or_ln29_fu_544_p2">or, 0, 0, 5, 5, 1</column>
+<column name="or_ln37_fu_512_p2">or, 0, 0, 5, 5, 1</column>
+<column name="or_ln45_fu_480_p2">or, 0, 0, 5, 5, 1</column>
+<column name="or_ln52_fu_576_p2">or, 0, 0, 5, 5, 1</column>
+<column name="or_ln58_fu_610_p2">or, 0, 0, 5, 5, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp2">xor, 0, 0, 2, 1, 2</column>
@@ -176,10 +176,10 @@
 <column name="i3_0_0_i_reg_391">6, 0, 6, 0</column>
 <column name="i4_0_0_i_reg_402">6, 0, 6, 0</column>
 <column name="i_0_0_i_reg_380">6, 0, 6, 0</column>
-<column name="icmp_ln24_reg_691">1, 0, 1, 0</column>
-<column name="icmp_ln32_reg_662">1, 0, 1, 0</column>
-<column name="icmp_ln40_reg_633">1, 0, 1, 0</column>
-<column name="icmp_ln53_reg_728">1, 0, 1, 0</column>
+<column name="icmp_ln29_reg_691">1, 0, 1, 0</column>
+<column name="icmp_ln37_reg_662">1, 0, 1, 0</column>
+<column name="icmp_ln45_reg_633">1, 0, 1, 0</column>
+<column name="icmp_ln58_reg_728">1, 0, 1, 0</column>
 <column name="p_r_M_imag_1_reg_803">32, 0, 32, 0</column>
 <column name="p_r_M_imag_reg_785">32, 0, 32, 0</column>
 <column name="p_r_M_real_1_reg_797">32, 0, 32, 0</column>
@@ -190,21 +190,21 @@
 <column name="tmp_8_i_i_i_reg_820">32, 0, 32, 0</column>
 <column name="tmp_i_i35_i_reg_835">32, 0, 32, 0</column>
 <column name="tmp_i_i38_i_reg_845">32, 0, 32, 0</column>
-<column name="tmp_i_i_i_16_reg_825">32, 0, 32, 0</column>
+<column name="tmp_i_i_i_18_reg_825">32, 0, 32, 0</column>
 <column name="tmp_i_i_i_reg_815">32, 0, 32, 0</column>
 <column name="window_load_1_reg_809">32, 0, 32, 0</column>
 <column name="window_load_reg_791">32, 0, 32, 0</column>
-<column name="zext_ln28_1_reg_705">4, 0, 64, 60</column>
-<column name="zext_ln28_reg_695">6, 0, 64, 58</column>
-<column name="zext_ln36_1_reg_676">4, 0, 64, 60</column>
-<column name="zext_ln36_reg_666">6, 0, 64, 58</column>
-<column name="zext_ln44_1_reg_647">4, 0, 64, 60</column>
-<column name="zext_ln44_reg_637">6, 0, 64, 58</column>
-<column name="zext_ln56_1_reg_753">4, 0, 64, 60</column>
-<column name="zext_ln56_reg_732">6, 0, 64, 58</column>
-<column name="icmp_ln53_reg_728">64, 32, 1, 0</column>
-<column name="zext_ln56_1_reg_753">64, 32, 64, 60</column>
-<column name="zext_ln56_reg_732">64, 32, 64, 58</column>
+<column name="zext_ln33_1_reg_705">4, 0, 64, 60</column>
+<column name="zext_ln33_reg_695">6, 0, 64, 58</column>
+<column name="zext_ln41_1_reg_676">4, 0, 64, 60</column>
+<column name="zext_ln41_reg_666">6, 0, 64, 58</column>
+<column name="zext_ln49_1_reg_647">4, 0, 64, 60</column>
+<column name="zext_ln49_reg_637">6, 0, 64, 58</column>
+<column name="zext_ln61_1_reg_753">4, 0, 64, 60</column>
+<column name="zext_ln61_reg_732">6, 0, 64, 58</column>
+<column name="icmp_ln58_reg_728">64, 32, 1, 0</column>
+<column name="zext_ln61_1_reg_753">64, 32, 64, 60</column>
+<column name="zext_ln61_reg_732">64, 32, 64, 58</column>
 </table>
 </item>
 </section>

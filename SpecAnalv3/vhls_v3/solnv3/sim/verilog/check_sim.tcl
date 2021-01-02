@@ -80,14 +80,11 @@ proc check_tvin_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "c.FFT.autotvin_data_IN_M_real.dat"
-         "c.FFT.autotvin_data_IN_M_imag.dat"
+         "c.FFT.autotvin_data_IN.dat"
          "c.FFT.autotvin_win_mode.dat"
-         "c.FFT.autotvin_data_OUT_M_real.dat"
-         "c.FFT.autotvin_data_OUT_M_imag.dat"
+         "c.FFT.autotvin_data_OUT.dat"
          "c.FFT.autotvin_mag_OUT.dat"
-         "c.FFT.autotvout_data_OUT_M_real.dat"
-         "c.FFT.autotvout_data_OUT_M_imag.dat"
+         "c.FFT.autotvout_data_OUT.dat"
          "c.FFT.autotvout_mag_OUT.dat"
     }
     foreach rtlfile $rtlfilelist {
@@ -113,8 +110,7 @@ proc check_tvout_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "rtl.FFT.autotvout_data_OUT_M_real.dat"
-         "rtl.FFT.autotvout_data_OUT_M_imag.dat"
+         "rtl.FFT.autotvout_data_OUT.dat"
          "rtl.FFT.autotvout_mag_OUT.dat"
     }
     foreach rtlfile $rtlfilelist {

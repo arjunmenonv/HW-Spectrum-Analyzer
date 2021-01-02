@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 
 entity FFT_flog_32ns_32ng8j is
     generic (
-        ID         : integer := 115;
+        ID         : integer := 114;
         NUM_STAGE  : integer := 13;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;

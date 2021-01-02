@@ -12,7 +12,7 @@
 #include "AESL_pkg.h"
 
 #include "FFT_entry3.h"
-#include "Block_codeRepl116_pr.h"
+#include "Block_codeRepl124_pr.h"
 #include "mult_window.h"
 #include "bitreverse.h"
 #include "FFT0118.h"
@@ -20,7 +20,7 @@
 #include "FFT0120.h"
 #include "FFT0121.h"
 #include "FFT0122.h"
-#include "Block_codeRepl11624_s.h"
+#include "Block_codeRepl12432_s.h"
 #include "FFT_xin_M_imag.h"
 #include "FFT_prod_IN_M_real.h"
 #include "FFT_data_OUTfft_MrcU.h"
@@ -32,7 +32,7 @@ namespace ap_rtl {
 template<unsigned int C_S_AXI_AXILITES_ADDR_WIDTH = 5,
          unsigned int C_S_AXI_AXILITES_DATA_WIDTH = 32>
 struct FFT : public sc_module {
-    // Port declarations 38
+    // Port declarations 32
     sc_in< sc_logic > s_axi_AXILiteS_AWVALID;
     sc_out< sc_logic > s_axi_AXILiteS_AWREADY;
     sc_in< sc_uint<C_S_AXI_AXILITES_ADDR_WIDTH> > s_axi_AXILiteS_AWADDR;
@@ -52,22 +52,16 @@ struct FFT : public sc_module {
     sc_out< sc_lv<2> > s_axi_AXILiteS_BRESP;
     sc_in_clk ap_clk;
     sc_in< sc_logic > ap_rst_n;
-    sc_in< sc_lv<32> > data_IN_M_real_TDATA;
-    sc_in< sc_lv<32> > data_IN_M_imag_TDATA;
-    sc_out< sc_lv<32> > data_OUT_M_real_TDATA;
-    sc_out< sc_lv<32> > data_OUT_M_imag_TDATA;
+    sc_in< sc_lv<64> > data_IN_TDATA;
+    sc_out< sc_lv<64> > data_OUT_TDATA;
     sc_out< sc_lv<32> > mag_OUT_TDATA;
     sc_in< sc_logic > ap_start;
-    sc_in< sc_logic > data_IN_M_real_TVALID;
-    sc_out< sc_logic > data_IN_M_real_TREADY;
-    sc_in< sc_logic > data_IN_M_imag_TVALID;
-    sc_out< sc_logic > data_IN_M_imag_TREADY;
+    sc_in< sc_logic > data_IN_TVALID;
+    sc_out< sc_logic > data_IN_TREADY;
     sc_out< sc_logic > mag_OUT_TVALID;
     sc_in< sc_logic > mag_OUT_TREADY;
-    sc_out< sc_logic > data_OUT_M_real_TVALID;
-    sc_in< sc_logic > data_OUT_M_real_TREADY;
-    sc_out< sc_logic > data_OUT_M_imag_TVALID;
-    sc_in< sc_logic > data_OUT_M_imag_TREADY;
+    sc_out< sc_logic > data_OUT_TVALID;
+    sc_in< sc_logic > data_OUT_TREADY;
     sc_out< sc_logic > ap_done;
     sc_out< sc_logic > ap_ready;
     sc_out< sc_logic > ap_idle;
@@ -89,7 +83,7 @@ struct FFT : public sc_module {
     ofstream mHdltvoutHandle;
     FFT_AXILiteS_s_axi<C_S_AXI_AXILITES_ADDR_WIDTH,C_S_AXI_AXILITES_DATA_WIDTH>* FFT_AXILiteS_s_axi_U;
     FFT_entry3* FFT_entry3_U0;
-    Block_codeRepl116_pr* Block_codeRepl116_pr_U0;
+    Block_codeRepl124_pr* Block_codeRepl124_pr_U0;
     mult_window* mult_window_U0;
     bitreverse* bitreverse_U0;
     FFT0118* FFT0118_U0;
@@ -97,7 +91,7 @@ struct FFT : public sc_module {
     FFT0120* FFT0120_U0;
     FFT0121* FFT0121_U0;
     FFT0122* FFT0122_U0;
-    Block_codeRepl11624_s* Block_codeRepl11624_U0;
+    Block_codeRepl12432_s* Block_codeRepl12432_U0;
     FFT_xin_M_imag* xin_M_imag_U;
     FFT_xin_M_imag* xin_M_real_U;
     FFT_prod_IN_M_real* prod_IN_M_real_U;
@@ -125,30 +119,29 @@ struct FFT : public sc_module {
     sc_signal< sc_logic > FFT_entry3_U0_ap_ready;
     sc_signal< sc_lv<8> > FFT_entry3_U0_win_mode_out_din;
     sc_signal< sc_logic > FFT_entry3_U0_win_mode_out_write;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_ap_start;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_ap_done;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_ap_continue;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_ap_idle;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_ap_ready;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_data_IN_M_real_TREADY;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_data_IN_M_imag_TREADY;
-    sc_signal< sc_lv<5> > Block_codeRepl116_pr_U0_xin_M_imag_address0;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_xin_M_imag_ce0;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_xin_M_imag_we0;
-    sc_signal< sc_lv<32> > Block_codeRepl116_pr_U0_xin_M_imag_d0;
-    sc_signal< sc_lv<5> > Block_codeRepl116_pr_U0_xin_M_real_address0;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_xin_M_real_ce0;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_xin_M_real_we0;
-    sc_signal< sc_lv<32> > Block_codeRepl116_pr_U0_xin_M_real_d0;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_win_mode_read;
-    sc_signal< sc_lv<8> > Block_codeRepl116_pr_U0_win_mode_out_din;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_win_mode_out_write;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_ap_start;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_ap_done;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_ap_continue;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_ap_idle;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_ap_ready;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_data_IN_TREADY;
+    sc_signal< sc_lv<5> > Block_codeRepl124_pr_U0_xin_M_imag_address0;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_xin_M_imag_ce0;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_xin_M_imag_we0;
+    sc_signal< sc_lv<32> > Block_codeRepl124_pr_U0_xin_M_imag_d0;
+    sc_signal< sc_lv<5> > Block_codeRepl124_pr_U0_xin_M_real_address0;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_xin_M_real_ce0;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_xin_M_real_we0;
+    sc_signal< sc_lv<32> > Block_codeRepl124_pr_U0_xin_M_real_d0;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_win_mode_read;
+    sc_signal< sc_lv<8> > Block_codeRepl124_pr_U0_win_mode_out_din;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_win_mode_out_write;
     sc_signal< sc_logic > ap_channel_done_xin_M_real;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_xin_M_real_full_n;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_xin_M_real_full_n;
     sc_signal< sc_logic > ap_sync_reg_channel_write_xin_M_real;
     sc_signal< sc_logic > ap_sync_channel_write_xin_M_real;
     sc_signal< sc_logic > ap_channel_done_xin_M_imag;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_xin_M_imag_full_n;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_xin_M_imag_full_n;
     sc_signal< sc_logic > ap_sync_reg_channel_write_xin_M_imag;
     sc_signal< sc_logic > ap_sync_channel_write_xin_M_imag;
     sc_signal< sc_logic > mult_window_U0_ap_start;
@@ -411,21 +404,19 @@ struct FFT : public sc_module {
     sc_signal< sc_logic > FFT0122_U0_data_OUTfft_M_real_full_n;
     sc_signal< sc_logic > ap_sync_reg_channel_write_data_OUTfft_M_real;
     sc_signal< sc_logic > ap_sync_channel_write_data_OUTfft_M_real;
-    sc_signal< sc_logic > Block_codeRepl11624_U0_ap_start;
-    sc_signal< sc_logic > Block_codeRepl11624_U0_ap_done;
-    sc_signal< sc_logic > Block_codeRepl11624_U0_ap_continue;
-    sc_signal< sc_logic > Block_codeRepl11624_U0_ap_idle;
-    sc_signal< sc_logic > Block_codeRepl11624_U0_ap_ready;
-    sc_signal< sc_lv<32> > Block_codeRepl11624_U0_mag_OUT_TDATA;
-    sc_signal< sc_logic > Block_codeRepl11624_U0_mag_OUT_TVALID;
-    sc_signal< sc_lv<32> > Block_codeRepl11624_U0_data_OUT_M_real_TDATA;
-    sc_signal< sc_logic > Block_codeRepl11624_U0_data_OUT_M_real_TVALID;
-    sc_signal< sc_lv<32> > Block_codeRepl11624_U0_data_OUT_M_imag_TDATA;
-    sc_signal< sc_logic > Block_codeRepl11624_U0_data_OUT_M_imag_TVALID;
-    sc_signal< sc_lv<5> > Block_codeRepl11624_U0_data_OUTfft_M_imag_address0;
-    sc_signal< sc_logic > Block_codeRepl11624_U0_data_OUTfft_M_imag_ce0;
-    sc_signal< sc_lv<5> > Block_codeRepl11624_U0_data_OUTfft_M_real_address0;
-    sc_signal< sc_logic > Block_codeRepl11624_U0_data_OUTfft_M_real_ce0;
+    sc_signal< sc_logic > Block_codeRepl12432_U0_ap_start;
+    sc_signal< sc_logic > Block_codeRepl12432_U0_ap_done;
+    sc_signal< sc_logic > Block_codeRepl12432_U0_ap_continue;
+    sc_signal< sc_logic > Block_codeRepl12432_U0_ap_idle;
+    sc_signal< sc_logic > Block_codeRepl12432_U0_ap_ready;
+    sc_signal< sc_lv<32> > Block_codeRepl12432_U0_mag_OUT_TDATA;
+    sc_signal< sc_logic > Block_codeRepl12432_U0_mag_OUT_TVALID;
+    sc_signal< sc_lv<64> > Block_codeRepl12432_U0_data_OUT_TDATA;
+    sc_signal< sc_logic > Block_codeRepl12432_U0_data_OUT_TVALID;
+    sc_signal< sc_lv<5> > Block_codeRepl12432_U0_data_OUTfft_M_imag_address0;
+    sc_signal< sc_logic > Block_codeRepl12432_U0_data_OUTfft_M_imag_ce0;
+    sc_signal< sc_lv<5> > Block_codeRepl12432_U0_data_OUTfft_M_real_address0;
+    sc_signal< sc_logic > Block_codeRepl12432_U0_data_OUTfft_M_real_ce0;
     sc_signal< sc_logic > ap_sync_continue;
     sc_signal< sc_lv<32> > xin_M_imag_i_q0;
     sc_signal< sc_lv<32> > xin_M_imag_i_q1;
@@ -534,13 +525,13 @@ struct FFT : public sc_module {
     sc_signal< sc_logic > ap_sync_reg_FFT_entry3_U0_ap_ready;
     sc_signal< sc_logic > ap_sync_FFT_entry3_U0_ap_ready;
     sc_signal< sc_lv<2> > FFT_entry3_U0_ap_ready_count;
-    sc_signal< sc_logic > ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready;
-    sc_signal< sc_logic > ap_sync_Block_codeRepl116_pr_U0_ap_ready;
-    sc_signal< sc_lv<2> > Block_codeRepl116_pr_U0_ap_ready_count;
+    sc_signal< sc_logic > ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready;
+    sc_signal< sc_logic > ap_sync_Block_codeRepl124_pr_U0_ap_ready;
+    sc_signal< sc_lv<2> > Block_codeRepl124_pr_U0_ap_ready_count;
     sc_signal< sc_logic > FFT_entry3_U0_start_full_n;
     sc_signal< sc_logic > FFT_entry3_U0_start_write;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_start_full_n;
-    sc_signal< sc_logic > Block_codeRepl116_pr_U0_start_write;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_start_full_n;
+    sc_signal< sc_logic > Block_codeRepl124_pr_U0_start_write;
     sc_signal< sc_logic > mult_window_U0_start_full_n;
     sc_signal< sc_logic > mult_window_U0_start_write;
     sc_signal< sc_logic > bitreverse_U0_start_full_n;
@@ -555,12 +546,13 @@ struct FFT : public sc_module {
     sc_signal< sc_logic > FFT0121_U0_start_write;
     sc_signal< sc_logic > FFT0122_U0_start_full_n;
     sc_signal< sc_logic > FFT0122_U0_start_write;
-    sc_signal< sc_logic > Block_codeRepl11624_U0_start_full_n;
-    sc_signal< sc_logic > Block_codeRepl11624_U0_start_write;
+    sc_signal< sc_logic > Block_codeRepl12432_U0_start_full_n;
+    sc_signal< sc_logic > Block_codeRepl12432_U0_start_write;
     static const int C_S_AXI_DATA_WIDTH;
     static const int C_S_AXI_WSTRB_WIDTH;
     static const int C_S_AXI_ADDR_WIDTH;
     static const sc_logic ap_const_logic_1;
+    static const sc_lv<64> ap_const_lv64_0;
     static const sc_lv<32> ap_const_lv32_0;
     static const sc_logic ap_const_logic_0;
     static const sc_lv<2> ap_const_lv2_0;
@@ -575,16 +567,16 @@ struct FFT : public sc_module {
     void thread_ap_var_for_const2();
     void thread_ap_var_for_const1();
     void thread_ap_clk_no_reset_();
-    void thread_Block_codeRepl11624_U0_ap_continue();
-    void thread_Block_codeRepl11624_U0_ap_start();
-    void thread_Block_codeRepl11624_U0_start_full_n();
-    void thread_Block_codeRepl11624_U0_start_write();
-    void thread_Block_codeRepl116_pr_U0_ap_continue();
-    void thread_Block_codeRepl116_pr_U0_ap_start();
-    void thread_Block_codeRepl116_pr_U0_start_full_n();
-    void thread_Block_codeRepl116_pr_U0_start_write();
-    void thread_Block_codeRepl116_pr_U0_xin_M_imag_full_n();
-    void thread_Block_codeRepl116_pr_U0_xin_M_real_full_n();
+    void thread_Block_codeRepl12432_U0_ap_continue();
+    void thread_Block_codeRepl12432_U0_ap_start();
+    void thread_Block_codeRepl12432_U0_start_full_n();
+    void thread_Block_codeRepl12432_U0_start_write();
+    void thread_Block_codeRepl124_pr_U0_ap_continue();
+    void thread_Block_codeRepl124_pr_U0_ap_start();
+    void thread_Block_codeRepl124_pr_U0_start_full_n();
+    void thread_Block_codeRepl124_pr_U0_start_write();
+    void thread_Block_codeRepl124_pr_U0_xin_M_imag_full_n();
+    void thread_Block_codeRepl124_pr_U0_xin_M_real_full_n();
     void thread_FFT0118_U0_ap_continue();
     void thread_FFT0118_U0_ap_start();
     void thread_FFT0118_U0_data_OUT1_M_imag_full_n();
@@ -639,7 +631,7 @@ struct FFT : public sc_module {
     void thread_ap_idle();
     void thread_ap_ready();
     void thread_ap_rst_n_inv();
-    void thread_ap_sync_Block_codeRepl116_pr_U0_ap_ready();
+    void thread_ap_sync_Block_codeRepl124_pr_U0_ap_ready();
     void thread_ap_sync_FFT_entry3_U0_ap_ready();
     void thread_ap_sync_channel_write_data_OUT0_M_imag();
     void thread_ap_sync_channel_write_data_OUT0_M_real();
@@ -666,12 +658,9 @@ struct FFT : public sc_module {
     void thread_bitreverse_U0_data_OUT0_M_real_full_n();
     void thread_bitreverse_U0_start_full_n();
     void thread_bitreverse_U0_start_write();
-    void thread_data_IN_M_imag_TREADY();
-    void thread_data_IN_M_real_TREADY();
-    void thread_data_OUT_M_imag_TDATA();
-    void thread_data_OUT_M_imag_TVALID();
-    void thread_data_OUT_M_real_TDATA();
-    void thread_data_OUT_M_real_TVALID();
+    void thread_data_IN_TREADY();
+    void thread_data_OUT_TDATA();
+    void thread_data_OUT_TVALID();
     void thread_mag_OUT_TDATA();
     void thread_mag_OUT_TVALID();
     void thread_mult_window_U0_ap_continue();

@@ -38,10 +38,17 @@ if __name__ == "__main__" :
   result_hann = np.fft.fft(data*np.hanning(32))
   result_hamm = np.fft.fft(data*np.hamming(32))
   result_black = np.fft.fft(data*np.blackman(32))
-
+'''
+    # TEST DATA Saved in Vivado HLS testbench folder
   np.savetxt("../build/inp.txt", data, fmt = "%f %f")
   np.savetxt("../build/out_hann.txt", result_hann, fmt = "%f %f")
   np.savetxt("../build/out_hamm.txt", result_hamm, fmt = "%f %f")
   np.savetxt("../build/out_black.txt", result_black, fmt = "%f %f")
+'''
+# TEST DATA saved in Vitis IDE Source folder
+np.savetxt("../vitis_src/inp.txt", data, fmt = "data_comp(%f, %f),")
+np.savetxt("../vitis_src/out_hann.txt", result_hann, fmt = "data_comp(%f, %f),")
+np.savetxt("../vitis_src/out_hamm.txt", result_hamm, fmt = "data_comp(%f, %f),")
+np.savetxt("../vitis_src/out_black.txt", result_black, fmt = "data_comp(%f, %f),")
 
 

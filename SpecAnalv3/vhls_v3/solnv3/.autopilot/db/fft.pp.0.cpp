@@ -152,7 +152,7 @@ extern "C" {
 # 8 "<command line>" 2
 # 1 "<built-in>" 2
 # 1 "vhls_src/fft.cpp" 2
-# 11 "vhls_src/fft.cpp"
+# 17 "vhls_src/fft.cpp"
 # 1 "vhls_src/32fft.h" 1
 
 
@@ -30155,7 +30155,7 @@ const float Blackman32[32] = {
 };
 # 17 "vhls_src/32fft.h" 2
 void FFT(data_comp data_IN[32], char win_mode, data_comp data_OUT[32], data_t mag_OUT[32]);
-# 12 "vhls_src/fft.cpp" 2
+# 18 "vhls_src/fft.cpp" 2
 
 # 1 "/tools/Xilinx/Vivado/2020.1/common/technology/autopilot/hls_math.h" 1
 # 36 "/tools/Xilinx/Vivado/2020.1/common/technology/autopilot/hls_math.h"
@@ -47745,8 +47745,7 @@ namespace hls {
     uint32_t logb(uint32_t);
 
 };
-# 14 "vhls_src/fft.cpp" 2
-
+# 20 "vhls_src/fft.cpp" 2
 
 using namespace std;
 
@@ -47827,7 +47826,7 @@ void polarOUT(data_comp data_IN[32], data_t mag_OUT[32])
  data_t in_r[32], in_i[32];
  for(int i = 0; i<32; i++){
 #pragma HLS PIPELINE
-# 106 "vhls_src/fft.cpp"
+# 111 "vhls_src/fft.cpp"
  in_r[i] = data_IN[i].real();
   in_i[i] = data_IN[i].imag();
   mag_sqr[i] = in_r[i]*in_r[i] + in_i[i]*in_i[i];
@@ -47836,12 +47835,14 @@ void polarOUT(data_comp data_IN[32], data_t mag_OUT[32])
 }
 
 void FFT(data_comp data_IN[32], char win_mode, data_comp data_OUT[32], data_t mag_OUT[32]){_ssdm_SpecArrayDimSize(data_IN, 32);_ssdm_SpecArrayDimSize(data_OUT, 32);_ssdm_SpecArrayDimSize(mag_OUT, 32);
+
+#pragma HLS DATA_PACK variable=&data_OUT
+#pragma HLS DATA_PACK variable=&data_IN
 #pragma HLS INTERFACE s_axilite port=&win_mode
 #pragma HLS DATAFLOW
 #pragma HLS INTERFACE axis register both port=&mag_OUT
 #pragma HLS INTERFACE axis register both port=&data_OUT
 #pragma HLS INTERFACE axis register both port=&data_IN
-
 
 
 

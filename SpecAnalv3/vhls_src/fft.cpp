@@ -1,17 +1,22 @@
-/*Source: Numerical Recipe In C
- * Modified by IIT Madras
- * The following code computes 32point FFT
- * The bit reversal positions are precomputed and stored in the header files.
- * The Twiddle Factor is decomposed into following form:
- * exp(ia + ib) = exp(ia)*exp(ib) = exp(ia) + Z*exp(ia)
- * Where Z = exp(ib) - 1 = -(1 - cos(b)) + isin(b) = -2*sin^2(b/2) + isin(b)
- * Z is precomputed and stored in header file.
- * */
+/*
+ * FFT Peripheral High Level Synthesis Design
+ * version 3
+ * Source for Base code: Nitin Chandrachoodan (https://gitlab.com/chandrachoodan/teach-fpga)
+ * Modified by Arjun Menon Vadakkeveedu and Akash Reddy (EE @ IIT Madras)
+ * Modifications include:
+ * 		Hardware Optimisation Directives- LOOP UNROLLING, PIPELINING, DATAFLOW
+ * 		Module for multiplying input signal by a time-domain windowing function
+ * 		Module for computing magnitude spectrum in decibel scale
+ * 		Extension to 256 point FFT (version 4)
+ * Twiddle Factors, Bit-reversed indices and windowing functions pre-computed and
+ * 	stored in header file (will get synthesised as LUTs/ BRAMs).
+ *
+ * version 3 stable; Latency = 365 cycles; II = 99 cycles (log10 unit is bottleneck for II)
+ */
 
 #include "32fft.h"
 #include "32fftvalues.h"
 #include "hls_math.h"
-//#include "complex"
 
 using namespace std;
 
@@ -111,6 +116,9 @@ void polarOUT(data_comp data_IN[N], data_t mag_OUT[N])
 }
 
 void FFT(data_comp data_IN[N], char win_mode, data_comp data_OUT[N], data_t mag_OUT[N]){
+//#pragma HLS INTERFACE ap_ctrl_none port=return
+#pragma HLS DATA_PACK variable=data_OUT
+#pragma HLS DATA_PACK variable=data_IN
 #pragma HLS INTERFACE s_axilite port=win_mode
 #pragma HLS DATAFLOW
 #pragma HLS INTERFACE axis register both port=mag_OUT
@@ -118,11 +126,10 @@ void FFT(data_comp data_IN[N], char win_mode, data_comp data_OUT[N], data_t mag_
 #pragma HLS INTERFACE axis register both port=data_IN
 
 /*
- * Avoid DATA_PACK directive
- * Increases both latency and II of FFT loop from 33 cycles to 67
- * DATA_PACK packs elements of a typedef struct into one long vector (reg)
- * While data packing simplifies memory access, this can no longer
- * be pipelined.
+ * DATA_PACK directive
+ * DATA_PACK packs elements of a typedef struct into a single vector (reg)
+ * This simplifies memory access and reduces the number of interface ports
+ * (AXI-stream) that are required.
  */
 	static data_comp prod_IN[N];
 	static data_comp data_OUT0[N];

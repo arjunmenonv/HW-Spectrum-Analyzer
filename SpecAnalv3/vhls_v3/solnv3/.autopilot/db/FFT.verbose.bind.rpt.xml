@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'FFT'" level="0">
-<item name = "Date">Thu Dec 31 11:13:14 2020
+<item name = "Date">Fri Jan  1 20:14:29 2021
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">vhls_v3</item>
@@ -31,16 +31,16 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_mult_window_fu_174">mult_window, 46, 46, 0.460 us, 0.460 us, 46, 46, none</column>
-<column name="grp_FFT0119_fu_193">FFT0119, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
-<column name="grp_FFT0120_fu_209">FFT0120, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
-<column name="grp_FFT0121_fu_225">FFT0121, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
-<column name="grp_FFT0118_fu_241">FFT0118, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
-<column name="grp_FFT0122_fu_257">FFT0122, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
-<column name="grp_Block_codeRepl11624_s_fu_273">Block_codeRepl11624_s, 98, 98, 0.980 us, 0.980 us, 98, 98, none</column>
-<column name="grp_bitreverse_fu_289">bitreverse, 16, 16, 0.160 us, 0.160 us, 16, 16, none</column>
-<column name="grp_Block_codeRepl116_pr_fu_301">Block_codeRepl116_pr, 31, 31, 0.310 us, 0.310 us, 31, 31, none</column>
-<column name="call_ln113_FFT_entry3_fu_315">FFT_entry3, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_mult_window_fu_170">mult_window, 46, 46, 0.460 us, 0.460 us, 46, 46, none</column>
+<column name="grp_Block_codeRepl12432_s_fu_189">Block_codeRepl12432_s, 98, 98, 0.980 us, 0.980 us, 98, 98, none</column>
+<column name="grp_FFT0119_fu_203">FFT0119, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
+<column name="grp_FFT0120_fu_219">FFT0120, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
+<column name="grp_FFT0121_fu_235">FFT0121, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
+<column name="grp_FFT0118_fu_251">FFT0118, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
+<column name="grp_FFT0122_fu_267">FFT0122, 33, 33, 0.330 us, 0.330 us, 33, 33, none</column>
+<column name="grp_bitreverse_fu_283">bitreverse, 16, 16, 0.160 us, 0.160 us, 16, 16, none</column>
+<column name="grp_Block_codeRepl124_pr_fu_295">Block_codeRepl124_pr, 31, 31, 0.310 us, 0.310 us, 31, 31, none</column>
+<column name="call_ln118_FFT_entry3_fu_307">FFT_entry3, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

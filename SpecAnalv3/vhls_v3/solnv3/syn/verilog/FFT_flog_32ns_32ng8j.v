@@ -7,7 +7,7 @@
 
 module FFT_flog_32ns_32ng8j
 #(parameter
-    ID         = 115,
+    ID         = 114,
     NUM_STAGE  = 13,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

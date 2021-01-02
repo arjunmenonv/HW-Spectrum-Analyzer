@@ -7,7 +7,7 @@
 
 module FFT_fsub_32ns_32ncud
 #(parameter
-    ID         = 10,
+    ID         = 9,
     NUM_STAGE  = 5,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

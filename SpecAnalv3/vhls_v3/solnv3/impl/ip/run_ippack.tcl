@@ -51,10 +51,10 @@ proc sort_file_names {files {top_name {}}} {
 set Vendor      "xilinx.com"
 set Library     "hls"
 set IPName      "FFT"
-set Version     "3.0"
-set DisplayName "FFT32v3"
-set Revision    "2012311124"
-set Description "FFT32 peripheral: Computes radix 2 FFT of floating point complex inputs with 32 bins. Input is multiplied by a time domain window (hamm32, hann32, blackman32) and its FFT is computed. Returns complex valued float output in Freq Domain along with its magnitude in dB scale. Optimisations: Pipelining, Dataflow, Loop Unrolling"
+set Version     "3.1"
+set DisplayName "FFT32v3.1"
+set Revision    "2101012019"
+set Description "FFT32 peripheral: Computes radix 2 FFT of floating point complex inputs with 32 bins. Input is multiplied by a time domain window (hamm32, hann32, blackman32) and its FFT is computed. Returns complex valued float output in Freq Domain along with its magnitude in dB scale. Optimisations: Pipelining, Dataflow, Loop Unrolling. AXI-stream complex valued ports are DATA_PACKed"
 set Device      "zynq"
 set AutoFamily  ""
 set Taxonomy    "/VIVADO_HLS_IP"
@@ -80,14 +80,14 @@ mult_window_window
 FFT0118_W_M_real130
 FFT0118_W_M_imag126
 FFT_flog_32ns_32ng8j
-Block_codeRepl116fYi
+Block_codeRepl124fYi
 regslice_core
 fifo_w8_d2_A
 fifo_w8_d2_A
 FFT_AXILiteS_s_axi
 regslice_core
 FFT_entry3
-Block_codeRepl116_pr
+Block_codeRepl124_pr
 mult_window
 bitreverse
 FFT0118
@@ -95,7 +95,7 @@ FFT0119
 FFT0120
 FFT0121
 FFT0122
-Block_codeRepl11624_s
+Block_codeRepl12432_s
 FFT
 }
 set kernel_xo ""
@@ -219,7 +219,7 @@ set Interfaces {
                 Bits "1"
             }
         }
-        buses "s_axi_AXILiteS data_IN_M_real data_IN_M_imag data_OUT_M_real data_OUT_M_imag mag_OUT"
+        buses "s_axi_AXILiteS data_IN data_OUT mag_OUT"
         reset "ap_rst_n"
     }
     ap_rst_n {
@@ -259,19 +259,24 @@ set Interfaces {
             }
         }
     }
-    data_IN_M_real {
+    data_IN {
         type "axi4stream"
         mode "slave"
-        port_prefix "data_IN_M_real"
+        port_prefix "data_IN"
         has_tready "1"
         ports {
-            TDATA 32
+            TDATA 64
         }
         ctype {
             TDATA {
-                Type "real float"
-                Width "32"
-                Bits "32"
+                Type "complex"
+                Width "64"
+                Bits "64"
+                Element {
+                    Type "real float"
+                    Width "32"
+                    Bits "32"
+                }
             }
             TVALID {
                 Type "bool"
@@ -285,71 +290,24 @@ set Interfaces {
             }
         }
     }
-    data_IN_M_imag {
-        type "axi4stream"
-        mode "slave"
-        port_prefix "data_IN_M_imag"
-        has_tready "1"
-        ports {
-            TDATA 32
-        }
-        ctype {
-            TDATA {
-                Type "real float"
-                Width "32"
-                Bits "32"
-            }
-            TVALID {
-                Type "bool"
-                Width "1"
-                Bits "1"
-            }
-            TREADY {
-                Type "bool"
-                Width "1"
-                Bits "1"
-            }
-        }
-    }
-    data_OUT_M_real {
+    data_OUT {
         type "axi4stream"
         mode "master"
-        port_prefix "data_OUT_M_real"
+        port_prefix "data_OUT"
         has_tready "1"
         ports {
-            TDATA 32
+            TDATA 64
         }
         ctype {
             TDATA {
-                Type "real float"
-                Width "32"
-                Bits "32"
-            }
-            TVALID {
-                Type "bool"
-                Width "1"
-                Bits "1"
-            }
-            TREADY {
-                Type "bool"
-                Width "1"
-                Bits "1"
-            }
-        }
-    }
-    data_OUT_M_imag {
-        type "axi4stream"
-        mode "master"
-        port_prefix "data_OUT_M_imag"
-        has_tready "1"
-        ports {
-            TDATA 32
-        }
-        ctype {
-            TDATA {
-                Type "real float"
-                Width "32"
-                Bits "32"
+                Type "complex"
+                Width "64"
+                Bits "64"
+                Element {
+                    Type "real float"
+                    Width "32"
+                    Bits "32"
+                }
             }
             TVALID {
                 Type "bool"

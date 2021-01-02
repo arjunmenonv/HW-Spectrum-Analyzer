@@ -13,11 +13,11 @@
     "Speed": "-1"
   },
   "HlsSolution": {"Config": [
-      "config_export -description {FFT32 peripheral: Computes radix 2 FFT of floating point complex inputs with 32 bins. Input is multiplied by a time domain window (hamm32, hann32, blackman32) and its FFT is computed. Returns complex valued float output in Freq Domain along with its magnitude in dB scale. Optimisations: Pipelining, Dataflow, Loop Unrolling}",
-      "config_export -display_name=FFT32v3",
+      "config_export -description {FFT32 peripheral: Computes radix 2 FFT of floating point complex inputs with 32 bins. Input is multiplied by a time domain window (hamm32, hann32, blackman32) and its FFT is computed. Returns complex valued float output in Freq Domain along with its magnitude in dB scale. Optimisations: Pipelining, Dataflow, Loop Unrolling. AXI-stream complex valued ports are DATA_PACKed}",
+      "config_export -display_name=FFT32v3.1",
       "config_export -format=ip_catalog",
       "config_export -rtl=verilog",
-      "config_export -version=3.0"
+      "config_export -version=3.1"
     ]},
   "Args": {
     "data_IN": {
@@ -25,7 +25,9 @@
       "type": {
         "kinds": ["array"],
         "dataType": "complex",
-        "arraySizes": ["32"]
+        "arraySizes": ["32"],
+        "interfaceRef": "data_IN",
+        "portRef": "TDATA"
       }
     },
     "win_mode": {
@@ -42,7 +44,9 @@
       "type": {
         "kinds": ["array"],
         "dataType": "complex",
-        "arraySizes": ["32"]
+        "arraySizes": ["32"],
+        "interfaceRef": "data_OUT",
+        "portRef": "TDATA"
       }
     },
     "mag_OUT": {
@@ -73,10 +77,10 @@
     "Vendor": "xilinx.com",
     "Library": "hls",
     "Name": "FFT",
-    "Version": "3.0",
-    "DisplayName": "FFT32v3",
+    "Version": "3.1",
+    "DisplayName": "FFT32v3.1",
     "Revision": "",
-    "Description": "FFT32 peripheral: Computes radix 2 FFT of floating point complex inputs with 32 bins. Input is multiplied by a time domain window (hamm32, hann32, blackman32) and its FFT is computed. Returns complex valued float output in Freq Domain along with its magnitude in dB scale. Optimisations: Pipelining, Dataflow, Loop Unrolling",
+    "Description": "FFT32 peripheral: Computes radix 2 FFT of floating point complex inputs with 32 bins. Input is multiplied by a time domain window (hamm32, hann32, blackman32) and its FFT is computed. Returns complex valued float output in Freq Domain along with its magnitude in dB scale. Optimisations: Pipelining, Dataflow, Loop Unrolling. AXI-stream complex valued ports are DATA_PACKed",
     "Taxonomy": "\/VIVADO_HLS_IP",
     "AutoFamilySupport": ""
   },
@@ -84,9 +88,9 @@
     "CSource": ["..\/..\/vhls_src\/fft.cpp"],
     "Vhdl": [
       "impl\/vhdl\/bitreverse.vhd",
-      "impl\/vhdl\/Block_codeRepl116_pr.vhd",
-      "impl\/vhdl\/Block_codeRepl116fYi.vhd",
-      "impl\/vhdl\/Block_codeRepl11624_s.vhd",
+      "impl\/vhdl\/Block_codeRepl124_pr.vhd",
+      "impl\/vhdl\/Block_codeRepl124fYi.vhd",
+      "impl\/vhdl\/Block_codeRepl12432_s.vhd",
       "impl\/vhdl\/FFT0118.vhd",
       "impl\/vhdl\/FFT0118_W_M_imag126.vhd",
       "impl\/vhdl\/FFT0118_W_M_real130.vhd",
@@ -117,10 +121,10 @@
     ],
     "Verilog": [
       "impl\/verilog\/bitreverse.v",
-      "impl\/verilog\/Block_codeRepl116_pr.v",
-      "impl\/verilog\/Block_codeRepl116fYi.v",
-      "impl\/verilog\/Block_codeRepl116fYi_ram.dat",
-      "impl\/verilog\/Block_codeRepl11624_s.v",
+      "impl\/verilog\/Block_codeRepl124_pr.v",
+      "impl\/verilog\/Block_codeRepl124fYi.v",
+      "impl\/verilog\/Block_codeRepl124fYi_ram.dat",
+      "impl\/verilog\/Block_codeRepl12432_s.v",
       "impl\/verilog\/FFT0118.v",
       "impl\/verilog\/FFT0118_W_M_imag126.v",
       "impl\/verilog\/FFT0118_W_M_imag126_rom.dat",
@@ -158,14 +162,14 @@
       "impl\/verilog\/FFT.v"
     ],
     "SwDriver": [
-      "impl\/misc\/drivers\/FFT_v3_0\/data\/FFT.mdd",
-      "impl\/misc\/drivers\/FFT_v3_0\/data\/FFT.tcl",
-      "impl\/misc\/drivers\/FFT_v3_0\/src\/Makefile",
-      "impl\/misc\/drivers\/FFT_v3_0\/src\/xfft.c",
-      "impl\/misc\/drivers\/FFT_v3_0\/src\/xfft.h",
-      "impl\/misc\/drivers\/FFT_v3_0\/src\/xfft_hw.h",
-      "impl\/misc\/drivers\/FFT_v3_0\/src\/xfft_linux.c",
-      "impl\/misc\/drivers\/FFT_v3_0\/src\/xfft_sinit.c"
+      "impl\/misc\/drivers\/FFT_v3_1\/data\/FFT.mdd",
+      "impl\/misc\/drivers\/FFT_v3_1\/data\/FFT.tcl",
+      "impl\/misc\/drivers\/FFT_v3_1\/src\/Makefile",
+      "impl\/misc\/drivers\/FFT_v3_1\/src\/xfft.c",
+      "impl\/misc\/drivers\/FFT_v3_1\/src\/xfft.h",
+      "impl\/misc\/drivers\/FFT_v3_1\/src\/xfft_hw.h",
+      "impl\/misc\/drivers\/FFT_v3_1\/src\/xfft_linux.c",
+      "impl\/misc\/drivers\/FFT_v3_1\/src\/xfft_sinit.c"
     ],
     "Misc": ["impl\/misc\/logo.png"],
     "Subcore": [
@@ -210,7 +214,7 @@
       "ctype": {"CLK": {"Type": "bool"}},
       "bundle_name": "ap_clk",
       "bundle_role": "default",
-      "buses": "s_axi_AXILiteS data_IN_M_real data_IN_M_imag data_OUT_M_real data_OUT_M_imag mag_OUT",
+      "buses": "s_axi_AXILiteS data_IN data_OUT mag_OUT",
       "reset": "ap_rst_n"
     },
     "ap_ctrl": {
@@ -230,65 +234,43 @@
       "bundle_name": "ap_rst_n",
       "bundle_role": "default"
     },
-    "data_IN_M_imag": {
+    "data_IN": {
       "type": "axi4stream",
       "mode": "slave",
-      "port_prefix": "data_IN_M_imag",
+      "port_prefix": "data_IN",
       "has_tready": "1",
       "ctype": {
         "TDATA": {
-          "Type": "real float",
-          "Width": "32"
+          "Type": "complex",
+          "Width": "64",
+          "Element": {
+            "Type": "real float",
+            "Width": "32"
+          }
         },
         "TVALID": {"Type": "bool"},
         "TREADY": {"Type": "bool"}
       },
-      "port_width": {"TDATA": "32"}
+      "port_width": {"TDATA": "64"}
     },
-    "data_IN_M_real": {
-      "type": "axi4stream",
-      "mode": "slave",
-      "port_prefix": "data_IN_M_real",
-      "has_tready": "1",
-      "ctype": {
-        "TDATA": {
-          "Type": "real float",
-          "Width": "32"
-        },
-        "TVALID": {"Type": "bool"},
-        "TREADY": {"Type": "bool"}
-      },
-      "port_width": {"TDATA": "32"}
-    },
-    "data_OUT_M_imag": {
+    "data_OUT": {
       "type": "axi4stream",
       "mode": "master",
-      "port_prefix": "data_OUT_M_imag",
+      "port_prefix": "data_OUT",
       "has_tready": "1",
       "ctype": {
         "TDATA": {
-          "Type": "real float",
-          "Width": "32"
+          "Type": "complex",
+          "Width": "64",
+          "Element": {
+            "Type": "real float",
+            "Width": "32"
+          }
         },
         "TVALID": {"Type": "bool"},
         "TREADY": {"Type": "bool"}
       },
-      "port_width": {"TDATA": "32"}
-    },
-    "data_OUT_M_real": {
-      "type": "axi4stream",
-      "mode": "master",
-      "port_prefix": "data_OUT_M_real",
-      "has_tready": "1",
-      "ctype": {
-        "TDATA": {
-          "Type": "real float",
-          "Width": "32"
-        },
-        "TVALID": {"Type": "bool"},
-        "TREADY": {"Type": "bool"}
-      },
-      "port_width": {"TDATA": "32"}
+      "port_width": {"TDATA": "64"}
     },
     "mag_OUT": {
       "type": "axi4stream",
@@ -480,51 +462,27 @@
       "dir": "out",
       "width": "1"
     },
-    "data_IN_M_real_TDATA": {
+    "data_IN_TDATA": {
       "dir": "in",
-      "width": "32"
+      "width": "64"
     },
-    "data_IN_M_real_TVALID": {
-      "dir": "in",
-      "width": "1"
-    },
-    "data_IN_M_real_TREADY": {
-      "dir": "out",
-      "width": "1"
-    },
-    "data_IN_M_imag_TDATA": {
-      "dir": "in",
-      "width": "32"
-    },
-    "data_IN_M_imag_TVALID": {
+    "data_IN_TVALID": {
       "dir": "in",
       "width": "1"
     },
-    "data_IN_M_imag_TREADY": {
+    "data_IN_TREADY": {
       "dir": "out",
       "width": "1"
     },
-    "data_OUT_M_real_TDATA": {
+    "data_OUT_TDATA": {
       "dir": "out",
-      "width": "32"
+      "width": "64"
     },
-    "data_OUT_M_real_TVALID": {
-      "dir": "out",
-      "width": "1"
-    },
-    "data_OUT_M_real_TREADY": {
-      "dir": "in",
-      "width": "1"
-    },
-    "data_OUT_M_imag_TDATA": {
-      "dir": "out",
-      "width": "32"
-    },
-    "data_OUT_M_imag_TVALID": {
+    "data_OUT_TVALID": {
       "dir": "out",
       "width": "1"
     },
-    "data_OUT_M_imag_TREADY": {
+    "data_OUT_TREADY": {
       "dir": "in",
       "width": "1"
     },
@@ -550,6 +508,10 @@
           "InstanceName": "mult_window_U0"
         },
         {
+          "ModuleName": "Block_codeRepl12432_s",
+          "InstanceName": "Block_codeRepl12432_U0"
+        },
+        {
           "ModuleName": "FFT0119",
           "InstanceName": "FFT0119_U0"
         },
@@ -570,16 +532,12 @@
           "InstanceName": "FFT0122_U0"
         },
         {
-          "ModuleName": "Block_codeRepl11624_s",
-          "InstanceName": "Block_codeRepl11624_U0"
-        },
-        {
           "ModuleName": "bitreverse",
           "InstanceName": "bitreverse_U0"
         },
         {
-          "ModuleName": "Block_codeRepl116_pr",
-          "InstanceName": "Block_codeRepl116_pr_U0"
+          "ModuleName": "Block_codeRepl124_pr",
+          "InstanceName": "Block_codeRepl124_pr_U0"
         },
         {
           "ModuleName": "FFT_entry3",
@@ -595,7 +553,7 @@
         "isCombinational": "0",
         "isOneStateSeq": "1"
       },
-      "Block_codeRepl116_pr": {
+      "Block_codeRepl124_pr": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
@@ -651,7 +609,7 @@
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "Block_codeRepl11624_s": {
+      "Block_codeRepl12432_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
@@ -689,7 +647,7 @@
           "URAM": "0"
         }
       },
-      "Block_codeRepl116_pr": {
+      "Block_codeRepl124_pr": {
         "Latency": {
           "LatencyBest": "31",
           "LatencyAvg": "31",
@@ -705,7 +663,7 @@
         },
         "Area": {
           "FF": "33",
-          "LUT": "496",
+          "LUT": "783",
           "BRAM_18K": "0",
           "DSP48E": "0",
           "URAM": "0"
@@ -937,7 +895,7 @@
           "URAM": "0"
         }
       },
-      "Block_codeRepl11624_s": {
+      "Block_codeRepl12432_s": {
         "Latency": {
           "LatencyBest": "98",
           "LatencyAvg": "98",
@@ -962,7 +920,7 @@
           "BRAM_18K": "1",
           "DSP48E": "27",
           "FF": "1729",
-          "LUT": "3075",
+          "LUT": "3215",
           "URAM": "0"
         }
       },
@@ -984,7 +942,7 @@
           "BRAM_18K": "58",
           "DSP48E": "179",
           "FF": "18511",
-          "LUT": "29936",
+          "LUT": "30363",
           "URAM": "0"
         }
       }
@@ -1000,7 +958,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-12-31 11:24:10 IST",
+    "Time": "2021-01-01 20:19:57 IST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.1"
   }

@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 
 entity FFT_fadd_32ns_32ndEe is
     generic (
-        ID         : integer := 11;
+        ID         : integer := 10;
         NUM_STAGE  : integer := 5;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;

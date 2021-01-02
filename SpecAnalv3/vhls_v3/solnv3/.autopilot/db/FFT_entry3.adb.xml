@@ -52,7 +52,7 @@ entry:1  %win_mode_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %win_mode)
 entry:2  call void @_ssdm_op_Write.ap_fifo.i8P(i8* %win_mode_out, i8 %win_mode_read)
 
 ]]></Node>
-<StgValue><ssdm name="write_ln113"/></StgValue>
+<StgValue><ssdm name="write_ln118"/></StgValue>
 </operation>
 
 <operation id="5" st_id="1" stage="1" lat="1">
@@ -67,7 +67,7 @@ entry:2  call void @_ssdm_op_Write.ap_fifo.i8P(i8* %win_mode_out, i8 %win_mode_r
 entry:3  ret void
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln113"/></StgValue>
+<StgValue><ssdm name="ret_ln118"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -122,11 +122,11 @@ entry:3  ret void
 </dataflow>
 <dataflow id="38" from="win_mode" to="win_mode_read" fromId="6" toId="3">
 </dataflow>
-<dataflow id="40" from="_ssdm_op_Write.ap_fifo.i8P" to="write_ln113" fromId="39" toId="4">
+<dataflow id="40" from="_ssdm_op_Write.ap_fifo.i8P" to="write_ln118" fromId="39" toId="4">
 </dataflow>
-<dataflow id="41" from="win_mode_out" to="write_ln113" fromId="7" toId="4">
+<dataflow id="41" from="win_mode_out" to="write_ln118" fromId="7" toId="4">
 </dataflow>
-<dataflow id="42" from="win_mode_read" to="write_ln113" fromId="3" toId="4">
+<dataflow id="42" from="win_mode_read" to="write_ln118" fromId="3" toId="4">
 </dataflow>
 </dataflows>
 

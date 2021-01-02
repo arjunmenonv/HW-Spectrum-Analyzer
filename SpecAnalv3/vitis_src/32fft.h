@@ -9,11 +9,11 @@ using namespace std;
 #define N 32
 
 typedef float data_t;
-//typedef ap_fixed<32, 16> data_t;
+//typedef ap_fixed<16,8> data_t;
 typedef complex<data_t> data_comp;
 
 
 #include "32fftvalues.h"
-void FFT(data_comp data_IN[N], data_comp data_OUT[N]);
-
+void FFT(data_comp data_IN[N], char win_mode, data_comp data_OUT[N],  data_t mag_OUT[N]);
+//void FFT(data_comp data_IN[N], data_t mag_OUT[N], data_t ph_OUT[N]);
 #endif

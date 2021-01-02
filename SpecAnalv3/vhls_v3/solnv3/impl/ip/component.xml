@@ -3,7 +3,7 @@
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>hls</spirit:library>
   <spirit:name>FFT</spirit:name>
-  <spirit:version>3.0</spirit:version>
+  <spirit:version>3.1</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>s_axi_AXILiteS</spirit:name>
@@ -187,7 +187,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>ASSOCIATED_BUSIF</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.AP_CLK.ASSOCIATED_BUSIF">s_axi_AXILiteS:data_IN_M_real:data_IN_M_imag:data_OUT_M_real:data_OUT_M_imag:mag_OUT</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.AP_CLK.ASSOCIATED_BUSIF">s_axi_AXILiteS:data_IN:data_OUT:mag_OUT</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>ASSOCIATED_RESET</spirit:name>
@@ -258,7 +258,7 @@
       </spirit:portMaps>
     </spirit:busInterface>
     <spirit:busInterface>
-      <spirit:name>data_IN_M_real</spirit:name>
+      <spirit:name>data_IN</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
       <spirit:slave/>
@@ -268,7 +268,7 @@
             <spirit:name>TVALID</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>data_IN_M_real_TVALID</spirit:name>
+            <spirit:name>data_IN_TVALID</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -276,7 +276,7 @@
             <spirit:name>TREADY</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>data_IN_M_real_TREADY</spirit:name>
+            <spirit:name>data_IN_TREADY</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -284,73 +284,27 @@
             <spirit:name>TDATA</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>data_IN_M_real_TDATA</spirit:name>
+            <spirit:name>data_IN_TDATA</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATA_IN_M_REAL.TDATA_NUM_BYTES">4</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATA_IN.TDATA_NUM_BYTES">8</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATA_IN_M_REAL.TUSER_WIDTH">0</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATA_IN.TUSER_WIDTH">0</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>LAYERED_METADATA</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.DATA_IN_M_REAL.LAYERED_METADATA"/>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.DATA_IN.LAYERED_METADATA"/>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
     <spirit:busInterface>
-      <spirit:name>data_IN_M_imag</spirit:name>
-      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
-      <spirit:slave/>
-      <spirit:portMaps>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TVALID</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>data_IN_M_imag_TVALID</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TREADY</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>data_IN_M_imag_TREADY</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TDATA</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>data_IN_M_imag_TDATA</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-      </spirit:portMaps>
-      <spirit:parameters>
-        <spirit:parameter>
-          <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATA_IN_M_IMAG.TDATA_NUM_BYTES">4</spirit:value>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>TUSER_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATA_IN_M_IMAG.TUSER_WIDTH">0</spirit:value>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>LAYERED_METADATA</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.DATA_IN_M_IMAG.LAYERED_METADATA"/>
-        </spirit:parameter>
-      </spirit:parameters>
-    </spirit:busInterface>
-    <spirit:busInterface>
-      <spirit:name>data_OUT_M_real</spirit:name>
+      <spirit:name>data_OUT</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
       <spirit:master/>
@@ -360,7 +314,7 @@
             <spirit:name>TVALID</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>data_OUT_M_real_TVALID</spirit:name>
+            <spirit:name>data_OUT_TVALID</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -368,7 +322,7 @@
             <spirit:name>TREADY</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>data_OUT_M_real_TREADY</spirit:name>
+            <spirit:name>data_OUT_TREADY</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -376,68 +330,22 @@
             <spirit:name>TDATA</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>data_OUT_M_real_TDATA</spirit:name>
+            <spirit:name>data_OUT_TDATA</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATA_OUT_M_REAL.TDATA_NUM_BYTES">4</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATA_OUT.TDATA_NUM_BYTES">8</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATA_OUT_M_REAL.TUSER_WIDTH">0</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATA_OUT.TUSER_WIDTH">0</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>LAYERED_METADATA</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.DATA_OUT_M_REAL.LAYERED_METADATA"/>
-        </spirit:parameter>
-      </spirit:parameters>
-    </spirit:busInterface>
-    <spirit:busInterface>
-      <spirit:name>data_OUT_M_imag</spirit:name>
-      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
-      <spirit:master/>
-      <spirit:portMaps>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TVALID</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>data_OUT_M_imag_TVALID</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TREADY</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>data_OUT_M_imag_TREADY</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TDATA</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>data_OUT_M_imag_TDATA</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-      </spirit:portMaps>
-      <spirit:parameters>
-        <spirit:parameter>
-          <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATA_OUT_M_IMAG.TDATA_NUM_BYTES">4</spirit:value>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>TUSER_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATA_OUT_M_IMAG.TUSER_WIDTH">0</spirit:value>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>LAYERED_METADATA</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.DATA_OUT_M_IMAG.LAYERED_METADATA"/>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.DATA_OUT.LAYERED_METADATA"/>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -564,7 +472,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>fa10ac6c</spirit:value>
+            <spirit:value>13b6a11f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -583,7 +491,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>3af67d68</spirit:value>
+            <spirit:value>ddd6b4be</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -602,7 +510,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>dc8f9253</spirit:value>
+            <spirit:value>69f8bbe2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -621,7 +529,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ab025f21</spirit:value>
+            <spirit:value>eade7527</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -635,7 +543,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e72d18b2</spirit:value>
+            <spirit:value>9e22036e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -671,7 +579,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e7c1ea89</spirit:value>
+            <spirit:value>7057f90a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1033,7 +941,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>data_IN_M_real_TVALID</spirit:name>
+        <spirit:name>data_IN_TVALID</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -1046,7 +954,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>data_IN_M_real_TREADY</spirit:name>
+        <spirit:name>data_IN_TREADY</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -1059,11 +967,11 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>data_IN_M_real_TDATA</spirit:name>
+        <spirit:name>data_IN_TDATA</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:left spirit:format="long">63</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1076,20 +984,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>data_IN_M_imag_TVALID</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>data_IN_M_imag_TREADY</spirit:name>
+        <spirit:name>data_OUT_TVALID</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -1102,37 +997,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>data_IN_M_imag_TDATA</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>data_OUT_M_real_TVALID</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>data_OUT_M_real_TREADY</spirit:name>
+        <spirit:name>data_OUT_TREADY</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -1145,54 +1010,11 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>data_OUT_M_real_TDATA</spirit:name>
+        <spirit:name>data_OUT_TDATA</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>data_OUT_M_imag_TVALID</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>data_OUT_M_imag_TREADY</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>data_OUT_M_imag_TDATA</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:left spirit:format="long">63</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1288,19 +1110,19 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/Block_codeRepl116_pr.v</spirit:name>
+        <spirit:name>hdl/verilog/Block_codeRepl124_pr.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/Block_codeRepl116fYi.v</spirit:name>
+        <spirit:name>hdl/verilog/Block_codeRepl124fYi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/Block_codeRepl116fYi_ram.dat</spirit:name>
+        <spirit:name>hdl/verilog/Block_codeRepl124fYi_ram.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/Block_codeRepl11624_s.v</spirit:name>
+        <spirit:name>hdl/verilog/Block_codeRepl12432_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1462,21 +1284,21 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/Block_codeRepl116_pr.v</spirit:name>
+        <spirit:name>hdl/verilog/Block_codeRepl124_pr.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/Block_codeRepl116fYi.v</spirit:name>
+        <spirit:name>hdl/verilog/Block_codeRepl124fYi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/Block_codeRepl116fYi_ram.dat</spirit:name>
+        <spirit:name>hdl/verilog/Block_codeRepl124fYi_ram.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/Block_codeRepl11624_s.v</spirit:name>
+        <spirit:name>hdl/verilog/Block_codeRepl12432_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1706,15 +1528,15 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/Block_codeRepl116_pr.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/Block_codeRepl124_pr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/Block_codeRepl116fYi.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/Block_codeRepl124fYi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/Block_codeRepl11624_s.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/Block_codeRepl12432_s.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1824,7 +1646,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/FFT.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_808de25e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_df833bd8</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1845,17 +1667,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/Block_codeRepl116_pr.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/Block_codeRepl124_pr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/Block_codeRepl116fYi.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/Block_codeRepl124fYi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/Block_codeRepl11624_s.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/Block_codeRepl12432_s.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2028,35 +1850,35 @@
     <spirit:fileSet>
       <spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>drivers/FFT_v3_0/data/FFT.mdd</spirit:name>
+        <spirit:name>drivers/FFT_v3_1/data/FFT.mdd</spirit:name>
         <spirit:userFileType>driver_mdd</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/FFT_v3_0/data/FFT.tcl</spirit:name>
+        <spirit:name>drivers/FFT_v3_1/data/FFT.tcl</spirit:name>
         <spirit:userFileType>driver_tcl</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/FFT_v3_0/src/Makefile</spirit:name>
+        <spirit:name>drivers/FFT_v3_1/src/Makefile</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/FFT_v3_0/src/xfft.c</spirit:name>
+        <spirit:name>drivers/FFT_v3_1/src/xfft.c</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/FFT_v3_0/src/xfft.h</spirit:name>
+        <spirit:name>drivers/FFT_v3_1/src/xfft.h</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/FFT_v3_0/src/xfft_hw.h</spirit:name>
+        <spirit:name>drivers/FFT_v3_1/src/xfft_hw.h</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/FFT_v3_0/src/xfft_linux.c</spirit:name>
+        <spirit:name>drivers/FFT_v3_1/src/xfft_linux.c</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/FFT_v3_0/src/xfft_sinit.c</spirit:name>
+        <spirit:name>drivers/FFT_v3_1/src/xfft_sinit.c</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2084,7 +1906,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/FFT_v3_0.tcl</spirit:name>
+        <spirit:name>xgui/FFT_v3_1.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_e3dbfd01</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -2099,11 +1921,11 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>FFT32 peripheral: Computes radix 2 FFT of floating point complex inputs with 32 bins. Input is multiplied by a time domain window (hamm32, hann32, blackman32) and its FFT is computed. Returns complex valued float output in Freq Domain along with its magnitude in dB scale. Optimisations: Pipelining, Dataflow, Loop Unrolling</spirit:description>
+  <spirit:description>FFT32 peripheral: Computes radix 2 FFT of floating point complex inputs with 32 bins. Input is multiplied by a time domain window (hamm32, hann32, blackman32) and its FFT is computed. Returns complex valued float output in Freq Domain along with its magnitude in dB scale. Optimisations: Pipelining, Dataflow, Loop Unrolling. AXI-stream complex valued ports are DATA_PACKed</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">FFT_v3_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">FFT_v3_1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
@@ -2134,19 +1956,19 @@
       <xilinx:taxonomies>
         <xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>FFT32v3</xilinx:displayName>
+      <xilinx:displayName>FFT32v3.1</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2012311124</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-12-31T05:54:52Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2101012019</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-01-01T14:50:49Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="e19f4095"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="ee9b2537"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="8061a5a9"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7749fc3a"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="2dc32615"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="70d76252"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="bec0286a"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="1cf4461c"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="e65bbfb0"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="c4449414"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

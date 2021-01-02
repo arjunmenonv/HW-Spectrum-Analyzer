@@ -7,7 +7,7 @@
 
 module FFT_fmul_32ns_32neOg
 #(parameter
-    ID         = 14,
+    ID         = 13,
     NUM_STAGE  = 4,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

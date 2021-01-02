@@ -159,7 +159,7 @@ module AESL_deadlock_detector (
             ap_done_reg_0 <= 'b0;
         end
         else begin
-            ap_done_reg_0 <= AESL_inst_FFT.Block_codeRepl116_pr_U0.ap_done;
+            ap_done_reg_0 <= AESL_inst_FFT.Block_codeRepl124_pr_U0.ap_done;
         end
     end
 
@@ -239,7 +239,7 @@ module AESL_deadlock_detector (
             ap_done_reg_8 <= 'b0;
         end
         else begin
-            ap_done_reg_8 <= AESL_inst_FFT.Block_codeRepl11624_U0.ap_done;
+            ap_done_reg_8 <= AESL_inst_FFT.Block_codeRepl12432_U0.ap_done;
         end
     end
 
@@ -269,7 +269,7 @@ module AESL_deadlock_detector (
         .token_out_vec(token_out_vec_0),
         .dl_detect_out(dl_in_vec[0]));
 
-    assign proc_dep_vld_vec_0[0] = dl_detect_out ? proc_dep_vld_vec_0_reg[0] : (~AESL_inst_FFT.FFT_entry3_U0.win_mode_out_blk_n | ((AESL_inst_FFT.FFT_entry3_U0_ap_ready_count[0]) & AESL_inst_FFT.FFT_entry3_U0.ap_idle & ~(AESL_inst_FFT.Block_codeRepl116_pr_U0_ap_ready_count[0])));
+    assign proc_dep_vld_vec_0[0] = dl_detect_out ? proc_dep_vld_vec_0_reg[0] : (~AESL_inst_FFT.FFT_entry3_U0.win_mode_out_blk_n | ((AESL_inst_FFT.FFT_entry3_U0_ap_ready_count[0]) & AESL_inst_FFT.FFT_entry3_U0.ap_idle & ~(AESL_inst_FFT.Block_codeRepl124_pr_U0_ap_ready_count[0])));
     always @ (negedge reset or posedge clock) begin
         if (~reset) begin
             proc_dep_vld_vec_0_reg <= 'b0;
@@ -286,16 +286,16 @@ module AESL_deadlock_detector (
     assign token_0_1 = token_out_vec_0[0];
 
     // delay ap_idle for one cycle
-    reg [0:0] AESL_inst_FFT$Block_codeRepl116_pr_U0$ap_idle;
+    reg [0:0] AESL_inst_FFT$Block_codeRepl124_pr_U0$ap_idle;
     always @ (negedge reset or posedge clock) begin
         if (~reset) begin
-            AESL_inst_FFT$Block_codeRepl116_pr_U0$ap_idle <= 'b0;
+            AESL_inst_FFT$Block_codeRepl124_pr_U0$ap_idle <= 'b0;
         end
         else begin
-            AESL_inst_FFT$Block_codeRepl116_pr_U0$ap_idle <= AESL_inst_FFT.Block_codeRepl116_pr_U0.ap_idle;
+            AESL_inst_FFT$Block_codeRepl124_pr_U0$ap_idle <= AESL_inst_FFT.Block_codeRepl124_pr_U0.ap_idle;
         end
     end
-    // Process: AESL_inst_FFT.Block_codeRepl116_pr_U0
+    // Process: AESL_inst_FFT.Block_codeRepl124_pr_U0
     AESL_deadlock_detect_unit #(10, 1, 2, 2) AESL_deadlock_detect_unit_1 (
         .reset(reset),
         .clock(clock),
@@ -311,8 +311,8 @@ module AESL_deadlock_detector (
         .token_out_vec(token_out_vec_1),
         .dl_detect_out(dl_in_vec[1]));
 
-    assign proc_dep_vld_vec_1[0] = dl_detect_out ? proc_dep_vld_vec_1_reg[0] : (~AESL_inst_FFT.xin_M_imag_U.i_full_n & AESL_inst_FFT.Block_codeRepl116_pr_U0.ap_done & deadlock_detector.ap_done_reg_0 & ~AESL_inst_FFT.xin_M_imag_U.t_read | ~AESL_inst_FFT.xin_M_real_U.i_full_n & AESL_inst_FFT.Block_codeRepl116_pr_U0.ap_done & deadlock_detector.ap_done_reg_0 & ~AESL_inst_FFT.xin_M_real_U.t_read | ~AESL_inst_FFT.Block_codeRepl116_pr_U0.win_mode_out_blk_n);
-    assign proc_dep_vld_vec_1[1] = dl_detect_out ? proc_dep_vld_vec_1_reg[1] : (~AESL_inst_FFT.Block_codeRepl116_pr_U0.win_mode_blk_n | ((AESL_inst_FFT.Block_codeRepl116_pr_U0_ap_ready_count[0]) & AESL_inst_FFT.Block_codeRepl116_pr_U0.ap_idle & ~(AESL_inst_FFT.FFT_entry3_U0_ap_ready_count[0])));
+    assign proc_dep_vld_vec_1[0] = dl_detect_out ? proc_dep_vld_vec_1_reg[0] : (~AESL_inst_FFT.xin_M_imag_U.i_full_n & AESL_inst_FFT.Block_codeRepl124_pr_U0.ap_done & deadlock_detector.ap_done_reg_0 & ~AESL_inst_FFT.xin_M_imag_U.t_read | ~AESL_inst_FFT.xin_M_real_U.i_full_n & AESL_inst_FFT.Block_codeRepl124_pr_U0.ap_done & deadlock_detector.ap_done_reg_0 & ~AESL_inst_FFT.xin_M_real_U.t_read | ~AESL_inst_FFT.Block_codeRepl124_pr_U0.win_mode_out_blk_n);
+    assign proc_dep_vld_vec_1[1] = dl_detect_out ? proc_dep_vld_vec_1_reg[1] : (~AESL_inst_FFT.Block_codeRepl124_pr_U0.win_mode_blk_n | ((AESL_inst_FFT.Block_codeRepl124_pr_U0_ap_ready_count[0]) & AESL_inst_FFT.Block_codeRepl124_pr_U0.ap_idle & ~(AESL_inst_FFT.FFT_entry3_U0_ap_ready_count[0])));
     always @ (negedge reset or posedge clock) begin
         if (~reset) begin
             proc_dep_vld_vec_1_reg <= 'b0;
@@ -678,16 +678,16 @@ module AESL_deadlock_detector (
     assign token_8_9 = token_out_vec_8[1];
 
     // delay ap_idle for one cycle
-    reg [0:0] AESL_inst_FFT$Block_codeRepl11624_U0$ap_idle;
+    reg [0:0] AESL_inst_FFT$Block_codeRepl12432_U0$ap_idle;
     always @ (negedge reset or posedge clock) begin
         if (~reset) begin
-            AESL_inst_FFT$Block_codeRepl11624_U0$ap_idle <= 'b0;
+            AESL_inst_FFT$Block_codeRepl12432_U0$ap_idle <= 'b0;
         end
         else begin
-            AESL_inst_FFT$Block_codeRepl11624_U0$ap_idle <= AESL_inst_FFT.Block_codeRepl11624_U0.ap_idle;
+            AESL_inst_FFT$Block_codeRepl12432_U0$ap_idle <= AESL_inst_FFT.Block_codeRepl12432_U0.ap_idle;
         end
     end
-    // Process: AESL_inst_FFT.Block_codeRepl11624_U0
+    // Process: AESL_inst_FFT.Block_codeRepl12432_U0
     AESL_deadlock_detect_unit #(10, 9, 1, 1) AESL_deadlock_detect_unit_9 (
         .reset(reset),
         .clock(clock),
@@ -703,7 +703,7 @@ module AESL_deadlock_detector (
         .token_out_vec(token_out_vec_9),
         .dl_detect_out(dl_in_vec[9]));
 
-    assign proc_dep_vld_vec_9[0] = dl_detect_out ? proc_dep_vld_vec_9_reg[0] : (~AESL_inst_FFT.data_OUTfft_M_imag_U.t_empty_n & (AESL_inst_FFT.Block_codeRepl11624_U0.ap_ready | AESL_inst_FFT.Block_codeRepl11624_U0.ap_idle) & ~AESL_inst_FFT.data_OUTfft_M_imag_U.i_write | ~AESL_inst_FFT.data_OUTfft_M_real_U.t_empty_n & (AESL_inst_FFT.Block_codeRepl11624_U0.ap_ready | AESL_inst_FFT.Block_codeRepl11624_U0.ap_idle) & ~AESL_inst_FFT.data_OUTfft_M_real_U.i_write);
+    assign proc_dep_vld_vec_9[0] = dl_detect_out ? proc_dep_vld_vec_9_reg[0] : (~AESL_inst_FFT.data_OUTfft_M_imag_U.t_empty_n & (AESL_inst_FFT.Block_codeRepl12432_U0.ap_ready | AESL_inst_FFT.Block_codeRepl12432_U0.ap_idle) & ~AESL_inst_FFT.data_OUTfft_M_imag_U.i_write | ~AESL_inst_FFT.data_OUTfft_M_real_U.t_empty_n & (AESL_inst_FFT.Block_codeRepl12432_U0.ap_ready | AESL_inst_FFT.Block_codeRepl12432_U0.ap_idle) & ~AESL_inst_FFT.data_OUTfft_M_real_U.i_write);
     always @ (negedge reset or posedge clock) begin
         if (~reset) begin
             proc_dep_vld_vec_9_reg <= 'b0;

@@ -162,7 +162,7 @@
 						<name>window</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>25</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -177,14 +177,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>20</second>
+										<second>25</second>
 									</item>
 								</second>
 							</item>
@@ -217,7 +217,7 @@
 						<name>win_mode_read</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>18</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -232,7 +232,7 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>18</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -263,10 +263,10 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>_ln21</name>
+						<name>_ln26</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>21</lineNumber>
+						<lineNumber>26</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -281,14 +281,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>21</second>
+										<second>26</second>
 									</item>
 								</second>
 							</item>
@@ -362,7 +362,7 @@
 						<name>i2_0_0_i</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -377,14 +377,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>40</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -417,10 +417,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>icmp_ln40</name>
+						<name>icmp_ln45</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -435,14 +435,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>40</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -473,10 +473,10 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>_ln40</name>
+						<name>_ln45</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -491,14 +491,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>40</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -530,10 +530,10 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>empty_6</name>
+						<name>empty_8</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -548,14 +548,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>40</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -585,10 +585,10 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>zext_ln44</name>
+						<name>zext_ln49</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -603,14 +603,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>44</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -643,7 +643,7 @@
 						<name>Blackman32_addr</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -658,14 +658,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>44</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -700,7 +700,7 @@
 						<name>Blackman32_load</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -715,14 +715,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>44</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -755,7 +755,7 @@
 						<name>window_addr_6</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -770,14 +770,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>44</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -809,10 +809,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>window_addr_6_write_ln44</name>
+						<name>window_addr_6_write_ln49</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -827,14 +827,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>44</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -865,10 +865,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>or_ln40</name>
+						<name>or_ln45</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -883,14 +883,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>40</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -921,10 +921,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>zext_ln44_1</name>
+						<name>zext_ln49_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -939,14 +939,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>44</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -979,7 +979,7 @@
 						<name>Blackman32_addr_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -994,14 +994,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>44</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -1036,7 +1036,7 @@
 						<name>Blackman32_load_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1051,14 +1051,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>44</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -1091,7 +1091,7 @@
 						<name>window_addr_7</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1106,14 +1106,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>44</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -1145,10 +1145,10 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>window_addr_7_write_ln44</name>
+						<name>window_addr_7_write_ln49</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1163,14 +1163,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>44</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -1201,10 +1201,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>add_ln40</name>
+						<name>add_ln45</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1219,14 +1219,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>40</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -1257,10 +1257,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>_ln40</name>
+						<name>_ln45</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1275,14 +1275,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>40</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -1383,7 +1383,7 @@
 						<name>i1_0_0_i</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>32</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1398,14 +1398,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>32</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -1438,10 +1438,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>icmp_ln32</name>
+						<name>icmp_ln37</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>32</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1456,14 +1456,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>32</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -1494,10 +1494,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>_ln32</name>
+						<name>_ln37</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>32</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1512,14 +1512,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>32</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -1551,10 +1551,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>empty_9</name>
+						<name>empty_11</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>32</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1569,14 +1569,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>32</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -1606,10 +1606,10 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>zext_ln36</name>
+						<name>zext_ln41</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1624,14 +1624,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>36</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1664,7 +1664,7 @@
 						<name>Hamm32_addr</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1679,14 +1679,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>36</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1721,7 +1721,7 @@
 						<name>Hamm32_load</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1736,14 +1736,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>36</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1776,7 +1776,7 @@
 						<name>window_addr_4</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1791,14 +1791,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>36</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1830,10 +1830,10 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>window_addr_4_write_ln36</name>
+						<name>window_addr_4_write_ln41</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1848,14 +1848,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>36</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -1886,10 +1886,10 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>or_ln32</name>
+						<name>or_ln37</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>32</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1904,14 +1904,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>32</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -1942,10 +1942,10 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>zext_ln36_1</name>
+						<name>zext_ln41_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1960,14 +1960,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>36</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -2000,7 +2000,7 @@
 						<name>Hamm32_addr_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2015,14 +2015,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>36</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -2057,7 +2057,7 @@
 						<name>Hamm32_load_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2072,14 +2072,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>36</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -2112,7 +2112,7 @@
 						<name>window_addr_5</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2127,14 +2127,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>36</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -2166,10 +2166,10 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>window_addr_5_write_ln36</name>
+						<name>window_addr_5_write_ln41</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2184,14 +2184,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>36</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -2222,10 +2222,10 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>add_ln32</name>
+						<name>add_ln37</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>32</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2240,14 +2240,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>32</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2278,10 +2278,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>_ln32</name>
+						<name>_ln37</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>32</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2296,14 +2296,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>32</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2404,7 +2404,7 @@
 						<name>i_0_0_i</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>24</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2419,14 +2419,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>24</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -2459,10 +2459,10 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>icmp_ln24</name>
+						<name>icmp_ln29</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>24</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2477,14 +2477,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>24</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -2515,10 +2515,10 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>_ln24</name>
+						<name>_ln29</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>24</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2533,14 +2533,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>24</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -2572,10 +2572,10 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>empty_12</name>
+						<name>empty_14</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>24</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2590,14 +2590,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>24</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -2627,10 +2627,10 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>zext_ln28</name>
+						<name>zext_ln33</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2645,14 +2645,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>28</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -2685,7 +2685,7 @@
 						<name>Hann32_addr</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2700,14 +2700,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>28</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -2742,7 +2742,7 @@
 						<name>Hann32_load</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2757,14 +2757,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>28</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -2797,7 +2797,7 @@
 						<name>window_addr_2</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2812,14 +2812,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>28</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -2851,10 +2851,10 @@
 					<Obj>
 						<type>0</type>
 						<id>86</id>
-						<name>window_addr_2_write_ln28</name>
+						<name>window_addr_2_write_ln33</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2869,14 +2869,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>28</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -2907,10 +2907,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>or_ln24</name>
+						<name>or_ln29</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>24</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2925,14 +2925,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>24</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -2963,10 +2963,10 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>zext_ln28_1</name>
+						<name>zext_ln33_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2981,14 +2981,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>28</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -3021,7 +3021,7 @@
 						<name>Hann32_addr_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3036,14 +3036,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>28</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -3078,7 +3078,7 @@
 						<name>Hann32_load_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3093,14 +3093,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>28</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -3133,7 +3133,7 @@
 						<name>window_addr_3</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3148,14 +3148,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>28</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -3187,10 +3187,10 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>window_addr_3_write_ln28</name>
+						<name>window_addr_3_write_ln33</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3205,14 +3205,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>28</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -3243,10 +3243,10 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>add_ln24</name>
+						<name>add_ln29</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>24</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3261,14 +3261,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>24</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -3299,10 +3299,10 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>_ln24</name>
+						<name>_ln29</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>24</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3317,14 +3317,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>24</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -3425,7 +3425,7 @@
 						<name>i3_0_0_i</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3440,14 +3440,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>47</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -3480,10 +3480,10 @@
 					<Obj>
 						<type>0</type>
 						<id>103</id>
-						<name>icmp_ln47</name>
+						<name>icmp_ln52</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3498,14 +3498,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>47</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -3536,10 +3536,10 @@
 					<Obj>
 						<type>0</type>
 						<id>104</id>
-						<name>_ln47</name>
+						<name>_ln52</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3554,14 +3554,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>47</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -3593,10 +3593,10 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>zext_ln49</name>
+						<name>zext_ln54</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3611,14 +3611,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>49</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -3651,7 +3651,7 @@
 						<name>window_addr</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3666,14 +3666,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>49</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -3705,10 +3705,10 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>window_addr_write_ln49</name>
+						<name>window_addr_write_ln54</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3723,14 +3723,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>49</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -3761,10 +3761,10 @@
 					<Obj>
 						<type>0</type>
 						<id>109</id>
-						<name>empty_4</name>
+						<name>empty_6</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3779,14 +3779,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>47</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -3816,10 +3816,10 @@
 					<Obj>
 						<type>0</type>
 						<id>110</id>
-						<name>or_ln47</name>
+						<name>or_ln52</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3834,14 +3834,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>47</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -3872,10 +3872,10 @@
 					<Obj>
 						<type>0</type>
 						<id>111</id>
-						<name>zext_ln49_1</name>
+						<name>zext_ln54_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3890,14 +3890,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>49</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -3930,7 +3930,7 @@
 						<name>window_addr_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3945,14 +3945,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>49</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -3984,10 +3984,10 @@
 					<Obj>
 						<type>0</type>
 						<id>113</id>
-						<name>window_addr_1_write_ln49</name>
+						<name>window_addr_1_write_ln54</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4002,14 +4002,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>49</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -4040,10 +4040,10 @@
 					<Obj>
 						<type>0</type>
 						<id>114</id>
-						<name>add_ln47</name>
+						<name>add_ln52</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4058,14 +4058,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>47</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -4096,10 +4096,10 @@
 					<Obj>
 						<type>0</type>
 						<id>115</id>
-						<name>_ln47</name>
+						<name>_ln52</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4114,14 +4114,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>47</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -4185,10 +4185,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>_ln53</name>
+						<name>_ln58</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4203,14 +4203,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>53</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -4243,7 +4243,7 @@
 						<name>i4_0_0_i</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4258,14 +4258,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>53</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -4298,10 +4298,10 @@
 					<Obj>
 						<type>0</type>
 						<id>123</id>
-						<name>icmp_ln53</name>
+						<name>icmp_ln58</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4316,14 +4316,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>53</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -4354,10 +4354,10 @@
 					<Obj>
 						<type>0</type>
 						<id>124</id>
-						<name>_ln53</name>
+						<name>_ln58</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4372,14 +4372,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>53</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -4411,10 +4411,10 @@
 					<Obj>
 						<type>0</type>
 						<id>126</id>
-						<name>empty_15</name>
+						<name>empty_17</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4429,14 +4429,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>53</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -4466,10 +4466,10 @@
 					<Obj>
 						<type>0</type>
 						<id>129</id>
-						<name>zext_ln56</name>
+						<name>zext_ln61</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4484,14 +4484,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -4524,7 +4524,7 @@
 						<name>xin_M_real_addr</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4539,14 +4539,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -4581,7 +4581,7 @@
 						<name>xin_M_imag_addr</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4596,14 +4596,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -4638,7 +4638,7 @@
 						<name>window_addr_8</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4653,14 +4653,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -4695,7 +4695,7 @@
 						<name>p_r_M_real</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4710,14 +4710,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -4750,7 +4750,7 @@
 						<name>p_r_M_imag</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4765,14 +4765,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -4805,7 +4805,7 @@
 						<name>window_load</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4820,14 +4820,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -4860,7 +4860,7 @@
 						<name>tmp_i_i_i</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4875,14 +4875,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -4916,7 +4916,7 @@
 						<name>tmp_8_i_i_i</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4931,14 +4931,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -4972,7 +4972,7 @@
 						<name>complex_M_real_writ</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4987,14 +4987,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5025,10 +5025,10 @@
 					<Obj>
 						<type>0</type>
 						<id>139</id>
-						<name>tmp_i_i_i_16</name>
+						<name>tmp_i_i_i_18</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5043,14 +5043,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5084,7 +5084,7 @@
 						<name>tmp_1_i_i_i</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5099,14 +5099,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5140,7 +5140,7 @@
 						<name>complex_M_imag_writ</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5155,14 +5155,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5196,7 +5196,7 @@
 						<name>prod_IN_M_real_addr</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5211,14 +5211,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5250,10 +5250,10 @@
 					<Obj>
 						<type>0</type>
 						<id>143</id>
-						<name>prod_IN_M_real_addr_write_ln56</name>
+						<name>prod_IN_M_real_addr_write_ln61</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5268,14 +5268,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5309,7 +5309,7 @@
 						<name>prod_IN_M_imag_addr</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5324,14 +5324,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5363,10 +5363,10 @@
 					<Obj>
 						<type>0</type>
 						<id>145</id>
-						<name>prod_IN_M_imag_addr_write_ln56</name>
+						<name>prod_IN_M_imag_addr_write_ln61</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5381,14 +5381,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5419,10 +5419,10 @@
 					<Obj>
 						<type>0</type>
 						<id>147</id>
-						<name>or_ln53</name>
+						<name>or_ln58</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5437,14 +5437,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>53</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -5475,10 +5475,10 @@
 					<Obj>
 						<type>0</type>
 						<id>148</id>
-						<name>zext_ln56_1</name>
+						<name>zext_ln61_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5493,14 +5493,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5533,7 +5533,7 @@
 						<name>xin_M_real_addr_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5548,14 +5548,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5590,7 +5590,7 @@
 						<name>xin_M_imag_addr_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5605,14 +5605,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5647,7 +5647,7 @@
 						<name>window_addr_9</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5662,14 +5662,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5704,7 +5704,7 @@
 						<name>p_r_M_real_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5719,14 +5719,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5759,7 +5759,7 @@
 						<name>p_r_M_imag_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5774,14 +5774,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5814,7 +5814,7 @@
 						<name>window_load_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5829,14 +5829,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5869,7 +5869,7 @@
 						<name>tmp_i_i35_i</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5884,14 +5884,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5925,7 +5925,7 @@
 						<name>tmp_8_i_i36_i</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5940,14 +5940,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -5981,7 +5981,7 @@
 						<name>complex_M_real_writ_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5996,14 +5996,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -6037,7 +6037,7 @@
 						<name>tmp_i_i38_i</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6052,14 +6052,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -6093,7 +6093,7 @@
 						<name>tmp_1_i_i39_i</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6108,14 +6108,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -6149,7 +6149,7 @@
 						<name>complex_M_imag_writ_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6164,14 +6164,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -6205,7 +6205,7 @@
 						<name>prod_IN_M_real_addr_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6220,14 +6220,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -6259,10 +6259,10 @@
 					<Obj>
 						<type>0</type>
 						<id>162</id>
-						<name>prod_IN_M_real_addr_1_write_ln56</name>
+						<name>prod_IN_M_real_addr_1_write_ln61</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6277,14 +6277,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -6318,7 +6318,7 @@
 						<name>prod_IN_M_imag_addr_1</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6333,14 +6333,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -6372,10 +6372,10 @@
 					<Obj>
 						<type>0</type>
 						<id>164</id>
-						<name>prod_IN_M_imag_addr_1_write_ln56</name>
+						<name>prod_IN_M_imag_addr_1_write_ln61</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6390,14 +6390,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -6428,10 +6428,10 @@
 					<Obj>
 						<type>0</type>
 						<id>165</id>
-						<name>add_ln53</name>
+						<name>add_ln58</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6446,14 +6446,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>53</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -6484,10 +6484,10 @@
 					<Obj>
 						<type>0</type>
 						<id>166</id>
-						<name>_ln53</name>
+						<name>_ln58</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>mult_window</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6502,14 +6502,14 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>vhls_src/fft.cpp</first>
 											<second>mult_window</second>
 										</first>
-										<second>53</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -6539,10 +6539,10 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>_ln113</name>
+						<name>_ln118</name>
 						<fileName>vhls_src/fft.cpp</fileName>
 						<fileDirectory>/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv3</fileDirectory>
-						<lineNumber>113</lineNumber>
+						<lineNumber>118</lineNumber>
 						<contextFuncName>FFT</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6557,7 +6557,7 @@
 											<first>vhls_src/fft.cpp</first>
 											<second>FFT</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 								</second>
 							</item>

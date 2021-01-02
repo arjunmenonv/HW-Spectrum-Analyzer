@@ -33,22 +33,16 @@ port (
     s_axi_AXILiteS_BRESP : OUT STD_LOGIC_VECTOR (1 downto 0);
     ap_clk : IN STD_LOGIC;
     ap_rst_n : IN STD_LOGIC;
-    data_IN_M_real_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-    data_IN_M_imag_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-    data_OUT_M_real_TDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
-    data_OUT_M_imag_TDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
+    data_IN_TDATA : IN STD_LOGIC_VECTOR (63 downto 0);
+    data_OUT_TDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
     mag_OUT_TDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
     ap_start : IN STD_LOGIC;
-    data_IN_M_real_TVALID : IN STD_LOGIC;
-    data_IN_M_real_TREADY : OUT STD_LOGIC;
-    data_IN_M_imag_TVALID : IN STD_LOGIC;
-    data_IN_M_imag_TREADY : OUT STD_LOGIC;
+    data_IN_TVALID : IN STD_LOGIC;
+    data_IN_TREADY : OUT STD_LOGIC;
     mag_OUT_TVALID : OUT STD_LOGIC;
     mag_OUT_TREADY : IN STD_LOGIC;
-    data_OUT_M_real_TVALID : OUT STD_LOGIC;
-    data_OUT_M_real_TREADY : IN STD_LOGIC;
-    data_OUT_M_imag_TVALID : OUT STD_LOGIC;
-    data_OUT_M_imag_TREADY : IN STD_LOGIC;
+    data_OUT_TVALID : OUT STD_LOGIC;
+    data_OUT_TREADY : IN STD_LOGIC;
     ap_done : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
     ap_idle : OUT STD_LOGIC );
@@ -58,11 +52,12 @@ end;
 architecture behav of FFT is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "FFT,hls_ip_2020_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=8.358000,HLS_SYN_LAT=365,HLS_SYN_TPT=99,HLS_SYN_MEM=58,HLS_SYN_DSP=179,HLS_SYN_FF=18511,HLS_SYN_LUT=29936,HLS_VERSION=2020_1}";
+    "FFT,hls_ip_2020_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=8.358000,HLS_SYN_LAT=365,HLS_SYN_TPT=99,HLS_SYN_MEM=58,HLS_SYN_DSP=179,HLS_SYN_FF=18511,HLS_SYN_LUT=30363,HLS_VERSION=2020_1}";
     constant C_S_AXI_DATA_WIDTH : INTEGER range 63 downto 0 := 20;
     constant C_S_AXI_WSTRB_WIDTH : INTEGER range 63 downto 0 := 4;
     constant C_S_AXI_ADDR_WIDTH : INTEGER range 63 downto 0 := 20;
     constant ap_const_logic_1 : STD_LOGIC := '1';
+    constant ap_const_lv64_0 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000000000";
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
@@ -81,30 +76,29 @@ architecture behav of FFT is
     signal FFT_entry3_U0_ap_ready : STD_LOGIC;
     signal FFT_entry3_U0_win_mode_out_din : STD_LOGIC_VECTOR (7 downto 0);
     signal FFT_entry3_U0_win_mode_out_write : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_ap_start : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_ap_done : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_ap_continue : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_ap_idle : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_ap_ready : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_data_IN_M_real_TREADY : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_data_IN_M_imag_TREADY : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_xin_M_imag_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal Block_codeRepl116_pr_U0_xin_M_imag_ce0 : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_xin_M_imag_we0 : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_xin_M_imag_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal Block_codeRepl116_pr_U0_xin_M_real_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal Block_codeRepl116_pr_U0_xin_M_real_ce0 : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_xin_M_real_we0 : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_xin_M_real_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal Block_codeRepl116_pr_U0_win_mode_read : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_win_mode_out_din : STD_LOGIC_VECTOR (7 downto 0);
-    signal Block_codeRepl116_pr_U0_win_mode_out_write : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_ap_start : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_ap_done : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_ap_continue : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_ap_idle : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_ap_ready : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_data_IN_TREADY : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_xin_M_imag_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal Block_codeRepl124_pr_U0_xin_M_imag_ce0 : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_xin_M_imag_we0 : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_xin_M_imag_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal Block_codeRepl124_pr_U0_xin_M_real_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal Block_codeRepl124_pr_U0_xin_M_real_ce0 : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_xin_M_real_we0 : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_xin_M_real_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal Block_codeRepl124_pr_U0_win_mode_read : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_win_mode_out_din : STD_LOGIC_VECTOR (7 downto 0);
+    signal Block_codeRepl124_pr_U0_win_mode_out_write : STD_LOGIC;
     signal ap_channel_done_xin_M_real : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_xin_M_real_full_n : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_xin_M_real_full_n : STD_LOGIC;
     signal ap_sync_reg_channel_write_xin_M_real : STD_LOGIC := '0';
     signal ap_sync_channel_write_xin_M_real : STD_LOGIC;
     signal ap_channel_done_xin_M_imag : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_xin_M_imag_full_n : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_xin_M_imag_full_n : STD_LOGIC;
     signal ap_sync_reg_channel_write_xin_M_imag : STD_LOGIC := '0';
     signal ap_sync_channel_write_xin_M_imag : STD_LOGIC;
     signal mult_window_U0_ap_start : STD_LOGIC;
@@ -367,21 +361,19 @@ architecture behav of FFT is
     signal FFT0122_U0_data_OUTfft_M_real_full_n : STD_LOGIC;
     signal ap_sync_reg_channel_write_data_OUTfft_M_real : STD_LOGIC := '0';
     signal ap_sync_channel_write_data_OUTfft_M_real : STD_LOGIC;
-    signal Block_codeRepl11624_U0_ap_start : STD_LOGIC;
-    signal Block_codeRepl11624_U0_ap_done : STD_LOGIC;
-    signal Block_codeRepl11624_U0_ap_continue : STD_LOGIC;
-    signal Block_codeRepl11624_U0_ap_idle : STD_LOGIC;
-    signal Block_codeRepl11624_U0_ap_ready : STD_LOGIC;
-    signal Block_codeRepl11624_U0_mag_OUT_TDATA : STD_LOGIC_VECTOR (31 downto 0);
-    signal Block_codeRepl11624_U0_mag_OUT_TVALID : STD_LOGIC;
-    signal Block_codeRepl11624_U0_data_OUT_M_real_TDATA : STD_LOGIC_VECTOR (31 downto 0);
-    signal Block_codeRepl11624_U0_data_OUT_M_real_TVALID : STD_LOGIC;
-    signal Block_codeRepl11624_U0_data_OUT_M_imag_TDATA : STD_LOGIC_VECTOR (31 downto 0);
-    signal Block_codeRepl11624_U0_data_OUT_M_imag_TVALID : STD_LOGIC;
-    signal Block_codeRepl11624_U0_data_OUTfft_M_imag_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal Block_codeRepl11624_U0_data_OUTfft_M_imag_ce0 : STD_LOGIC;
-    signal Block_codeRepl11624_U0_data_OUTfft_M_real_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal Block_codeRepl11624_U0_data_OUTfft_M_real_ce0 : STD_LOGIC;
+    signal Block_codeRepl12432_U0_ap_start : STD_LOGIC;
+    signal Block_codeRepl12432_U0_ap_done : STD_LOGIC;
+    signal Block_codeRepl12432_U0_ap_continue : STD_LOGIC;
+    signal Block_codeRepl12432_U0_ap_idle : STD_LOGIC;
+    signal Block_codeRepl12432_U0_ap_ready : STD_LOGIC;
+    signal Block_codeRepl12432_U0_mag_OUT_TDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal Block_codeRepl12432_U0_mag_OUT_TVALID : STD_LOGIC;
+    signal Block_codeRepl12432_U0_data_OUT_TDATA : STD_LOGIC_VECTOR (63 downto 0);
+    signal Block_codeRepl12432_U0_data_OUT_TVALID : STD_LOGIC;
+    signal Block_codeRepl12432_U0_data_OUTfft_M_imag_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal Block_codeRepl12432_U0_data_OUTfft_M_imag_ce0 : STD_LOGIC;
+    signal Block_codeRepl12432_U0_data_OUTfft_M_real_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal Block_codeRepl12432_U0_data_OUTfft_M_real_ce0 : STD_LOGIC;
     signal ap_sync_continue : STD_LOGIC;
     signal xin_M_imag_i_q0 : STD_LOGIC_VECTOR (31 downto 0);
     signal xin_M_imag_i_q1 : STD_LOGIC_VECTOR (31 downto 0);
@@ -490,13 +482,13 @@ architecture behav of FFT is
     signal ap_sync_reg_FFT_entry3_U0_ap_ready : STD_LOGIC := '0';
     signal ap_sync_FFT_entry3_U0_ap_ready : STD_LOGIC;
     signal FFT_entry3_U0_ap_ready_count : STD_LOGIC_VECTOR (1 downto 0) := "00";
-    signal ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready : STD_LOGIC := '0';
-    signal ap_sync_Block_codeRepl116_pr_U0_ap_ready : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_ap_ready_count : STD_LOGIC_VECTOR (1 downto 0) := "00";
+    signal ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready : STD_LOGIC := '0';
+    signal ap_sync_Block_codeRepl124_pr_U0_ap_ready : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_ap_ready_count : STD_LOGIC_VECTOR (1 downto 0) := "00";
     signal FFT_entry3_U0_start_full_n : STD_LOGIC;
     signal FFT_entry3_U0_start_write : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_start_full_n : STD_LOGIC;
-    signal Block_codeRepl116_pr_U0_start_write : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_start_full_n : STD_LOGIC;
+    signal Block_codeRepl124_pr_U0_start_write : STD_LOGIC;
     signal mult_window_U0_start_full_n : STD_LOGIC;
     signal mult_window_U0_start_write : STD_LOGIC;
     signal bitreverse_U0_start_full_n : STD_LOGIC;
@@ -511,8 +503,8 @@ architecture behav of FFT is
     signal FFT0121_U0_start_write : STD_LOGIC;
     signal FFT0122_U0_start_full_n : STD_LOGIC;
     signal FFT0122_U0_start_write : STD_LOGIC;
-    signal Block_codeRepl11624_U0_start_full_n : STD_LOGIC;
-    signal Block_codeRepl11624_U0_start_write : STD_LOGIC;
+    signal Block_codeRepl12432_U0_start_full_n : STD_LOGIC;
+    signal Block_codeRepl12432_U0_start_write : STD_LOGIC;
 
     component FFT_entry3 IS
     port (
@@ -530,7 +522,7 @@ architecture behav of FFT is
     end component;
 
 
-    component Block_codeRepl116_pr IS
+    component Block_codeRepl124_pr IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -539,12 +531,9 @@ architecture behav of FFT is
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        data_IN_M_real_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-        data_IN_M_real_TVALID : IN STD_LOGIC;
-        data_IN_M_real_TREADY : OUT STD_LOGIC;
-        data_IN_M_imag_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-        data_IN_M_imag_TVALID : IN STD_LOGIC;
-        data_IN_M_imag_TREADY : OUT STD_LOGIC;
+        data_IN_TDATA : IN STD_LOGIC_VECTOR (63 downto 0);
+        data_IN_TVALID : IN STD_LOGIC;
+        data_IN_TREADY : OUT STD_LOGIC;
         xin_M_imag_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
         xin_M_imag_ce0 : OUT STD_LOGIC;
         xin_M_imag_we0 : OUT STD_LOGIC;
@@ -845,7 +834,7 @@ architecture behav of FFT is
     end component;
 
 
-    component Block_codeRepl11624_s IS
+    component Block_codeRepl12432_s IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -857,12 +846,9 @@ architecture behav of FFT is
         mag_OUT_TDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
         mag_OUT_TVALID : OUT STD_LOGIC;
         mag_OUT_TREADY : IN STD_LOGIC;
-        data_OUT_M_real_TDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
-        data_OUT_M_real_TVALID : OUT STD_LOGIC;
-        data_OUT_M_real_TREADY : IN STD_LOGIC;
-        data_OUT_M_imag_TDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
-        data_OUT_M_imag_TVALID : OUT STD_LOGIC;
-        data_OUT_M_imag_TREADY : IN STD_LOGIC;
+        data_OUT_TDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
+        data_OUT_TVALID : OUT STD_LOGIC;
+        data_OUT_TREADY : IN STD_LOGIC;
         data_OUTfft_M_imag_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
         data_OUTfft_M_imag_ce0 : OUT STD_LOGIC;
         data_OUTfft_M_imag_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -1064,35 +1050,32 @@ begin
         win_mode_out_full_n => win_mode_c1_full_n,
         win_mode_out_write => FFT_entry3_U0_win_mode_out_write);
 
-    Block_codeRepl116_pr_U0 : component Block_codeRepl116_pr
+    Block_codeRepl124_pr_U0 : component Block_codeRepl124_pr
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => Block_codeRepl116_pr_U0_ap_start,
-        ap_done => Block_codeRepl116_pr_U0_ap_done,
-        ap_continue => Block_codeRepl116_pr_U0_ap_continue,
-        ap_idle => Block_codeRepl116_pr_U0_ap_idle,
-        ap_ready => Block_codeRepl116_pr_U0_ap_ready,
-        data_IN_M_real_TDATA => data_IN_M_real_TDATA,
-        data_IN_M_real_TVALID => data_IN_M_real_TVALID,
-        data_IN_M_real_TREADY => Block_codeRepl116_pr_U0_data_IN_M_real_TREADY,
-        data_IN_M_imag_TDATA => data_IN_M_imag_TDATA,
-        data_IN_M_imag_TVALID => data_IN_M_imag_TVALID,
-        data_IN_M_imag_TREADY => Block_codeRepl116_pr_U0_data_IN_M_imag_TREADY,
-        xin_M_imag_address0 => Block_codeRepl116_pr_U0_xin_M_imag_address0,
-        xin_M_imag_ce0 => Block_codeRepl116_pr_U0_xin_M_imag_ce0,
-        xin_M_imag_we0 => Block_codeRepl116_pr_U0_xin_M_imag_we0,
-        xin_M_imag_d0 => Block_codeRepl116_pr_U0_xin_M_imag_d0,
-        xin_M_real_address0 => Block_codeRepl116_pr_U0_xin_M_real_address0,
-        xin_M_real_ce0 => Block_codeRepl116_pr_U0_xin_M_real_ce0,
-        xin_M_real_we0 => Block_codeRepl116_pr_U0_xin_M_real_we0,
-        xin_M_real_d0 => Block_codeRepl116_pr_U0_xin_M_real_d0,
+        ap_start => Block_codeRepl124_pr_U0_ap_start,
+        ap_done => Block_codeRepl124_pr_U0_ap_done,
+        ap_continue => Block_codeRepl124_pr_U0_ap_continue,
+        ap_idle => Block_codeRepl124_pr_U0_ap_idle,
+        ap_ready => Block_codeRepl124_pr_U0_ap_ready,
+        data_IN_TDATA => data_IN_TDATA,
+        data_IN_TVALID => data_IN_TVALID,
+        data_IN_TREADY => Block_codeRepl124_pr_U0_data_IN_TREADY,
+        xin_M_imag_address0 => Block_codeRepl124_pr_U0_xin_M_imag_address0,
+        xin_M_imag_ce0 => Block_codeRepl124_pr_U0_xin_M_imag_ce0,
+        xin_M_imag_we0 => Block_codeRepl124_pr_U0_xin_M_imag_we0,
+        xin_M_imag_d0 => Block_codeRepl124_pr_U0_xin_M_imag_d0,
+        xin_M_real_address0 => Block_codeRepl124_pr_U0_xin_M_real_address0,
+        xin_M_real_ce0 => Block_codeRepl124_pr_U0_xin_M_real_ce0,
+        xin_M_real_we0 => Block_codeRepl124_pr_U0_xin_M_real_we0,
+        xin_M_real_d0 => Block_codeRepl124_pr_U0_xin_M_real_d0,
         win_mode_dout => win_mode_c1_dout,
         win_mode_empty_n => win_mode_c1_empty_n,
-        win_mode_read => Block_codeRepl116_pr_U0_win_mode_read,
-        win_mode_out_din => Block_codeRepl116_pr_U0_win_mode_out_din,
+        win_mode_read => Block_codeRepl124_pr_U0_win_mode_read,
+        win_mode_out_din => Block_codeRepl124_pr_U0_win_mode_out_din,
         win_mode_out_full_n => win_mode_c_full_n,
-        win_mode_out_write => Block_codeRepl116_pr_U0_win_mode_out_write);
+        win_mode_out_write => Block_codeRepl124_pr_U0_win_mode_out_write);
 
     mult_window_U0 : component mult_window
     port map (
@@ -1363,29 +1346,26 @@ begin
         data_OUTfft_M_imag_we1 => FFT0122_U0_data_OUTfft_M_imag_we1,
         data_OUTfft_M_imag_d1 => FFT0122_U0_data_OUTfft_M_imag_d1);
 
-    Block_codeRepl11624_U0 : component Block_codeRepl11624_s
+    Block_codeRepl12432_U0 : component Block_codeRepl12432_s
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => Block_codeRepl11624_U0_ap_start,
-        ap_done => Block_codeRepl11624_U0_ap_done,
-        ap_continue => Block_codeRepl11624_U0_ap_continue,
-        ap_idle => Block_codeRepl11624_U0_ap_idle,
-        ap_ready => Block_codeRepl11624_U0_ap_ready,
-        mag_OUT_TDATA => Block_codeRepl11624_U0_mag_OUT_TDATA,
-        mag_OUT_TVALID => Block_codeRepl11624_U0_mag_OUT_TVALID,
+        ap_start => Block_codeRepl12432_U0_ap_start,
+        ap_done => Block_codeRepl12432_U0_ap_done,
+        ap_continue => Block_codeRepl12432_U0_ap_continue,
+        ap_idle => Block_codeRepl12432_U0_ap_idle,
+        ap_ready => Block_codeRepl12432_U0_ap_ready,
+        mag_OUT_TDATA => Block_codeRepl12432_U0_mag_OUT_TDATA,
+        mag_OUT_TVALID => Block_codeRepl12432_U0_mag_OUT_TVALID,
         mag_OUT_TREADY => mag_OUT_TREADY,
-        data_OUT_M_real_TDATA => Block_codeRepl11624_U0_data_OUT_M_real_TDATA,
-        data_OUT_M_real_TVALID => Block_codeRepl11624_U0_data_OUT_M_real_TVALID,
-        data_OUT_M_real_TREADY => data_OUT_M_real_TREADY,
-        data_OUT_M_imag_TDATA => Block_codeRepl11624_U0_data_OUT_M_imag_TDATA,
-        data_OUT_M_imag_TVALID => Block_codeRepl11624_U0_data_OUT_M_imag_TVALID,
-        data_OUT_M_imag_TREADY => data_OUT_M_imag_TREADY,
-        data_OUTfft_M_imag_address0 => Block_codeRepl11624_U0_data_OUTfft_M_imag_address0,
-        data_OUTfft_M_imag_ce0 => Block_codeRepl11624_U0_data_OUTfft_M_imag_ce0,
+        data_OUT_TDATA => Block_codeRepl12432_U0_data_OUT_TDATA,
+        data_OUT_TVALID => Block_codeRepl12432_U0_data_OUT_TVALID,
+        data_OUT_TREADY => data_OUT_TREADY,
+        data_OUTfft_M_imag_address0 => Block_codeRepl12432_U0_data_OUTfft_M_imag_address0,
+        data_OUTfft_M_imag_ce0 => Block_codeRepl12432_U0_data_OUTfft_M_imag_ce0,
         data_OUTfft_M_imag_q0 => data_OUTfft_M_imag_t_q0,
-        data_OUTfft_M_real_address0 => Block_codeRepl11624_U0_data_OUTfft_M_real_address0,
-        data_OUTfft_M_real_ce0 => Block_codeRepl11624_U0_data_OUTfft_M_real_ce0,
+        data_OUTfft_M_real_address0 => Block_codeRepl12432_U0_data_OUTfft_M_real_address0,
+        data_OUTfft_M_real_ce0 => Block_codeRepl12432_U0_data_OUTfft_M_real_ce0,
         data_OUTfft_M_real_q0 => data_OUTfft_M_real_t_q0);
 
     xin_M_imag_U : component FFT_xin_M_imag
@@ -1396,10 +1376,10 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
-        i_address0 => Block_codeRepl116_pr_U0_xin_M_imag_address0,
-        i_ce0 => Block_codeRepl116_pr_U0_xin_M_imag_ce0,
-        i_we0 => Block_codeRepl116_pr_U0_xin_M_imag_we0,
-        i_d0 => Block_codeRepl116_pr_U0_xin_M_imag_d0,
+        i_address0 => Block_codeRepl124_pr_U0_xin_M_imag_address0,
+        i_ce0 => Block_codeRepl124_pr_U0_xin_M_imag_ce0,
+        i_we0 => Block_codeRepl124_pr_U0_xin_M_imag_we0,
+        i_d0 => Block_codeRepl124_pr_U0_xin_M_imag_d0,
         i_q0 => xin_M_imag_i_q0,
         i_address1 => ap_const_lv5_0,
         i_ce1 => ap_const_logic_0,
@@ -1427,10 +1407,10 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
-        i_address0 => Block_codeRepl116_pr_U0_xin_M_real_address0,
-        i_ce0 => Block_codeRepl116_pr_U0_xin_M_real_ce0,
-        i_we0 => Block_codeRepl116_pr_U0_xin_M_real_we0,
-        i_d0 => Block_codeRepl116_pr_U0_xin_M_real_d0,
+        i_address0 => Block_codeRepl124_pr_U0_xin_M_real_address0,
+        i_ce0 => Block_codeRepl124_pr_U0_xin_M_real_ce0,
+        i_we0 => Block_codeRepl124_pr_U0_xin_M_real_we0,
+        i_d0 => Block_codeRepl124_pr_U0_xin_M_real_d0,
         i_q0 => xin_M_real_i_q0,
         i_address1 => ap_const_lv5_0,
         i_ce1 => ap_const_logic_0,
@@ -1887,8 +1867,8 @@ begin
         i_ce1 => FFT0122_U0_data_OUTfft_M_real_ce1,
         i_we1 => FFT0122_U0_data_OUTfft_M_real_we1,
         i_d1 => FFT0122_U0_data_OUTfft_M_real_d1,
-        t_address0 => Block_codeRepl11624_U0_data_OUTfft_M_real_address0,
-        t_ce0 => Block_codeRepl11624_U0_data_OUTfft_M_real_ce0,
+        t_address0 => Block_codeRepl12432_U0_data_OUTfft_M_real_address0,
+        t_ce0 => Block_codeRepl12432_U0_data_OUTfft_M_real_ce0,
         t_we0 => ap_const_logic_0,
         t_d0 => ap_const_lv32_0,
         t_q0 => data_OUTfft_M_real_t_q0,
@@ -1901,7 +1881,7 @@ begin
         i_full_n => data_OUTfft_M_real_i_full_n,
         i_write => ap_channel_done_data_OUTfft_M_real,
         t_empty_n => data_OUTfft_M_real_t_empty_n,
-        t_read => Block_codeRepl11624_U0_ap_ready);
+        t_read => Block_codeRepl12432_U0_ap_ready);
 
     data_OUTfft_M_imag_U : component FFT_data_OUTfft_MrcU
     generic map (
@@ -1920,8 +1900,8 @@ begin
         i_ce1 => FFT0122_U0_data_OUTfft_M_imag_ce1,
         i_we1 => FFT0122_U0_data_OUTfft_M_imag_we1,
         i_d1 => FFT0122_U0_data_OUTfft_M_imag_d1,
-        t_address0 => Block_codeRepl11624_U0_data_OUTfft_M_imag_address0,
-        t_ce0 => Block_codeRepl11624_U0_data_OUTfft_M_imag_ce0,
+        t_address0 => Block_codeRepl12432_U0_data_OUTfft_M_imag_address0,
+        t_ce0 => Block_codeRepl12432_U0_data_OUTfft_M_imag_ce0,
         t_we0 => ap_const_logic_0,
         t_d0 => ap_const_lv32_0,
         t_q0 => data_OUTfft_M_imag_t_q0,
@@ -1934,7 +1914,7 @@ begin
         i_full_n => data_OUTfft_M_imag_i_full_n,
         i_write => ap_channel_done_data_OUTfft_M_imag,
         t_empty_n => data_OUTfft_M_imag_t_empty_n,
-        t_read => Block_codeRepl11624_U0_ap_ready);
+        t_read => Block_codeRepl12432_U0_ap_ready);
 
     win_mode_c1_U : component fifo_w8_d2_A
     port map (
@@ -1947,7 +1927,7 @@ begin
         if_write => FFT_entry3_U0_win_mode_out_write,
         if_dout => win_mode_c1_dout,
         if_empty_n => win_mode_c1_empty_n,
-        if_read => Block_codeRepl116_pr_U0_win_mode_read);
+        if_read => Block_codeRepl124_pr_U0_win_mode_read);
 
     win_mode_c_U : component fifo_w8_d2_A
     port map (
@@ -1955,9 +1935,9 @@ begin
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => Block_codeRepl116_pr_U0_win_mode_out_din,
+        if_din => Block_codeRepl124_pr_U0_win_mode_out_din,
         if_full_n => win_mode_c_full_n,
-        if_write => Block_codeRepl116_pr_U0_win_mode_out_write,
+        if_write => Block_codeRepl124_pr_U0_win_mode_out_write,
         if_dout => win_mode_c_dout,
         if_empty_n => win_mode_c_empty_n,
         if_read => mult_window_U0_win_mode_read);
@@ -1966,16 +1946,16 @@ begin
 
 
 
-    ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready_assign_proc : process(ap_clk)
+    ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready <= ap_const_logic_0;
+                ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready <= ap_const_logic_0;
             else
                 if (((ap_sync_ready and ap_start) = ap_const_logic_1)) then 
-                    ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready <= ap_const_logic_0;
+                    ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready <= ap_const_logic_0;
                 else 
-                    ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready <= ap_sync_Block_codeRepl116_pr_U0_ap_ready;
+                    ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready <= ap_sync_Block_codeRepl124_pr_U0_ap_ready;
                 end if; 
             end if;
         end if;
@@ -2228,7 +2208,7 @@ begin
             if (ap_rst_n_inv = '1') then
                 ap_sync_reg_channel_write_xin_M_imag <= ap_const_logic_0;
             else
-                if (((Block_codeRepl116_pr_U0_ap_done and Block_codeRepl116_pr_U0_ap_continue) = ap_const_logic_1)) then 
+                if (((Block_codeRepl124_pr_U0_ap_done and Block_codeRepl124_pr_U0_ap_continue) = ap_const_logic_1)) then 
                     ap_sync_reg_channel_write_xin_M_imag <= ap_const_logic_0;
                 else 
                     ap_sync_reg_channel_write_xin_M_imag <= ap_sync_channel_write_xin_M_imag;
@@ -2244,7 +2224,7 @@ begin
             if (ap_rst_n_inv = '1') then
                 ap_sync_reg_channel_write_xin_M_real <= ap_const_logic_0;
             else
-                if (((Block_codeRepl116_pr_U0_ap_done and Block_codeRepl116_pr_U0_ap_continue) = ap_const_logic_1)) then 
+                if (((Block_codeRepl124_pr_U0_ap_done and Block_codeRepl124_pr_U0_ap_continue) = ap_const_logic_1)) then 
                     ap_sync_reg_channel_write_xin_M_real <= ap_const_logic_0;
                 else 
                     ap_sync_reg_channel_write_xin_M_real <= ap_sync_channel_write_xin_M_real;
@@ -2254,13 +2234,13 @@ begin
     end process;
 
 
-    Block_codeRepl116_pr_U0_ap_ready_count_assign_proc : process (ap_clk)
+    Block_codeRepl124_pr_U0_ap_ready_count_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_0 = Block_codeRepl116_pr_U0_ap_ready) and (ap_sync_ready = ap_const_logic_1))) then 
-                Block_codeRepl116_pr_U0_ap_ready_count <= std_logic_vector(unsigned(Block_codeRepl116_pr_U0_ap_ready_count) - unsigned(ap_const_lv2_1));
-            elsif (((ap_const_logic_1 = Block_codeRepl116_pr_U0_ap_ready) and (ap_sync_ready = ap_const_logic_0))) then 
-                Block_codeRepl116_pr_U0_ap_ready_count <= std_logic_vector(unsigned(Block_codeRepl116_pr_U0_ap_ready_count) + unsigned(ap_const_lv2_1));
+            if (((ap_const_logic_0 = Block_codeRepl124_pr_U0_ap_ready) and (ap_sync_ready = ap_const_logic_1))) then 
+                Block_codeRepl124_pr_U0_ap_ready_count <= std_logic_vector(unsigned(Block_codeRepl124_pr_U0_ap_ready_count) - unsigned(ap_const_lv2_1));
+            elsif (((ap_sync_ready = ap_const_logic_0) and (ap_const_logic_1 = Block_codeRepl124_pr_U0_ap_ready))) then 
+                Block_codeRepl124_pr_U0_ap_ready_count <= std_logic_vector(unsigned(Block_codeRepl124_pr_U0_ap_ready_count) + unsigned(ap_const_lv2_1));
             end if; 
         end if;
     end process;
@@ -2270,21 +2250,21 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_0 = FFT_entry3_U0_ap_ready) and (ap_sync_ready = ap_const_logic_1))) then 
                 FFT_entry3_U0_ap_ready_count <= std_logic_vector(unsigned(FFT_entry3_U0_ap_ready_count) - unsigned(ap_const_lv2_1));
-            elsif (((ap_const_logic_1 = FFT_entry3_U0_ap_ready) and (ap_sync_ready = ap_const_logic_0))) then 
+            elsif (((ap_sync_ready = ap_const_logic_0) and (ap_const_logic_1 = FFT_entry3_U0_ap_ready))) then 
                 FFT_entry3_U0_ap_ready_count <= std_logic_vector(unsigned(FFT_entry3_U0_ap_ready_count) + unsigned(ap_const_lv2_1));
             end if; 
         end if;
     end process;
-    Block_codeRepl11624_U0_ap_continue <= ap_const_logic_1;
-    Block_codeRepl11624_U0_ap_start <= (data_OUTfft_M_real_t_empty_n and data_OUTfft_M_imag_t_empty_n);
-    Block_codeRepl11624_U0_start_full_n <= ap_const_logic_1;
-    Block_codeRepl11624_U0_start_write <= ap_const_logic_0;
-    Block_codeRepl116_pr_U0_ap_continue <= (ap_sync_channel_write_xin_M_real and ap_sync_channel_write_xin_M_imag);
-    Block_codeRepl116_pr_U0_ap_start <= ((ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready xor ap_const_logic_1) and ap_start);
-    Block_codeRepl116_pr_U0_start_full_n <= ap_const_logic_1;
-    Block_codeRepl116_pr_U0_start_write <= ap_const_logic_0;
-    Block_codeRepl116_pr_U0_xin_M_imag_full_n <= xin_M_imag_i_full_n;
-    Block_codeRepl116_pr_U0_xin_M_real_full_n <= xin_M_real_i_full_n;
+    Block_codeRepl12432_U0_ap_continue <= ap_const_logic_1;
+    Block_codeRepl12432_U0_ap_start <= (data_OUTfft_M_real_t_empty_n and data_OUTfft_M_imag_t_empty_n);
+    Block_codeRepl12432_U0_start_full_n <= ap_const_logic_1;
+    Block_codeRepl12432_U0_start_write <= ap_const_logic_0;
+    Block_codeRepl124_pr_U0_ap_continue <= (ap_sync_channel_write_xin_M_real and ap_sync_channel_write_xin_M_imag);
+    Block_codeRepl124_pr_U0_ap_start <= ((ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready xor ap_const_logic_1) and ap_start);
+    Block_codeRepl124_pr_U0_start_full_n <= ap_const_logic_1;
+    Block_codeRepl124_pr_U0_start_write <= ap_const_logic_0;
+    Block_codeRepl124_pr_U0_xin_M_imag_full_n <= xin_M_imag_i_full_n;
+    Block_codeRepl124_pr_U0_xin_M_real_full_n <= xin_M_real_i_full_n;
     FFT0118_U0_ap_continue <= (ap_sync_channel_write_data_OUT1_M_real and ap_sync_channel_write_data_OUT1_M_imag);
     FFT0118_U0_ap_start <= (data_OUT0_M_real_t_empty_n and data_OUT0_M_imag_t_empty_n);
     FFT0118_U0_data_OUT1_M_imag_full_n <= data_OUT1_M_imag_i_full_n;
@@ -2333,10 +2313,10 @@ begin
     ap_channel_done_data_OUTfft_M_real <= ((ap_sync_reg_channel_write_data_OUTfft_M_real xor ap_const_logic_1) and FFT0122_U0_ap_done);
     ap_channel_done_prod_IN_M_imag <= (mult_window_U0_ap_done and (ap_sync_reg_channel_write_prod_IN_M_imag xor ap_const_logic_1));
     ap_channel_done_prod_IN_M_real <= (mult_window_U0_ap_done and (ap_sync_reg_channel_write_prod_IN_M_real xor ap_const_logic_1));
-    ap_channel_done_xin_M_imag <= ((ap_sync_reg_channel_write_xin_M_imag xor ap_const_logic_1) and Block_codeRepl116_pr_U0_ap_done);
-    ap_channel_done_xin_M_real <= ((ap_sync_reg_channel_write_xin_M_real xor ap_const_logic_1) and Block_codeRepl116_pr_U0_ap_done);
-    ap_done <= Block_codeRepl11624_U0_ap_done;
-    ap_idle <= (mult_window_U0_ap_idle and (data_OUT4_M_real_t_empty_n xor ap_const_logic_1) and (data_OUT4_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUT3_M_real_t_empty_n xor ap_const_logic_1) and (data_OUT3_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUT2_M_real_t_empty_n xor ap_const_logic_1) and (data_OUT2_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUT1_M_real_t_empty_n xor ap_const_logic_1) and (data_OUT1_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUT0_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUT0_M_real_t_empty_n xor ap_const_logic_1) and (prod_IN_M_imag_t_empty_n xor ap_const_logic_1) and (prod_IN_M_real_t_empty_n xor ap_const_logic_1) and (xin_M_real_t_empty_n xor ap_const_logic_1) and (xin_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUTfft_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUTfft_M_real_t_empty_n xor ap_const_logic_1) and bitreverse_U0_ap_idle and FFT_entry3_U0_ap_idle and FFT0122_U0_ap_idle and FFT0121_U0_ap_idle and FFT0120_U0_ap_idle and FFT0119_U0_ap_idle and FFT0118_U0_ap_idle and Block_codeRepl116_pr_U0_ap_idle and Block_codeRepl11624_U0_ap_idle);
+    ap_channel_done_xin_M_imag <= ((ap_sync_reg_channel_write_xin_M_imag xor ap_const_logic_1) and Block_codeRepl124_pr_U0_ap_done);
+    ap_channel_done_xin_M_real <= ((ap_sync_reg_channel_write_xin_M_real xor ap_const_logic_1) and Block_codeRepl124_pr_U0_ap_done);
+    ap_done <= Block_codeRepl12432_U0_ap_done;
+    ap_idle <= (mult_window_U0_ap_idle and (data_OUT4_M_real_t_empty_n xor ap_const_logic_1) and (data_OUT4_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUT3_M_real_t_empty_n xor ap_const_logic_1) and (data_OUT3_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUT2_M_real_t_empty_n xor ap_const_logic_1) and (data_OUT2_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUT1_M_real_t_empty_n xor ap_const_logic_1) and (data_OUT1_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUT0_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUT0_M_real_t_empty_n xor ap_const_logic_1) and (prod_IN_M_imag_t_empty_n xor ap_const_logic_1) and (prod_IN_M_real_t_empty_n xor ap_const_logic_1) and (xin_M_real_t_empty_n xor ap_const_logic_1) and (xin_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUTfft_M_imag_t_empty_n xor ap_const_logic_1) and (data_OUTfft_M_real_t_empty_n xor ap_const_logic_1) and bitreverse_U0_ap_idle and FFT_entry3_U0_ap_idle and FFT0122_U0_ap_idle and FFT0121_U0_ap_idle and FFT0120_U0_ap_idle and FFT0119_U0_ap_idle and FFT0118_U0_ap_idle and Block_codeRepl124_pr_U0_ap_idle and Block_codeRepl12432_U0_ap_idle);
     ap_ready <= ap_sync_ready;
 
     ap_rst_n_inv_assign_proc : process(ap_rst_n)
@@ -2344,7 +2324,7 @@ begin
                 ap_rst_n_inv <= not(ap_rst_n);
     end process;
 
-    ap_sync_Block_codeRepl116_pr_U0_ap_ready <= (ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready or Block_codeRepl116_pr_U0_ap_ready);
+    ap_sync_Block_codeRepl124_pr_U0_ap_ready <= (ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready or Block_codeRepl124_pr_U0_ap_ready);
     ap_sync_FFT_entry3_U0_ap_ready <= (ap_sync_reg_FFT_entry3_U0_ap_ready or FFT_entry3_U0_ap_ready);
     ap_sync_channel_write_data_OUT0_M_imag <= ((bitreverse_U0_data_OUT0_M_imag_full_n and ap_channel_done_data_OUT0_M_imag) or ap_sync_reg_channel_write_data_OUT0_M_imag);
     ap_sync_channel_write_data_OUT0_M_real <= ((bitreverse_U0_data_OUT0_M_real_full_n and ap_channel_done_data_OUT0_M_real) or ap_sync_reg_channel_write_data_OUT0_M_real);
@@ -2360,25 +2340,22 @@ begin
     ap_sync_channel_write_data_OUTfft_M_real <= ((ap_channel_done_data_OUTfft_M_real and FFT0122_U0_data_OUTfft_M_real_full_n) or ap_sync_reg_channel_write_data_OUTfft_M_real);
     ap_sync_channel_write_prod_IN_M_imag <= ((mult_window_U0_prod_IN_M_imag_full_n and ap_channel_done_prod_IN_M_imag) or ap_sync_reg_channel_write_prod_IN_M_imag);
     ap_sync_channel_write_prod_IN_M_real <= ((mult_window_U0_prod_IN_M_real_full_n and ap_channel_done_prod_IN_M_real) or ap_sync_reg_channel_write_prod_IN_M_real);
-    ap_sync_channel_write_xin_M_imag <= ((ap_channel_done_xin_M_imag and Block_codeRepl116_pr_U0_xin_M_imag_full_n) or ap_sync_reg_channel_write_xin_M_imag);
-    ap_sync_channel_write_xin_M_real <= ((ap_channel_done_xin_M_real and Block_codeRepl116_pr_U0_xin_M_real_full_n) or ap_sync_reg_channel_write_xin_M_real);
+    ap_sync_channel_write_xin_M_imag <= ((ap_channel_done_xin_M_imag and Block_codeRepl124_pr_U0_xin_M_imag_full_n) or ap_sync_reg_channel_write_xin_M_imag);
+    ap_sync_channel_write_xin_M_real <= ((ap_channel_done_xin_M_real and Block_codeRepl124_pr_U0_xin_M_real_full_n) or ap_sync_reg_channel_write_xin_M_real);
     ap_sync_continue <= ap_const_logic_1;
-    ap_sync_done <= Block_codeRepl11624_U0_ap_done;
-    ap_sync_ready <= (ap_sync_FFT_entry3_U0_ap_ready and ap_sync_Block_codeRepl116_pr_U0_ap_ready);
+    ap_sync_done <= Block_codeRepl12432_U0_ap_done;
+    ap_sync_ready <= (ap_sync_FFT_entry3_U0_ap_ready and ap_sync_Block_codeRepl124_pr_U0_ap_ready);
     bitreverse_U0_ap_continue <= (ap_sync_channel_write_data_OUT0_M_real and ap_sync_channel_write_data_OUT0_M_imag);
     bitreverse_U0_ap_start <= (prod_IN_M_real_t_empty_n and prod_IN_M_imag_t_empty_n);
     bitreverse_U0_data_OUT0_M_imag_full_n <= data_OUT0_M_imag_i_full_n;
     bitreverse_U0_data_OUT0_M_real_full_n <= data_OUT0_M_real_i_full_n;
     bitreverse_U0_start_full_n <= ap_const_logic_1;
     bitreverse_U0_start_write <= ap_const_logic_0;
-    data_IN_M_imag_TREADY <= Block_codeRepl116_pr_U0_data_IN_M_imag_TREADY;
-    data_IN_M_real_TREADY <= Block_codeRepl116_pr_U0_data_IN_M_real_TREADY;
-    data_OUT_M_imag_TDATA <= Block_codeRepl11624_U0_data_OUT_M_imag_TDATA;
-    data_OUT_M_imag_TVALID <= Block_codeRepl11624_U0_data_OUT_M_imag_TVALID;
-    data_OUT_M_real_TDATA <= Block_codeRepl11624_U0_data_OUT_M_real_TDATA;
-    data_OUT_M_real_TVALID <= Block_codeRepl11624_U0_data_OUT_M_real_TVALID;
-    mag_OUT_TDATA <= Block_codeRepl11624_U0_mag_OUT_TDATA;
-    mag_OUT_TVALID <= Block_codeRepl11624_U0_mag_OUT_TVALID;
+    data_IN_TREADY <= Block_codeRepl124_pr_U0_data_IN_TREADY;
+    data_OUT_TDATA <= Block_codeRepl12432_U0_data_OUT_TDATA;
+    data_OUT_TVALID <= Block_codeRepl12432_U0_data_OUT_TVALID;
+    mag_OUT_TDATA <= Block_codeRepl12432_U0_mag_OUT_TDATA;
+    mag_OUT_TVALID <= Block_codeRepl12432_U0_mag_OUT_TVALID;
     mult_window_U0_ap_continue <= (ap_sync_channel_write_prod_IN_M_real and ap_sync_channel_write_prod_IN_M_imag);
     mult_window_U0_ap_start <= (xin_M_real_t_empty_n and xin_M_imag_t_empty_n);
     mult_window_U0_prod_IN_M_imag_full_n <= prod_IN_M_imag_i_full_n;

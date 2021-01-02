@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'FFT'
 ================================================================
-* Date:           Thu Dec 31 11:13:21 2020
+* Date:           Fri Jan  1 20:14:38 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        vhls_v3
@@ -39,14 +39,14 @@
         |         Instance        |         Module        |   min   |   max   |    min   |    max   | min | max |   Type  |
         +-------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------+
         |mult_window_U0           |mult_window            |       46|       46| 0.460 us | 0.460 us |   46|   46|   none  |
+        |Block_codeRepl12432_U0   |Block_codeRepl12432_s  |       98|       98| 0.980 us | 0.980 us |   98|   98|   none  |
         |FFT0119_U0               |FFT0119                |       33|       33| 0.330 us | 0.330 us |   33|   33|   none  |
         |FFT0120_U0               |FFT0120                |       33|       33| 0.330 us | 0.330 us |   33|   33|   none  |
         |FFT0121_U0               |FFT0121                |       33|       33| 0.330 us | 0.330 us |   33|   33|   none  |
         |FFT0118_U0               |FFT0118                |       33|       33| 0.330 us | 0.330 us |   33|   33|   none  |
         |FFT0122_U0               |FFT0122                |       33|       33| 0.330 us | 0.330 us |   33|   33|   none  |
-        |Block_codeRepl11624_U0   |Block_codeRepl11624_s  |       98|       98| 0.980 us | 0.980 us |   98|   98|   none  |
         |bitreverse_U0            |bitreverse             |       16|       16| 0.160 us | 0.160 us |   16|   16|   none  |
-        |Block_codeRepl116_pr_U0  |Block_codeRepl116_pr   |       31|       31| 0.310 us | 0.310 us |   31|   31|   none  |
+        |Block_codeRepl124_pr_U0  |Block_codeRepl124_pr   |       31|       31| 0.310 us | 0.310 us |   31|   31|   none  |
         |FFT_entry3_U0            |FFT_entry3             |        0|        0|   0 ns   |   0 ns   |    0|    0|   none  |
         +-------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------+
 
@@ -65,16 +65,16 @@
 |DSP              |        -|      -|       -|      -|    -|
 |Expression       |        -|      -|       0|    128|    -|
 |FIFO             |        0|      -|      10|     40|    -|
-|Instance         |       26|    179|   18479|  29588|    0|
+|Instance         |       26|    179|   18479|  30015|    0|
 |Memory           |       32|      -|       0|      0|    0|
 |Multiplexer      |        -|      -|       -|    180|    -|
 |Register         |        -|      -|      22|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |       58|    179|   18511|  29936|    0|
+|Total            |       58|    179|   18511|  30363|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
-|Utilization (%)  |       20|     81|      17|     56|    0|
+|Utilization (%)  |       20|     81|      17|     57|    0|
 +-----------------+---------+-------+--------+-------+-----+
 
 + Detail: 
@@ -82,8 +82,8 @@
     +-------------------------+-----------------------+---------+-------+------+------+-----+
     |         Instance        |         Module        | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
     +-------------------------+-----------------------+---------+-------+------+------+-----+
-    |Block_codeRepl11624_U0   |Block_codeRepl11624_s  |        1|     27|  1729|  3075|    0|
-    |Block_codeRepl116_pr_U0  |Block_codeRepl116_pr   |        0|      0|    33|   496|    0|
+    |Block_codeRepl12432_U0   |Block_codeRepl12432_s  |        1|     27|  1729|  3215|    0|
+    |Block_codeRepl124_pr_U0  |Block_codeRepl124_pr   |        0|      0|    33|   783|    0|
     |FFT0118_U0               |FFT0118                |        4|     24|  2764|  4084|    0|
     |FFT0119_U0               |FFT0119                |        4|     24|  2764|  4102|    0|
     |FFT0120_U0               |FFT0120                |        4|     24|  2764|  4102|    0|
@@ -94,7 +94,7 @@
     |bitreverse_U0            |bitreverse             |        0|      0|    18|   780|    0|
     |mult_window_U0           |mult_window            |        5|     32|  2833|  4687|    0|
     +-------------------------+-----------------------+---------+-------+------+------+-----+
-    |Total                    |                       |       26|    179| 18479| 29588|    0|
+    |Total                    |                       |       26|    179| 18479| 30015|    0|
     +-------------------------+-----------------------+---------+-------+------+------+-----+
 
     * DSP48E: 
@@ -138,11 +138,11 @@
     +------------------------------------------+----------+-------+---+----+------------+------------+
     |               Variable Name              | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +------------------------------------------+----------+-------+---+----+------------+------------+
-    |Block_codeRepl116_pr_U0_ap_ready_count    |     +    |      0|  0|  10|           2|           1|
+    |Block_codeRepl124_pr_U0_ap_ready_count    |     +    |      0|  0|  10|           2|           1|
     |FFT_entry3_U0_ap_ready_count              |     +    |      0|  0|  10|           2|           1|
-    |Block_codeRepl11624_U0_ap_start           |    and   |      0|  0|   2|           1|           1|
-    |Block_codeRepl116_pr_U0_ap_continue       |    and   |      0|  0|   2|           1|           1|
-    |Block_codeRepl116_pr_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |Block_codeRepl12432_U0_ap_start           |    and   |      0|  0|   2|           1|           1|
+    |Block_codeRepl124_pr_U0_ap_continue       |    and   |      0|  0|   2|           1|           1|
+    |Block_codeRepl124_pr_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
     |FFT0118_U0_ap_continue                    |    and   |      0|  0|   2|           1|           1|
     |FFT0118_U0_ap_start                       |    and   |      0|  0|   2|           1|           1|
     |FFT0119_U0_ap_continue                    |    and   |      0|  0|   2|           1|           1|
@@ -176,7 +176,7 @@
     |bitreverse_U0_ap_start                    |    and   |      0|  0|   2|           1|           1|
     |mult_window_U0_ap_continue                |    and   |      0|  0|   2|           1|           1|
     |mult_window_U0_ap_start                   |    and   |      0|  0|   2|           1|           1|
-    |ap_sync_Block_codeRepl116_pr_U0_ap_ready  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_Block_codeRepl124_pr_U0_ap_ready  |    or    |      0|  0|   2|           1|           1|
     |ap_sync_FFT_entry3_U0_ap_ready            |    or    |      0|  0|   2|           1|           1|
     |ap_sync_channel_write_data_OUT0_M_imag    |    or    |      0|  0|   2|           1|           1|
     |ap_sync_channel_write_data_OUT0_M_real    |    or    |      0|  0|   2|           1|           1|
@@ -202,9 +202,9 @@
     +----------------------------------------------+----+-----------+-----+-----------+
     |                     Name                     | LUT| Input Size| Bits| Total Bits|
     +----------------------------------------------+----+-----------+-----+-----------+
-    |Block_codeRepl116_pr_U0_ap_ready_count        |   9|          2|    2|          4|
+    |Block_codeRepl124_pr_U0_ap_ready_count        |   9|          2|    2|          4|
     |FFT_entry3_U0_ap_ready_count                  |   9|          2|    2|          4|
-    |ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready  |   9|          2|    1|          2|
     |ap_sync_reg_FFT_entry3_U0_ap_ready            |   9|          2|    1|          2|
     |ap_sync_reg_channel_write_data_OUT0_M_imag    |   9|          2|    1|          2|
     |ap_sync_reg_channel_write_data_OUT0_M_real    |   9|          2|    1|          2|
@@ -230,9 +230,9 @@
     +----------------------------------------------+---+----+-----+-----------+
     |                     Name                     | FF| LUT| Bits| Const Bits|
     +----------------------------------------------+---+----+-----+-----------+
-    |Block_codeRepl116_pr_U0_ap_ready_count        |  2|   0|    2|          0|
+    |Block_codeRepl124_pr_U0_ap_ready_count        |  2|   0|    2|          0|
     |FFT_entry3_U0_ap_ready_count                  |  2|   0|    2|          0|
-    |ap_sync_reg_Block_codeRepl116_pr_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_Block_codeRepl124_pr_U0_ap_ready  |  1|   0|    1|          0|
     |ap_sync_reg_FFT_entry3_U0_ap_ready            |  1|   0|    1|          0|
     |ap_sync_reg_channel_write_data_OUT0_M_imag    |  1|   0|    1|          0|
     |ap_sync_reg_channel_write_data_OUT0_M_real    |  1|   0|    1|          0|
@@ -260,46 +260,40 @@
 == Interface
 ================================================================
 * Summary: 
-+------------------------+-----+-----+------------+-----------------+--------------+
-|        RTL Ports       | Dir | Bits|  Protocol  |  Source Object  |    C Type    |
-+------------------------+-----+-----+------------+-----------------+--------------+
-|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_AWADDR   |  in |    5|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_ARADDR   |  in |    5|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |     AXILiteS    |    scalar    |
-|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |     AXILiteS    |    scalar    |
-|ap_clk                  |  in |    1| ap_ctrl_hs |       FFT       | return value |
-|ap_rst_n                |  in |    1| ap_ctrl_hs |       FFT       | return value |
-|ap_start                |  in |    1| ap_ctrl_hs |       FFT       | return value |
-|ap_done                 | out |    1| ap_ctrl_hs |       FFT       | return value |
-|ap_ready                | out |    1| ap_ctrl_hs |       FFT       | return value |
-|ap_idle                 | out |    1| ap_ctrl_hs |       FFT       | return value |
-|data_IN_M_real_TDATA    |  in |   32|    axis    |  data_IN_M_real |    pointer   |
-|data_IN_M_real_TVALID   |  in |    1|    axis    |  data_IN_M_real |    pointer   |
-|data_IN_M_real_TREADY   | out |    1|    axis    |  data_IN_M_real |    pointer   |
-|data_IN_M_imag_TDATA    |  in |   32|    axis    |  data_IN_M_imag |    pointer   |
-|data_IN_M_imag_TVALID   |  in |    1|    axis    |  data_IN_M_imag |    pointer   |
-|data_IN_M_imag_TREADY   | out |    1|    axis    |  data_IN_M_imag |    pointer   |
-|data_OUT_M_real_TDATA   | out |   32|    axis    | data_OUT_M_real |    pointer   |
-|data_OUT_M_real_TVALID  | out |    1|    axis    | data_OUT_M_real |    pointer   |
-|data_OUT_M_real_TREADY  |  in |    1|    axis    | data_OUT_M_real |    pointer   |
-|data_OUT_M_imag_TDATA   | out |   32|    axis    | data_OUT_M_imag |    pointer   |
-|data_OUT_M_imag_TVALID  | out |    1|    axis    | data_OUT_M_imag |    pointer   |
-|data_OUT_M_imag_TREADY  |  in |    1|    axis    | data_OUT_M_imag |    pointer   |
-|mag_OUT_TDATA           | out |   32|    axis    |     mag_OUT     |    pointer   |
-|mag_OUT_TVALID          | out |    1|    axis    |     mag_OUT     |    pointer   |
-|mag_OUT_TREADY          |  in |    1|    axis    |     mag_OUT     |    pointer   |
-+------------------------+-----+-----+------------+-----------------+--------------+
++------------------------+-----+-----+------------+--------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------------------+-----+-----+------------+--------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_AWADDR   |  in |    5|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARADDR   |  in |    5|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |   AXILiteS   |    scalar    |
+|ap_clk                  |  in |    1| ap_ctrl_hs |      FFT     | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |      FFT     | return value |
+|ap_start                |  in |    1| ap_ctrl_hs |      FFT     | return value |
+|ap_done                 | out |    1| ap_ctrl_hs |      FFT     | return value |
+|ap_ready                | out |    1| ap_ctrl_hs |      FFT     | return value |
+|ap_idle                 | out |    1| ap_ctrl_hs |      FFT     | return value |
+|data_IN_TDATA           |  in |   64|    axis    |    data_IN   |    pointer   |
+|data_IN_TVALID          |  in |    1|    axis    |    data_IN   |    pointer   |
+|data_IN_TREADY          | out |    1|    axis    |    data_IN   |    pointer   |
+|data_OUT_TDATA          | out |   64|    axis    |   data_OUT   |    pointer   |
+|data_OUT_TVALID         | out |    1|    axis    |   data_OUT   |    pointer   |
+|data_OUT_TREADY         |  in |    1|    axis    |   data_OUT   |    pointer   |
+|mag_OUT_TDATA           | out |   32|    axis    |    mag_OUT   |    pointer   |
+|mag_OUT_TVALID          | out |    1|    axis    |    mag_OUT   |    pointer   |
+|mag_OUT_TREADY          |  in |    1|    axis    |    mag_OUT   |    pointer   |
++------------------------+-----+-----+------------+--------------+--------------+
 

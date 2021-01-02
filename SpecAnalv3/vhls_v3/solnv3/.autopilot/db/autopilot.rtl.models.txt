@@ -9,14 +9,14 @@ mult_window_window
 FFT0118_W_M_real130
 FFT0118_W_M_imag126
 FFT_flog_32ns_32ng8j
-Block_codeRepl116fYi
+Block_codeRepl124fYi
 regslice_core
 fifo_w8_d2_A
 fifo_w8_d2_A
 FFT_AXILiteS_s_axi
 regslice_core
 FFT_entry3
-Block_codeRepl116_pr
+Block_codeRepl124_pr
 mult_window
 bitreverse
 FFT0118
@@ -24,5 +24,5 @@ FFT0119
 FFT0120
 FFT0121
 FFT0122
-Block_codeRepl11624_s
+Block_codeRepl12432_s
 FFT

@@ -53,21 +53,21 @@
             <obj_property name="Value_Data">/apatb_FFT_top/AESL_inst_FFT/FFT_entry3_U0/FFT_entry3_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
             <obj_property name="Detail_Data">/apatb_FFT_top/AESL_inst_FFT/FFT_entry3_U0/FFT_entry3_U0_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/Block_codeRepl116_pr_U0_activity">
-            <obj_property name="label">Block_codeRepl116_pr_U0_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/Block_codeRepl124_pr_U0_activity">
+            <obj_property name="label">Block_codeRepl124_pr_U0_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">Block_codeRepl116_pr_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">Block_codeRepl116_pr_U0_activity</obj_property>
+            <obj_property name="ElementShortName">Block_codeRepl124_pr_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Block_codeRepl124_pr_U0_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/Block_codeRepl116_pr_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/Block_codeRepl116_pr_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/Block_codeRepl116_pr_U0_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/Block_codeRepl124_pr_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/Block_codeRepl124_pr_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/Block_codeRepl124_pr_U0_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
          <wvobject type="group" fp_name="/apatb_FFT_top/AESL_inst_FFT/mult_window_U0/mult_window_U0_activity">
             <obj_property name="label">mult_window_U0_activity</obj_property>
@@ -181,21 +181,21 @@
             <obj_property name="Value_Data">/apatb_FFT_top/AESL_inst_FFT/FFT0122_U0/FFT0122_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
             <obj_property name="Detail_Data">/apatb_FFT_top/AESL_inst_FFT/FFT0122_U0/FFT0122_U0_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/Block_codeRepl11624_U0_activity">
-            <obj_property name="label">Block_codeRepl11624_U0_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/Block_codeRepl12432_U0_activity">
+            <obj_property name="label">Block_codeRepl12432_U0_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">Block_codeRepl11624_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">Block_codeRepl11624_U0_activity</obj_property>
+            <obj_property name="ElementShortName">Block_codeRepl12432_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Block_codeRepl12432_U0_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/Block_codeRepl11624_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/Block_codeRepl11624_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/Block_codeRepl11624_U0_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/Block_codeRepl12432_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/Block_codeRepl12432_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/Block_codeRepl12432_U0_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
       </wvobject>
    </wvobject>
@@ -210,9 +210,9 @@
          <obj_property name="ElementShortName">FFT_entry3_U0_activity</obj_property>
          <obj_property name="ObjectShortName">FFT_entry3_U0_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/Block_codeRepl116_pr_U0_activity">
-         <obj_property name="ElementShortName">Block_codeRepl116_pr_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">Block_codeRepl116_pr_U0_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/Block_codeRepl124_pr_U0_activity">
+         <obj_property name="ElementShortName">Block_codeRepl124_pr_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Block_codeRepl124_pr_U0_activity</obj_property>
       </wvobject>
       <wvobject type="protoinst" fp_name="/apatb_FFT_top/AESL_inst_FFT/mult_window_U0/mult_window_U0_activity">
          <obj_property name="ElementShortName">mult_window_U0_activity</obj_property>
@@ -242,9 +242,9 @@
          <obj_property name="ElementShortName">FFT0122_U0_activity</obj_property>
          <obj_property name="ObjectShortName">FFT0122_U0_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/Block_codeRepl11624_U0_activity">
-         <obj_property name="ElementShortName">Block_codeRepl11624_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">Block_codeRepl11624_U0_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/Block_codeRepl12432_U0_activity">
+         <obj_property name="ElementShortName">Block_codeRepl12432_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Block_codeRepl12432_U0_activity</obj_property>
       </wvobject>
       <wvobject type="group" fp_name="AESL_inst_FFT_Handshake_group">
          <obj_property name="label">Block-level handshake</obj_property>
@@ -312,78 +312,78 @@
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="Block_codeRepl116_pr_U0_group">
-         <obj_property name="label">Block_codeRepl116_pr_U0</obj_property>
+      <wvobject type="group" fp_name="Block_codeRepl124_pr_U0_group">
+         <obj_property name="label">Block_codeRepl124_pr_U0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="Block_codeRepl116_pr_U0_Input_group">
+         <wvobject type="group" fp_name="Block_codeRepl124_pr_U0_Input_group">
             <obj_property name="label">Input Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject type="group" fp_name="win_mode_group">
                <obj_property name="label">win_mode(win_mode_c1_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/win_mode_blk_n">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/win_mode_blk_n">
                   <obj_property name="ElementShortName">win_mode_blk_n</obj_property>
                   <obj_property name="ObjectShortName">win_mode_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/win_mode_dout">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/win_mode_dout">
                   <obj_property name="ElementShortName">win_mode_dout[7:0]</obj_property>
                   <obj_property name="ObjectShortName">win_mode_dout[7:0]</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/win_mode_empty_n">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/win_mode_empty_n">
                   <obj_property name="ElementShortName">win_mode_empty_n</obj_property>
                   <obj_property name="ObjectShortName">win_mode_empty_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/win_mode_read">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/win_mode_read">
                   <obj_property name="ElementShortName">win_mode_read</obj_property>
                   <obj_property name="ObjectShortName">win_mode_read</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="Block_codeRepl116_pr_U0_Handshake_group">
+         <wvobject type="group" fp_name="Block_codeRepl124_pr_U0_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/ap_start">
+            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/ap_done">
+            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/ap_continue">
+            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/ap_continue">
                <obj_property name="ElementShortName">ap_continue</obj_property>
                <obj_property name="ObjectShortName">ap_continue</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="Block_codeRepl116_pr_U0_Output_group">
+         <wvobject type="group" fp_name="Block_codeRepl124_pr_U0_Output_group">
             <obj_property name="label">Output Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject type="group" fp_name="xin_M_imag_group">
                <obj_property name="label">xin_M_imag(xin_M_imag_U, PIPO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/xin_M_imag_address0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/xin_M_imag_address0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/xin_M_imag_d0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/xin_M_imag_d0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/xin_M_imag_ce0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/xin_M_imag_ce0">
                   <obj_property name="ElementShortName">xin_M_imag_ce0</obj_property>
                   <obj_property name="ObjectShortName">xin_M_imag_ce0</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/xin_M_imag_we0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/xin_M_imag_we0">
                   <obj_property name="ElementShortName">xin_M_imag_we0</obj_property>
                   <obj_property name="ObjectShortName">xin_M_imag_we0</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/ap_done">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                   <obj_property name="label">ap_done(i_write)</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/ap_continue">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/ap_continue">
                   <obj_property name="ElementShortName">ap_continue</obj_property>
                   <obj_property name="ObjectShortName">ap_continue</obj_property>
                   <obj_property name="label">ap_continue(i_full_n)</obj_property>
@@ -393,25 +393,25 @@
             <wvobject type="group" fp_name="xin_M_real_group">
                <obj_property name="label">xin_M_real(xin_M_real_U, PIPO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/xin_M_real_address0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/xin_M_real_address0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/xin_M_real_d0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/xin_M_real_d0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/xin_M_real_ce0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/xin_M_real_ce0">
                   <obj_property name="ElementShortName">xin_M_real_ce0</obj_property>
                   <obj_property name="ObjectShortName">xin_M_real_ce0</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/xin_M_real_we0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/xin_M_real_we0">
                   <obj_property name="ElementShortName">xin_M_real_we0</obj_property>
                   <obj_property name="ObjectShortName">xin_M_real_we0</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/ap_done">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                   <obj_property name="label">ap_done(i_write)</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/ap_continue">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/ap_continue">
                   <obj_property name="ElementShortName">ap_continue</obj_property>
                   <obj_property name="ObjectShortName">ap_continue</obj_property>
                   <obj_property name="label">ap_continue(i_full_n)</obj_property>
@@ -421,17 +421,17 @@
             <wvobject type="group" fp_name="win_mode_out_group">
                <obj_property name="label">win_mode_out(win_mode_c_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/win_mode_out_blk_n">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/win_mode_out_blk_n">
                   <obj_property name="ElementShortName">win_mode_out_blk_n</obj_property>
                   <obj_property name="ObjectShortName">win_mode_out_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/win_mode_out_din">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/win_mode_out_din">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/win_mode_out_full_n">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/win_mode_out_full_n">
                   <obj_property name="ElementShortName">win_mode_out_full_n</obj_property>
                   <obj_property name="ObjectShortName">win_mode_out_full_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl116_pr_U0/win_mode_out_write">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl124_pr_U0/win_mode_out_write">
                   <obj_property name="ElementShortName">win_mode_out_write</obj_property>
                   <obj_property name="ObjectShortName">win_mode_out_write</obj_property>
                </wvobject>
@@ -1560,24 +1560,24 @@
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="Block_codeRepl11624_U0_group">
-         <obj_property name="label">Block_codeRepl11624_U0</obj_property>
+      <wvobject type="group" fp_name="Block_codeRepl12432_U0_group">
+         <obj_property name="label">Block_codeRepl12432_U0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="Block_codeRepl11624_U0_Input_group">
+         <wvobject type="group" fp_name="Block_codeRepl12432_U0_Input_group">
             <obj_property name="label">Input Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject type="group" fp_name="data_OUTfft_M_imag_group">
                <obj_property name="label">data_OUTfft_M_imag(data_OUTfft_M_imag_U, PIPO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/data_OUTfft_M_imag_address0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/data_OUTfft_M_imag_address0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/data_OUTfft_M_imag_q0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/data_OUTfft_M_imag_q0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/data_OUTfft_M_imag_ce0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/data_OUTfft_M_imag_ce0">
                   <obj_property name="ElementShortName">data_OUTfft_M_imag_ce0</obj_property>
                   <obj_property name="ObjectShortName">data_OUTfft_M_imag_ce0</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                   <obj_property name="label">ap_ready(t_read)</obj_property>
@@ -1587,15 +1587,15 @@
             <wvobject type="group" fp_name="data_OUTfft_M_real_group">
                <obj_property name="label">data_OUTfft_M_real(data_OUTfft_M_real_U, PIPO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/data_OUTfft_M_real_address0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/data_OUTfft_M_real_address0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/data_OUTfft_M_real_q0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/data_OUTfft_M_real_q0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/data_OUTfft_M_real_ce0">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/data_OUTfft_M_real_ce0">
                   <obj_property name="ElementShortName">data_OUTfft_M_real_ce0</obj_property>
                   <obj_property name="ObjectShortName">data_OUTfft_M_real_ce0</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                   <obj_property name="label">ap_ready(t_read)</obj_property>
@@ -1603,27 +1603,27 @@
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="Block_codeRepl11624_U0_Handshake_group">
+         <wvobject type="group" fp_name="Block_codeRepl12432_U0_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/ap_start">
+            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/ap_done">
+            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl11624_U0/ap_continue">
+            <wvobject type="logic" fp_name="/apatb_FFT_top/AESL_inst_FFT/Block_codeRepl12432_U0/ap_continue">
                <obj_property name="ElementShortName">ap_continue</obj_property>
                <obj_property name="ObjectShortName">ap_continue</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="Block_codeRepl11624_U0_Output_group">
+         <wvobject type="group" fp_name="Block_codeRepl12432_U0_Output_group">
             <obj_property name="label">Output Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
          </wvobject>

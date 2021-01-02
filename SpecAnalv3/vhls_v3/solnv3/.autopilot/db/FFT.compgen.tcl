@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 124
+set ID 122
 set hasByteEnable 0
 set MemName FFT_xin_M_imag_memcore
 set CoreName ap_simcore_mem
@@ -85,7 +85,7 @@ puts "@W \[IMPL-105\] Cannot find ap_gen_simcore_mem_df_channel, check your plat
 
 
 # Memory (RAM/ROM)  definition:
-set ID 125
+set ID 123
 set hasByteEnable 0
 set MemName FFT_prod_IN_M_real_memcore
 set CoreName ap_simcore_mem
@@ -169,7 +169,7 @@ puts "@W \[IMPL-105\] Cannot find ap_gen_simcore_mem_df_channel, check your plat
 
 
 # Memory (RAM/ROM)  definition:
-set ID 126
+set ID 124
 set hasByteEnable 0
 set MemName FFT_data_OUTfft_MrcU_memcore
 set CoreName ap_simcore_mem
@@ -253,7 +253,7 @@ puts "@W \[IMPL-105\] Cannot find ap_gen_simcore_mem_df_channel, check your plat
 
 
 # FIFO definition:
-set ID 127
+set ID 125
 set FifoName fifo_w8_d2_A
 set InstName win_mode_c1_U
 set CoreName ap_simcore_fifo
@@ -322,7 +322,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 128
+set ID 126
 set FifoName fifo_w8_d2_A
 set InstName win_mode_c_U
 set CoreName ap_simcore_fifo
@@ -415,7 +415,7 @@ dict set axilite_register_dict AXILiteS $port_AXILiteS
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 129 \
+			id 127 \
 			corename FFT_AXILiteS_axilite \
 			name FFT_AXILiteS_s_axi \
 			ports {$port_AXILiteS} \
@@ -435,83 +435,45 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 128 \
+    name data_IN \
+    reset_level 0 \
+    sync_rst true \
+    corename {} \
+    metadata {  } \
+    op interface \
+    ports { data_IN_TDATA { I 64 vector } data_IN_TVALID { I 1 bit } data_IN_TREADY { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'data_IN'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 129 \
+    name data_OUT \
+    reset_level 0 \
+    sync_rst true \
+    corename {} \
+    metadata {  } \
+    op interface \
+    ports { data_OUT_TDATA { O 64 vector } data_OUT_TVALID { O 1 bit } data_OUT_TREADY { I 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'data_OUT'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 130 \
-    name data_IN_M_real \
-    reset_level 0 \
-    sync_rst true \
-    corename {} \
-    metadata {  } \
-    op interface \
-    ports { data_IN_M_real_TDATA { I 32 vector } data_IN_M_real_TVALID { I 1 bit } data_IN_M_real_TREADY { O 1 bit } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'data_IN_M_real'"
-}
-}
-
-
-# Native AXIS:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
-eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 131 \
-    name data_IN_M_imag \
-    reset_level 0 \
-    sync_rst true \
-    corename {} \
-    metadata {  } \
-    op interface \
-    ports { data_IN_M_imag_TDATA { I 32 vector } data_IN_M_imag_TVALID { I 1 bit } data_IN_M_imag_TREADY { O 1 bit } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'data_IN_M_imag'"
-}
-}
-
-
-# Native AXIS:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
-eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 132 \
-    name data_OUT_M_real \
-    reset_level 0 \
-    sync_rst true \
-    corename {} \
-    metadata {  } \
-    op interface \
-    ports { data_OUT_M_real_TDATA { O 32 vector } data_OUT_M_real_TVALID { O 1 bit } data_OUT_M_real_TREADY { I 1 bit } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'data_OUT_M_real'"
-}
-}
-
-
-# Native AXIS:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
-eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 133 \
-    name data_OUT_M_imag \
-    reset_level 0 \
-    sync_rst true \
-    corename {} \
-    metadata {  } \
-    op interface \
-    ports { data_OUT_M_imag_TDATA { O 32 vector } data_OUT_M_imag_TVALID { O 1 bit } data_OUT_M_imag_TREADY { I 1 bit } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'data_OUT_M_imag'"
-}
-}
-
-
-# Native AXIS:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
-eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 134 \
     name mag_OUT \
     reset_level 0 \
     sync_rst true \
@@ -591,7 +553,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 
 # RegSlice definition:
-set ID 135
+set ID 131
 set RegSliceName regslice_core
 set RegSliceInstName regslice_core_U
 set CoreName ap_simcore_regslice_core
