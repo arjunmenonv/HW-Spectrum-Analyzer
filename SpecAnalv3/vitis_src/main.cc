@@ -12,6 +12,8 @@
 #include "xaxidma.h"
 #include "xparameters.h"	// Generated during HW export, includes macros for
 							// peripheral addresses, device IDs etc.
+#include "xuartps.h"
+
 
 #define TOL 0.1
 #define NORM(x) ((x).real()*(x).real() + (x).imag()*(x).imag())
@@ -35,6 +37,8 @@ void dispf(float a) {
 
 int main()
 {
+	XUartPs uart;			// XUart struct to communicate between the board and laptop
+	XUartPs* uart_ptr=&uart;
 	XFft xf;			// XFft struct is used to send win_mode through axilite bus
 	XFft* xfptr = &xf;
 	XAxiDma dma0;		// dma0: MM2S for data_IN, S2MM for data_OUT
@@ -90,6 +94,7 @@ int main()
 	XAxiDma_IntrDisable(dma1_ptr, XAXIDMA_IRQ_ALL_MASK,
 							XAXIDMA_DMA_TO_DEVICE);
    //
+   
 
     // Software Run
     int t1 = XCounter_Get_return(xcptr);
@@ -99,7 +104,7 @@ int main()
    	for(int k=0;k<N;k++){
    		norm[k] =  NORM(data_exp[k]-data_out[k]);
    		if(norm[k]>TOL)	result ++;
-  	}
+
    	if (result != 0) xil_printf("\r\nFAIL SW: %d errors\r\n", result);
    	else	xil_printf("\r\nPASS SW\r\n");
    	xil_printf("SW FFT cycles: %d\r\n", t2-t1);
@@ -118,6 +123,25 @@ int main()
 	XAxiDma_SimpleTransfer(dma0_ptr, (UINTPTR) data_out, N*sizeof(data_comp), XAXIDMA_DEVICE_TO_DMA);
 	XAxiDma_SimpleTransfer(dma1_ptr, (UINTPTR) mag_out, N*sizeof(float), XAXIDMA_DEVICE_TO_DMA);
 	t_hw2 = XCounter_Get_return(xcptr);
+	
+
+	
+	Config_0 = XUartPs_LookupConfig(XPAR_XUARTPS_0_DEVICE_ID);
+        if (NULL == Config_0){
+                xil_printf("Initialization failed %d\r\n", Config_0);
+                return XST_FAILURE;
+        }
+
+        Status = XUartPs_CfgInitialize(uart_ptr, Config_0, Config_0->BaseAddress);
+        if (Status != XST_SUCCESS) {
+                return XST_FAILURE;
+        }
+	
+        int bytes_sent;
+	
+        bytes_sent = XUartPs_Send(uart_ptr, (char*) mag_out, N*sizeof(float));
+	xil_printf(":%d\n", bytes_sent);
+        
 
 	for(int k=0;k<N;k++){
 		norm[k] =  NORM(data_exp[k]-data_out[k]);
