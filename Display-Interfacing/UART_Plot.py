@@ -1,24 +1,35 @@
-import serial
-import numpy
-import math
+'''
+    Python Program to Plot Magnitude Spectrum of FFT in dB scale
+    Input is stored in ./data.dat
+    Jan 2021
+'''
+import os
+import struct
+import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
+import time
+from scipy.fftpack import fft
+from tkinter import TclError
 
 
-plt.style.use('fivethirtyeight')
-
-fig = plt.figure()
-ax1 = fig.add_subplot(1,1,1)
-
-def animate(i):
-	graph_data = open('data.txt', 'r').read()
-	lines = graph_data.split('\n')
-        
-	for line in lines:
-		if len(line) == 32:
-			data = line.split(',')
-	ax1.clear()
-	ax1.plot(xs, ys)
-
-ani = animation.FuncAnimation(fig, animate, interval=1000)
+x_vec = np.linspace(0, 31, 32)
+file = open("data.dat", 'r')
+filedata = file.readlines()
+filedata = [filedata[i].strip("\n") for i in range(len(filedata))]
+filedata = [float(filedata[i]) for i in range(len(filedata))]
+numIter = len(filedata)/32
+for index in range(int(numIter)):
+    data = [filedata[i] for i in range(index*32, (index+1)*32)]
+    data = np.array(data)
+    data = 10*np.log10(data) 
+    data1 = data.copy()
+    data1[data < -20] = np.nan
+    plt.stem(x_vec, data1, "-")
+    plt.title("STFT Magnitude Spectrum Window "+str(index))
+    plt.xlabel("Frequency Bins")
+    plt.ylabel("Magnitude (dB)")
+    plt.ylim((-30, 30))
+    plt.pause(0.1)
+    plt.clf()
 plt.show()
+

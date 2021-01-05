@@ -1,3 +1,10 @@
+'''
+    Python Program to Detect UART/USB connections and Connect to the Digilent Board used for the demo
+    Hardware Accelerator for FFT based digital spectrum analyser project
+    Author: Muralekrishnan R
+    Dec 2020
+'''
+import time
 import serial.tools.list_ports
 
 
@@ -34,7 +41,7 @@ def connect():
 			print('Connected to ', connectBoard)
 			break
 		else:
-			print('Board not Found!')
-			
+                        print('Board not Found!')
+                        exit()
 	return ser
 
