@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jan  3 22:57:13 2021
+# Process ID: 3129
+# Current directory: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2.9/FFT32v2.9_axis/FFT32v2.9_axis.runs/ip_axis_FFT_0_0_synth_1
+# Command line: vivado -log ip_axis_FFT_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ip_axis_FFT_0_0.tcl
+# Log file: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2.9/FFT32v2.9_axis/FFT32v2.9_axis.runs/ip_axis_FFT_0_0_synth_1/ip_axis_FFT_0_0.vds
+# Journal file: /home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2.9/FFT32v2.9_axis/FFT32v2.9_axis.runs/ip_axis_FFT_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ip_axis_FFT_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2.9'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2.9' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/arjunmenonv/Arjun_acads/Year3/CompOrg/HW-Spectrum-Analyzer/SpecAnalv2.9/FFT32v2.9_axis/FFT32v2.9_axis.runs/ip_axis_FFT_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
