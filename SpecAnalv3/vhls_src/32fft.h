@@ -8,8 +8,8 @@
 using namespace std;
 #define N 32
 
-typedef float data_t;
-//typedef ap_fixed<16,8> data_t;
+//typedef float data_t;
+typedef ap_fixed<32, 24> data_t;
 typedef complex<data_t> data_comp;
 
 

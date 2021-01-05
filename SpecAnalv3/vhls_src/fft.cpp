@@ -1,17 +1,19 @@
 /*
  * FFT Peripheral High Level Synthesis Design
- * version 3
+ * version 3 Fixed Point version
  * Source for Base code: Nitin Chandrachoodan (https://gitlab.com/chandrachoodan/teach-fpga)
  * Modified by Arjun Menon Vadakkeveedu and Akash Reddy (EE @ IIT Madras)
  * Modifications include:
  * 		Hardware Optimisation Directives- LOOP UNROLLING, PIPELINING, DATAFLOW
  * 		Module for multiplying input signal by a time-domain windowing function
- * 		Module for computing magnitude spectrum in decibel scale
+ * 		returns squared-mag spectrum, for dB similarity between fixed point and int representation
+ * 			can be used with necessary type conversion
  * 		Extension to 256 point FFT (version 4)
  * Twiddle Factors, Bit-reversed indices and windowing functions pre-computed and
  * 	stored in header file (will get synthesised as LUTs/ BRAMs).
  *
- * version 3 stable; Latency = 365 cycles; II = 99 cycles (log10 unit is bottleneck for II)
+ * version 3 stable; Latency = 266 cycles; II = 70 cycles
+ * Uses approx 112 DSP slices- can be optimised further (WiP)
  */
 
 #include "32fft.h"
@@ -22,12 +24,12 @@ using namespace std;
 
 void mult_window(data_comp data_IN[N], char win_mode, data_comp prod_IN[N])
 {
-	float window[N];
+	data_t window[N];
 	switch(win_mode){
 	//win_mode used to specify window type (one_hot code for now)
 	case 0x01:	// Multiply by Hanning
 				for(int i = 0; i<N; i++){
-#pragma HLS UNROLL factor=2
+#pragma HLS UNROLL factor=8
 #pragma HLS PIPELINE
 
 					window[i] = Hann32[i];
@@ -35,7 +37,7 @@ void mult_window(data_comp data_IN[N], char win_mode, data_comp prod_IN[N])
 				break;
 	case 0x02:	//Multiply by Hamming
 				for(int i = 0; i<N; i++){
-#pragma HLS UNROLL factor=2
+#pragma HLS UNROLL factor=8
 #pragma HLS PIPELINE
 
 					window[i] = Hamm32[i];
@@ -43,20 +45,20 @@ void mult_window(data_comp data_IN[N], char win_mode, data_comp prod_IN[N])
 				break;
 	case 0x04:	//Multiply by Blackman
 				for(int i = 0; i<N; i++){
-#pragma HLS UNROLL factor=2
+#pragma HLS UNROLL factor=8
 #pragma HLS PIPELINE
 
 					window[i] = Blackman32[i];
 				}
 				break;
 	default:	for(int i = 0; i<N; i++){
-#pragma HLS UNROLL factor=2
+#pragma HLS UNROLL factor=8
 				window[i] = 1;
 				}
 	break;
   }
 for(int i = 0; i<N; i++){
-#pragma HLS UNROLL factor=2
+#pragma HLS UNROLL factor=8
 #pragma HLS PIPELINE
 	prod_IN[i] = data_IN[i]*window[i];
 	}
@@ -110,17 +112,19 @@ void polarOUT(data_comp data_IN[N], data_t mag_OUT[N])
 	 */
 		in_r[i] = data_IN[i].real();
 		in_i[i] = data_IN[i].imag();
-		mag_sqr[i] = in_r[i]*in_r[i] + in_i[i]*in_i[i];
-		mag_OUT[i] = 10*log10(mag_sqr[i]);
+		//mag_sqr[i] = in_r[i]*in_r[i] + in_i[i]*in_i[i];
+		//mag_OUT[i] = 10*log10(mag_sqr[i]);
+		mag_OUT[i] = in_r[i]*in_r[i] + in_i[i]*in_i[i];
 	}
 }
 
 void FFT(data_comp data_IN[N], char win_mode, data_comp data_OUT[N], data_t mag_OUT[N]){
+#pragma HLS INTERFACE s_axilite port=return
 //#pragma HLS INTERFACE ap_ctrl_none port=return
-#pragma HLS DATA_PACK variable=data_OUT
-#pragma HLS DATA_PACK variable=data_IN
+//#pragma HLS DATA_PACK variable=data_OUT
+//#pragma HLS DATA_PACK variable=data_IN
+
 #pragma HLS INTERFACE s_axilite port=win_mode
-#pragma HLS DATAFLOW
 #pragma HLS INTERFACE axis register both port=mag_OUT
 #pragma HLS INTERFACE axis register both port=data_OUT
 #pragma HLS INTERFACE axis register both port=data_IN
@@ -146,6 +150,10 @@ void FFT(data_comp data_IN[N], char win_mode, data_comp data_OUT[N], data_t mag_
 #pragma HLS UNROLL
 		xin[i] = data_IN[i];
 		}
+	FFT_stages:
+	{
+#pragma HLS DATAFLOW
+
 	mult_window(xin, win_mode, prod_IN);	// Multiply by Window specified by win_mode
 	bitreverse(prod_IN, data_OUT0);  //calculate bitreverse order
 	FFT0(1,16,4,1,data_OUT0,data_OUT1); //calculate the FFT
@@ -154,7 +162,7 @@ void FFT(data_comp data_IN[N], char win_mode, data_comp data_OUT[N], data_t mag_
 	FFT0(8,2,1,4,data_OUT3,data_OUT4);
 	FFT0(16,1,0,5,data_OUT4,data_OUTfft);
 	polarOUT(data_OUTfft, xout_mag);
-
+	}
 	for (int i=0; i<N; i++){
 #pragma HLS UNROLL
 #pragma HLS PIPELINE
