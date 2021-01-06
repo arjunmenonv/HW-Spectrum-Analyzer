@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'bitreverse'
 ================================================================
-* Date:           Fri Jan  1 20:14:33 2021
+* Date:           Wed Jan  6 00:06:26 2021
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        vhls_v3
@@ -86,22 +86,22 @@
     +-----------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
-    +---------------------------+----+-----------+-----+-----------+
-    |            Name           | LUT| Input Size| Bits| Total Bits|
-    +---------------------------+----+-----------+-----+-----------+
-    |ap_NS_fsm                  |  89|         18|    1|         18|
-    |ap_done                    |   9|          2|    1|          2|
-    |data_OUT0_M_imag_address0  |  85|         17|    5|         85|
-    |data_OUT0_M_imag_address1  |  85|         17|    5|         85|
-    |data_OUT0_M_real_address0  |  85|         17|    5|         85|
-    |data_OUT0_M_real_address1  |  85|         17|    5|         85|
-    |prod_IN_M_imag_address0    |  85|         17|    5|         85|
-    |prod_IN_M_imag_address1    |  85|         17|    5|         85|
-    |prod_IN_M_real_address0    |  85|         17|    5|         85|
-    |prod_IN_M_real_address1    |  85|         17|    5|         85|
-    +---------------------------+----+-----------+-----+-----------+
-    |Total                      | 778|        156|   42|        700|
-    +---------------------------+----+-----------+-----+-----------+
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |  89|         18|    1|         18|
+    |ap_done                      |   9|          2|    1|          2|
+    |data_OUT0_M_imag_V_address0  |  85|         17|    5|         85|
+    |data_OUT0_M_imag_V_address1  |  85|         17|    5|         85|
+    |data_OUT0_M_real_V_address0  |  85|         17|    5|         85|
+    |data_OUT0_M_real_V_address1  |  85|         17|    5|         85|
+    |prod_IN_M_imag_V_address0    |  85|         17|    5|         85|
+    |prod_IN_M_imag_V_address1    |  85|         17|    5|         85|
+    |prod_IN_M_real_V_address0    |  85|         17|    5|         85|
+    |prod_IN_M_real_V_address1    |  85|         17|    5|         85|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 778|        156|   42|        700|
+    +-----------------------------+----+-----------+-----+-----------+
 
     * Register: 
     +-------------+----+----+-----+-----------+
@@ -119,43 +119,43 @@
 == Interface
 ================================================================
 * Summary: 
-+---------------------------+-----+-----+------------+------------------+--------------+
-|         RTL Ports         | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
-+---------------------------+-----+-----+------------+------------------+--------------+
-|ap_clk                     |  in |    1| ap_ctrl_hs |    bitreverse    | return value |
-|ap_rst                     |  in |    1| ap_ctrl_hs |    bitreverse    | return value |
-|ap_start                   |  in |    1| ap_ctrl_hs |    bitreverse    | return value |
-|ap_done                    | out |    1| ap_ctrl_hs |    bitreverse    | return value |
-|ap_continue                |  in |    1| ap_ctrl_hs |    bitreverse    | return value |
-|ap_idle                    | out |    1| ap_ctrl_hs |    bitreverse    | return value |
-|ap_ready                   | out |    1| ap_ctrl_hs |    bitreverse    | return value |
-|prod_IN_M_imag_address0    | out |    5|  ap_memory |  prod_IN_M_imag  |     array    |
-|prod_IN_M_imag_ce0         | out |    1|  ap_memory |  prod_IN_M_imag  |     array    |
-|prod_IN_M_imag_q0          |  in |   32|  ap_memory |  prod_IN_M_imag  |     array    |
-|prod_IN_M_imag_address1    | out |    5|  ap_memory |  prod_IN_M_imag  |     array    |
-|prod_IN_M_imag_ce1         | out |    1|  ap_memory |  prod_IN_M_imag  |     array    |
-|prod_IN_M_imag_q1          |  in |   32|  ap_memory |  prod_IN_M_imag  |     array    |
-|prod_IN_M_real_address0    | out |    5|  ap_memory |  prod_IN_M_real  |     array    |
-|prod_IN_M_real_ce0         | out |    1|  ap_memory |  prod_IN_M_real  |     array    |
-|prod_IN_M_real_q0          |  in |   32|  ap_memory |  prod_IN_M_real  |     array    |
-|prod_IN_M_real_address1    | out |    5|  ap_memory |  prod_IN_M_real  |     array    |
-|prod_IN_M_real_ce1         | out |    1|  ap_memory |  prod_IN_M_real  |     array    |
-|prod_IN_M_real_q1          |  in |   32|  ap_memory |  prod_IN_M_real  |     array    |
-|data_OUT0_M_real_address0  | out |    5|  ap_memory | data_OUT0_M_real |     array    |
-|data_OUT0_M_real_ce0       | out |    1|  ap_memory | data_OUT0_M_real |     array    |
-|data_OUT0_M_real_we0       | out |    1|  ap_memory | data_OUT0_M_real |     array    |
-|data_OUT0_M_real_d0        | out |   32|  ap_memory | data_OUT0_M_real |     array    |
-|data_OUT0_M_real_address1  | out |    5|  ap_memory | data_OUT0_M_real |     array    |
-|data_OUT0_M_real_ce1       | out |    1|  ap_memory | data_OUT0_M_real |     array    |
-|data_OUT0_M_real_we1       | out |    1|  ap_memory | data_OUT0_M_real |     array    |
-|data_OUT0_M_real_d1        | out |   32|  ap_memory | data_OUT0_M_real |     array    |
-|data_OUT0_M_imag_address0  | out |    5|  ap_memory | data_OUT0_M_imag |     array    |
-|data_OUT0_M_imag_ce0       | out |    1|  ap_memory | data_OUT0_M_imag |     array    |
-|data_OUT0_M_imag_we0       | out |    1|  ap_memory | data_OUT0_M_imag |     array    |
-|data_OUT0_M_imag_d0        | out |   32|  ap_memory | data_OUT0_M_imag |     array    |
-|data_OUT0_M_imag_address1  | out |    5|  ap_memory | data_OUT0_M_imag |     array    |
-|data_OUT0_M_imag_ce1       | out |    1|  ap_memory | data_OUT0_M_imag |     array    |
-|data_OUT0_M_imag_we1       | out |    1|  ap_memory | data_OUT0_M_imag |     array    |
-|data_OUT0_M_imag_d1        | out |   32|  ap_memory | data_OUT0_M_imag |     array    |
-+---------------------------+-----+-----+------------+------------------+--------------+
++-----------------------------+-----+-----+------------+--------------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++-----------------------------+-----+-----+------------+--------------------+--------------+
+|ap_clk                       |  in |    1| ap_ctrl_hs |     bitreverse     | return value |
+|ap_rst                       |  in |    1| ap_ctrl_hs |     bitreverse     | return value |
+|ap_start                     |  in |    1| ap_ctrl_hs |     bitreverse     | return value |
+|ap_done                      | out |    1| ap_ctrl_hs |     bitreverse     | return value |
+|ap_continue                  |  in |    1| ap_ctrl_hs |     bitreverse     | return value |
+|ap_idle                      | out |    1| ap_ctrl_hs |     bitreverse     | return value |
+|ap_ready                     | out |    1| ap_ctrl_hs |     bitreverse     | return value |
+|prod_IN_M_imag_V_address0    | out |    5|  ap_memory |  prod_IN_M_imag_V  |     array    |
+|prod_IN_M_imag_V_ce0         | out |    1|  ap_memory |  prod_IN_M_imag_V  |     array    |
+|prod_IN_M_imag_V_q0          |  in |   32|  ap_memory |  prod_IN_M_imag_V  |     array    |
+|prod_IN_M_imag_V_address1    | out |    5|  ap_memory |  prod_IN_M_imag_V  |     array    |
+|prod_IN_M_imag_V_ce1         | out |    1|  ap_memory |  prod_IN_M_imag_V  |     array    |
+|prod_IN_M_imag_V_q1          |  in |   32|  ap_memory |  prod_IN_M_imag_V  |     array    |
+|prod_IN_M_real_V_address0    | out |    5|  ap_memory |  prod_IN_M_real_V  |     array    |
+|prod_IN_M_real_V_ce0         | out |    1|  ap_memory |  prod_IN_M_real_V  |     array    |
+|prod_IN_M_real_V_q0          |  in |   32|  ap_memory |  prod_IN_M_real_V  |     array    |
+|prod_IN_M_real_V_address1    | out |    5|  ap_memory |  prod_IN_M_real_V  |     array    |
+|prod_IN_M_real_V_ce1         | out |    1|  ap_memory |  prod_IN_M_real_V  |     array    |
+|prod_IN_M_real_V_q1          |  in |   32|  ap_memory |  prod_IN_M_real_V  |     array    |
+|data_OUT0_M_real_V_address0  | out |    5|  ap_memory | data_OUT0_M_real_V |     array    |
+|data_OUT0_M_real_V_ce0       | out |    1|  ap_memory | data_OUT0_M_real_V |     array    |
+|data_OUT0_M_real_V_we0       | out |    1|  ap_memory | data_OUT0_M_real_V |     array    |
+|data_OUT0_M_real_V_d0        | out |   32|  ap_memory | data_OUT0_M_real_V |     array    |
+|data_OUT0_M_real_V_address1  | out |    5|  ap_memory | data_OUT0_M_real_V |     array    |
+|data_OUT0_M_real_V_ce1       | out |    1|  ap_memory | data_OUT0_M_real_V |     array    |
+|data_OUT0_M_real_V_we1       | out |    1|  ap_memory | data_OUT0_M_real_V |     array    |
+|data_OUT0_M_real_V_d1        | out |   32|  ap_memory | data_OUT0_M_real_V |     array    |
+|data_OUT0_M_imag_V_address0  | out |    5|  ap_memory | data_OUT0_M_imag_V |     array    |
+|data_OUT0_M_imag_V_ce0       | out |    1|  ap_memory | data_OUT0_M_imag_V |     array    |
+|data_OUT0_M_imag_V_we0       | out |    1|  ap_memory | data_OUT0_M_imag_V |     array    |
+|data_OUT0_M_imag_V_d0        | out |   32|  ap_memory | data_OUT0_M_imag_V |     array    |
+|data_OUT0_M_imag_V_address1  | out |    5|  ap_memory | data_OUT0_M_imag_V |     array    |
+|data_OUT0_M_imag_V_ce1       | out |    1|  ap_memory | data_OUT0_M_imag_V |     array    |
+|data_OUT0_M_imag_V_we1       | out |    1|  ap_memory | data_OUT0_M_imag_V |     array    |
+|data_OUT0_M_imag_V_d1        | out |   32|  ap_memory | data_OUT0_M_imag_V |     array    |
++-----------------------------+-----+-----+------------+--------------------+--------------+
 
