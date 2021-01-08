@@ -2,7 +2,7 @@
 
 Hardware Accelerator for FFT based Digital Spectrum Analyser implemented on a Zynq-7000 evaluation board (Zybo Z7-20 by Digilent)
 
-Authors: Akash Reddy, [Arjun Menon Vadakkeveedu](https://github.com/arjunmenonv) , Muralekrishnan R
+Authors: [Akash Reddy](https://github.com/knightpegasus7382), [Arjun Menon Vadakkeveedu](https://github.com/arjunmenonv) , [Muralekrishnan R](https://github.com/murale127)
 
 EE2003 Computer Organisation Project, IIT Madras
 
